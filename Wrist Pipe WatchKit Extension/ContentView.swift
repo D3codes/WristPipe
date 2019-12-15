@@ -54,7 +54,7 @@ struct ContentView: View {
             
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 0 ? selectedColor : unselectedColors[0])
+                    .fill(round(selectedPitch) == 0 ? selectedColor : unselectedColors[0])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y:35)
                 Text("\(pitches[0])")
@@ -64,7 +64,7 @@ struct ContentView: View {
             
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 1 ? selectedColor : unselectedColors[1])
+                    .fill(round(selectedPitch) == 1 ? selectedColor : unselectedColors[1])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y:45)
                 Text("\(pitches[1])")
@@ -75,7 +75,7 @@ struct ContentView: View {
         HStack {
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 10 ? selectedColor : unselectedColors[10])
+                    .fill(round(selectedPitch) == 10 ? selectedColor : unselectedColors[10])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: -45, y:35)
                 Text("\(pitches[10])")
@@ -85,7 +85,7 @@ struct ContentView: View {
             
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 2 ? selectedColor : unselectedColors[2])
+                    .fill(round(selectedPitch) == 2 ? selectedColor : unselectedColors[2])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 45, y:35)
                 Text("\(pitches[2])")
@@ -96,7 +96,7 @@ struct ContentView: View {
         HStack {
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 9 ? selectedColor : unselectedColors[9])
+                    .fill(round(selectedPitch) == 9 ? selectedColor : unselectedColors[9])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: -10, y: 10)
                 Text("\(pitches[9])")
@@ -135,7 +135,7 @@ struct ContentView: View {
             
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 3 ? selectedColor : unselectedColors[3])
+                    .fill(round(selectedPitch) == 3 ? selectedColor : unselectedColors[3])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 10, y: 10)
                 Text("\(pitches[3])")
@@ -146,7 +146,7 @@ struct ContentView: View {
         HStack {
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 8 ? selectedColor : unselectedColors[8])
+                    .fill(round(selectedPitch) == 8 ? selectedColor : unselectedColors[8])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: -45, y: -15)
                 Text("\(pitches[8])")
@@ -156,7 +156,7 @@ struct ContentView: View {
             
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 4 ? selectedColor : unselectedColors[4])
+                    .fill(round(selectedPitch) == 4 ? selectedColor : unselectedColors[4])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 45, y: -15)
                 Text("\(pitches[4])")
@@ -167,7 +167,7 @@ struct ContentView: View {
         HStack {
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 7 ? selectedColor : unselectedColors[7])
+                    .fill(round(selectedPitch) == 7 ? selectedColor : unselectedColors[7])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y: -25)
                 Text("\(pitches[7])")
@@ -177,7 +177,7 @@ struct ContentView: View {
             
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 6 ? selectedColor : unselectedColors[6])
+                    .fill(round(selectedPitch) == 6 ? selectedColor : unselectedColors[6])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y: -15)
                 Text("\(pitches[6])")
@@ -187,7 +187,7 @@ struct ContentView: View {
             
             ZStack {
                 Circle()
-                    .fill(selectedPitch == 5 ? selectedColor : unselectedColors[5])
+                    .fill(round(selectedPitch) == 5 ? selectedColor : unselectedColors[5])
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y: -25)
                 Text("\(pitches[5])")
