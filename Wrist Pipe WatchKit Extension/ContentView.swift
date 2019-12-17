@@ -15,9 +15,10 @@ struct ContentView: View {
     let selectorSize: CGFloat = 80.0
     let selectedColor = Color.white
     let pitches = ["F", "F♯", "G", "A♭", "A", "B♭", "B", "C", "C♯", "D", "E♭", "E"]
+    @State var blackText = false;
     @State private var selectedPitch = 0.0
     @State var scrollAmount = 0.0
-    @State var unselectedColors = [Color.red, Color.blue, Color.green, Color.yellow, Color.purple, Color.orange, Color.red, Color.blue, Color.green, Color.yellow, Color.purple, Color.orange]
+    @State var unselectedColors = [Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black]
     
     let screenWidth = WKInterfaceDevice.current().screenBounds.width
     let xsScale: CGFloat = 0.75
@@ -34,6 +35,7 @@ struct ContentView: View {
         do {
             pitchSound = try AVAudioPlayer(contentsOf: url)
             pitchSound?.play()
+            print("\(pitchSound!.url)")
         } catch {
             print("couldn't load file :(")
         }
@@ -48,7 +50,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y:45)
                 Text("\(pitches[11])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 11 ? .black : .white)
                     .offset(x: 0, y: 45)
             }
             
@@ -58,7 +60,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y:35)
                 Text("\(pitches[0])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 0 ? .black : .white)
                     .offset(x: 0, y: 35)
             }
             
@@ -68,7 +70,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y:45)
                 Text("\(pitches[1])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 1 ? .black : .white)
                     .offset(x: 0, y: 45)
             }
         }
@@ -79,7 +81,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: -45, y:35)
                 Text("\(pitches[10])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 10 ? .black : .white)
                     .offset(x: -45, y: 35)
             }
             
@@ -89,7 +91,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 45, y:35)
                 Text("\(pitches[2])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 2 ? .black : .white)
                     .offset(x: 45, y: 35)
             }
         }
@@ -100,7 +102,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: -10, y: 10)
                 Text("\(pitches[9])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 9 ? .black : .white)
                     .offset(x: -10, y: 10)
             }
             
@@ -126,7 +128,7 @@ struct ContentView: View {
                     .rotationEffect(Angle(degrees: selectedPitch * 30))
                 Text("\(pitches[Int(round(selectedPitch))])")
                     .font(.largeTitle)
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText ? .black : .white)
                 Button(action: { self.playPitch() }, label: { Text("") })
                     .frame(width: selectorSize, height: selectorSize)
                     .opacity(0.1)
@@ -139,7 +141,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 10, y: 10)
                 Text("\(pitches[3])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 3 ? .black : .white)
                     .offset(x: 10, y: 10)
             }
         }
@@ -150,7 +152,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: -45, y: -15)
                 Text("\(pitches[8])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 8 ? .black : .white)
                     .offset(x: -45, y: -15)
             }
             
@@ -160,7 +162,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 45, y: -15)
                 Text("\(pitches[4])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 4 ? .black : .white)
                     .offset(x: 45, y: -15)
             }
         }
@@ -171,7 +173,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y: -25)
                 Text("\(pitches[7])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 7 ? .black : .white)
                     .offset(x: 0, y: -25)
             }
             
@@ -181,7 +183,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y: -15)
                 Text("\(pitches[6])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 6 ? .black : .white)
                     .offset(x: 0, y: -15)
             }
             
@@ -191,7 +193,7 @@ struct ContentView: View {
                     .frame(width: circleSize, height: circleSize)
                     .offset(x: 0, y: -25)
                 Text("\(pitches[5])")
-                    .foregroundColor(.black)
+                    .foregroundColor(blackText || round(selectedPitch) == 5 ? .black : .white)
                     .offset(x: 0, y: -25)
             }
         }
@@ -200,11 +202,16 @@ struct ContentView: View {
         .scaleEffect(screenWidth == 136.0 ? xsScale : screenWidth == 156.0 ? sScale : screenWidth == 162.0 ? mScale : lScale)
         .contextMenu {
             Button(action: {
-                if(self.unselectedColors[0] == Color.blue)
+                if(self.unselectedColors[0] == Color.black)
                 {
+                    self.blackText = true;
                     self.unselectedColors = [Color.red, Color.blue, Color.green, Color.yellow, Color.purple, Color.orange, Color.red, Color.blue, Color.green, Color.yellow, Color.purple, Color.orange]
-                } else {
+                } else if(self.unselectedColors[0] == Color.red) {
+                    self.blackText = true;
                     self.unselectedColors = [Color.blue, Color.blue, Color.blue, Color.blue, Color.blue, Color.blue, Color.blue, Color.blue, Color.blue, Color.blue, Color.blue, Color.blue]
+                } else {
+                    self.blackText = false;
+                    self.unselectedColors = [Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black]
                 }
             }) {
                 Text("Change Pitch Colors")
