@@ -15,6 +15,7 @@ struct ContentView: View {
     let selectorSize: CGFloat = 80.0
     let selectedColor = Color.white
     let pitches = ["F", "F♯", "G", "A♭", "A", "B♭", "B", "C", "C♯", "D", "E♭", "E"]
+    let pitchNames = ["FNatural", "FSharp", "GNatural", "AFlat", "ANatural", "BFlat", "BNatural", "CNatural", "CSharp", "DNatural", "EFlat", "ENaturalHigh"]
     @State var blackText = false;
     @State private var selectedPitch = 0.0
     @State var scrollAmount = 0.0
@@ -28,14 +29,12 @@ struct ContentView: View {
     
     @State var pitchSound: AVAudioPlayer?
     func playPitch() {
-        print("\(self.selectedPitch)")
-        
-        let path = Bundle.main.path(forResource: "BlingBlong!.mp3", ofType:nil)!
+        self.pitchSound?.stop()
+        let path = Bundle.main.path(forResource: pitchNames[Int(round(self.selectedPitch))], ofType:"mp3")!
         let url = URL(fileURLWithPath: path)
         do {
             pitchSound = try AVAudioPlayer(contentsOf: url)
-            pitchSound?.play()
-            print("\(pitchSound!.url)")
+            self.pitchSound?.play()
         } catch {
             print("couldn't load file :(")
         }
