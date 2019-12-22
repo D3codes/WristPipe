@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E5A8A1723A5F33700B33A74 /* Wrist Pipe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0E5A8A1623A5F33700B33A74 /* Wrist Pipe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E5A8A1723A5F33700B33A74 /* Wrist Pipe.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0E5A8A1623A5F33700B33A74 /* Wrist Pipe.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0E5A8A1D23A5F33700B33A74 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A1B23A5F33700B33A74 /* Interface.storyboard */; };
 		0E5A8A1F23A5F33800B33A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A1E23A5F33800B33A74 /* Assets.xcassets */; };
 		0E5A8A2623A5F33800B33A74 /* Wrist Pipe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E5A8A2523A5F33800B33A74 /* Wrist Pipe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -91,7 +91,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				0E5A8A1723A5F33700B33A74 /* Wrist Pipe WatchKit App.app in Embed Watch Content */,
+				0E5A8A1723A5F33700B33A74 /* Wrist Pipe.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +100,7 @@
 
 /* Begin PBXFileReference section */
 		0E5A8A1223A5F33700B33A74 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5A8A1623A5F33700B33A74 /* Wrist Pipe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5A8A1623A5F33700B33A74 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5A8A1C23A5F33700B33A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0E5A8A1E23A5F33800B33A74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5A8A2023A5F33800B33A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				0E5A8A1223A5F33700B33A74 /* Wrist Pipe.app */,
-				0E5A8A1623A5F33700B33A74 /* Wrist Pipe WatchKit App.app */,
+				0E5A8A1623A5F33700B33A74 /* Wrist Pipe.app */,
 				0E5A8A2523A5F33800B33A74 /* Wrist Pipe WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -253,7 +253,7 @@
 			);
 			name = "Wrist Pipe WatchKit App";
 			productName = "Wrist Pipe WatchKit App";
-			productReference = 0E5A8A1623A5F33700B33A74 /* Wrist Pipe WatchKit App.app */;
+			productReference = 0E5A8A1623A5F33700B33A74 /* Wrist Pipe.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		0E5A8A2423A5F33800B33A74 /* Wrist Pipe WatchKit Extension */ = {
@@ -587,7 +587,7 @@
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -606,7 +606,7 @@
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
