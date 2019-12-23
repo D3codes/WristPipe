@@ -17,6 +17,7 @@ struct ColorPicker: View {
     
     let circleSize: CGFloat = 43.0
     let conic = AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center)
+    let defaults = UserDefaults.standard
     
     func setColor(color: Color) {
         for n in 0...11 {
@@ -92,6 +93,40 @@ struct ColorPicker: View {
                 }
                 ZStack {
                     Button(action: {
+                        var color: String = ""
+                        switch(self.selectedOption) {
+                            case 0:
+                                color = "red"
+                                break
+                            case 1:
+                                color = "blue"
+                                break
+                            case 2:
+                                color = "green"
+                                break
+                            case 3:
+                                color = "yellow"
+                                break
+                            case 4:
+                                color = "orange"
+                                break
+                            case 5:
+                                color = "purple"
+                                break
+                            case 6:
+                                color = "black"
+                                break
+                            case 7:
+                                color = "multi"
+                                break
+                            default:
+                                break
+                        }
+                        
+                        if(!color.isEmpty) {
+                            self.defaults.set(color, forKey: "pitchColors")
+                            self.defaults.synchronize()
+                        }
                         self.view = "pitch"
                     }) {
                         Text("done")
