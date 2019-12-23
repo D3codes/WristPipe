@@ -36,15 +36,11 @@ struct ColorPicker: View {
                     .fill(Color.red)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = true;
                         self.setColor(color: Color.red)
                         self.selectedOption = 0
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
                 ZStack {
                     Circle()
@@ -55,15 +51,11 @@ struct ColorPicker: View {
                     .fill(conic)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = true;
                         self.unselectedColors = [Color.red, Color.blue, Color.green, Color.yellow, Color.orange, Color.purple, Color.red, Color.blue, Color.green, Color.yellow, Color.orange, Color.purple]
                         self.selectedOption = 7
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
                 .offset(x: 0, y:-20)
                 ZStack {
@@ -75,15 +67,11 @@ struct ColorPicker: View {
                     .fill(Color.blue)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = true;
                         self.setColor(color: Color.blue)
                         self.selectedOption = 1
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
             }
             HStack {
@@ -96,15 +84,11 @@ struct ColorPicker: View {
                     .fill(Color.green)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = true;
                         self.setColor(color: Color.green)
                         self.selectedOption = 2
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
                 ZStack {
                     Button(action: {
@@ -123,15 +107,11 @@ struct ColorPicker: View {
                     .fill(Color.yellow)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = true;
                         self.setColor(color: Color.yellow)
                         self.selectedOption = 3
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
             }
             HStack {
@@ -144,15 +124,11 @@ struct ColorPicker: View {
                     .fill(Color.orange)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = true;
                         self.setColor(color: Color.orange)
                         self.selectedOption = 4
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
                 ZStack {
                     Circle()
@@ -163,15 +139,11 @@ struct ColorPicker: View {
                     .fill(Color.black)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = false;
                         self.setColor(color: Color.black)
                         self.selectedOption = 6
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
                 .offset(x: 0, y:20)
                 ZStack {
@@ -183,15 +155,11 @@ struct ColorPicker: View {
                     .fill(Color.purple)
                     .frame(width: circleSize-5, height: circleSize-5)
                     .offset(x: 0, y:0)
-                    Button(action: {
+                    .onTapGesture {
                         self.blackText = true;
                         self.setColor(color: Color.purple)
                         self.selectedOption = 5
-                    }) {
-                        Text("")
                     }
-                    .frame(width: circleSize, height: circleSize)
-                    .opacity(0.1)
                 }
             }
         }
