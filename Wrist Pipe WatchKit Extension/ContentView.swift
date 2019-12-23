@@ -36,9 +36,6 @@ struct ContentView: View {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
             pitchSound = try AVAudioPlayer(contentsOf: url)
             self.pitchSound?.play()
-            if (true) {
-                self.message = Message(text: "\nPlease turn off Silent Mode to hear a pitch.")
-            }
         } catch {
             print("couldn't load file :(")
         }
