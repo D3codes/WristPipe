@@ -54,6 +54,8 @@
 		0E8A5CD023AB479C002184BE /* ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CCC23AB479C002184BE /* ANatural.mp3 */; };
 		0E8A5CD123AB479C002184BE /* ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CCC23AB479C002184BE /* ANatural.mp3 */; };
 		0E8A5CD223AB479C002184BE /* ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CCC23AB479C002184BE /* ANatural.mp3 */; };
+		0E8A5D1923B0817D002184BE /* PitchPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1823B0817D002184BE /* PitchPicker.swift */; };
+		0E8A5D1B23B082D2002184BE /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1A23B082D2002184BE /* ColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,8 @@
 		0E8A5CAC23AB4790002184BE /* CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CNatural.mp3; sourceTree = "<group>"; };
 		0E8A5CCB23AB479B002184BE /* AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = AFlat.mp3; sourceTree = "<group>"; };
 		0E8A5CCC23AB479C002184BE /* ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ANatural.mp3; sourceTree = "<group>"; };
+		0E8A5D1823B0817D002184BE /* PitchPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPicker.swift; sourceTree = "<group>"; };
+		0E8A5D1A23B082D2002184BE /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 				0E5A8A3223A5F33900B33A74 /* Assets.xcassets */,
 				0E5A8A3723A5F33900B33A74 /* Info.plist */,
 				0E5A8A3423A5F33900B33A74 /* Preview Content */,
+				0E8A5D1823B0817D002184BE /* PitchPicker.swift */,
+				0E8A5D1A23B082D2002184BE /* ColorPicker.swift */,
 			);
 			path = "Wrist Pipe WatchKit Extension";
 			sourceTree = "<group>";
@@ -385,8 +391,10 @@
 			files = (
 				0E5A8A2D23A5F33800B33A74 /* HostingController.swift in Sources */,
 				0E5A8A3123A5F33800B33A74 /* ComplicationController.swift in Sources */,
+				0E8A5D1923B0817D002184BE /* PitchPicker.swift in Sources */,
 				0E5A8A2B23A5F33800B33A74 /* ContentView.swift in Sources */,
 				0E5A8A2F23A5F33800B33A74 /* ExtensionDelegate.swift in Sources */,
+				0E8A5D1B23B082D2002184BE /* ColorPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
