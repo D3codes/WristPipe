@@ -9,11 +9,17 @@
 import SwiftUI
 
 struct ColorPicker: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var unselectedColors: Array<Color>
     @Binding var blackText: Bool
-    @Binding var view: String
     
     @State var selectedOption: Int = -1
+    
+    let screenWidth = WKInterfaceDevice.current().screenBounds.width
+    let xsScale: CGFloat = 0.70 //38mm
+    let sScale: CGFloat = 0.80  //42mm
+    let mScale: CGFloat = 0.85  //40mm
+    let lScale: CGFloat = 1.0   //44mm
     
     let circleSize: CGFloat = 43.0
     let conic = AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center)
@@ -127,7 +133,8 @@ struct ColorPicker: View {
                             self.defaults.set(color, forKey: "pitchColors")
                             self.defaults.synchronize()
                         }
-                        self.view = "pitch"
+                        
+                        self.presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("done")
                     }
@@ -199,5 +206,7 @@ struct ColorPicker: View {
             }
         }
         .offset(x: 0, y:15)
+        .navigationBarBackButtonHidden(true)
+        .scaleEffect(screenWidth == 136.0 ? xsScale : screenWidth == 156.0 ? sScale : screenWidth == 162.0 ? mScale : lScale)
     }
 }

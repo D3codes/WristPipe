@@ -14,13 +14,6 @@ struct ContentView: View {
     let defaults = UserDefaults.standard
     @State var unselectedColors = [Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black, Color.black]
     @State var blackText = false
-    @State var view = "pitch"
-    
-    let screenWidth = WKInterfaceDevice.current().screenBounds.width
-    let xsScale: CGFloat = 0.70 //38mm
-    let sScale: CGFloat = 0.80  //42mm
-    let mScale: CGFloat = 0.85  //40mm
-    let lScale: CGFloat = 1.0   //44mm
     
     func getColors() {
         if let color = defaults.string(forKey: "pitchColors")
@@ -73,24 +66,18 @@ struct ContentView: View {
     }
     
     var body: some View {
-        Group {
-            if (view == "color") {
-                ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText, view: $view)
-                .navigationBarTitle(Text("Pitch Color"))
-            } else if (view == "pitch"){
-                PitchPicker(unselectedColors: $unselectedColors, blackText: $blackText)
-                    .onAppear(perform: getColors)
-                .navigationBarTitle(Text("Wrist Pipe"))
-                .contextMenu {
-                    Button(action: {
-                        self.view = "color"
-                    }) {
-                        Text("Change Pitch Colors")
-                    }
+        PitchPicker(unselectedColors: $unselectedColors, blackText: $blackText)
+            .onAppear(perform: getColors)
+        .navigationBarTitle(Text("Wrist Pipe"))
+        .contextMenu {
+            NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText)
+            .navigationBarTitle(Text("Pitch Color"))) {
+                Button(action: {
+                }) {
+                    Text("Change Pitch Colors")
                 }
             }
         }
-        .scaleEffect(screenWidth == 136.0 ? xsScale : screenWidth == 156.0 ? sScale : screenWidth == 162.0 ? mScale : lScale)
     }
 }
 
