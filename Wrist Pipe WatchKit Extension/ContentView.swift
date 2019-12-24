@@ -17,10 +17,10 @@ struct ContentView: View {
     @State var view = "pitch"
     
     let screenWidth = WKInterfaceDevice.current().screenBounds.width
-    let xsScale: CGFloat = 0.75
-    let sScale: CGFloat = 0.85
-    let mScale: CGFloat = 0.85
-    let lScale: CGFloat = 1.0
+    let xsScale: CGFloat = 0.70 //38mm
+    let sScale: CGFloat = 0.80  //42mm
+    let mScale: CGFloat = 0.85  //40mm
+    let lScale: CGFloat = 1.0   //44mm
     
     func getColors() {
         if let color = defaults.string(forKey: "pitchColors")
