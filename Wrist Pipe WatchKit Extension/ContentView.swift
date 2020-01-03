@@ -74,7 +74,7 @@ struct ContentView: View {
             .navigationBarTitle(Text("Pitch Color"))) {
                 Button(action: {
                 }) {
-                    Text("Change Pitch Colors")
+                    Text("Change Pitch Color")
                 }
             }
         }
