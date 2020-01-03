@@ -31,7 +31,7 @@ struct PitchPicker: View {
     @State var pitchSound: AVAudioPlayer?
     func playPitch() {
         self.pitchSound?.stop()
-        let path = Bundle.main.path(forResource: pitchNames[Int(round(self.selectedPitch))], ofType:"mp3")!
+        let path = Bundle.main.path(forResource: pitchNames[round(selectedPitch) == 12 ? 0 : Int(round(self.selectedPitch))], ofType:"mp3")!
         let url = URL(fileURLWithPath: path)
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
@@ -57,11 +57,11 @@ struct PitchPicker: View {
              
              ZStack {
                  Circle()
-                     .fill(round(selectedPitch) == 0 ? selectedColor : unselectedColors[0])
+                     .fill((round(selectedPitch) == 0 || round(selectedPitch) == 12) ? selectedColor : unselectedColors[0])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y:35)
                  Text("\(pitches[0])")
-                     .foregroundColor(blackText || round(selectedPitch) == 0 ? .black : .white)
+                     .foregroundColor(blackText || round(selectedPitch) == 0 || round(selectedPitch) == 12 ? .black : .white)
                      .offset(x: 0, y: 35)
              }
              
@@ -114,26 +114,26 @@ struct PitchPicker: View {
                          .frame(width: selectorSize, height: selectorSize)
                          .offset(x: 0, y:15)
                          .focusable(true)
-                         .digitalCrownRotation($selectedPitch, from: 0, through: 11.001, by: 1, sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true)
+                         .digitalCrownRotation($selectedPitch, from: 0, through: 12.001, by: 1, sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true)
                      Rectangle()
                          .fill(Color.white)
                          .frame(width: 45, height: 45)
                          .offset(x: 0, y: 0)
                          .rotationEffect(Angle(degrees: 45))
                      Circle()
-                         .fill(unselectedColors[Int(round(selectedPitch))])
+                        .fill(unselectedColors[round(selectedPitch) == 12 ? 0 : Int(round(selectedPitch))])
                          .frame(width: selectorSize - 5, height: selectorSize - 5)
                          .offset(x: 0, y: 15)
                  }
                      .offset(x: 0, y: -15)
                      .rotationEffect(Angle(degrees: selectedPitch * 30))
-                 Text("\(pitches[Int(round(selectedPitch))])")
+                 Text("\(pitches[round(selectedPitch) == 12 ? 0 : Int(round(selectedPitch))])")
                      .font(.largeTitle)
                      .foregroundColor(blackText ? .black : .white)
-                 Button(action: { self.playPitch() }, label: { Text("") })
-                     .frame(width: selectorSize, height: selectorSize)
-                     .opacity(0.1)
              }
+                 .onTapGesture {
+                    self.playPitch()
+                 }
                  .offset(x: 0, y: 10)
              
              ZStack {
