@@ -56,6 +56,7 @@
 		0E8A5CD223AB479C002184BE /* ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CCC23AB479C002184BE /* ANatural.mp3 */; };
 		0E8A5D1923B0817D002184BE /* PitchPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1823B0817D002184BE /* PitchPicker.swift */; };
 		0E8A5D1B23B082D2002184BE /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1A23B082D2002184BE /* ColorPicker.swift */; };
+		0EF93CC723BEFDEF00155F0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF93CC623BEFDEF00155F0F /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,7 @@
 		0E8A5CCC23AB479C002184BE /* ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ANatural.mp3; sourceTree = "<group>"; };
 		0E8A5D1823B0817D002184BE /* PitchPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPicker.swift; sourceTree = "<group>"; };
 		0E8A5D1A23B082D2002184BE /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		0EF93CC623BEFDEF00155F0F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				0E5A8A3423A5F33900B33A74 /* Preview Content */,
 				0E8A5D1823B0817D002184BE /* PitchPicker.swift */,
 				0E8A5D1A23B082D2002184BE /* ColorPicker.swift */,
+				0EF93CC623BEFDEF00155F0F /* Settings.swift */,
 			);
 			path = "Wrist Pipe WatchKit Extension";
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				0E5A8A3123A5F33800B33A74 /* ComplicationController.swift in Sources */,
 				0E8A5D1923B0817D002184BE /* PitchPicker.swift in Sources */,
 				0E5A8A2B23A5F33800B33A74 /* ContentView.swift in Sources */,
+				0EF93CC723BEFDEF00155F0F /* Settings.swift in Sources */,
 				0E5A8A2F23A5F33800B33A74 /* ExtensionDelegate.swift in Sources */,
 				0E8A5D1B23B082D2002184BE /* ColorPicker.swift in Sources */,
 			);

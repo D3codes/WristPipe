@@ -77,6 +77,13 @@ struct ContentView: View {
                     Text("Change Pitch Color")
                 }
             }
+            NavigationLink(destination: Settings()
+            .navigationBarTitle(Text("Settings"))) {
+                Button(action: {
+                }) {
+                    Text("Settings")
+                }
+            }
         }
     }
 }

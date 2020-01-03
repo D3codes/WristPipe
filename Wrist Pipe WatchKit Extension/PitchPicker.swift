@@ -54,6 +54,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 11 ? .black : .white)
                      .offset(x: 0, y: 45)
              }
+             .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 11
+                }
+            }
              
              ZStack {
                  Circle()
@@ -64,6 +70,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 0 || round(selectedPitch) == 12 ? .black : .white)
                      .offset(x: 0, y: 35)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 0
+                }
+            }
              
              ZStack {
                  Circle()
@@ -74,6 +86,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 1 ? .black : .white)
                      .offset(x: 0, y: 45)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 1
+                }
+            }
          }
          HStack {
              ZStack {
@@ -85,6 +103,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 10 ? .black : .white)
                      .offset(x: -45, y: 35)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 10
+                }
+            }
              
              ZStack {
                  Circle()
@@ -95,6 +119,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 2 ? .black : .white)
                      .offset(x: 45, y: 35)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 2
+                }
+            }
          }
          HStack {
              ZStack {
@@ -106,6 +136,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 9 ? .black : .white)
                      .offset(x: -10, y: 10)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 9
+                }
+            }
              
              ZStack {
                  ZStack {
@@ -145,6 +181,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 3 ? .black : .white)
                      .offset(x: 10, y: 10)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 3
+                }
+            }
          }
          HStack {
              ZStack {
@@ -156,6 +198,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 8 ? .black : .white)
                      .offset(x: -45, y: -15)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 8
+                }
+            }
              
              ZStack {
                  Circle()
@@ -166,6 +214,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 4 ? .black : .white)
                      .offset(x: 45, y: -15)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 4
+                }
+            }
          }
          HStack {
              ZStack {
@@ -177,6 +231,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 7 ? .black : .white)
                      .offset(x: 0, y: -25)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 7
+                }
+            }
              
              ZStack {
                  Circle()
@@ -187,6 +247,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 6 ? .black : .white)
                      .offset(x: 0, y: -15)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 6
+                }
+            }
              
              ZStack {
                  Circle()
@@ -197,6 +263,12 @@ struct PitchPicker: View {
                      .foregroundColor(blackText || round(selectedPitch) == 5 ? .black : .white)
                      .offset(x: 0, y: -25)
              }
+            .onTapGesture {
+                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                if tapToSelect {
+                    self.selectedPitch = 5
+                }
+            }
          }
         }
         .scaleEffect(screenWidth == 136.0 ? xsScale : screenWidth == 156.0 ? sScale : screenWidth == 162.0 ? mScale : lScale)
