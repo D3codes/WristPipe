@@ -12,8 +12,7 @@ struct ColorPicker: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var unselectedColors: Array<Color>
     @Binding var blackText: Bool
-    
-    @State var selectedOption: Int = -1
+    @Binding var selectedOption: Int
     
     let screenWidth = WKInterfaceDevice.current().screenBounds.width
     let xsScale: CGFloat = 0.70 //38mm
