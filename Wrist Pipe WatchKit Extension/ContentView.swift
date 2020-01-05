@@ -66,25 +66,35 @@ struct ContentView: View {
     }
     
     var body: some View {
-        PitchPicker(unselectedColors: $unselectedColors, blackText: $blackText)
+        PitchPicker(unselectedColors: $unselectedColors, blackText: $blackText, haptics: $haptics)
             .onAppear(perform: getColors)
         .navigationBarTitle(Text("Wrist Pipe"))
-        .contextMenu {
+        .contextMenu(menuItems: {
             NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText)
             .navigationBarTitle(Text("Pitch Color"))) {
                 Button(action: {
-                }) {
-                    Text("Change Pitch Color")
-                }
+                    print("Refresh")
+                }, label: {
+                    VStack{
+                        Image(systemName: "paintbrush")
+                            .font(.title)
+                        Text("Change Pitch Color")
+                    }
+                })
             }
-            NavigationLink(destination: Settings()
+            NavigationLink(destination: Settings(haptics: $haptics)
             .navigationBarTitle(Text("Settings"))) {
                 Button(action: {
-                }) {
-                    Text("Settings")
-                }
+                    print("Refresh")
+                }, label: {
+                    VStack{
+                        Image(systemName: "gear")
+                            .font(.title)
+                        Text("Settings")
+                    }
+                })
             }
-        }
+        })
     }
 }
 
