@@ -10,11 +10,13 @@ import SwiftUI
 
 struct Settings: View {
     @State private var tapToSelect: Bool = false
+    @State private var ignoreSilentMode: Bool = true
     @State private var togglesHaveLoaded: Bool = false
     let defaults = UserDefaults.standard
     
     func getToggles() {
         self.tapToSelect = defaults.bool(forKey: "tapToSelect")
+        self.ignoreSilentMode = !defaults.bool(forKey: "respectSilentMode")
         
         self.togglesHaveLoaded = true
     }
@@ -25,12 +27,25 @@ struct Settings: View {
         return ""
     }
     
+    func toggleIgnoreSilentMode() -> String {
+        self.defaults.set(!ignoreSilentMode, forKey: "respectSilentMode")
+        self.defaults.synchronize()
+        return ""
+    }
+    
     var body: some View {
         VStack {
             Toggle(isOn: $tapToSelect) {
                 Text("Tap Pitch to Select")
                 if togglesHaveLoaded {
                     Text("\(self.toggleTapToSelect())")
+                }
+            }.padding()
+            Divider()
+            Toggle(isOn: $ignoreSilentMode) {
+                Text("Ignore Silent Mode")
+                if togglesHaveLoaded {
+                    Text("\(self.toggleIgnoreSilentMode())")
                 }
             }.padding()
         }

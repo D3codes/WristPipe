@@ -34,7 +34,12 @@ struct PitchPicker: View {
         let path = Bundle.main.path(forResource: pitchNames[round(selectedPitch) == 12 ? 0 : Int(round(self.selectedPitch))], ofType:"mp3")!
         let url = URL(fileURLWithPath: path)
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            let ignoreSilentMode = !UserDefaults.standard.bool(forKey: "respectSilentMode")
+            if ignoreSilentMode {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            } else {
+                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient)
+            }
             pitchSound = try AVAudioPlayer(contentsOf: url)
             self.pitchSound?.play()
         } catch {
