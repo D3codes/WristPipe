@@ -11,7 +11,6 @@
 		0E5A8A1D23A5F33700B33A74 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A1B23A5F33700B33A74 /* Interface.storyboard */; };
 		0E5A8A1F23A5F33800B33A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A1E23A5F33800B33A74 /* Assets.xcassets */; };
 		0E5A8A2623A5F33800B33A74 /* Wrist Pipe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0E5A8A2523A5F33800B33A74 /* Wrist Pipe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0E5A8A2B23A5F33800B33A74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8A2A23A5F33800B33A74 /* ContentView.swift */; };
 		0E5A8A2D23A5F33800B33A74 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8A2C23A5F33800B33A74 /* HostingController.swift */; };
 		0E5A8A2F23A5F33800B33A74 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8A2E23A5F33800B33A74 /* ExtensionDelegate.swift */; };
 		0E5A8A3123A5F33800B33A74 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8A3023A5F33800B33A74 /* ComplicationController.swift */; };
@@ -56,6 +55,7 @@
 		0E8A5CD223AB479C002184BE /* ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CCC23AB479C002184BE /* ANatural.mp3 */; };
 		0E8A5D1923B0817D002184BE /* PitchPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1823B0817D002184BE /* PitchPicker.swift */; };
 		0E8A5D1B23B082D2002184BE /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1A23B082D2002184BE /* ColorPicker.swift */; };
+		0EE7836B24BFF28600896669 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8A2A23A5F33800B33A74 /* ContentView.swift */; };
 		0EF93CC723BEFDEF00155F0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF93CC623BEFDEF00155F0F /* Settings.swift */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +178,9 @@
 		0E5A8A2923A5F33800B33A74 /* Wrist Pipe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0E8A5D1823B0817D002184BE /* PitchPicker.swift */,
+				0E8A5D1A23B082D2002184BE /* ColorPicker.swift */,
+				0EF93CC623BEFDEF00155F0F /* Settings.swift */,
 				0E5A8A4523A6D9AB00B33A74 /* Pitches */,
 				0E5A8A2A23A5F33800B33A74 /* ContentView.swift */,
 				0E5A8A2C23A5F33800B33A74 /* HostingController.swift */,
@@ -186,9 +189,6 @@
 				0E5A8A3223A5F33900B33A74 /* Assets.xcassets */,
 				0E5A8A3723A5F33900B33A74 /* Info.plist */,
 				0E5A8A3423A5F33900B33A74 /* Preview Content */,
-				0E8A5D1823B0817D002184BE /* PitchPicker.swift */,
-				0E8A5D1A23B082D2002184BE /* ColorPicker.swift */,
-				0EF93CC623BEFDEF00155F0F /* Settings.swift */,
 			);
 			path = "Wrist Pipe WatchKit Extension";
 			sourceTree = "<group>";
@@ -394,8 +394,8 @@
 			files = (
 				0E5A8A2D23A5F33800B33A74 /* HostingController.swift in Sources */,
 				0E5A8A3123A5F33800B33A74 /* ComplicationController.swift in Sources */,
+				0EE7836B24BFF28600896669 /* ContentView.swift in Sources */,
 				0E8A5D1923B0817D002184BE /* PitchPicker.swift in Sources */,
-				0E5A8A2B23A5F33800B33A74 /* ContentView.swift in Sources */,
 				0EF93CC723BEFDEF00155F0F /* Settings.swift in Sources */,
 				0E5A8A2F23A5F33800B33A74 /* ExtensionDelegate.swift in Sources */,
 				0E8A5D1B23B082D2002184BE /* ColorPicker.swift in Sources */,

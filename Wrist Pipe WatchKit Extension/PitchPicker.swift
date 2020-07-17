@@ -30,7 +30,11 @@ struct PitchPicker: View {
     
     @State var pitchSound: AVAudioPlayer?
     func playPitch() {
-        self.pitchSound?.stop()
+        if self.pitchSound != nil && self.pitchSound!.isPlaying {
+            self.pitchSound?.stop()
+            return
+        }
+        
         let path = Bundle.main.path(forResource: pitchNames[round(selectedPitch) == 12 ? 0 : Int(round(self.selectedPitch))], ofType:"mp3")!
         let url = URL(fileURLWithPath: path)
         do {
