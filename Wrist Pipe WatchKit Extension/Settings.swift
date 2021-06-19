@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct Settings: View {
+    @Binding var unselectedColors: Array<Color>
+    @Binding var blackText: Bool
+    @Binding var selectedOption: Int
     @State private var tapToSelect: Bool = false
     @State private var ignoreSilentMode: Bool = true
     @State private var togglesHaveLoaded: Bool = false
@@ -34,9 +37,12 @@ struct Settings: View {
     }
     
     var body: some View {
-        VStack {
+        ScrollView {
             Toggle(isOn: $tapToSelect) {
                 Text("Tap Pitch to Select")
+                    .lineLimit(nil)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
                 if togglesHaveLoaded {
                     Text("\(self.toggleTapToSelect())")
                 }
@@ -44,8 +50,19 @@ struct Settings: View {
             Divider()
             Toggle(isOn: $ignoreSilentMode) {
                 Text("Ignore Silent Mode")
+                    .lineLimit(nil)
+                    .multilineTextAlignment(.leading)
+                    .fixedSize(horizontal: false, vertical: true)
                 if togglesHaveLoaded {
                     Text("\(self.toggleIgnoreSilentMode())")
+                }
+            }.padding()
+            Divider()
+            NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedOption)
+            .navigationBarTitle(Text("Pitch Color"))) {
+                HStack{
+                    Image(systemName: "paintbrush")
+                    Text("Pitch Color")
                 }
             }.padding()
         }

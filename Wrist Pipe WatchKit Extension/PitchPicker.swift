@@ -40,9 +40,9 @@ struct PitchPicker: View {
         do {
             let ignoreSilentMode = !UserDefaults.standard.bool(forKey: "respectSilentMode")
             if ignoreSilentMode {
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+                try AVAudioSession.sharedInstance().setCategory(.playback)
             } else {
-                try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.ambient)
+                try AVAudioSession.sharedInstance().setCategory(.ambient)
             }
             pitchSound = try AVAudioPlayer(contentsOf: url)
             self.pitchSound?.play()

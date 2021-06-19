@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E43639C26730F3F00F3B1B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5A8A4B23A6DAC200B33A74 /* AVFoundation.framework */; };
 		0E5A8A1723A5F33700B33A74 /* Wrist Pipe.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0E5A8A1623A5F33700B33A74 /* Wrist Pipe.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0E5A8A1D23A5F33700B33A74 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A1B23A5F33700B33A74 /* Interface.storyboard */; };
 		0E5A8A1F23A5F33800B33A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A1E23A5F33800B33A74 /* Assets.xcassets */; };
@@ -16,7 +17,6 @@
 		0E5A8A3123A5F33800B33A74 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8A3023A5F33800B33A74 /* ComplicationController.swift */; };
 		0E5A8A3323A5F33900B33A74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A3223A5F33900B33A74 /* Assets.xcassets */; };
 		0E5A8A3623A5F33900B33A74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A3523A5F33900B33A74 /* Preview Assets.xcassets */; };
-		0E5A8A5023A6DB6D00B33A74 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5A8A4B23A6DAC200B33A74 /* AVFoundation.framework */; };
 		0E8A5CAD23AB4790002184BE /* BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CA323AB478F002184BE /* BNatural.mp3 */; };
 		0E8A5CAE23AB4790002184BE /* BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CA323AB478F002184BE /* BNatural.mp3 */; };
 		0E8A5CAF23AB4790002184BE /* BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CA323AB478F002184BE /* BNatural.mp3 */; };
@@ -55,6 +55,7 @@
 		0E8A5CD223AB479C002184BE /* ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8A5CCC23AB479C002184BE /* ANatural.mp3 */; };
 		0E8A5D1923B0817D002184BE /* PitchPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1823B0817D002184BE /* PitchPicker.swift */; };
 		0E8A5D1B23B082D2002184BE /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8A5D1A23B082D2002184BE /* ColorPicker.swift */; };
+		0ED70920267418680052888C /* pitchpipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED7091F267418680052888C /* pitchpipe.png */; };
 		0EE7836B24BFF28600896669 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A8A2A23A5F33800B33A74 /* ContentView.swift */; };
 		0EF93CC723BEFDEF00155F0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF93CC623BEFDEF00155F0F /* Settings.swift */; };
 /* End PBXBuildFile section */
@@ -130,6 +131,7 @@
 		0E8A5CCC23AB479C002184BE /* ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ANatural.mp3; sourceTree = "<group>"; };
 		0E8A5D1823B0817D002184BE /* PitchPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPicker.swift; sourceTree = "<group>"; };
 		0E8A5D1A23B082D2002184BE /* ColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		0ED7091F267418680052888C /* pitchpipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitchpipe.png; sourceTree = "<group>"; };
 		0EF93CC623BEFDEF00155F0F /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,7 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5A8A5023A6DB6D00B33A74 /* AVFoundation.framework in Frameworks */,
+				0E43639C26730F3F00F3B1B8 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +180,7 @@
 		0E5A8A2923A5F33800B33A74 /* Wrist Pipe WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				0ED7091F267418680052888C /* pitchpipe.png */,
 				0E8A5D1823B0817D002184BE /* PitchPicker.swift */,
 				0E8A5D1A23B082D2002184BE /* ColorPicker.swift */,
 				0EF93CC623BEFDEF00155F0F /* Settings.swift */,
@@ -289,7 +292,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "David Freeman";
 				TargetAttributes = {
 					0E5A8A1123A5F33700B33A74 = {
@@ -372,6 +375,7 @@
 				0E8A5CBE23AB4790002184BE /* BFlat.mp3 in Resources */,
 				0E8A5CD223AB479C002184BE /* ANatural.mp3 in Resources */,
 				0E8A5CCF23AB479C002184BE /* AFlat.mp3 in Resources */,
+				0ED70920267418680052888C /* pitchpipe.png in Resources */,
 				0E8A5CBB23AB4790002184BE /* FSharp.mp3 in Resources */,
 				0E8A5CC723AB4790002184BE /* FNatural.mp3 in Resources */,
 				0E8A5CB523AB4790002184BE /* EFlat.mp3 in Resources */,
@@ -455,6 +459,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -514,6 +519,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -546,8 +552,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe WatchKit Extension/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "Wrist\\ Pipe\\ WatchKit\\ Extension/Preview\\ Content";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit Extension/Info.plist";
@@ -556,14 +562,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Debug;
 		};
@@ -572,8 +578,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe WatchKit Extension/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_ASSET_PATHS = "Wrist\\ Pipe\\ WatchKit\\ Extension/Preview\\ Content";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit Extension/Info.plist";
@@ -582,14 +588,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Release;
 		};
@@ -599,18 +605,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Debug;
 		};
@@ -620,18 +626,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+				WATCHOS_DEPLOYMENT_TARGET = 7.1;
 			};
 			name = Release;
 		};
@@ -639,9 +645,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 26333RDE2B;
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -652,9 +658,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_TEAM = 26333RDE2B;
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

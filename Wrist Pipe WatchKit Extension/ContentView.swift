@@ -16,6 +16,20 @@ struct ContentView: View {
     @State var blackText = false
     @State var selectedColor = -1
     
+    let screenWidth = WKInterfaceDevice.current().screenBounds.width
+    //38mm
+    let xsXOffset: CGFloat = -60
+    let xsYOffset: CGFloat = 65
+    //42mm
+    let sXOffset: CGFloat = -65
+    let sYOffset: CGFloat = 75
+    //40mm
+    let mXOffset: CGFloat = -60
+    let mYOffset: CGFloat = 80
+    //44mm
+    let lXOffset: CGFloat = -70
+    let lYOffset: CGFloat = 90
+    
     func getColors() {
         if let color = defaults.string(forKey: "pitchColors")
         {
@@ -75,38 +89,27 @@ struct ContentView: View {
     }
     
     var body: some View {
-        PitchPicker(unselectedColors: $unselectedColors, blackText: $blackText)
-            .onAppear(perform: getColors)
-        .navigationBarTitle(Text("Wrist Pipe"))
-        .contextMenu(menuItems: {
-            NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedColor)
-            .navigationBarTitle(Text("Pitch Color"))) {
-                Button(action: {
-                }, label: {
-                    VStack{
-                        Image(systemName: "paintbrush")
-                            .font(.title)
-                        Text("Change Pitch Color")
-                    }
-                })
+        ZStack{
+            PitchPicker(unselectedColors: $unselectedColors, blackText: $blackText)
+                .onAppear(perform: getColors)
+            .navigationBarTitle(Text("Wrist Pipe"))
+            NavigationLink(destination: Settings(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedColor).navigationBarTitle(Text("Settings"))) {
+                Image(systemName: "gear")
             }
-            NavigationLink(destination: Settings()
-            .navigationBarTitle(Text("Settings"))) {
-                Button(action: {
-                }, label: {
-                    VStack{
-                        Image(systemName: "gear")
-                            .font(.title)
-                        Text("Settings")
-                    }
-                })
-            }
-        })
+            .buttonStyle(PlainButtonStyle())
+            .offset(
+                x: screenWidth == 136.0 ? xsXOffset : screenWidth == 156.0 ? sXOffset : screenWidth == 162.0 ? mXOffset : lXOffset,
+                y: screenWidth == 136.0 ? xsYOffset : screenWidth == 156.0 ? sYOffset : screenWidth == 162.0 ? mYOffset : lYOffset
+            )
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+        }
     }
 }
