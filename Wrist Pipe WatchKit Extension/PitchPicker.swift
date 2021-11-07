@@ -23,10 +23,14 @@ struct PitchPicker: View {
     @State var scrollAmount = 0.0
     
     let screenWidth = WKInterfaceDevice.current().screenBounds.width
-    let xsScale: CGFloat = 0.75 //38mm
-    let sScale: CGFloat = 0.85  //42mm
-    let mScale: CGFloat = 0.85  //40mm
-    let lScale: CGFloat = 1.0   //44mm
+    let scaling = [
+        136.0 : 0.75, //38mm
+        156.0 : 0.85, //42mm
+        162.0 : 0.85, //40mm
+        184.0 : 1.0,  //44mm
+        176.0 : 0.95, //41mm
+        198.0 : 1.1   //45mm
+    ]
     
     @State var pitchSound: AVAudioPlayer?
     func playPitch() {
@@ -45,9 +49,10 @@ struct PitchPicker: View {
                 try AVAudioSession.sharedInstance().setCategory(.ambient)
             }
             pitchSound = try AVAudioPlayer(contentsOf: url)
+            self.pitchSound?.volume = 1.0
             self.pitchSound?.play()
         } catch {
-            print("couldn't load file :(")
+            print("couldn't load file")
         }
     }
     
@@ -280,6 +285,6 @@ struct PitchPicker: View {
             }
          }
         }
-        .scaleEffect(screenWidth == 136.0 ? xsScale : screenWidth == 156.0 ? sScale : screenWidth == 162.0 ? mScale : lScale)
+        .scaleEffect(scaling[screenWidth]!)
     }
 }

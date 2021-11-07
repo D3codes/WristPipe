@@ -17,18 +17,15 @@ struct ContentView: View {
     @State var selectedColor = -1
     
     let screenWidth = WKInterfaceDevice.current().screenBounds.width
-    //38mm
-    let xsXOffset: CGFloat = -60
-    let xsYOffset: CGFloat = 65
-    //42mm
-    let sXOffset: CGFloat = -65
-    let sYOffset: CGFloat = 75
-    //40mm
-    let mXOffset: CGFloat = -60
-    let mYOffset: CGFloat = 80
-    //44mm
-    let lXOffset: CGFloat = -70
-    let lYOffset: CGFloat = 90
+    let settingsIconOffsets = [
+        136.0 : [ "x" : -60.0, "y" : 60.0 ], //38mm
+        156.0 : [ "x" : -65.0, "y" : 75.0 ], //42mm
+        162.0 : [ "x" : -60.0, "y" : 80.0 ], //40mm
+        184.0 : [ "x" : -70.0, "y" : 90.0 ], //44mm
+        176.0 : [ "x" : -70.0, "y" : 90.0 ], //41mm
+        198.0 : [ "x" : -80.0, "y" : 100.0 ] //45mm
+    ]
+    
     
     func getColors() {
         if let color = defaults.string(forKey: "pitchColors")
@@ -92,14 +89,23 @@ struct ContentView: View {
         ZStack{
             PitchPicker(unselectedColors: $unselectedColors, blackText: $blackText)
                 .onAppear(perform: getColors)
-            .navigationBarTitle(Text("Wrist Pipe"))
-            NavigationLink(destination: Settings(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedColor).navigationBarTitle(Text("Settings"))) {
+            .navigationTitle(Text("Wrist Pipe"))
+            .navigationBarTitleDisplayMode(.inline)
+            NavigationLink(destination: Settings().navigationTitle(Text("Settings")).navigationBarTitleDisplayMode(.inline)) {
                 Image(systemName: "gear")
             }
             .buttonStyle(PlainButtonStyle())
             .offset(
-                x: screenWidth == 136.0 ? xsXOffset : screenWidth == 156.0 ? sXOffset : screenWidth == 162.0 ? mXOffset : lXOffset,
-                y: screenWidth == 136.0 ? xsYOffset : screenWidth == 156.0 ? sYOffset : screenWidth == 162.0 ? mYOffset : lYOffset
+                x: settingsIconOffsets[screenWidth]!["x"]!,
+                y: settingsIconOffsets[screenWidth]!["y"]!
+            )
+            NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedColor).navigationTitle(Text("Pitch Color")).navigationBarTitleDisplayMode(.inline)) {
+                Image(systemName: "paintbrush")
+            }
+            .buttonStyle(PlainButtonStyle())
+            .offset(
+                x: -settingsIconOffsets[screenWidth]!["x"]!,
+                y: settingsIconOffsets[screenWidth]!["y"]!
             )
         }
     }

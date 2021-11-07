@@ -9,9 +9,6 @@
 import SwiftUI
 
 struct Settings: View {
-    @Binding var unselectedColors: Array<Color>
-    @Binding var blackText: Bool
-    @Binding var selectedOption: Int
     @State private var tapToSelect: Bool = false
     @State private var ignoreSilentMode: Bool = true
     @State private var togglesHaveLoaded: Bool = false
@@ -36,35 +33,38 @@ struct Settings: View {
         return ""
     }
     
+    struct VolumeView: WKInterfaceObjectRepresentable {
+        typealias WKInterfaceObjectType = WKInterfaceVolumeControl
+
+        func makeWKInterfaceObject(context: Self.Context) -> WKInterfaceVolumeControl {
+            let view = WKInterfaceVolumeControl(origin: .local)
+            return view
+        }
+        func updateWKInterfaceObject(_ wkInterfaceObject: WKInterfaceVolumeControl, context: WKInterfaceObjectRepresentableContext<VolumeView>) {
+        }
+    }
+    
     var body: some View {
-        ScrollView {
+        VStack {
             Toggle(isOn: $tapToSelect) {
                 Text("Tap Pitch to Select")
-                    .lineLimit(nil)
+                    .lineLimit(2)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
                 if togglesHaveLoaded {
                     Text("\(self.toggleTapToSelect())")
                 }
             }.padding()
-            Divider()
             Toggle(isOn: $ignoreSilentMode) {
                 Text("Ignore Silent Mode")
-                    .lineLimit(nil)
+                    .lineLimit(2)
                     .multilineTextAlignment(.leading)
                     .fixedSize(horizontal: false, vertical: true)
                 if togglesHaveLoaded {
                     Text("\(self.toggleIgnoreSilentMode())")
                 }
             }.padding()
-            Divider()
-            NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedOption)
-            .navigationBarTitle(Text("Pitch Color"))) {
-                HStack{
-                    Image(systemName: "paintbrush")
-                    Text("Pitch Color")
-                }
-            }.padding()
+            VolumeView()
         }
         .onAppear(perform: getToggles)
     }
