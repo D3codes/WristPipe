@@ -8,7 +8,6 @@
 
 import SwiftUI
 import Foundation
-import AVFoundation
 
 struct PitchPicker: View {
     @Binding var unselectedColors: Array<Color>
@@ -17,43 +16,12 @@ struct PitchPicker: View {
     let circleSize: CGFloat = 30.0
     let selectorSize: CGFloat = 80.0
     let selectedColor = Color.white
-    let pitches = ["F", "F♯", "G", "A♭", "A", "B♭", "B", "C", "C♯", "D", "E♭", "E"]
-    let pitchNames = ["FNatural", "FSharp", "GNatural", "AFlat", "ANatural", "BFlat", "BNatural", "CNatural", "CSharp", "DNatural", "EFlat", "ENaturalHigh"]
     @State private var selectedPitch = 0.0
     @State var scrollAmount = 0.0
     
-    let screenWidth = WKInterfaceDevice.current().screenBounds.width
-    let scaling = [
-        136.0 : 0.75, //38mm
-        156.0 : 0.85, //42mm
-        162.0 : 0.85, //40mm
-        184.0 : 1.0,  //44mm
-        176.0 : 0.95, //41mm
-        198.0 : 1.1   //45mm
-    ]
-    
-    @State var pitchSound: AVAudioPlayer?
     func playPitch() {
-        if self.pitchSound != nil && self.pitchSound!.isPlaying {
-            self.pitchSound?.stop()
-            return
-        }
-        
-        let path = Bundle.main.path(forResource: pitchNames[round(selectedPitch) == 12 ? 0 : Int(round(self.selectedPitch))], ofType:"mp3")!
-        let url = URL(fileURLWithPath: path)
-        do {
-            let ignoreSilentMode = !UserDefaults.standard.bool(forKey: "respectSilentMode")
-            if ignoreSilentMode {
-                try AVAudioSession.sharedInstance().setCategory(.playback)
-            } else {
-                try AVAudioSession.sharedInstance().setCategory(.ambient)
-            }
-            pitchSound = try AVAudioPlayer(contentsOf: url)
-            self.pitchSound?.volume = 1.0
-            self.pitchSound?.play()
-        } catch {
-            print("couldn't load file")
-        }
+        let pitch = PitchPlayer().pitches[round(selectedPitch) == 12 ? 0 : Int(round(self.selectedPitch))]
+        PitchPlayer().playPitch(selectedPitch: pitch)
     }
     
     var body: some View {
@@ -64,12 +32,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 11 ? selectedColor : unselectedColors[11])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y:45)
-                 Text("\(pitches[11])")
+                 Text("\(PitchPlayer().pitches[11])")
                      .foregroundColor(blackText || round(selectedPitch) == 11 ? .black : .white)
                      .offset(x: 0, y: 45)
              }
              .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 11
                 }
@@ -80,12 +48,12 @@ struct PitchPicker: View {
                      .fill((round(selectedPitch) == 0 || round(selectedPitch) == 12) ? selectedColor : unselectedColors[0])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y:35)
-                 Text("\(pitches[0])")
+                 Text("\(PitchPlayer().pitches[0])")
                      .foregroundColor(blackText || round(selectedPitch) == 0 || round(selectedPitch) == 12 ? .black : .white)
                      .offset(x: 0, y: 35)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 0
                 }
@@ -96,12 +64,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 1 ? selectedColor : unselectedColors[1])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y:45)
-                 Text("\(pitches[1])")
+                 Text("\(PitchPlayer().pitches[1])")
                      .foregroundColor(blackText || round(selectedPitch) == 1 ? .black : .white)
                      .offset(x: 0, y: 45)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 1
                 }
@@ -113,12 +81,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 10 ? selectedColor : unselectedColors[10])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: -45, y:35)
-                 Text("\(pitches[10])")
+                 Text("\(PitchPlayer().pitches[10])")
                      .foregroundColor(blackText || round(selectedPitch) == 10 ? .black : .white)
                      .offset(x: -45, y: 35)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 10
                 }
@@ -129,12 +97,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 2 ? selectedColor : unselectedColors[2])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 45, y:35)
-                 Text("\(pitches[2])")
+                 Text("\(PitchPlayer().pitches[2])")
                      .foregroundColor(blackText || round(selectedPitch) == 2 ? .black : .white)
                      .offset(x: 45, y: 35)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 2
                 }
@@ -146,12 +114,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 9 ? selectedColor : unselectedColors[9])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: -10, y: 10)
-                 Text("\(pitches[9])")
+                 Text("\(PitchPlayer().pitches[9])")
                      .foregroundColor(blackText || round(selectedPitch) == 9 ? .black : .white)
                      .offset(x: -10, y: 10)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 9
                 }
@@ -177,7 +145,7 @@ struct PitchPicker: View {
                  }
                      .offset(x: 0, y: -15)
                      .rotationEffect(Angle(degrees: selectedPitch * 30))
-                 Text("\(pitches[round(selectedPitch) == 12 ? 0 : Int(round(selectedPitch))])")
+                 Text("\(PitchPlayer().pitches[round(selectedPitch) == 12 ? 0 : Int(round(selectedPitch))])")
                      .font(.largeTitle)
                      .foregroundColor(blackText ? .black : .white)
              }
@@ -191,12 +159,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 3 ? selectedColor : unselectedColors[3])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 10, y: 10)
-                 Text("\(pitches[3])")
+                 Text("\(PitchPlayer().pitches[3])")
                      .foregroundColor(blackText || round(selectedPitch) == 3 ? .black : .white)
                      .offset(x: 10, y: 10)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 3
                 }
@@ -208,12 +176,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 8 ? selectedColor : unselectedColors[8])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: -45, y: -15)
-                 Text("\(pitches[8])")
+                 Text("\(PitchPlayer().pitches[8])")
                      .foregroundColor(blackText || round(selectedPitch) == 8 ? .black : .white)
                      .offset(x: -45, y: -15)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 8
                 }
@@ -224,12 +192,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 4 ? selectedColor : unselectedColors[4])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 45, y: -15)
-                 Text("\(pitches[4])")
+                 Text("\(PitchPlayer().pitches[4])")
                      .foregroundColor(blackText || round(selectedPitch) == 4 ? .black : .white)
                      .offset(x: 45, y: -15)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 4
                 }
@@ -241,12 +209,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 7 ? selectedColor : unselectedColors[7])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y: -25)
-                 Text("\(pitches[7])")
+                 Text("\(PitchPlayer().pitches[7])")
                      .foregroundColor(blackText || round(selectedPitch) == 7 ? .black : .white)
                      .offset(x: 0, y: -25)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 7
                 }
@@ -257,12 +225,12 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 6 ? selectedColor : unselectedColors[6])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y: -15)
-                 Text("\(pitches[6])")
+                 Text("\(PitchPlayer().pitches[6])")
                      .foregroundColor(blackText || round(selectedPitch) == 6 ? .black : .white)
                      .offset(x: 0, y: -15)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 6
                 }
@@ -273,18 +241,18 @@ struct PitchPicker: View {
                      .fill(round(selectedPitch) == 5 ? selectedColor : unselectedColors[5])
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y: -25)
-                 Text("\(pitches[5])")
+                 Text("\(PitchPlayer().pitches[5])")
                      .foregroundColor(blackText || round(selectedPitch) == 5 ? .black : .white)
                      .offset(x: 0, y: -25)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: "tapToSelect")
+                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 5
                 }
             }
          }
         }
-        .scaleEffect(scaling[screenWidth]!)
+        .scaleEffect(Screen().getPitchScaling())
     }
 }

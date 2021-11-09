@@ -14,16 +14,6 @@ struct ColorPicker: View {
     @Binding var blackText: Bool
     @Binding var selectedOption: Int
     
-    let screenWidth = WKInterfaceDevice.current().screenBounds.width
-    let scaling = [
-        136.0 : 0.70, //38mm
-        156.0 : 0.80, //42mm
-        162.0 : 0.85, //40mm
-        184.0 : 1.0,  //44mm
-        176.0 : 0.9,  //41mm
-        198.0 : 1.1   //45mm
-    ]
-    
     let circleSize: CGFloat = 43.0
     let conic = AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple]), center: .center)
     let defaults = UserDefaults.standard
@@ -50,7 +40,6 @@ struct ColorPicker: View {
                         self.blackText = true;
                         self.setColor(color: Color.red)
                         self.selectedOption = 0
-                        print(screenWidth)
                     }
                 }
                 ZStack {
@@ -134,7 +123,7 @@ struct ColorPicker: View {
                         }
                         
                         if(!color.isEmpty) {
-                            self.defaults.set(color, forKey: "pitchColors")
+                            self.defaults.set(color, forKey: UserDefaultsKeys().pitchColors)
                             self.defaults.synchronize()
                         }
                         
@@ -211,6 +200,6 @@ struct ColorPicker: View {
         }
         .offset(x: 0, y:15)
         .navigationBarBackButtonHidden(true)
-        .scaleEffect(scaling[screenWidth]!)
+        .scaleEffect(Screen().getColorScaling())
     }
 }

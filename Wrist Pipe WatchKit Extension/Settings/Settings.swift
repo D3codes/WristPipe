@@ -9,26 +9,29 @@
 import SwiftUI
 
 struct Settings: View {
+    @Binding var unselectedColors: Array<Color>
+    @Binding var blackText: Bool
+    @Binding var selectedOption: Int
     @State private var tapToSelect: Bool = false
     @State private var ignoreSilentMode: Bool = true
     @State private var togglesHaveLoaded: Bool = false
     let defaults = UserDefaults.standard
     
     func getToggles() {
-        self.tapToSelect = defaults.bool(forKey: "tapToSelect")
-        self.ignoreSilentMode = !defaults.bool(forKey: "respectSilentMode")
+        self.tapToSelect = defaults.bool(forKey: UserDefaultsKeys().tapToSelect)
+        self.ignoreSilentMode = !defaults.bool(forKey: UserDefaultsKeys().respectSilentMode)
         
         self.togglesHaveLoaded = true
     }
     
     func toggleTapToSelect() -> String {
-        self.defaults.set(tapToSelect, forKey: "tapToSelect")
+        self.defaults.set(tapToSelect, forKey: UserDefaultsKeys().tapToSelect)
         self.defaults.synchronize()
         return ""
     }
     
     func toggleIgnoreSilentMode() -> String {
-        self.defaults.set(!ignoreSilentMode, forKey: "respectSilentMode")
+        self.defaults.set(!ignoreSilentMode, forKey: UserDefaultsKeys().respectSilentMode)
         self.defaults.synchronize()
         return ""
     }
@@ -46,6 +49,19 @@ struct Settings: View {
     
     var body: some View {
         VStack {
+            if(!Screen().isSeries3()) {
+                Spacer(minLength: 30)
+            }
+            HStack {
+                VolumeView()
+                Spacer()
+                NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedOption)
+                .navigationBarTitle(Text("Pitch Color"))) {
+                    HStack{
+                        Image(systemName: "paintbrush")
+                    }
+                }.padding()
+            }
             Toggle(isOn: $tapToSelect) {
                 Text("Tap Pitch to Select")
                     .lineLimit(2)
@@ -64,7 +80,6 @@ struct Settings: View {
                     Text("\(self.toggleIgnoreSilentMode())")
                 }
             }.padding()
-            VolumeView()
         }
         .onAppear(perform: getToggles)
     }

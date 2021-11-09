@@ -16,19 +16,8 @@ struct ContentView: View {
     @State var blackText = false
     @State var selectedColor = -1
     
-    let screenWidth = WKInterfaceDevice.current().screenBounds.width
-    let settingsIconOffsets = [
-        136.0 : [ "x" : -60.0, "y" : 60.0 ], //38mm
-        156.0 : [ "x" : -65.0, "y" : 75.0 ], //42mm
-        162.0 : [ "x" : -60.0, "y" : 80.0 ], //40mm
-        184.0 : [ "x" : -70.0, "y" : 90.0 ], //44mm
-        176.0 : [ "x" : -70.0, "y" : 90.0 ], //41mm
-        198.0 : [ "x" : -80.0, "y" : 100.0 ] //45mm
-    ]
-    
-    
     func getColors() {
-        if let color = defaults.string(forKey: "pitchColors")
+        if let color = defaults.string(forKey: UserDefaultsKeys().pitchColors)
         {
             var pitchColor: Color = Color.black
             var isMulti = false
@@ -91,21 +80,21 @@ struct ContentView: View {
                 .onAppear(perform: getColors)
             .navigationTitle(Text("Wrist Pipe"))
             .navigationBarTitleDisplayMode(.inline)
-            NavigationLink(destination: Settings().navigationTitle(Text("Settings")).navigationBarTitleDisplayMode(.inline)) {
+            NavigationLink(destination: Settings(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedColor).navigationTitle(Text("Settings")).navigationBarTitleDisplayMode(.inline)) {
                 Image(systemName: "gear")
             }
             .buttonStyle(PlainButtonStyle())
             .offset(
-                x: settingsIconOffsets[screenWidth]!["x"]!,
-                y: settingsIconOffsets[screenWidth]!["y"]!
+                x: Screen().getIconXOffsets(),
+                y: Screen().getIconYOffsets()
             )
-            NavigationLink(destination: ColorPicker(unselectedColors: $unselectedColors, blackText: $blackText, selectedOption: $selectedColor).navigationTitle(Text("Pitch Color")).navigationBarTitleDisplayMode(.inline)) {
-                Image(systemName: "paintbrush")
+            NavigationLink(destination: SetList().navigationTitle(Text("Set List")).navigationBarTitleDisplayMode(.inline)) {
+                Image(systemName: "list.bullet")
             }
             .buttonStyle(PlainButtonStyle())
             .offset(
-                x: -settingsIconOffsets[screenWidth]!["x"]!,
-                y: settingsIconOffsets[screenWidth]!["y"]!
+                x: -Screen().getIconXOffsets(),
+                y: Screen().getIconYOffsets()
             )
         }
     }
