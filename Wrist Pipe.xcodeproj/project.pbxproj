@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2AF60427405FDE0046B005 /* PitchColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2AF60327405FDE0046B005 /* PitchColor.swift */; };
+		0E2AF6062740973E0046B005 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2AF6052740973E0046B005 /* Volume.swift */; };
+		0E2AF6082740A67D0046B005 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2AF6072740A67D0046B005 /* About.swift */; };
+		0E2AF60A2740AB730046B005 /* TapToSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2AF6092740AB730046B005 /* TapToSelect.swift */; };
 		0E43639C26730F3F00F3B1B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E5A8A4B23A6DAC200B33A74 /* AVFoundation.framework */; };
 		0E5A8A1723A5F33700B33A74 /* Wrist Pipe.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0E5A8A1623A5F33700B33A74 /* Wrist Pipe.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0E5A8A1D23A5F33700B33A74 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5A8A1B23A5F33700B33A74 /* Interface.storyboard */; };
@@ -109,6 +113,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E2AF60327405FDE0046B005 /* PitchColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchColor.swift; sourceTree = "<group>"; };
+		0E2AF6052740973E0046B005 /* Volume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		0E2AF6072740A67D0046B005 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		0E2AF6092740AB730046B005 /* TapToSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapToSelect.swift; sourceTree = "<group>"; };
 		0E5A8A1223A5F33700B33A74 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5A8A1623A5F33700B33A74 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5A8A1C23A5F33700B33A74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -250,6 +258,7 @@
 				0EE0CBDF2739CC0400FAF4E6 /* Screen.swift */,
 				0EE0CBDB2738F20C00FAF4E6 /* PitchPlayer.swift */,
 				0EE0CBDD2738F7ED00FAF4E6 /* UserDefaultsKeys.swift */,
+				0E2AF60327405FDE0046B005 /* PitchColor.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -269,6 +278,9 @@
 			children = (
 				0EF93CC623BEFDEF00155F0F /* Settings.swift */,
 				0E8A5D1A23B082D2002184BE /* ColorPicker.swift */,
+				0E2AF6052740973E0046B005 /* Volume.swift */,
+				0E2AF6072740A67D0046B005 /* About.swift */,
+				0E2AF6092740AB730046B005 /* TapToSelect.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -438,9 +450,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E2AF6062740973E0046B005 /* Volume.swift in Sources */,
+				0E2AF6082740A67D0046B005 /* About.swift in Sources */,
+				0E2AF60427405FDE0046B005 /* PitchColor.swift in Sources */,
 				0E6E2D552738775100E6FA4B /* SetList.swift in Sources */,
 				0E5A8A2D23A5F33800B33A74 /* HostingController.swift in Sources */,
 				0E5A8A3123A5F33800B33A74 /* ComplicationController.swift in Sources */,
+				0E2AF60A2740AB730046B005 /* TapToSelect.swift in Sources */,
 				0EE0CBE02739CC0400FAF4E6 /* Screen.swift in Sources */,
 				0EE7836B24BFF28600896669 /* ContentView.swift in Sources */,
 				0EE0CBDE2738F7ED00FAF4E6 /* UserDefaultsKeys.swift in Sources */,
@@ -610,7 +626,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -636,7 +652,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -657,7 +673,7 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -678,7 +694,7 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -695,7 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -708,7 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
-				MARKETING_VERSION = 1.4.0;
+				MARKETING_VERSION = 1.4.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

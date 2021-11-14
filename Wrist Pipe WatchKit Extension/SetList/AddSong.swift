@@ -12,7 +12,7 @@ struct AddSong: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var setList: [SetListItem]
     @State private var title: String = ""
-    @State private var selectedPitch = "F"
+    @State private var selectedPitch: String = PitchPlayer().pitches[0]
     let defaults = UserDefaults.standard
     
     var body: some View {
@@ -26,18 +26,18 @@ struct AddSong: View {
             }
             Spacer()
             Button(action: {
-                if(!title.isEmpty) {
-                    setList.append(SetListItem(name: title, key: selectedPitch))
-                    if let encoded = try? JSONEncoder().encode(setList) {
-                        self.defaults.set(encoded, forKey: UserDefaultsKeys().setList)
-                        self.defaults.synchronize()
-                    }
+                setList.append(SetListItem(name: title, key: selectedPitch))
+                if let encoded = try? JSONEncoder().encode(setList) {
+                    self.defaults.set(encoded, forKey: UserDefaultsKeys().setList)
+                    self.defaults.synchronize()
                 }
                 
                 self.presentationMode.wrappedValue.dismiss()
             }) {
                 Text("Add Song")
-            }.padding()
+            }
+            .padding()
+            .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
         }
     }
 }

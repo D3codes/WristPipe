@@ -21,14 +21,6 @@ struct SetList: View {
     
     var body: some View {
         VStack {
-            NavigationLink(destination: AddSong(setList: $setListItems)
-            .navigationBarTitle(Text("Cancel"))) {
-                HStack{
-                    Image(systemName: "plus")
-                    Text("Add Song")
-                }
-            }.buttonStyle(BorderedButtonStyle(tint: Color.blue))
-            
             if(!self.setListItems.isEmpty) {
                 List {
                     ForEach(self.setListItems, id: \.self) { listItem in
@@ -37,8 +29,33 @@ struct SetList: View {
                     .onDelete(perform: self.deleteRow)
                 }
             }
-            
-        }.onAppear(perform: getSetList)
+            else {
+                NavigationLink(destination: AddSong(setList: $setListItems)
+                .navigationBarTitle(Text("Cancel"))) {
+                    HStack{
+                        Image(systemName: "plus")
+                        Text("Add Song")
+                    }
+                }
+                .buttonStyle(BorderedButtonStyle(tint: Color.blue))
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .primaryAction) {
+                if(!self.setListItems.isEmpty) {
+                    NavigationLink(destination: AddSong(setList: $setListItems)
+                    .navigationBarTitle(Text("Cancel"))) {
+                        HStack{
+                            Image(systemName: "plus")
+                            Text("Add Song")
+                        }
+                    }
+                    .buttonStyle(BorderedButtonStyle(tint: Color.blue))
+                    .padding()
+                }
+            }
+        }
+        .onAppear(perform: getSetList)
     }
     
     private func deleteRow(at indexSet: IndexSet) {
@@ -56,7 +73,14 @@ struct SetList: View {
             Button(action: {
                 PitchPlayer().playPitch(selectedPitch: listItem.key)
             }) {
-                Text(listItem.name)
+                HStack {
+                    Text(listItem.name)
+                    Spacer()
+                    Group {
+                        Divider()
+                        Text(listItem.key).frame(width: 25.0)
+                    }
+                }
             }
         }
     }

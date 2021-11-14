@@ -10,12 +10,11 @@ import SwiftUI
 import Foundation
 
 struct PitchPicker: View {
-    @Binding var unselectedColors: Array<Color>
-    @Binding var blackText: Bool
+    @Binding var pitchColors: Array<PitchColor>
+    @Binding var tapToSelect: Bool
     
     let circleSize: CGFloat = 30.0
     let selectorSize: CGFloat = 80.0
-    let selectedColor = Color.white
     @State private var selectedPitch = 0.0
     @State var scrollAmount = 0.0
     
@@ -28,48 +27,60 @@ struct PitchPicker: View {
         VStack {
          HStack {
              ZStack {
+                 let pitchColor = pitchColors[11]
                  Circle()
-                     .fill(round(selectedPitch) == 11 ? selectedColor : unselectedColors[11])
+                     .fill(round(selectedPitch) == 11
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y:45)
                  Text("\(PitchPlayer().pitches[11])")
-                     .foregroundColor(blackText || round(selectedPitch) == 11 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 11
+                        ? pitchColor.selectedTextColor
+                        : pitchColor.unselectedTextColor)
                      .offset(x: 0, y: 45)
              }
              .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 11
                 }
             }
              
              ZStack {
+                 let pitchColor = pitchColors[0]
                  Circle()
-                     .fill((round(selectedPitch) == 0 || round(selectedPitch) == 12) ? selectedColor : unselectedColors[0])
+                     .fill((round(selectedPitch) == 0 || round(selectedPitch) == 12)
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y:35)
                  Text("\(PitchPlayer().pitches[0])")
-                     .foregroundColor(blackText || round(selectedPitch) == 0 || round(selectedPitch) == 12 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 0 || round(selectedPitch) == 12
+                          ? pitchColor.selectedTextColor
+                          : pitchColor.unselectedTextColor)
                      .offset(x: 0, y: 35)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 0
                 }
             }
              
              ZStack {
+                 let pitchColor = pitchColors[1]
                  Circle()
-                     .fill(round(selectedPitch) == 1 ? selectedColor : unselectedColors[1])
+                     .fill(round(selectedPitch) == 1
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y:45)
                  Text("\(PitchPlayer().pitches[1])")
-                     .foregroundColor(blackText || round(selectedPitch) == 1 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 1
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: 0, y: 45)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 1
                 }
@@ -77,32 +88,40 @@ struct PitchPicker: View {
          }
          HStack {
              ZStack {
+                 let pitchColor = pitchColors[10]
                  Circle()
-                     .fill(round(selectedPitch) == 10 ? selectedColor : unselectedColors[10])
+                     .fill(round(selectedPitch) == 10
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: -45, y:35)
                  Text("\(PitchPlayer().pitches[10])")
-                     .foregroundColor(blackText || round(selectedPitch) == 10 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 10
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: -45, y: 35)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 10
                 }
             }
              
              ZStack {
+                 let pitchColor = pitchColors[2]
                  Circle()
-                     .fill(round(selectedPitch) == 2 ? selectedColor : unselectedColors[2])
+                     .fill(round(selectedPitch) == 2
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 45, y:35)
                  Text("\(PitchPlayer().pitches[2])")
-                     .foregroundColor(blackText || round(selectedPitch) == 2 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 2
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: 45, y: 35)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 2
                 }
@@ -110,16 +129,20 @@ struct PitchPicker: View {
          }
          HStack {
              ZStack {
+                 let pitchColor = pitchColors[9]
                  Circle()
-                     .fill(round(selectedPitch) == 9 ? selectedColor : unselectedColors[9])
+                     .fill(round(selectedPitch) == 9
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: -10, y: 10)
                  Text("\(PitchPlayer().pitches[9])")
-                     .foregroundColor(blackText || round(selectedPitch) == 9 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 9
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: -10, y: 10)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 9
                 }
@@ -139,7 +162,11 @@ struct PitchPicker: View {
                          .offset(x: 0, y: 0)
                          .rotationEffect(Angle(degrees: 45))
                      Circle()
-                        .fill(unselectedColors[round(selectedPitch) == 12 ? 0 : Int(round(selectedPitch))])
+                         .fill(pitchColors[round(selectedPitch) == 12
+                               ? 0
+                               : Int(round(selectedPitch))
+                            ].unselectedColor
+                         )
                          .frame(width: selectorSize - 5, height: selectorSize - 5)
                          .offset(x: 0, y: 15)
                  }
@@ -147,7 +174,7 @@ struct PitchPicker: View {
                      .rotationEffect(Angle(degrees: selectedPitch * 30))
                  Text("\(PitchPlayer().pitches[round(selectedPitch) == 12 ? 0 : Int(round(selectedPitch))])")
                      .font(.largeTitle)
-                     .foregroundColor(blackText ? .black : .white)
+                     .foregroundColor(pitchColors[0].unselectedTextColor)
              }
                  .onTapGesture {
                     self.playPitch()
@@ -155,16 +182,20 @@ struct PitchPicker: View {
                  .offset(x: 0, y: 10)
              
              ZStack {
+                 let pitchColor = pitchColors[3]
                  Circle()
-                     .fill(round(selectedPitch) == 3 ? selectedColor : unselectedColors[3])
+                     .fill(round(selectedPitch) == 3
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 10, y: 10)
                  Text("\(PitchPlayer().pitches[3])")
-                     .foregroundColor(blackText || round(selectedPitch) == 3 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 3
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: 10, y: 10)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 3
                 }
@@ -172,32 +203,40 @@ struct PitchPicker: View {
          }
          HStack {
              ZStack {
+                 let pitchColor = pitchColors[8]
                  Circle()
-                     .fill(round(selectedPitch) == 8 ? selectedColor : unselectedColors[8])
+                     .fill(round(selectedPitch) == 8
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: -45, y: -15)
                  Text("\(PitchPlayer().pitches[8])")
-                     .foregroundColor(blackText || round(selectedPitch) == 8 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 8
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: -45, y: -15)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 8
                 }
             }
              
              ZStack {
+                 let pitchColor = pitchColors[4]
                  Circle()
-                     .fill(round(selectedPitch) == 4 ? selectedColor : unselectedColors[4])
+                     .fill(round(selectedPitch) == 4
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 45, y: -15)
                  Text("\(PitchPlayer().pitches[4])")
-                     .foregroundColor(blackText || round(selectedPitch) == 4 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 4
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: 45, y: -15)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 4
                 }
@@ -205,48 +244,60 @@ struct PitchPicker: View {
          }
          HStack {
              ZStack {
+                 let pitchColor = pitchColors[7]
                  Circle()
-                     .fill(round(selectedPitch) == 7 ? selectedColor : unselectedColors[7])
+                     .fill(round(selectedPitch) == 7
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y: -25)
                  Text("\(PitchPlayer().pitches[7])")
-                     .foregroundColor(blackText || round(selectedPitch) == 7 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 7
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: 0, y: -25)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 7
                 }
             }
              
              ZStack {
+                 let pitchColor = pitchColors[6]
                  Circle()
-                     .fill(round(selectedPitch) == 6 ? selectedColor : unselectedColors[6])
+                     .fill(round(selectedPitch) == 6
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y: -15)
                  Text("\(PitchPlayer().pitches[6])")
-                     .foregroundColor(blackText || round(selectedPitch) == 6 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 6
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: 0, y: -15)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 6
                 }
             }
              
              ZStack {
+                 let pitchColor = pitchColors[5]
                  Circle()
-                     .fill(round(selectedPitch) == 5 ? selectedColor : unselectedColors[5])
+                     .fill(round(selectedPitch) == 5
+                           ? pitchColor.selectedColor
+                           : pitchColor.unselectedColor)
                      .frame(width: circleSize, height: circleSize)
                      .offset(x: 0, y: -25)
                  Text("\(PitchPlayer().pitches[5])")
-                     .foregroundColor(blackText || round(selectedPitch) == 5 ? .black : .white)
+                     .foregroundColor(round(selectedPitch) == 5
+                            ? pitchColor.selectedTextColor
+                            : pitchColor.unselectedTextColor)
                      .offset(x: 0, y: -25)
              }
             .onTapGesture {
-                let tapToSelect = UserDefaults.standard.bool(forKey: UserDefaultsKeys().tapToSelect)
                 if tapToSelect {
                     self.selectedPitch = 5
                 }
