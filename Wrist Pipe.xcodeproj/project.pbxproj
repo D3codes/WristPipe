@@ -626,7 +626,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -652,7 +652,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -673,7 +673,7 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -694,7 +694,7 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				IBSC_MODULE = Wrist_Pipe_WatchKit_Extension;
 				INFOPLIST_FILE = "Wrist Pipe WatchKit App/Info.plist";
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -711,7 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -724,7 +724,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
-				MARKETING_VERSION = 1.4.1;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
