@@ -12,32 +12,28 @@ struct Settings: View {
     
     var body: some View {
         List {
-            NavigationLink(destination: Volume()
-            .navigationBarTitle(Text("Volume"))) {
+            NavigationLink(destination: Volume()) {
                 HStack{
                     Image(systemName: "speaker.wave.2.fill")
                     Text("Volume")
                 }
             }.padding()
             
-            NavigationLink(destination: ColorPicker()
-            .navigationBarTitle(Text("Theme"))) {
+            NavigationLink(destination: ColorPicker()) {
                 HStack{
                     Image(systemName: "paintbrush.fill")
                     Text("Theme")
                 }
             }.padding()
             
-            NavigationLink(destination: TapToSelect()
-            .navigationBarTitle(Text("Tap to Select"))) {
+            NavigationLink(destination: TapToSelect()) {
                 HStack{
                     Image(systemName: "hand.tap.fill")
                     Text("Tap to Select")
                 }
             }.padding()
             
-            NavigationLink(destination: About()
-            .navigationBarTitle(Text("About"))) {
+            NavigationLink(destination: About()) {
                 HStack{
                     Image(systemName: "info.circle.fill")
                     Text("About")

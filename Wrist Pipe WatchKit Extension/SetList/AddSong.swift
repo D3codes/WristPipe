@@ -19,11 +19,17 @@ struct AddSong: View {
         VStack {
             TextField("Title", text: $title)
             Spacer()
-            Picker("Key", selection: $selectedPitch) {
-                ForEach(PitchPlayer().pitches, id: \.self) {
-                    Text($0)
+            HStack {
+                Text("Key")
+                Picker("Key", selection: $selectedPitch) {
+                    ForEach(PitchPlayer().pitches, id: \.self) {
+                        Text($0)
+                    }
                 }
+                .labelsHidden()
+                .frame(width: 50)
             }
+            .frame(height: 30)
             Spacer()
             Button(action: {
                 setList.append(SetListItem(name: title, key: selectedPitch))
@@ -39,5 +45,6 @@ struct AddSong: View {
             .padding()
             .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
         }
+        .padding(.top)
     }
 }

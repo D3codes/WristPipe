@@ -30,8 +30,7 @@ struct SetList: View {
                 }
             }
             else {
-                NavigationLink(destination: AddSong(setList: $setListItems)
-                .navigationBarTitle(Text("Cancel"))) {
+                NavigationLink(destination: AddSong(setList: $setListItems)) {
                     HStack{
                         Image(systemName: "plus")
                         Text("Add Song")
@@ -43,8 +42,7 @@ struct SetList: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 if(!self.setListItems.isEmpty) {
-                    NavigationLink(destination: AddSong(setList: $setListItems)
-                    .navigationBarTitle(Text("Cancel"))) {
+                    NavigationLink(destination: AddSong(setList: $setListItems)) {
                         HStack{
                             Image(systemName: "plus")
                             Text("Add Song")
