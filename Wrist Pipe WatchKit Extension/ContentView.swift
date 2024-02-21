@@ -27,11 +27,13 @@ struct ContentView: View {
         ZStack{
             PitchPicker(pitchColors: $pitchColors, tapToSelect: $tapToSelect)
             .onAppear(perform: getColors)
-            .navigationTitle(Text("Wrist Pipe"))
-            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button {} label: {}
+                }
+            }
             
             NavigationLink(destination: Settings()
-                .navigationTitle(Text("Settings"))
             ) {
                 Image(systemName: "gear")
             }
@@ -42,10 +44,8 @@ struct ContentView: View {
             )
             
             NavigationLink(destination: SetList()
-                .navigationTitle(Text("Set List"))
-                .navigationBarTitleDisplayMode(.inline)
             ) {
-                Image(systemName: "list.bullet")
+                Image(systemName: "music.note.list")
             }
             .buttonStyle(PlainButtonStyle())
             .offset(
