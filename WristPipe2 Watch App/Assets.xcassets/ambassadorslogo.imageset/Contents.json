@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "[removal.ai]_1afbfdcc-87e1-4991-a09b-c2e2f062b962-127257043_234465231372877_2023350118421778203_n.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
