@@ -79,5 +79,5 @@ class Screen {
 }
 
 #Preview() {
-    PitchPipe(theme: CodyChoraliersTheme())
+    PitchPipe(theme: BlackTheme(), preview: true)
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A312BB0F183009B0B2A /* BHSThemesList.swift */; };
+		0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */; };
 		0E229CD62B8C45EA0065AB31 /* CodyChoraliersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */; };
 		0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0322B8D208D00FBD605 /* BHSTheme.swift */; };
 		0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */; };
@@ -71,6 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E117A312BB0F183009B0B2A /* BHSThemesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSThemesList.swift; sourceTree = "<group>"; };
+		0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChoraliersTheme.swift; sourceTree = "<group>"; };
 		0E89E0322B8D208D00FBD605 /* BHSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSTheme.swift; sourceTree = "<group>"; };
 		0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEBSQSATheme.swift; sourceTree = "<group>"; };
@@ -122,6 +126,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E117A332BB1F9A2009B0B2A /* ThemeSettings */ = {
+			isa = PBXGroup;
+			children = (
+				0E89E0412B90EF2500FBD605 /* ThemeSettings.swift */,
+				0E117A312BB0F183009B0B2A /* BHSThemesList.swift */,
+				0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */,
+			);
+			path = ThemeSettings;
+			sourceTree = "<group>";
+		};
 		0E229CD72B8C460C0065AB31 /* BHS */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,10 +266,10 @@
 		0EF7C1342B8C62170031AD78 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				0E117A332BB1F9A2009B0B2A /* ThemeSettings */,
 				0E89E03A2B8DABEB00FBD605 /* UserSettings.swift */,
 				0EF7C1322B8C61C90031AD78 /* Settings.swift */,
 				0E89E0432B90F09D00FBD605 /* VolumeSettings.swift */,
-				0E89E0412B90EF2500FBD605 /* ThemeSettings.swift */,
 				0E89E0452B90F0B700FBD605 /* HoldToPlaySettings.swift */,
 			);
 			path = Settings;
@@ -384,6 +398,7 @@
 				0E89E0372B8D2E2900FBD605 /* AmbassadorsOfHarmonyTheme.swift in Sources */,
 				0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */,
 				0E89E03E2B90D49300FBD605 /* SetList.swift in Sources */,
+				0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */,
 				0EDBF7932B8BFE9100A313D8 /* Theme.swift in Sources */,
 				0E89E0442B90F09D00FBD605 /* VolumeSettings.swift in Sources */,
 				0EF7C13B2B8D15B80031AD78 /* PrideTheme.swift in Sources */,
@@ -398,6 +413,7 @@
 				0E89E0422B90EF2500FBD605 /* ThemeSettings.swift in Sources */,
 				0EF7C1332B8C61C90031AD78 /* Settings.swift in Sources */,
 				0EF7C1372B8C66670031AD78 /* UnityTheme.swift in Sources */,
+				0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */,
 				0E89E0392B8DA5FD00FBD605 /* Themes.swift in Sources */,
 				0EDBF78F2B8B7B3C00A313D8 /* PitchPlayer.swift in Sources */,
 				0EDBF7962B8BFF5F00A313D8 /* BlueTheme.swift in Sources */,

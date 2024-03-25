@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct WristPipe2_Watch_AppApp: App {
-    @AppStorage("theme") private var selectedTheme = 3
-    
     var body: some Scene {
+        @State var path = NavigationPath()
+        
         WindowGroup {
-            NavigationStack {
-                PitchPipe(theme: Themes[selectedTheme])
+            NavigationStack(path: $path) {
+                PitchPipe()
                     .toolbar {
                         ToolbarItem(placement: .topBarLeading) {
                             NavigationLink { Settings() } label: {

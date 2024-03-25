@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CodyChoraliersTheme: Theme {
-    var id: Int = 1002
+    var id: Int = 1300
+    var name: String = "Cody Choraliers"
     
     func getBackground() -> any View {
         return AnyView(Spacer())
@@ -31,10 +32,31 @@ struct CodyChoraliersTheme: Theme {
     var logo: Image? = Image("choralierslogo")
     var logoXScale: Double = 30
     var logoYScale: Double = 25
+    
+    var isColorTheme = false
+    var isCauseTheme = false
+    var isBHSTheme = true
+    var isCARTheme = false
+    var isNSCTheme = false
+    var isCSDTheme = true
+    var isEVGTheme = false
+    var isFWDTheme = false
+    var isILLTheme = false
+    var isJADTheme = false
+    var isLOLTheme = false
+    var isMADTheme = false
+    var isNEDTheme = false
+    var isONTTheme = false
+    var isPIOTheme = false
+    var isRMDTheme = false
+    var isSLDTheme = false
+    var isSHDTheme = false
+    var isSWDTheme = false
+    var isSUNTheme = false
 }
 
 #Preview() {
-    PitchPipe(theme: CodyChoraliersTheme())
+    PitchPipe(theme: CodyChoraliersTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(CodyChoraliersTheme().getBackground())
 }

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct AOHTheme: Theme {
-    var id: Int = 1003
+    var id: Int = 1301
+    var name: String = "Ambassadors of Harmony"
     
     func getBackground() -> any View {
         return ZStack {
@@ -34,10 +35,31 @@ struct AOHTheme: Theme {
     var logo: Image? = Image("aoh_logo")
     var logoXScale: Double = 0
     var logoYScale: Double = 0
+    
+    var isColorTheme = false
+    var isCauseTheme = false
+    var isBHSTheme = true
+    var isCARTheme = false
+    var isNSCTheme = false
+    var isCSDTheme = true
+    var isEVGTheme = false
+    var isFWDTheme = false
+    var isILLTheme = false
+    var isJADTheme = false
+    var isLOLTheme = false
+    var isMADTheme = false
+    var isNEDTheme = false
+    var isONTTheme = false
+    var isPIOTheme = false
+    var isRMDTheme = false
+    var isSLDTheme = false
+    var isSHDTheme = false
+    var isSWDTheme = false
+    var isSUNTheme = false
 }
 
 #Preview() {
-    PitchPipe(theme: AOHTheme())
+    PitchPipe(theme: AOHTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(AOHTheme().getBackground())
 }

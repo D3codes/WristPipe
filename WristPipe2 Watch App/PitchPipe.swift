@@ -10,7 +10,9 @@ import SwiftUI
 import Foundation
 
 struct PitchPipe: View {
-    @State var theme: any Theme
+    @AppStorage("theme") private var selectedTheme = 0
+    @State var theme = Themes[0]
+    @State var preview = false
     
     let pitchSize: Double = Screen().getPitchSize()
     let selectorSize: Double = Screen().getPitchSelectorSize()
@@ -100,9 +102,17 @@ struct PitchPipe: View {
         .digitalCrownRotation($selectedPitch, from: 0, through: 12.001, by: 1, sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(AnyView(theme.getBackground()))
+        .onAppear(perform: {
+            if !preview {
+                theme = Themes.first(where: { $0.id == selectedTheme }) ?? Themes[0]
+            }
+        })
+        .onChange(of: selectedTheme, { _,newTheme in
+            theme = Themes.first(where: { $0.id == newTheme }) ?? Themes[0]
+        })
     }
 }
 
 #Preview() {
-    PitchPipe(theme: CentralStandardTheme())
+    PitchPipe(theme: SPEBSQSATheme(), preview: true)
 }
