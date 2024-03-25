@@ -11,6 +11,7 @@ import Foundation
 
 struct PitchPipe: View {
     @AppStorage("theme") private var selectedTheme = 0
+    @AppStorage("holdToPlay") private var holdToPlay = true
     @State var theme = Themes[0]
     @State var preview = false
     
@@ -88,8 +89,6 @@ struct PitchPipe: View {
                 .onLongPressGesture(minimumDuration: 15) {
                         print("Long pressed!")
                     } onPressingChanged: { inProgress in
-                        let holdToPlay = true
-                        
                         print("Long press in progress: \(inProgress)!")
                         if inProgress {
                             pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName)

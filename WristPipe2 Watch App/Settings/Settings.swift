@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct Settings: View {
+    static let holdToPlay: String = "holdToPlay"
+    
     var body: some View {
         List {
             NavigationLink(destination: VolumeSettings()) {
