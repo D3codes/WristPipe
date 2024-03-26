@@ -71,7 +71,7 @@
 		0E89E0442B90F09D00FBD605 /* VolumeSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0432B90F09D00FBD605 /* VolumeSettings.swift */; };
 		0E89E0462B90F0B700FBD605 /* HoldToPlaySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0452B90F0B700FBD605 /* HoldToPlaySettings.swift */; };
 		0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */; };
-		0EDBF7592B8B7AC500A313D8 /* WristPipe2 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0EDBF7582B8B7AC500A313D8 /* WristPipe2 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0EDBF7592B8B7AC500A313D8 /* Wrist Pipe.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0EDBF75E2B8B7AC500A313D8 /* WristPipe2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDBF75D2B8B7AC500A313D8 /* WristPipe2App.swift */; };
 		0EDBF7622B8B7AC600A313D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDBF7612B8B7AC600A313D8 /* Assets.xcassets */; };
 		0EDBF7652B8B7AC600A313D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDBF7642B8B7AC600A313D8 /* Preview Assets.xcassets */; };
@@ -116,7 +116,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				0EDBF7592B8B7AC500A313D8 /* WristPipe2 Watch App.app in Embed Watch Content */,
+				0EDBF7592B8B7AC500A313D8 /* Wrist Pipe.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,7 +189,7 @@
 		0E89E0452B90F0B700FBD605 /* HoldToPlaySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldToPlaySettings.swift; sourceTree = "<group>"; };
 		0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralStandardTheme.swift; sourceTree = "<group>"; };
 		0EDBF7522B8B7AC500A313D8 /* WristPipe2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristPipe2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EDBF7582B8B7AC500A313D8 /* WristPipe2 Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WristPipe2 Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDBF75D2B8B7AC500A313D8 /* WristPipe2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WristPipe2App.swift; sourceTree = "<group>"; };
 		0EDBF7612B8B7AC600A313D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EDBF7642B8B7AC600A313D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -384,7 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				0EDBF7522B8B7AC500A313D8 /* WristPipe2.app */,
-				0EDBF7582B8B7AC500A313D8 /* WristPipe2 Watch App.app */,
+				0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -511,7 +511,7 @@
 			);
 			name = "WristPipe2 Watch App";
 			productName = "WristPipe2 Watch App";
-			productReference = 0EDBF7582B8B7AC500A313D8 /* WristPipe2 Watch App.app */;
+			productReference = 0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -532,7 +532,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0EDBF74F2B8B7AC500A313D8 /* Build configuration list for PBXProject "WristPipe2" */;
+			buildConfigurationList = 0EDBF74F2B8B7AC500A313D8 /* Build configuration list for PBXProject "Wrist Pipe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -803,7 +803,6 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WristPipe2;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -811,8 +810,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codes.d3.WristPipe2.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
+				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -833,7 +832,6 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WristPipe2;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -841,8 +839,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codes.d3.WristPipe2.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
+				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -862,7 +860,7 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = WristPipe2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codes.d3.WristPipe2;
+				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -878,7 +876,7 @@
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = WristPipe2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = codes.d3.WristPipe2;
+				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -889,7 +887,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EDBF74F2B8B7AC500A313D8 /* Build configuration list for PBXProject "WristPipe2" */ = {
+		0EDBF74F2B8B7AC500A313D8 /* Build configuration list for PBXProject "Wrist Pipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0EDBF7662B8B7AC600A313D8 /* Debug */,
