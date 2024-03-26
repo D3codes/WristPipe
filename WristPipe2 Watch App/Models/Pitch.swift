@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Pitch: Identifiable{
+struct Pitch: Identifiable, Hashable {
     var id: Int
     var note: String
     var fileName: String
