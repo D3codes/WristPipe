@@ -12,6 +12,9 @@ import AVFoundation
 var pitchSound: AVAudioPlayer!
 
 class PitchPlayer {
+    @AppStorage("ignoreSilentMode") private var ignoreSilentMode = true
+    @AppStorage("instrument") private var instrument = "PitchPipe"
+    
     public let pitches: [Pitch] = [
         Pitch(id: 0, note: "F", fileName: "FNatural", xOff: sin((Double.pi/6) * Double(0)), yOff: -cos((Double.pi/6) * Double(0))),
         Pitch(id: 1, note: "F♯", fileName: "FSharp", xOff: sin((Double.pi/6) * Double(1)), yOff: -cos((Double.pi/6) * Double(1))),
@@ -39,11 +42,9 @@ class PitchPlayer {
             return
         }
         
-        let path = Bundle.main.path(forResource: selectedPitch, ofType:"mp3")!
+        let path = Bundle.main.path(forResource: "\(instrument)_\(selectedPitch)", ofType:"mp3")!
         let url = URL(fileURLWithPath: path)
         do {
-            //let ignoreSilentMode = !UserDefaults.standard.bool(forKey: UserDefaultsKeys().respectSilentMode)
-            let ignoreSilentMode = true
             if ignoreSilentMode {
                 try AVAudioSession.sharedInstance().setCategory(.playback)
             } else {

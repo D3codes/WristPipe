@@ -30,29 +30,8 @@ struct CodyChoraliersTheme: Theme {
     var pitchSelectedOpacity: Double = 1.0
     
     var logo: Image? = Image("choralierslogo")
-    var logoXScale: Double = 30
-    var logoYScale: Double = 25
-    
-    var isColorTheme = false
-    var isCauseTheme = false
-    var isBHSTheme = true
-    var isCARTheme = false
-    var isNSCTheme = false
-    var isCSDTheme = true
-    var isEVGTheme = false
-    var isFWDTheme = false
-    var isILLTheme = false
-    var isJADTheme = false
-    var isLOLTheme = false
-    var isMADTheme = false
-    var isNEDTheme = false
-    var isONTTheme = false
-    var isPIOTheme = false
-    var isRMDTheme = false
-    var isSLDTheme = false
-    var isSHDTheme = false
-    var isSWDTheme = false
-    var isSUNTheme = false
+    var logoXScale: Double = 0
+    var logoYScale: Double = 0
 }
 
 #Preview() {

@@ -32,27 +32,6 @@ struct BHSTheme: Theme {
     var logo: Image? = Image("BHSlogo")
     var logoXScale: Double = 5
     var logoYScale: Double = 5
-    
-    var isColorTheme = false
-    var isCauseTheme = false
-    var isBHSTheme = true
-    var isCARTheme = false
-    var isNSCTheme = false
-    var isCSDTheme = false
-    var isEVGTheme = false
-    var isFWDTheme = false
-    var isILLTheme = false
-    var isJADTheme = false
-    var isLOLTheme = false
-    var isMADTheme = false
-    var isNEDTheme = false
-    var isONTTheme = false
-    var isPIOTheme = false
-    var isRMDTheme = false
-    var isSLDTheme = false
-    var isSHDTheme = false
-    var isSWDTheme = false
-    var isSUNTheme = false
 }
 
 #Preview() {

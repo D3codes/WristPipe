@@ -10,10 +10,14 @@ import SwiftUI
 struct ThemeList: View {
     @AppStorage("theme") private var selectedTheme = 0
     @State var themes: [any Theme]
+    @Binding var path: [Int]
     
     var body: some View {
         List(themes.sorted(by: { $0.name < $1.name }), id:\.self.id) { theme in
-            Button(action: { selectedTheme = theme.id }, label: {
+            Button(action: {
+                selectedTheme = theme.id
+                path.removeAll()
+            }, label: {
                 Text("\(theme.name)")
             })
         }
@@ -21,5 +25,6 @@ struct ThemeList: View {
 }
 
 #Preview {
-    ThemeList(themes: Themes)
+    @State var path = [Int]()
+    return ThemeList(themes: Themes, path: $path)
 }

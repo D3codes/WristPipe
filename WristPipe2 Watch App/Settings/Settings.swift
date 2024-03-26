@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct Settings: View {
-    static let holdToPlay: String = "holdToPlay"
+    @Binding var path: [Int]
     
     var body: some View {
         List {
@@ -20,10 +20,17 @@ struct Settings: View {
                 }
             }.padding()
             
-            NavigationLink(destination: ThemeSettings()) {
+            NavigationLink(destination: ThemeSettings(path: $path)) {
                 HStack{
                     Image(systemName: "paintbrush.fill")
                     Text("Theme")
+                }
+            }.padding()
+            
+            NavigationLink(destination: InstrumentSettings()) {
+                HStack{
+                    Image(systemName: "pianokeys.inverse")
+                    Text("Instrument")
                 }
             }.padding()
             
@@ -34,14 +41,7 @@ struct Settings: View {
                 }
             }.padding()
             
-            NavigationLink(destination: Settings()) {
-                HStack{
-                    Image(systemName: "hand.tap.fill")
-                    Text("Instrument")
-                }
-            }.padding()
-            
-            NavigationLink(destination: Settings()) {
+            NavigationLink(destination: About()) {
                 HStack{
                     Image(systemName: "info.circle.fill")
                     Text("About")
@@ -52,5 +52,6 @@ struct Settings: View {
 }
 
 #Preview {
-    Settings()
+    @State var path = [Int]()
+    return Settings(path: $path)
 }
