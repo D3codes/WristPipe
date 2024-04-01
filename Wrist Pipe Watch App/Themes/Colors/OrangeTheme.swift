@@ -1,27 +1,27 @@
 //
-//  PrideTheme.swift
+//  OrangeTheme.swift
 //  Wrist Pipe Watch App
 //
-//  Created by David Freeman on 2/26/24.
+//  Created by David Freeman on 3/27/24.
 //
 
 import SwiftUI
 
-struct PrideTheme: Theme {
-    var id: Int = 3001
-    var name: String = "Pride"
+struct OrangeTheme: Theme {
+    var id: Int = 5
+    var name: String = "Orange"
     
     func getBackground() -> any View {
         return AnyView(Spacer())
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(AngularGradient(gradient: Gradient(colors: [.red, .yellow, .green, .blue, .purple, .red]), center: .center))
+            .background(.orange.gradient)
     }
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.red, .orange, .yellow, .green, .blue, .purple, .red, .orange, .yellow, .green, .blue, .purple]
+    var selectorBackgroundColor: [Color] = [.orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.red, .orange, .yellow, .green, .blue, .purple, .red, .orange, .yellow, .green, .blue, .purple]
+    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
@@ -35,7 +35,7 @@ struct PrideTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: PrideTheme(), preview: true)
+    PitchPipe(theme: OrangeTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(PrideTheme().getBackground())
+        .background(OrangeTheme().getBackground())
 }

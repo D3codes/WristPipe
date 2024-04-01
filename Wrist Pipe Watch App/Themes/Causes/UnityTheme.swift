@@ -14,7 +14,7 @@ struct UnityTheme: Theme {
     func getBackground() -> any View {
         return AnyView(Spacer())
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.black)
+            .background(AngularGradient(gradient: Gradient(colors: [.red, .black, .black, .green, .black, .black, .red, .black, .black, .green, .black, .black, .red, .black, .black, .green, .black, .black, .red]), center: .center))
     }
 
     var selectorColor: Color = .white
@@ -23,11 +23,11 @@ struct UnityTheme: Theme {
 
     var pitchBackgroundUnselectedColor: [Color] = [.red, .green, .red, .green, .red, .green, .red, .green, .red, .green, .red, .green]
     var pitchTextUnselectedColor: Color = .white
-    var pitchUnselectedOpacity: Double = 0.8
+    var pitchUnselectedOpacity: Double = 1
 
     var pitchBackgroundSelectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
     var pitchTextSelectedColor: Color = .white
-    var pitchSelectedOpacity: Double = 1.0
+    var pitchSelectedOpacity: Double = 1
     
     var logo: Image? = nil
     var logoXScale: Double = 0
