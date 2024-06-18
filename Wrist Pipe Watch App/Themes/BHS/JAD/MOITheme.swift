@@ -104,5 +104,5 @@ struct MOITheme: Theme {
 #Preview {
     PitchPipe(theme: MOITheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(MOITheme().getBackground())
+        .background(AnyView(MOITheme().getBackground()))
 }

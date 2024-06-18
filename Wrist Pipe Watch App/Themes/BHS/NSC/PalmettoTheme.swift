@@ -52,5 +52,5 @@ struct PalmettoTheme: Theme {
 #Preview {
     PitchPipe(theme: PalmettoTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(PalmettoTheme().getBackground())
+        .background(AnyView(PalmettoTheme().getBackground()))
 }

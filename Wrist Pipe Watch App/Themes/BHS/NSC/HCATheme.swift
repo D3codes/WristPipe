@@ -63,5 +63,5 @@ struct HCATheme: Theme {
 #Preview {
     PitchPipe(theme: HCATheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(HCATheme().getBackground())
+        .background(AnyView(HCATheme().getBackground()))
 }

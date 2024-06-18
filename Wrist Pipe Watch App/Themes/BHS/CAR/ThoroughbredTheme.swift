@@ -52,5 +52,5 @@ struct ThoroughbredTheme: Theme {
 #Preview {
     PitchPipe(theme: ThoroughbredTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(ThoroughbredTheme().getBackground())
+        .background(AnyView(ThoroughbredTheme().getBackground()))
 }

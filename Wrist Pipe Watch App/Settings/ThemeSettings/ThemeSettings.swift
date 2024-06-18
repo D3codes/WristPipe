@@ -26,6 +26,13 @@ struct ThemeSettings: View {
 }
 
 #Preview {
-    @State var path = [Int]()
-    return ThemeSettings(path: $path)
+    struct ThemeSettings_Preview: View {
+        @State var path = [Int]()
+        
+        var body: some View {
+            ThemeSettings(path: $path)
+        }
+    }
+    
+    return ThemeSettings_Preview()
 }

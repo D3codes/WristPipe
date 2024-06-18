@@ -37,5 +37,5 @@ struct OakCityTheme: Theme {
 #Preview {
     PitchPipe(theme: OakCityTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(OakCityTheme().getBackground())
+        .background(AnyView(OakCityTheme().getBackground()))
 }

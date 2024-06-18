@@ -71,5 +71,5 @@ struct THETheme: Theme {
 #Preview {
     PitchPipe(theme: THETheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(THETheme().getBackground())
+        .background(AnyView(THETheme().getBackground()))
 }

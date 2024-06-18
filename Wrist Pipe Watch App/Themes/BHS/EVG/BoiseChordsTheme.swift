@@ -53,5 +53,5 @@ struct BoiseChordsTheme: Theme {
 #Preview() {
     PitchPipe(theme: BoiseChordsTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(BoiseChordsTheme().getBackground())
+        .background(AnyView(BoiseChordsTheme().getBackground()))
 }

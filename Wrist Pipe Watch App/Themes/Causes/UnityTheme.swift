@@ -37,5 +37,5 @@ struct UnityTheme: Theme {
 #Preview() {
     PitchPipe(theme: UnityTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(UnityTheme().getBackground())
+        .background(AnyView(UnityTheme().getBackground()))
 }

@@ -79,5 +79,5 @@ struct MOHTheme: Theme {
 #Preview {
     PitchPipe(theme: MOHTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(MOHTheme().getBackground())
+        .background(AnyView(MOHTheme().getBackground()))
 }

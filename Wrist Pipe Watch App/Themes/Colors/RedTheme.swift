@@ -37,5 +37,5 @@ struct RedTheme: Theme {
 #Preview() {
     PitchPipe(theme: RedTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(RedTheme().getBackground())
+        .background(AnyView(RedTheme().getBackground()))
 }

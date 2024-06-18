@@ -79,6 +79,6 @@ struct GPHTheme: Theme {
 #Preview {
     PitchPipe(theme: GPHTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(GPHTheme().getBackground())
+        .background(AnyView(GPHTheme().getBackground()))
 }
 

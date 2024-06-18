@@ -37,5 +37,5 @@ struct PrideTheme: Theme {
 #Preview() {
     PitchPipe(theme: PrideTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(PrideTheme().getBackground())
+        .background(AnyView(PrideTheme().getBackground()))
 }

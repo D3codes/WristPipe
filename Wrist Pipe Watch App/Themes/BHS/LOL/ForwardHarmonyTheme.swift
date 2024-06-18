@@ -81,5 +81,5 @@ struct ForwardHarmonyTheme: Theme {
 #Preview {
     PitchPipe(theme: ForwardHarmonyTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(ForwardHarmonyTheme().getBackground())
+        .background(AnyView(ForwardHarmonyTheme().getBackground()))
 }

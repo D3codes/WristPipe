@@ -64,6 +64,14 @@ struct PitchPipe: View {
                 }
                 
                 ZStack {
+                    if #available(watchOS 11.0, *) {
+                        Button ("") {
+                            pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName)
+                        }
+                        .frame(width: selectorSize, height: selectorSize)
+                        .clipShape(.circle)
+                        .handGestureShortcut(.primaryAction)
+                    }
                     Circle()
                         .fill(theme.selectorColor)
                         .frame(width: selectorSize, height: selectorSize)

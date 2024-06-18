@@ -53,5 +53,5 @@ struct HOATheme: Theme {
 #Preview() {
     PitchPipe(theme: HOATheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(HOATheme().getBackground())
+        .background(AnyView(HOATheme().getBackground()))
 }

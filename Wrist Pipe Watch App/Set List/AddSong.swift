@@ -50,6 +50,13 @@ struct AddSong: View {
 }
 
 #Preview {
-    @State var setList = [SetListItem]()
-    return AddSong(setList: $setList)
+    struct AddSong_Preview: View {
+        @State var setList = [SetListItem]()
+        
+        var body: some View {
+            AddSong(setList: $setList)
+        }
+    }
+    
+    return AddSong_Preview()
 }

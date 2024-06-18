@@ -64,11 +64,46 @@
 		0E117AAF2BB28167009B0B2A /* SetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAC2BB28167009B0B2A /* SetList.swift */; };
 		0E117AB02BB28167009B0B2A /* SetListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAD2BB28167009B0B2A /* SetListItem.swift */; };
 		0E229CD62B8C45EA0065AB31 /* CodyChoraliersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */; };
+		0E25149F2C1B87B300D94EA1 /* CapCityTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */; };
+		0E2514A22C1CE17700D94EA1 /* SOTRTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */; };
+		0E2514A42C1CE80300D94EA1 /* SaltairesTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514A32C1CE80300D94EA1 /* SaltairesTheme.swift */; };
+		0E2514A62C1D3FA000D94EA1 /* LPCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514A52C1D3FA000D94EA1 /* LPCTheme.swift */; };
+		0E2514A82C1D419700D94EA1 /* TimberTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514A72C1D419700D94EA1 /* TimberTheme.swift */; };
+		0E2514AB2C20EA8200D94EA1 /* HarmColTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514AA2C20EA7B00D94EA1 /* HarmColTheme.swift */; };
+		0E2514AD2C20ED2400D94EA1 /* SouthernTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514AC2C20ED2400D94EA1 /* SouthernTheme.swift */; };
+		0E2514B22C20FD3A00D94EA1 /* CrimPrideTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514B12C20FD3600D94EA1 /* CrimPrideTheme.swift */; };
+		0E2514B42C21157A00D94EA1 /* ChooChooTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514B32C21157A00D94EA1 /* ChooChooTheme.swift */; };
+		0E2514B62C21205B00D94EA1 /* SOTNTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514B52C21205B00D94EA1 /* SOTNTheme.swift */; };
+		0E2514B82C2122C100D94EA1 /* RSVPTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514B72C2122C100D94EA1 /* RSVPTheme.swift */; };
+		0E2514BA2C2123FD00D94EA1 /* MusicCityTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514B92C2123FD00D94EA1 /* MusicCityTheme.swift */; };
+		0E2514BE2C2129C000D94EA1 /* SpaceCityTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514BD2C2129B800D94EA1 /* SpaceCityTheme.swift */; };
+		0E2514C02C212BFC00D94EA1 /* PrismTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514BF2C212BFC00D94EA1 /* PrismTheme.swift */; };
+		0E2514C22C21394F00D94EA1 /* AcaFedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514C12C21394F00D94EA1 /* AcaFedTheme.swift */; };
+		0E2514C42C213B4700D94EA1 /* VSOOTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514C32C213B4700D94EA1 /* VSOOTheme.swift */; };
+		0E2514C62C213C7800D94EA1 /* MarcsmenTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514C52C213C7800D94EA1 /* MarcsmenTheme.swift */; };
+		0E2514C82C213EAA00D94EA1 /* VocalMajorityTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514C72C213EAA00D94EA1 /* VocalMajorityTheme.swift */; };
+		0E2514CB2C21412D00D94EA1 /* BOCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514CA2C21412A00D94EA1 /* BOCTheme.swift */; };
+		0E2514CD2C21435800D94EA1 /* OBCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514CC2C21435800D94EA1 /* OBCTheme.swift */; };
+		0E2514CF2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514CE2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift */; };
+		0E2514D12C21480500D94EA1 /* HOHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514D02C21480500D94EA1 /* HOHTheme.swift */; };
 		0E3FAB302BB5FB3C00265CA2 /* MVETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB2F2BB5FB3C00265CA2 /* MVETheme.swift */; };
 		0E3FAB322BB5FC9600265CA2 /* ForwardHarmonyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB312BB5FC9600265CA2 /* ForwardHarmonyTheme.swift */; };
 		0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB332BB600D000265CA2 /* GNUTheme.swift */; };
 		0E3FAB362BB6043300265CA2 /* CommodoresTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB352BB6043300265CA2 /* CommodoresTheme.swift */; };
 		0E3FAB382BB6154E00265CA2 /* GPHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB372BB6154E00265CA2 /* GPHTheme.swift */; };
+		0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBC2BD3637900581CCB /* ParksideTheme.swift */; };
+		0E595EBF2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */; };
+		0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC02BD36B0E00581CCB /* VOGTheme.swift */; };
+		0E595EC42BD417A900581CCB /* VRTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC32BD417A900581CCB /* VRTheme.swift */; };
+		0E595EC62BD4196A00581CCB /* VocaMotionTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC52BD4196A00581CCB /* VocaMotionTheme.swift */; };
+		0E595EC82BD41CB700581CCB /* VoicesUnitedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC72BD41CB700581CCB /* VoicesUnitedTheme.swift */; };
+		0E595ECA2BD4599600581CCB /* NBCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC92BD4599600581CCB /* NBCTheme.swift */; };
+		0E595ECD2BD4764B00581CCB /* HarmonyLeagueTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ECC2BD4764B00581CCB /* HarmonyLeagueTheme.swift */; };
+		0E595ECF2BD4791900581CCB /* GOHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ECE2BD4791900581CCB /* GOHTheme.swift */; };
+		0E595ED12BD567D300581CCB /* CCCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ED02BD567D300581CCB /* CCCTheme.swift */; };
+		0E595ED42BD56AC800581CCB /* GreatLakesTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ED32BD56AC800581CCB /* GreatLakesTheme.swift */; };
+		0E595ED62BD6A53600581CCB /* CityLightsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ED52BD6A53600581CCB /* CityLightsTheme.swift */; };
+		0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */; };
 		0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0322B8D208D00FBD605 /* BHSTheme.swift */; };
 		0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */; };
 		0E89E0372B8D2E2900FBD605 /* AmbassadorsOfHarmonyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0362B8D2E2900FBD605 /* AmbassadorsOfHarmonyTheme.swift */; };
@@ -221,11 +256,46 @@
 		0E117AAC2BB28167009B0B2A /* SetList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetList.swift; sourceTree = "<group>"; };
 		0E117AAD2BB28167009B0B2A /* SetListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetListItem.swift; sourceTree = "<group>"; };
 		0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChoraliersTheme.swift; sourceTree = "<group>"; };
+		0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapCityTheme.swift; sourceTree = "<group>"; };
+		0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTRTheme.swift; sourceTree = "<group>"; };
+		0E2514A32C1CE80300D94EA1 /* SaltairesTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaltairesTheme.swift; sourceTree = "<group>"; };
+		0E2514A52C1D3FA000D94EA1 /* LPCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPCTheme.swift; sourceTree = "<group>"; };
+		0E2514A72C1D419700D94EA1 /* TimberTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimberTheme.swift; sourceTree = "<group>"; };
+		0E2514AA2C20EA7B00D94EA1 /* HarmColTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmColTheme.swift; sourceTree = "<group>"; };
+		0E2514AC2C20ED2400D94EA1 /* SouthernTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SouthernTheme.swift; sourceTree = "<group>"; };
+		0E2514B12C20FD3600D94EA1 /* CrimPrideTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimPrideTheme.swift; sourceTree = "<group>"; };
+		0E2514B32C21157A00D94EA1 /* ChooChooTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooChooTheme.swift; sourceTree = "<group>"; };
+		0E2514B52C21205B00D94EA1 /* SOTNTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTNTheme.swift; sourceTree = "<group>"; };
+		0E2514B72C2122C100D94EA1 /* RSVPTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSVPTheme.swift; sourceTree = "<group>"; };
+		0E2514B92C2123FD00D94EA1 /* MusicCityTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCityTheme.swift; sourceTree = "<group>"; };
+		0E2514BD2C2129B800D94EA1 /* SpaceCityTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCityTheme.swift; sourceTree = "<group>"; };
+		0E2514BF2C212BFC00D94EA1 /* PrismTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismTheme.swift; sourceTree = "<group>"; };
+		0E2514C12C21394F00D94EA1 /* AcaFedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcaFedTheme.swift; sourceTree = "<group>"; };
+		0E2514C32C213B4700D94EA1 /* VSOOTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSOOTheme.swift; sourceTree = "<group>"; };
+		0E2514C52C213C7800D94EA1 /* MarcsmenTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcsmenTheme.swift; sourceTree = "<group>"; };
+		0E2514C72C213EAA00D94EA1 /* VocalMajorityTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalMajorityTheme.swift; sourceTree = "<group>"; };
+		0E2514CA2C21412A00D94EA1 /* BOCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOCTheme.swift; sourceTree = "<group>"; };
+		0E2514CC2C21435800D94EA1 /* OBCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBCTheme.swift; sourceTree = "<group>"; };
+		0E2514CE2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrlandoHarmonyTheme.swift; sourceTree = "<group>"; };
+		0E2514D02C21480500D94EA1 /* HOHTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOHTheme.swift; sourceTree = "<group>"; };
 		0E3FAB2F2BB5FB3C00265CA2 /* MVETheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVETheme.swift; sourceTree = "<group>"; };
 		0E3FAB312BB5FC9600265CA2 /* ForwardHarmonyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardHarmonyTheme.swift; sourceTree = "<group>"; };
 		0E3FAB332BB600D000265CA2 /* GNUTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNUTheme.swift; sourceTree = "<group>"; };
 		0E3FAB352BB6043300265CA2 /* CommodoresTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodoresTheme.swift; sourceTree = "<group>"; };
 		0E3FAB372BB6154E00265CA2 /* GPHTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPHTheme.swift; sourceTree = "<group>"; };
+		0E595EBC2BD3637900581CCB /* ParksideTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksideTheme.swift; sourceTree = "<group>"; };
+		0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandriaHarmonizersTheme.swift; sourceTree = "<group>"; };
+		0E595EC02BD36B0E00581CCB /* VOGTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOGTheme.swift; sourceTree = "<group>"; };
+		0E595EC32BD417A900581CCB /* VRTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRTheme.swift; sourceTree = "<group>"; };
+		0E595EC52BD4196A00581CCB /* VocaMotionTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaMotionTheme.swift; sourceTree = "<group>"; };
+		0E595EC72BD41CB700581CCB /* VoicesUnitedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicesUnitedTheme.swift; sourceTree = "<group>"; };
+		0E595EC92BD4599600581CCB /* NBCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBCTheme.swift; sourceTree = "<group>"; };
+		0E595ECC2BD4764B00581CCB /* HarmonyLeagueTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmonyLeagueTheme.swift; sourceTree = "<group>"; };
+		0E595ECE2BD4791900581CCB /* GOHTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOHTheme.swift; sourceTree = "<group>"; };
+		0E595ED02BD567D300581CCB /* CCCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCTheme.swift; sourceTree = "<group>"; };
+		0E595ED32BD56AC800581CCB /* GreatLakesTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatLakesTheme.swift; sourceTree = "<group>"; };
+		0E595ED52BD6A53600581CCB /* CityLightsTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLightsTheme.swift; sourceTree = "<group>"; };
+		0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkTheme.swift; sourceTree = "<group>"; };
 		0E89E0322B8D208D00FBD605 /* BHSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSTheme.swift; sourceTree = "<group>"; };
 		0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEBSQSATheme.swift; sourceTree = "<group>"; };
 		0E89E0362B8D2E2900FBD605 /* AmbassadorsOfHarmonyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbassadorsOfHarmonyTheme.swift; sourceTree = "<group>"; };
@@ -416,6 +486,15 @@
 		0E229CD72B8C460C0065AB31 /* BHS */ = {
 			isa = PBXGroup;
 			children = (
+				0E2514C92C21412000D94EA1 /* SUN */,
+				0E2514BC2C2129AF00D94EA1 /* SWD */,
+				0E2514B02C20FCD000D94EA1 /* SHD */,
+				0E2514A92C20EA7000D94EA1 /* SLD */,
+				0E2514A02C1CE12C00D94EA1 /* RMD */,
+				0E595ED22BD56A6900581CCB /* PIO */,
+				0E595ECB2BD4763100581CCB /* ONT */,
+				0E595EC22BD4169C00581CCB /* NED */,
+				0E595EBB2BD361FD00581CCB /* MAD */,
 				0E3FAB2E2BB5FA9300265CA2 /* LOL */,
 				0EC171FD2BB51CE8004908E0 /* JAD */,
 				0EC171F62BB4F6DD004908E0 /* ILL */,
@@ -452,11 +531,68 @@
 				0EDBF7952B8BFF5F00A313D8 /* BlueTheme.swift */,
 				0EC171E32BB4000B004908E0 /* RedTheme.swift */,
 				0EC171E52BB40056004908E0 /* PurpleTheme.swift */,
+				0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */,
 				0EC171E72BB400A9004908E0 /* GreenTheme.swift */,
 				0EC171EC2BB4AF14004908E0 /* OrangeTheme.swift */,
 				0EC171EE2BB4AF5A004908E0 /* YellowTheme.swift */,
 			);
 			path = Colors;
+			sourceTree = "<group>";
+		};
+		0E2514A02C1CE12C00D94EA1 /* RMD */ = {
+			isa = PBXGroup;
+			children = (
+				0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */,
+				0E2514A52C1D3FA000D94EA1 /* LPCTheme.swift */,
+				0E2514A72C1D419700D94EA1 /* TimberTheme.swift */,
+				0E2514A32C1CE80300D94EA1 /* SaltairesTheme.swift */,
+			);
+			path = RMD;
+			sourceTree = "<group>";
+		};
+		0E2514A92C20EA7000D94EA1 /* SLD */ = {
+			isa = PBXGroup;
+			children = (
+				0E2514AA2C20EA7B00D94EA1 /* HarmColTheme.swift */,
+				0E2514AC2C20ED2400D94EA1 /* SouthernTheme.swift */,
+			);
+			path = SLD;
+			sourceTree = "<group>";
+		};
+		0E2514B02C20FCD000D94EA1 /* SHD */ = {
+			isa = PBXGroup;
+			children = (
+				0E2514B12C20FD3600D94EA1 /* CrimPrideTheme.swift */,
+				0E2514B52C21205B00D94EA1 /* SOTNTheme.swift */,
+				0E2514B72C2122C100D94EA1 /* RSVPTheme.swift */,
+				0E2514B92C2123FD00D94EA1 /* MusicCityTheme.swift */,
+				0E2514B32C21157A00D94EA1 /* ChooChooTheme.swift */,
+			);
+			path = SHD;
+			sourceTree = "<group>";
+		};
+		0E2514BC2C2129AF00D94EA1 /* SWD */ = {
+			isa = PBXGroup;
+			children = (
+				0E2514BD2C2129B800D94EA1 /* SpaceCityTheme.swift */,
+				0E2514BF2C212BFC00D94EA1 /* PrismTheme.swift */,
+				0E2514C72C213EAA00D94EA1 /* VocalMajorityTheme.swift */,
+				0E2514C32C213B4700D94EA1 /* VSOOTheme.swift */,
+				0E2514C52C213C7800D94EA1 /* MarcsmenTheme.swift */,
+				0E2514C12C21394F00D94EA1 /* AcaFedTheme.swift */,
+			);
+			path = SWD;
+			sourceTree = "<group>";
+		};
+		0E2514C92C21412000D94EA1 /* SUN */ = {
+			isa = PBXGroup;
+			children = (
+				0E2514CA2C21412A00D94EA1 /* BOCTheme.swift */,
+				0E2514CC2C21435800D94EA1 /* OBCTheme.swift */,
+				0E2514D02C21480500D94EA1 /* HOHTheme.swift */,
+				0E2514CE2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift */,
+			);
+			path = SUN;
 			sourceTree = "<group>";
 		};
 		0E3FAB2E2BB5FA9300265CA2 /* LOL */ = {
@@ -469,6 +605,47 @@
 				0E3FAB372BB6154E00265CA2 /* GPHTheme.swift */,
 			);
 			path = LOL;
+			sourceTree = "<group>";
+		};
+		0E595EBB2BD361FD00581CCB /* MAD */ = {
+			isa = PBXGroup;
+			children = (
+				0E595EBC2BD3637900581CCB /* ParksideTheme.swift */,
+				0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */,
+				0E595EC02BD36B0E00581CCB /* VOGTheme.swift */,
+			);
+			path = MAD;
+			sourceTree = "<group>";
+		};
+		0E595EC22BD4169C00581CCB /* NED */ = {
+			isa = PBXGroup;
+			children = (
+				0E595EC32BD417A900581CCB /* VRTheme.swift */,
+				0E595EC52BD4196A00581CCB /* VocaMotionTheme.swift */,
+				0E595EC72BD41CB700581CCB /* VoicesUnitedTheme.swift */,
+				0E595EC92BD4599600581CCB /* NBCTheme.swift */,
+			);
+			path = NED;
+			sourceTree = "<group>";
+		};
+		0E595ECB2BD4763100581CCB /* ONT */ = {
+			isa = PBXGroup;
+			children = (
+				0E595ECC2BD4764B00581CCB /* HarmonyLeagueTheme.swift */,
+				0E595ECE2BD4791900581CCB /* GOHTheme.swift */,
+				0E595ED02BD567D300581CCB /* CCCTheme.swift */,
+			);
+			path = ONT;
+			sourceTree = "<group>";
+		};
+		0E595ED22BD56A6900581CCB /* PIO */ = {
+			isa = PBXGroup;
+			children = (
+				0E595ED32BD56AC800581CCB /* GreatLakesTheme.swift */,
+				0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */,
+				0E595ED52BD6A53600581CCB /* CityLightsTheme.swift */,
+			);
+			path = PIO;
 			sourceTree = "<group>";
 		};
 		0E89E03C2B90D48800FBD605 /* Set List */ = {
@@ -811,33 +988,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E2514CD2C21435800D94EA1 /* OBCTheme.swift in Sources */,
 				0EF0E1F12BB3C3DC00B31FFA /* RecruitsTheme.swift in Sources */,
 				0EDBF7982B8C01EA00A313D8 /* Screen.swift in Sources */,
+				0E595ED12BD567D300581CCB /* CCCTheme.swift in Sources */,
 				0E117A5D2BB24511009B0B2A /* InstrumentSettings.swift in Sources */,
 				0E117A3F2BB23F92009B0B2A /* About.swift in Sources */,
 				0EF0E1F72BB3D25E00B31FFA /* HOATheme.swift in Sources */,
 				0EC171E02BB3FC81004908E0 /* NWSoundTheme.swift in Sources */,
 				0EF0E1ED2BB3B30B00B31FFA /* THETheme.swift in Sources */,
 				0EC171F82BB4F791004908E0 /* SOITheme.swift in Sources */,
+				0E595ED62BD6A53600581CCB /* CityLightsTheme.swift in Sources */,
 				0EC171EF2BB4AF5A004908E0 /* YellowTheme.swift in Sources */,
 				0EC171E62BB40056004908E0 /* PurpleTheme.swift in Sources */,
 				0E89E0372B8D2E2900FBD605 /* AmbassadorsOfHarmonyTheme.swift in Sources */,
 				0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */,
+				0E595EC82BD41CB700581CCB /* VoicesUnitedTheme.swift in Sources */,
 				0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */,
 				0EDBF7932B8BFE9100A313D8 /* Theme.swift in Sources */,
+				0E2514B22C20FD3A00D94EA1 /* CrimPrideTheme.swift in Sources */,
+				0E2514B42C21157A00D94EA1 /* ChooChooTheme.swift in Sources */,
+				0E595EBF2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift in Sources */,
 				0EF0E1E72BB394A700B31FFA /* PalmettoTheme.swift in Sources */,
+				0E595ED42BD56AC800581CCB /* GreatLakesTheme.swift in Sources */,
 				0E89E0442B90F09D00FBD605 /* VolumeSettings.swift in Sources */,
+				0E2514CF2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift in Sources */,
+				0E595EC42BD417A900581CCB /* VRTheme.swift in Sources */,
 				0EF0E1F52BB3CF2200B31FFA /* LittleAppleTheme.swift in Sources */,
 				0EB277822BB3440B00A73710 /* UserDefaultsKeys.swift in Sources */,
 				0EF0E1F32BB3C63A00B31FFA /* SmorgasTheme.swift in Sources */,
 				0E117AAF2BB28167009B0B2A /* SetList.swift in Sources */,
+				0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */,
+				0E2514C42C213B4700D94EA1 /* VSOOTheme.swift in Sources */,
 				0EF7C13B2B8D15B80031AD78 /* PrideTheme.swift in Sources */,
 				0E229CD62B8C45EA0065AB31 /* CodyChoraliersTheme.swift in Sources */,
 				0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */,
+				0E595EC62BD4196A00581CCB /* VocaMotionTheme.swift in Sources */,
+				0E2514A22C1CE17700D94EA1 /* SOTRTheme.swift in Sources */,
 				0EC171E22BB3FE76004908E0 /* SenateAiresTheme.swift in Sources */,
+				0E595ECD2BD4764B00581CCB /* HarmonyLeagueTheme.swift in Sources */,
 				0EF7C1392B8D109C0031AD78 /* BlackTheme.swift in Sources */,
 				0EDBF7822B8B7B3C00A313D8 /* PitchPipe.swift in Sources */,
 				0E3FAB322BB5FC9600265CA2 /* ForwardHarmonyTheme.swift in Sources */,
+				0E2514B82C2122C100D94EA1 /* RSVPTheme.swift in Sources */,
+				0E2514C82C213EAA00D94EA1 /* VocalMajorityTheme.swift in Sources */,
 				0EC172032BB523AD004908E0 /* SingingBuckeyesTheme.swift in Sources */,
 				0EC171DC2BB3EFAD004908E0 /* VocalSummitTheme.swift in Sources */,
 				0EC171F12BB4B0B9004908E0 /* FogCityTheme.swift in Sources */,
@@ -845,35 +1039,53 @@
 				0E3FAB302BB5FB3C00265CA2 /* MVETheme.swift in Sources */,
 				0E117AB02BB28167009B0B2A /* SetListItem.swift in Sources */,
 				0EC171FC2BB4FE38004908E0 /* WTCTheme.swift in Sources */,
+				0E2514CB2C21412D00D94EA1 /* BOCTheme.swift in Sources */,
 				0EF0E1E02BB382AD00B31FFA /* GreatRiverVoicesTheme.swift in Sources */,
 				0EF0E1EF2BB3BFAE00B31FFA /* OakCityTheme.swift in Sources */,
+				0E2514C02C212BFC00D94EA1 /* PrismTheme.swift in Sources */,
 				0EDBF7812B8B7B3C00A313D8 /* Pitch.swift in Sources */,
 				0EF0E1E42BB38E2300B31FFA /* ThoroughbredTheme.swift in Sources */,
 				0EF0E1F92BB3D60800B31FFA /* PathfinderTheme.swift in Sources */,
+				0E2514BA2C2123FD00D94EA1 /* MusicCityTheme.swift in Sources */,
 				0EC171F32BB4B3BD004908E0 /* MOHTheme.swift in Sources */,
+				0E595ECA2BD4599600581CCB /* NBCTheme.swift in Sources */,
 				0EDBF75E2B8B7AC500A313D8 /* WristPipeApp.swift in Sources */,
 				0EC171FA2BB4FB8C004908E0 /* NewTradTheme.swift in Sources */,
 				0EC171FF2BB51CF2004908E0 /* SGCTheme.swift in Sources */,
 				0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */,
 				0E89E0422B90EF2500FBD605 /* ThemeSettings.swift in Sources */,
 				0E0072D52BB528BF001F2F3B /* MOITheme.swift in Sources */,
+				0E2514A62C1D3FA000D94EA1 /* LPCTheme.swift in Sources */,
+				0E2514BE2C2129C000D94EA1 /* SpaceCityTheme.swift in Sources */,
 				0EF7C1332B8C61C90031AD78 /* Settings.swift in Sources */,
+				0E595ECF2BD4791900581CCB /* GOHTheme.swift in Sources */,
 				0EC171DE2BB3F78B004908E0 /* BoiseChordsTheme.swift in Sources */,
+				0E2514B62C21205B00D94EA1 /* SOTNTheme.swift in Sources */,
+				0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */,
 				0EF0E1FC2BB3E97500B31FFA /* PDXTheme.swift in Sources */,
 				0EF0E1E22BB3881A00B31FFA /* CircleCitySoundTheme.swift in Sources */,
 				0EC171F52BB4B6F3004908E0 /* PCHTheme.swift in Sources */,
 				0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */,
+				0E2514D12C21480500D94EA1 /* HOHTheme.swift in Sources */,
+				0E2514AB2C20EA8200D94EA1 /* HarmColTheme.swift in Sources */,
 				0E3FAB382BB6154E00265CA2 /* GPHTheme.swift in Sources */,
+				0E2514C62C213C7800D94EA1 /* MarcsmenTheme.swift in Sources */,
 				0EC172012BB52192004908E0 /* VocalConfluenceTheme.swift in Sources */,
+				0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */,
 				0E117AAE2BB28167009B0B2A /* AddSong.swift in Sources */,
+				0E2514A42C1CE80300D94EA1 /* SaltairesTheme.swift in Sources */,
 				0EF7C1372B8C66670031AD78 /* UnityTheme.swift in Sources */,
 				0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */,
 				0E89E0392B8DA5FD00FBD605 /* Themes.swift in Sources */,
 				0EC171EB2BB4ABB7004908E0 /* WestminsterTheme.swift in Sources */,
+				0E2514C22C21394F00D94EA1 /* AcaFedTheme.swift in Sources */,
 				0EC171E82BB400A9004908E0 /* GreenTheme.swift in Sources */,
 				0EDBF78F2B8B7B3C00A313D8 /* PitchPlayer.swift in Sources */,
+				0E2514A82C1D419700D94EA1 /* TimberTheme.swift in Sources */,
 				0EC171ED2BB4AF14004908E0 /* OrangeTheme.swift in Sources */,
 				0EDBF7962B8BFF5F00A313D8 /* BlueTheme.swift in Sources */,
+				0E2514AD2C20ED2400D94EA1 /* SouthernTheme.swift in Sources */,
+				0E25149F2C1B87B300D94EA1 /* CapCityTheme.swift in Sources */,
 				0EF0E1E92BB3A9C100B31FFA /* HCATheme.swift in Sources */,
 				0E3FAB362BB6043300265CA2 /* CommodoresTheme.swift in Sources */,
 				0E89E0462B90F0B700FBD605 /* HoldToPlaySettings.swift in Sources */,
@@ -1014,7 +1226,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1043,7 +1255,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1072,7 +1284,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1088,7 +1300,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;

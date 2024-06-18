@@ -37,5 +37,5 @@ struct RecruitsTheme: Theme {
 #Preview() {
     PitchPipe(theme: RecruitsTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(RecruitsTheme().getBackground())
+        .background(AnyView(RecruitsTheme().getBackground()))
 }

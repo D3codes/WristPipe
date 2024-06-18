@@ -79,5 +79,5 @@ struct SGCTheme: Theme {
 #Preview {
     PitchPipe(theme: SGCTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(SGCTheme().getBackground())
+        .background(AnyView(SGCTheme().getBackground()))
 }

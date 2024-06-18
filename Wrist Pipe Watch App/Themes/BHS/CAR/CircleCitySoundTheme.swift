@@ -44,5 +44,5 @@ struct CircleCitySoundTheme: Theme {
 #Preview {
     PitchPipe(theme: CircleCitySoundTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(CircleCitySoundTheme().getBackground())
+        .background(AnyView(CircleCitySoundTheme().getBackground()))
 }

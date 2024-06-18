@@ -37,5 +37,5 @@ struct BHSTheme: Theme {
 #Preview() {
     PitchPipe(theme: BHSTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(BHSTheme().getBackground())
+        .background(AnyView(BHSTheme().getBackground()))
 }

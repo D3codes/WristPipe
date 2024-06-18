@@ -37,5 +37,5 @@ struct SPEBSQSATheme: Theme {
 #Preview() {
     PitchPipe(theme: SPEBSQSATheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(SPEBSQSATheme().getBackground())
+        .background(AnyView(SPEBSQSATheme().getBackground()))
 }

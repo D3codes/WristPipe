@@ -22,13 +22,52 @@ struct AOHTheme: Theme {
 
     var selectorColor: Color = .black
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray
+    ]
     var pitchTextUnselectedColor: Color = .black
     var pitchUnselectedOpacity: Double = 0.8
 
-    var pitchBackgroundSelectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextSelectedColor: Color = .white
     var pitchSelectedOpacity: Double = 0.9
     
@@ -40,5 +79,5 @@ struct AOHTheme: Theme {
 #Preview() {
     PitchPipe(theme: AOHTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AOHTheme().getBackground())
+        .background(AnyView(AOHTheme().getBackground()))
 }

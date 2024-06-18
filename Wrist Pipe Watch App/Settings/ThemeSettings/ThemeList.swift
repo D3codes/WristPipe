@@ -25,6 +25,13 @@ struct ThemeList: View {
 }
 
 #Preview {
-    @State var path = [Int]()
-    return ThemeList(themes: Themes, path: $path)
+    struct ThemeList_Preview: View {
+        @State var path = [Int]()
+        
+        var body: some View {
+            ThemeList(themes: Themes, path: $path)
+        }
+    }
+    
+    return ThemeList_Preview()
 }

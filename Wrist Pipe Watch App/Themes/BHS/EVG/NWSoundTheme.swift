@@ -39,5 +39,5 @@ struct NWSoundTheme: Theme {
 #Preview {
     PitchPipe(theme: NWSoundTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(NWSoundTheme().getBackground())
+        .background(AnyView(NWSoundTheme().getBackground()))
 }

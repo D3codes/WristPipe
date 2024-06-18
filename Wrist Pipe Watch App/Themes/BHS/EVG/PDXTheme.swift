@@ -39,5 +39,5 @@ struct PDXTheme: Theme {
 #Preview() {
     PitchPipe(theme: PDXTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(PDXTheme().getBackground())
+        .background(AnyView(PDXTheme().getBackground()))
 }

@@ -78,5 +78,5 @@ struct NewTradTheme: Theme {
 #Preview {
     PitchPipe(theme: NewTradTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(NewTradTheme().getBackground())
+        .background(AnyView(NewTradTheme().getBackground()))
 }

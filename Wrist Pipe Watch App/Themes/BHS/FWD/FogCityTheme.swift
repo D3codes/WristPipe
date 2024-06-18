@@ -65,5 +65,5 @@ struct FogCityTheme: Theme {
 #Preview {
     PitchPipe(theme: FogCityTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(FogCityTheme().getBackground())
+        .background(AnyView(FogCityTheme().getBackground()))
 }

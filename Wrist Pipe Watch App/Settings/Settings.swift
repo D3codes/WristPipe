@@ -52,6 +52,13 @@ struct Settings: View {
 }
 
 #Preview {
-    @State var path = [Int]()
-    return Settings(path: $path)
+    struct Settings_Preview: View {
+        @State var path = [Int]()
+        
+        var body: some View {
+            Settings(path: $path)
+        }
+    }
+    
+    return Settings_Preview()
 }

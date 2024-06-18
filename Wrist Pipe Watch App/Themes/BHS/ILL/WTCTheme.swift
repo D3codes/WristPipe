@@ -78,5 +78,5 @@ struct WTCTheme: Theme {
 #Preview {
     PitchPipe(theme: WTCTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(WTCTheme().getBackground())
+        .background(AnyView(WTCTheme().getBackground()))
 }

@@ -50,5 +50,5 @@ struct PathfinderTheme: Theme {
 #Preview() {
     PitchPipe(theme: PathfinderTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(PathfinderTheme().getBackground())
+        .background(AnyView(PathfinderTheme().getBackground()))
 }

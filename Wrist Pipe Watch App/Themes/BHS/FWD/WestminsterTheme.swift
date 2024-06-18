@@ -52,5 +52,5 @@ struct WestminsterTheme: Theme {
 #Preview {
     PitchPipe(theme: WestminsterTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(WestminsterTheme().getBackground())
+        .background(AnyView(WestminsterTheme().getBackground()))
 }

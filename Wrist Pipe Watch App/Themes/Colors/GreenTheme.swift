@@ -37,5 +37,5 @@ struct GreenTheme: Theme {
 #Preview() {
     PitchPipe(theme: GreenTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(GreenTheme().getBackground())
+        .background(AnyView(GreenTheme().getBackground()))
 }

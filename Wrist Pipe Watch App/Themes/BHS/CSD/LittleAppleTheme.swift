@@ -37,5 +37,5 @@ struct LittleAppleTheme: Theme {
 #Preview() {
     PitchPipe(theme: LittleAppleTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(LittleAppleTheme().getBackground())
+        .background(AnyView(LittleAppleTheme().getBackground()))
 }

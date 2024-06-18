@@ -158,6 +158,13 @@ struct BHSThemesList: View {
 }
 
 #Preview {
-    @State var path = [Int]()
-    return BHSThemesList(path: $path)
+    struct BHSThemesList_Preview: View {
+        @State var path = [Int]()
+            
+        var body: some View {
+            BHSThemesList(path: $path)
+        }
+    }
+        
+    return BHSThemesList_Preview()
 }

@@ -37,5 +37,5 @@ struct OrangeTheme: Theme {
 #Preview() {
     PitchPipe(theme: OrangeTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(OrangeTheme().getBackground())
+        .background(AnyView(OrangeTheme().getBackground()))
 }

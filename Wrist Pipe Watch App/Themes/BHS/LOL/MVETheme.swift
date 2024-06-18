@@ -76,5 +76,5 @@ struct MVETheme: Theme {
 #Preview {
     PitchPipe(theme: MVETheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(MVETheme().getBackground())
+        .background(AnyView(MVETheme().getBackground()))
 }

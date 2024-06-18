@@ -37,5 +37,5 @@ struct CodyChoraliersTheme: Theme {
 #Preview() {
     PitchPipe(theme: CodyChoraliersTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(CodyChoraliersTheme().getBackground())
+        .background(AnyView(CodyChoraliersTheme().getBackground()))
 }

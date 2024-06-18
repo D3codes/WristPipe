@@ -37,5 +37,5 @@ struct SenateAiresTheme: Theme {
 #Preview {
     PitchPipe(theme: SenateAiresTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(SenateAiresTheme().getBackground())
+        .background(AnyView(SenateAiresTheme().getBackground()))
 }

@@ -101,5 +101,5 @@ struct PCHTheme: Theme {
 #Preview {
     PitchPipe(theme: PCHTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(PCHTheme().getBackground())
+        .background(AnyView(PCHTheme().getBackground()))
 }

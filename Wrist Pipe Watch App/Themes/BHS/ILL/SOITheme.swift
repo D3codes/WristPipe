@@ -85,5 +85,5 @@ struct SOITheme: Theme {
 #Preview {
     PitchPipe(theme: SOITheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(SOITheme().getBackground())
+        .background(AnyView(SOITheme().getBackground()))
 }

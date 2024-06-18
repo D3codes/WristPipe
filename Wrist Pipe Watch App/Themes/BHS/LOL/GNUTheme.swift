@@ -81,5 +81,5 @@ struct GNUTheme: Theme {
 #Preview {
     PitchPipe(theme: GNUTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(GNUTheme().getBackground())
+        .background(AnyView(GNUTheme().getBackground()))
 }

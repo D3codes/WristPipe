@@ -84,5 +84,5 @@ struct SingingBuckeyesTheme: Theme {
 #Preview {
     PitchPipe(theme: SingingBuckeyesTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(SingingBuckeyesTheme().getBackground())
+        .background(AnyView(SingingBuckeyesTheme().getBackground()))
 }

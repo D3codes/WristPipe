@@ -37,5 +37,5 @@ struct VocalSummitTheme: Theme {
 #Preview() {
     PitchPipe(theme: VocalSummitTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(VocalSummitTheme().getBackground())
+        .background(AnyView(VocalSummitTheme().getBackground()))
 }

@@ -50,5 +50,5 @@ struct SmorgasTheme: Theme {
 #Preview() {
     PitchPipe(theme: SmorgasTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(SmorgasTheme().getBackground())
+        .background(AnyView(SmorgasTheme().getBackground()))
 }

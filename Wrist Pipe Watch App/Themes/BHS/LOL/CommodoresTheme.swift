@@ -79,5 +79,5 @@ struct CommodoresTheme: Theme {
 #Preview {
     PitchPipe(theme: CommodoresTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(CommodoresTheme().getBackground())
+        .background(AnyView(CommodoresTheme().getBackground()))
 }

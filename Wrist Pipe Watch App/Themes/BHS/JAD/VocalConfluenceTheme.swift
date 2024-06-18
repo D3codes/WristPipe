@@ -78,5 +78,5 @@ struct VocalConfluenceTheme: Theme {
 #Preview {
     PitchPipe(theme: VocalConfluenceTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(VocalConfluenceTheme().getBackground())
+        .background(AnyView(VocalConfluenceTheme().getBackground()))
 }

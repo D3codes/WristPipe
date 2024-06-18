@@ -37,5 +37,5 @@ struct CentralStandardTheme: Theme {
 #Preview() {
     PitchPipe(theme: CentralStandardTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(CentralStandardTheme().getBackground())
+        .background(AnyView(CentralStandardTheme().getBackground()))
 }

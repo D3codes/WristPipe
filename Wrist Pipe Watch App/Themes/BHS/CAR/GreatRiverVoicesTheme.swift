@@ -38,5 +38,5 @@ struct GreatRiverVoicesTheme: Theme {
 #Preview {
     PitchPipe(theme: GreatRiverVoicesTheme(), preview: true)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(GreatRiverVoicesTheme().getBackground())
+        .background(AnyView(GreatRiverVoicesTheme().getBackground()))
 }
