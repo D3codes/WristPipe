@@ -14,6 +14,8 @@ struct SetList: View {
     let defaults = UserDefaults.standard
     let pitchPlayer = PitchPlayer()
     
+    @State var editMode: Bool = false
+    
     func getSetList() {
         if let data = defaults.object(forKey: UserDefaultsKeys().setList) as? Data,
         let items = try? JSONDecoder().decode([SetListItem].self, from: data) {
@@ -26,25 +28,35 @@ struct SetList: View {
             if(!self.setListItems.isEmpty) {
                 List {
                     ForEach(self.setListItems, id: \.self) { listItem in
-                        HStack {
-                            Text(listItem.name)
-                            Spacer()
-                            Group {
-                                Divider()
-                                Text(listItem.key).frame(width: 25.0)
+                        if(editMode) {
+                            HStack {
+                                Text(listItem.name)
+                                Spacer()
+                                Image(systemName: "line.3.horizontal")
                             }
-                        }
-                        .contentShape(Rectangle())
-                        .onLongPressGesture(minimumDuration: 15) {
-                        } onPressingChanged: { inProgress in
-                            if inProgress {
-                                pitchPlayer.playPitch(selectedPitch: listItem.fileName)
-                            } else if holdToPlay {
-                                pitchPlayer.stopPlaying()
+                            .contentShape(Rectangle())
+                        } else {
+                            HStack {
+                                Text(listItem.name)
+                                Spacer()
+                                Group {
+                                    Divider()
+                                    Text(listItem.key).frame(width: 25.0)
+                                }
+                            }
+                            .contentShape(Rectangle())
+                            .onLongPressGesture(minimumDuration: 15) {
+                            } onPressingChanged: { inProgress in
+                                if inProgress {
+                                    pitchPlayer.playPitch(selectedPitch: listItem.fileName)
+                                } else if holdToPlay {
+                                    pitchPlayer.stopPlaying()
+                                }
                             }
                         }
                     }
                     .onDelete(perform: self.deleteRow)
+                    .onMove { from, to in self.moveRow(from: from, to: to) }
                 }
             }
             else {
@@ -58,7 +70,7 @@ struct SetList: View {
         }
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
-                if(!self.setListItems.isEmpty) {
+                if(!self.setListItems.isEmpty && !editMode) {
                     NavigationLink(destination: AddSong(setList: $setListItems)) {
                         HStack{
                             Image(systemName: "plus")
@@ -69,8 +81,28 @@ struct SetList: View {
                     .padding()
                 }
             }
+            
+            if(self.setListItems.count > 1) {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: { editMode.toggle() }, label: {
+                        editMode
+                        ? Text(" Done ")
+                        : Text("  Edit  ")
+                    })
+                    .padding()
+                    .foregroundStyle(Color.white)
+                }
+            }
         }
         .onAppear(perform: getSetList)
+    }
+    
+    private func moveRow(from: IndexSet, to: Int) {
+        self.setListItems.move(fromOffsets: from, toOffset: to)
+        if let encoded = try? JSONEncoder().encode(setListItems) {
+            self.defaults.set(encoded, forKey: UserDefaultsKeys().setList)
+            self.defaults.synchronize()
+        }
     }
     
     private func deleteRow(at indexSet: IndexSet) {
