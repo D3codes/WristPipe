@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Wrist Pipe WidgetsExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>WristPipe2 Watch App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>

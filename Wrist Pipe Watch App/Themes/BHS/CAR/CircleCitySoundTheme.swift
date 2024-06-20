@@ -13,24 +13,35 @@ struct CircleCitySoundTheme: Theme {
     
     private let circleCityRed: Color = Color(red: 0.69, green: 0.19, blue: 0.31)
     
+    private let circleCityLightBlue: Color = Color(red: 0.149, green: 0.663, blue: 0.882)
+    private let circleCityDarkBlue: Color = Color(red: 0.153, green: 0.161, blue: 0.404)
+    
     func getBackground() -> any View {
-        return AnyView(
-            VStack {
-                Spacer()
-                Text("Inspire. Connect. Sing.").font(.callout).foregroundStyle(circleCityRed)
-            }
-        )
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.blue)
+        return AnyView(Spacer())
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(LinearGradient(colors: [circleCityLightBlue, circleCityDarkBlue], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
     
     var selectorColor: Color = Color(red: 0.69, green: 0.19, blue: 0.31)
     var selectorTextColor: Color = .black
-    var selectorBackgroundColor: [Color] = [.blue, .blue, .blue, .blue, .blue, .blue, .blue, .blue, .blue, .blue, .blue, .blue]
+    var selectorBackgroundColor: [Color] = [
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
+        Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8)
+    ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
-    var pitchTextUnselectedColor: Color = .black
-    var pitchUnselectedOpacity: Double = 0.6
+    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var pitchTextUnselectedColor: Color = .white
+    var pitchUnselectedOpacity: Double = 1
     
     var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
     var pitchTextSelectedColor: Color = .black

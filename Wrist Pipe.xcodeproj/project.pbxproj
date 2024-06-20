@@ -63,6 +63,17 @@
 		0E117AAE2BB28167009B0B2A /* AddSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAB2BB28167009B0B2A /* AddSong.swift */; };
 		0E117AAF2BB28167009B0B2A /* SetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAC2BB28167009B0B2A /* SetList.swift */; };
 		0E117AB02BB28167009B0B2A /* SetListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAD2BB28167009B0B2A /* SetListItem.swift */; };
+		0E214C2F2C2355C300B05F82 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E214C2E2C2355C300B05F82 /* WidgetKit.framework */; };
+		0E214C312C2355C300B05F82 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E214C302C2355C300B05F82 /* SwiftUI.framework */; };
+		0E214C342C2355C300B05F82 /* Wrist_Pipe_Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C332C2355C300B05F82 /* Wrist_Pipe_Widgets.swift */; };
+		0E214C362C2355C300B05F82 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C352C2355C300B05F82 /* AppIntent.swift */; };
+		0E214C382C2355C500B05F82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E214C372C2355C500B05F82 /* Assets.xcassets */; };
+		0E214C3C2C2355C500B05F82 /* Wrist Pipe WidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0E214C2C2C2355C300B05F82 /* Wrist Pipe WidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E214C422C23B28700B05F82 /* LaunchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C412C23B28400B05F82 /* LaunchWidget.swift */; };
+		0E214C452C24DBB000B05F82 /* CircularLaunchWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C442C24DBA800B05F82 /* CircularLaunchWidgetView.swift */; };
+		0E214C472C24DBE700B05F82 /* RectangularLaunchWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C462C24DBE500B05F82 /* RectangularLaunchWidgetView.swift */; };
+		0E214C492C24DC3700B05F82 /* CornerLaunchWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C482C24DC3400B05F82 /* CornerLaunchWidgetView.swift */; };
+		0E214C4B2C24DC7F00B05F82 /* SFIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C4A2C24DC7B00B05F82 /* SFIcon.swift */; };
 		0E229CD62B8C45EA0065AB31 /* CodyChoraliersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */; };
 		0E25149F2C1B87B300D94EA1 /* CapCityTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */; };
 		0E2514A22C1CE17700D94EA1 /* SOTRTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */; };
@@ -175,6 +186,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0E214C3A2C2355C500B05F82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EDBF74C2B8B7AC500A313D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E214C2B2C2355C300B05F82;
+			remoteInfo = "Wrist Pipe WidgetsExtension";
+		};
 		0EDBF75A2B8B7AC500A313D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0EDBF74C2B8B7AC500A313D8 /* Project object */;
@@ -185,6 +203,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0E214C3D2C2355C500B05F82 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E214C3C2C2355C500B05F82 /* Wrist Pipe WidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EDBF76B2B8B7AC600A313D8 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +284,18 @@
 		0E117AAB2BB28167009B0B2A /* AddSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSong.swift; sourceTree = "<group>"; };
 		0E117AAC2BB28167009B0B2A /* SetList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetList.swift; sourceTree = "<group>"; };
 		0E117AAD2BB28167009B0B2A /* SetListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetListItem.swift; sourceTree = "<group>"; };
+		0E214C2C2C2355C300B05F82 /* Wrist Pipe WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wrist Pipe WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E214C2E2C2355C300B05F82 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0E214C302C2355C300B05F82 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0E214C332C2355C300B05F82 /* Wrist_Pipe_Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrist_Pipe_Widgets.swift; sourceTree = "<group>"; };
+		0E214C352C2355C300B05F82 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		0E214C372C2355C500B05F82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E214C392C2355C500B05F82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E214C412C23B28400B05F82 /* LaunchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchWidget.swift; sourceTree = "<group>"; };
+		0E214C442C24DBA800B05F82 /* CircularLaunchWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLaunchWidgetView.swift; sourceTree = "<group>"; };
+		0E214C462C24DBE500B05F82 /* RectangularLaunchWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularLaunchWidgetView.swift; sourceTree = "<group>"; };
+		0E214C482C24DC3400B05F82 /* CornerLaunchWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerLaunchWidgetView.swift; sourceTree = "<group>"; };
+		0E214C4A2C24DC7B00B05F82 /* SFIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFIcon.swift; sourceTree = "<group>"; };
 		0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChoraliersTheme.swift; sourceTree = "<group>"; };
 		0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapCityTheme.swift; sourceTree = "<group>"; };
 		0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTRTheme.swift; sourceTree = "<group>"; };
@@ -368,6 +409,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0E214C292C2355C300B05F82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E214C312C2355C300B05F82 /* SwiftUI.framework in Frameworks */,
+				0E214C2F2C2355C300B05F82 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EDBF7552B8B7AC500A313D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -481,6 +531,39 @@
 				0E117A942BB27DD8009B0B2A /* Trumpet_GNatural.mp3 */,
 			);
 			path = Trumpet;
+			sourceTree = "<group>";
+		};
+		0E214C2D2C2355C300B05F82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E214C2E2C2355C300B05F82 /* WidgetKit.framework */,
+				0E214C302C2355C300B05F82 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E214C322C2355C300B05F82 /* Wrist Pipe Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				0E214C4A2C24DC7B00B05F82 /* SFIcon.swift */,
+				0E214C432C24C0C300B05F82 /* Launch */,
+				0E214C332C2355C300B05F82 /* Wrist_Pipe_Widgets.swift */,
+				0E214C352C2355C300B05F82 /* AppIntent.swift */,
+				0E214C372C2355C500B05F82 /* Assets.xcassets */,
+				0E214C392C2355C500B05F82 /* Info.plist */,
+			);
+			path = "Wrist Pipe Widgets";
+			sourceTree = "<group>";
+		};
+		0E214C432C24C0C300B05F82 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				0E214C482C24DC3400B05F82 /* CornerLaunchWidgetView.swift */,
+				0E214C462C24DBE500B05F82 /* RectangularLaunchWidgetView.swift */,
+				0E214C442C24DBA800B05F82 /* CircularLaunchWidgetView.swift */,
+				0E214C412C23B28400B05F82 /* LaunchWidget.swift */,
+			);
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		0E229CD72B8C460C0065AB31 /* BHS */ = {
@@ -693,6 +776,8 @@
 			isa = PBXGroup;
 			children = (
 				0EDBF75C2B8B7AC500A313D8 /* Wrist Pipe Watch App */,
+				0E214C322C2355C300B05F82 /* Wrist Pipe Widgets */,
+				0E214C2D2C2355C300B05F82 /* Frameworks */,
 				0EDBF7532B8B7AC500A313D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -702,6 +787,7 @@
 			children = (
 				0EDBF7522B8B7AC500A313D8 /* Wrist Pipe.app */,
 				0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */,
+				0E214C2C2C2355C300B05F82 /* Wrist Pipe WidgetsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -833,6 +919,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0E214C2B2C2355C300B05F82 /* Wrist Pipe WidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E214C402C2355C500B05F82 /* Build configuration list for PBXNativeTarget "Wrist Pipe WidgetsExtension" */;
+			buildPhases = (
+				0E214C282C2355C300B05F82 /* Sources */,
+				0E214C292C2355C300B05F82 /* Frameworks */,
+				0E214C2A2C2355C300B05F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wrist Pipe WidgetsExtension";
+			productName = "Wrist Pipe WidgetsExtension";
+			productReference = 0E214C2C2C2355C300B05F82 /* Wrist Pipe WidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		0EDBF7512B8B7AC500A313D8 /* Wrist Pipe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EDBF76C2B8B7AC600A313D8 /* Build configuration list for PBXNativeTarget "Wrist Pipe" */;
@@ -857,10 +960,12 @@
 				0EDBF7542B8B7AC500A313D8 /* Sources */,
 				0EDBF7552B8B7AC500A313D8 /* Frameworks */,
 				0EDBF7562B8B7AC500A313D8 /* Resources */,
+				0E214C3D2C2355C500B05F82 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E214C3B2C2355C500B05F82 /* PBXTargetDependency */,
 			);
 			name = "Wrist Pipe Watch App";
 			productName = "WristPipe2 Watch App";
@@ -874,9 +979,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					0E214C2B2C2355C300B05F82 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					0EDBF7512B8B7AC500A313D8 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -900,11 +1008,20 @@
 			targets = (
 				0EDBF7512B8B7AC500A313D8 /* Wrist Pipe */,
 				0EDBF7572B8B7AC500A313D8 /* Wrist Pipe Watch App */,
+				0E214C2B2C2355C300B05F82 /* Wrist Pipe WidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0E214C2A2C2355C300B05F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E214C382C2355C500B05F82 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EDBF7502B8B7AC500A313D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -984,6 +1101,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0E214C282C2355C300B05F82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E214C492C24DC3700B05F82 /* CornerLaunchWidgetView.swift in Sources */,
+				0E214C422C23B28700B05F82 /* LaunchWidget.swift in Sources */,
+				0E214C4B2C24DC7F00B05F82 /* SFIcon.swift in Sources */,
+				0E214C452C24DBB000B05F82 /* CircularLaunchWidgetView.swift in Sources */,
+				0E214C472C24DBE700B05F82 /* RectangularLaunchWidgetView.swift in Sources */,
+				0E214C342C2355C300B05F82 /* Wrist_Pipe_Widgets.swift in Sources */,
+				0E214C362C2355C300B05F82 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0EDBF7542B8B7AC500A313D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1096,6 +1227,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0E214C3B2C2355C500B05F82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E214C2B2C2355C300B05F82 /* Wrist Pipe WidgetsExtension */;
+			targetProxy = 0E214C3A2C2355C500B05F82 /* PBXContainerItemProxy */;
+		};
 		0EDBF75B2B8B7AC500A313D8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0EDBF7572B8B7AC500A313D8 /* Wrist Pipe Watch App */;
@@ -1104,6 +1240,67 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0E214C3E2C2355C500B05F82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26333RDE2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.Wrist-Pipe-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		0E214C3F2C2355C500B05F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 26333RDE2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe Widgets";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.Wrist-Pipe-Widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		0EDBF7662B8B7AC600A313D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1315,6 +1512,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0E214C402C2355C500B05F82 /* Build configuration list for PBXNativeTarget "Wrist Pipe WidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E214C3E2C2355C500B05F82 /* Debug */,
+				0E214C3F2C2355C500B05F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0EDBF74F2B8B7AC500A313D8 /* Build configuration list for PBXProject "Wrist Pipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
