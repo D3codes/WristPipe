@@ -56,6 +56,7 @@ let CSDThemes: [any Theme] = [
     LittleAppleTheme(),             //1305
     HOATheme(),                     //1306
     PathfinderTheme(),              //1307
+    VisionsTheme(),                 //1308
 ]
 
 //1400-1499
@@ -65,6 +66,7 @@ let EVGThemes: [any Theme] = [
     BoiseChordsTheme(),             //1402
     NWSoundTheme(),                 //1403
     SenateAiresTheme(),             //1404
+    TVSTheme(),                     //1405
 ]
 
 //1500-1599
@@ -73,6 +75,7 @@ let FWDThemes: [any Theme] = [
     FogCityTheme(),                 //1501
     MOHTheme(),                     //1502
     PCHTheme(),                     //1503
+    SWVATheme(),                    //1504
 ]
 
 //1600-1699
@@ -104,6 +107,7 @@ let MADThemes: [any Theme] = [
     ParksideTheme(),                //1900
     AlexandriaHarmonizersTheme(),   //1901
     VOGTheme(),                     //1902
+    EastCoastTheme(),               //1903
 ]
 
 //2000-2099
@@ -112,6 +116,7 @@ let NEDThemes: [any Theme] = [
     VocaMotionTheme(),              //2001
     VoicesUnitedTheme(),            //2002
     NBCTheme(),                     //2003
+    CCSTheme(),                     //2004
 ]
 
 //2100-2199
@@ -119,6 +124,8 @@ let ONTThemes: [any Theme] = [
     HarmonyLeagueTheme(),           //2100
     GOHTheme(),                     //2101
     CCCTheme(),                     //2102
+    HarbourtownTheme(),             //2103
+    TNLTheme(),                     //2104
 ]
 
 //2200-2299
@@ -149,6 +156,7 @@ let SHDThemes: [any Theme] = [
     SOTNTheme(),                    //2502
     RSVPTheme(),                    //2503
     MusicCityTheme(),               //2504
+    SMCTheme(),                     //2505
 ]
 
 //2600-2699
@@ -159,6 +167,7 @@ let SWDThemes: [any Theme] = [
     VSOOTheme(),                    //2603
     MarcsmenTheme(),                //2604
     VocalMajorityTheme(),           //2605
+    SBSWTheme(),                    //2606
 ]
 
 //2700-2799
