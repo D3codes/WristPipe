@@ -51,7 +51,7 @@ struct BOCTheme: Theme {
         .clear
     ]
     var pitchTextUnselectedColor: Color = .white
-    var pitchUnselectedOpacity: Double = 1.0
+    var pitchUnselectedOpacity: Double = 1
 
     var pitchBackgroundSelectedColor: [Color] = [
         .white,

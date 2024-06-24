@@ -67,7 +67,7 @@ struct AcaFedTheme: Theme {
         .white,
         .white
     ]
-    var pitchTextSelectedColor: Color = .black
+    var pitchTextSelectedColor: Color = Color(red: 0.251, green: 0.118, blue: 0.424)
     var pitchSelectedOpacity: Double = 1.0
     
     var logo: Image? = Image("acafed_logo")

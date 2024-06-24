@@ -37,38 +37,38 @@ struct VoicesUnitedTheme: Theme {
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
     ]
     var pitchTextUnselectedColor: Color = .black
     var pitchUnselectedOpacity: Double = 1
     
     var pitchBackgroundSelectedColor: [Color] = [
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545),
+        Color(red: 0.365, green: 0.180, blue:0.545)
     ]
     var pitchTextSelectedColor: Color = .white
-    var pitchSelectedOpacity: Double = 0.7
+    var pitchSelectedOpacity: Double = 1
     
     var logo: Image? = Image("vu_logo")
     var logoXScale: Double = 5

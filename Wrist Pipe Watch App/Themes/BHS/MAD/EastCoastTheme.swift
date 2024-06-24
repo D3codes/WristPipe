@@ -54,20 +54,20 @@ struct EastCoastTheme: Theme {
     var pitchUnselectedOpacity: Double = 1
     
     var pitchBackgroundSelectedColor: [Color] = [
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
     ]
-    var pitchTextSelectedColor: Color = .black
+    var pitchTextSelectedColor: Color = Color(red: 0.004, green: 0.094, blue: 0.447)
     var pitchSelectedOpacity: Double = 1
     
     var logo: Image? = Image("eastcoast_logo")

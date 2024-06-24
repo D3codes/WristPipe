@@ -36,8 +36,8 @@ struct ThoroughbredTheme: Theme {
         Color(red: 0.91, green: 0.89, blue: 0.81)
     ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
-    var pitchTextUnselectedColor: Color = .brown
+    var pitchBackgroundUnselectedColor: [Color] = [.brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown]
+    var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 0.9
     
     var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]

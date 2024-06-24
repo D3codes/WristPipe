@@ -37,18 +37,18 @@ struct NBCTheme: Theme {
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
     ]
     var pitchTextUnselectedColor: Color = .black
     var pitchUnselectedOpacity: Double = 1

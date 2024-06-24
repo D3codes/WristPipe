@@ -53,17 +53,17 @@ struct PrismTheme: Theme {
 
     var pitchBackgroundSelectedColor: [Color] = [
         .white,
+        .red,
+        .yellow,
+        .green,
+        .blue,
+        .purple,
         .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white
+        .red,
+        .yellow,
+        .green,
+        .blue,
+        .purple
     ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0

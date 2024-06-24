@@ -54,21 +54,21 @@ struct VOGTheme: Theme {
     var pitchUnselectedOpacity: Double = 1
     
     var pitchBackgroundSelectedColor: [Color] = [
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray,
-        .gray
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
     ]
     var pitchTextSelectedColor: Color = Color(red: 0.000, green: 0.361, blue: 0.671)
-    var pitchSelectedOpacity: Double = 0.8
+    var pitchSelectedOpacity: Double = 1
     
     var logo: Image? = Image("VOG_logo")
     var logoXScale: Double = 0
