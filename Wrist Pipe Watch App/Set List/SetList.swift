@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import TipKit
 
 struct SetList: View {
     @AppStorage(UserDefaultsKeys().holdToPlay) private var holdToPlay = true
@@ -30,22 +29,9 @@ struct SetList: View {
                 List {
                     ForEach(self.setListItems, id: \.self) { listItem in
                         if(editMode) {
-                            HStack {
-                                Text(listItem.name)
-                                Spacer()
-                                Image(systemName: "line.3.horizontal")
-                            }
-                            .contentShape(Rectangle())
+                            SetListItemEditView(name: listItem.name)
                         } else {
-                            HStack {
-                                Text(listItem.name)
-                                Spacer()
-                                Group {
-                                    Divider()
-                                    Text(listItem.key).frame(width: 25.0)
-                                }
-                            }
-                            .contentShape(Rectangle())
+                            SetListItemView(name: listItem.name, key: listItem.key)
                             .onLongPressGesture(minimumDuration: 15) {
                             } onPressingChanged: { inProgress in
                                 if inProgress {
@@ -59,8 +45,7 @@ struct SetList: View {
                     .onDelete(perform: self.deleteRow)
                     .onMove { from, to in self.moveRow(from: from, to: to) }
                 }
-            }
-            else {
+            } else {
                 NavigationLink(destination: AddSong(setList: $setListItems)) {
                     HStack{
                         Image(systemName: "plus")
@@ -100,14 +85,15 @@ struct SetList: View {
     
     private func moveRow(from: IndexSet, to: Int) {
         self.setListItems.move(fromOffsets: from, toOffset: to)
-        if let encoded = try? JSONEncoder().encode(setListItems) {
-            self.defaults.set(encoded, forKey: UserDefaultsKeys().setList)
-            self.defaults.synchronize()
-        }
+        saveSetList()
     }
     
     private func deleteRow(at indexSet: IndexSet) {
         self.setListItems.remove(atOffsets: indexSet)
+        saveSetList()
+    }
+    
+    private func saveSetList() {
         if let encoded = try? JSONEncoder().encode(setListItems) {
             self.defaults.set(encoded, forKey: UserDefaultsKeys().setList)
             self.defaults.synchronize()
@@ -118,6 +104,6 @@ struct SetList: View {
 #Preview {
     SetList(setListItems: [
         SetListItem(name: "Tonight", key: "G", fileName: "GNatural"),
-        SetListItem(name: "Tonight", key: "G", fileName: "GNatural")
+        SetListItem(name: "Wild Irish Rose", key: "B♭", fileName: "BFlat")
     ])
 }

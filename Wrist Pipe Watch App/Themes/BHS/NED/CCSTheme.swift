@@ -71,7 +71,7 @@ struct CCSTheme: Theme {
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1
     
-    var logo: Image? = Image("ccs_logo")
+    var logo: Image? = Image("cod_logo")
     var logoXScale: Double = 0
     var logoYScale: Double = 0
 }
