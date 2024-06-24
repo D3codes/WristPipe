@@ -182,6 +182,7 @@ let SUNThemes: [any Theme] = [
 let CauseThemes: [any Theme] = [
     UnityTheme(),           //3000
     PrideTheme(),           //3001
+    TransTheme(),           //3002
 ]
 
 let Themes: [any Theme] = ColorThemes + BHSThemes + CauseThemes

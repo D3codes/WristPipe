@@ -83,6 +83,7 @@
 		0E214C592C287F7B00B05F82 /* TNLTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C582C287F7B00B05F82 /* TNLTheme.swift */; };
 		0E214C5B2C28825F00B05F82 /* SMCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C5A2C28825F00B05F82 /* SMCTheme.swift */; };
 		0E214C5D2C2885AC00B05F82 /* SBSWTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C5C2C2885AC00B05F82 /* SBSWTheme.swift */; };
+		0E214C5F2C28F69100B05F82 /* TransTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C5E2C28F69100B05F82 /* TransTheme.swift */; };
 		0E229CD62B8C45EA0065AB31 /* CodyChoraliersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */; };
 		0E25149F2C1B87B300D94EA1 /* CapCityTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */; };
 		0E2514A22C1CE17700D94EA1 /* SOTRTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */; };
@@ -314,6 +315,7 @@
 		0E214C582C287F7B00B05F82 /* TNLTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TNLTheme.swift; sourceTree = "<group>"; };
 		0E214C5A2C28825F00B05F82 /* SMCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMCTheme.swift; sourceTree = "<group>"; };
 		0E214C5C2C2885AC00B05F82 /* SBSWTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBSWTheme.swift; sourceTree = "<group>"; };
+		0E214C5E2C28F69100B05F82 /* TransTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransTheme.swift; sourceTree = "<group>"; };
 		0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodyChoraliersTheme.swift; sourceTree = "<group>"; };
 		0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapCityTheme.swift; sourceTree = "<group>"; };
 		0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOTRTheme.swift; sourceTree = "<group>"; };
@@ -939,6 +941,7 @@
 			children = (
 				0EF7C1362B8C66670031AD78 /* UnityTheme.swift */,
 				0EF7C13A2B8D15B80031AD78 /* PrideTheme.swift */,
+				0E214C5E2C28F69100B05F82 /* TransTheme.swift */,
 			);
 			path = Causes;
 			sourceTree = "<group>";
@@ -1232,6 +1235,7 @@
 				0EC171F52BB4B6F3004908E0 /* PCHTheme.swift in Sources */,
 				0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */,
 				0E2514D12C21480500D94EA1 /* HOHTheme.swift in Sources */,
+				0E214C5F2C28F69100B05F82 /* TransTheme.swift in Sources */,
 				0E2514AB2C20EA8200D94EA1 /* HarmColTheme.swift in Sources */,
 				0E3FAB382BB6154E00265CA2 /* GPHTheme.swift in Sources */,
 				0E2514C62C213C7800D94EA1 /* MarcsmenTheme.swift in Sources */,

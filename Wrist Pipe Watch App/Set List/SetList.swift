@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct SetList: View {
     @AppStorage(UserDefaultsKeys().holdToPlay) private var holdToPlay = true

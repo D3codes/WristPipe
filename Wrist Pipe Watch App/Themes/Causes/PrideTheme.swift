@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PrideTheme: Theme {
     var id: Int = 3001
-    var name: String = "Pride"
+    var name: String = "Stonewall"
     
     func getBackground() -> any View {
         return AnyView(Spacer())
