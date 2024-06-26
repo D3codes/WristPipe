@@ -72,9 +72,10 @@ struct SetList: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: { editMode.toggle() }, label: {
                         editMode
-                        ? Text(" Done ")
-                        : Text("  Edit  ")
+                        ? Image(systemName: "checkmark")
+                        : Image(systemName: "arrow.up.arrow.down")
                     })
+                    .contentTransition(.symbolEffect(.replace))
                     .padding()
                     .foregroundStyle(Color.white)
                 }

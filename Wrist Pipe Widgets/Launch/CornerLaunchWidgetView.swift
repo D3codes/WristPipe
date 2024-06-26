@@ -17,7 +17,13 @@ struct CornerLaunchWidgetView: View {
                 .resizable()
                 .scaledToFit()
         } else {
-            SFIcon(scale: 5.0)
+            ZStack {
+                Circle()
+                    .opacity(0.15)
+                Image("wpicon_xs_tint")
+                    .resizable()
+                    .scaledToFit()
+            }
         }
     }
 }

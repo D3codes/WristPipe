@@ -17,7 +17,13 @@ struct CircularLaunchWidgetView: View {
                 .resizable()
                 .scaledToFit()
         } else {
-            SFIcon(scale: 0)
+            ZStack {
+                Circle()
+                    .opacity(0.15)
+                Image("wpicon_sm_tint")
+                    .resizable()
+                    .scaledToFit()
+            }
         }
     }
 }
