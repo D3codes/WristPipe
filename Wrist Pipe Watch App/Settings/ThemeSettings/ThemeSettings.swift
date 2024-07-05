@@ -14,12 +14,21 @@ struct ThemeSettings: View {
         List {
             NavigationLink { ThemeList(themes: ColorThemes, path: $path) } label: {
                 Text("Colors")
+                    .frame(minWidth: 120, alignment: .leading)
+                Spacer()
+                Image(systemName: "chevron.right")
             }
             NavigationLink { BHSThemesList(path: $path) } label: {
                 Text("Barbershop Harmony Society")
+                    .frame(minWidth: 120, alignment: .leading)
+                Spacer()
+                Image(systemName: "chevron.right")
             }
             NavigationLink { ThemeList(themes: CauseThemes, path: $path) } label: {
                 Text("Causes")
+                    .frame(minWidth: 120, alignment: .leading)
+                Spacer()
+                Image(systemName: "chevron.right")
             }
         }
     }

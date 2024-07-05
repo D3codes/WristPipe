@@ -26,8 +26,8 @@ struct BHSTheme: Theme {
     var pitchUnselectedOpacity: Double = 0.8
 
     var pitchBackgroundSelectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
-    var pitchTextSelectedColor: Color = .black
-    var pitchSelectedOpacity: Double = 0.5
+    var pitchTextSelectedColor: Color = .white
+    var pitchSelectedOpacity: Double = 0.8
     
     var logo: Image? = Image("BHSlogo")
     var logoXScale: Double = 5
