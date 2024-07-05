@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ThemeSettings: View {
+    @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
     @Binding var path: [Int]
     
     var body: some View {
@@ -31,6 +32,17 @@ struct ThemeSettings: View {
                 Image(systemName: "chevron.right")
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    selectedTheme = Themes[Int.random(in: 0..<Themes.count)].id
+                    path.removeAll()
+                } label: {
+                    Image(systemName: "shuffle")
+                        .foregroundStyle(Color.white)
+                }
+            }
+        }
     }
 }
 
@@ -39,7 +51,9 @@ struct ThemeSettings: View {
         @State var path = [Int]()
         
         var body: some View {
-            ThemeSettings(path: $path)
+            NavigationView {
+                ThemeSettings(path: $path)
+            }
         }
     }
     

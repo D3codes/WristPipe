@@ -23,12 +23,39 @@ struct GreatRiverVoicesTheme: Theme {
     var selectorTextColor: Color = .black
     var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
-    var pitchTextUnselectedColor: Color = .black
-    var pitchUnselectedOpacity: Double = 0.7
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
+    var pitchTextUnselectedColor: Color = .white
+    var pitchUnselectedOpacity: Double = 1
+    
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
-    var pitchSelectedOpacity: Double = 0.9
+    var pitchSelectedOpacity: Double = 0.8
     
     var logo: Image? = Image("GRV_logo")
     var logoXScale: Double = 5.0
