@@ -126,7 +126,7 @@ struct PitchPipe: View {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    NavigationLink { SetList() } label: {
+                    NavigationLink { SetListList() } label: {
                         Image(systemName: "music.note.list")
                             .foregroundStyle(Color.white)
                     }

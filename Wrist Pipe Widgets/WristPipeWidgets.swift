@@ -1,5 +1,5 @@
 //
-//  Wrist_Pipe_Widgets.swift
+//  WristPipeWidgets.swift
 //  Wrist Pipe Widgets
 //
 //  Created by David Freeman on 6/19/24.

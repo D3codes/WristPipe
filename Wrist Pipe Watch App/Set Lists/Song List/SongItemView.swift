@@ -1,5 +1,5 @@
 //
-//  SetListItemView.swift
+//  SongItemView.swift
 //  Wrist Pipe
 //
 //  Created by David Freeman on 6/23/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SetListItemView: View {
+struct SongItemView: View {
     var name: String
     var key: String
     
@@ -24,7 +24,7 @@ struct SetListItemView: View {
     }
 }
 
-struct SetListItemEditView: View {
+struct SongItemEditView: View {
     var name: String
     
     var body: some View {

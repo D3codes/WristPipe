@@ -10,7 +10,8 @@ import SwiftUI
 
 struct AddSong: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    @Binding var setList: [SetListItem]
+    @State var setListId: UUID
+    @Binding var setList: [Song]
     @State private var title: String = ""
     @State private var selectedPitch: Pitch = PitchPlayer().pitches[0]
     let defaults = UserDefaults.standard
@@ -32,9 +33,9 @@ struct AddSong: View {
             .frame(height: 30)
             Spacer()
             Button(action: {
-                setList.append(SetListItem(name: title, key: selectedPitch.note, fileName: selectedPitch.fileName))
+                setList.append(Song(name: title, key: selectedPitch.note, fileName: selectedPitch.fileName))
                 if let encoded = try? JSONEncoder().encode(setList) {
-                    self.defaults.set(encoded, forKey: UserDefaultsKeys().setList)
+                    self.defaults.set(encoded, forKey: UserDefaultsKeys().setListKey(for: setListId))
                     self.defaults.synchronize()
                 }
                 
@@ -51,10 +52,10 @@ struct AddSong: View {
 
 #Preview {
     struct AddSong_Preview: View {
-        @State var setList = [SetListItem]()
+        @State var setList = [Song]()
         
         var body: some View {
-            AddSong(setList: $setList)
+            AddSong(setListId: UUID(), setList: $setList)
         }
     }
     

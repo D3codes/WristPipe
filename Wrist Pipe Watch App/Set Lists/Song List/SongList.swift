@@ -1,5 +1,5 @@
 //
-//  SetList.swift
+//  SongList.swift
 //  Wrist Pipe WatchKit Extension
 //
 //  Created by David Freeman on 11/7/21.
@@ -8,34 +8,36 @@
 
 import SwiftUI
 
-struct SetList: View {
+struct SongList: View {
     @AppStorage(UserDefaultsKeys().holdToPlay) private var holdToPlay = true
-    @State var setListItems: [SetListItem] = []
+    @State var setListId: UUID
+    @State var setListName: String
+    @State var songs: [Song] = []
     let defaults = UserDefaults.standard
     let pitchPlayer = PitchPlayer()
     
     @State var editMode: Bool = false
     
     func getSetList() {
-        if let data = defaults.object(forKey: UserDefaultsKeys().setList) as? Data,
-        let items = try? JSONDecoder().decode([SetListItem].self, from: data) {
-            self.setListItems = items
+        if let data = defaults.object(forKey: UserDefaultsKeys().setListKey(for: setListId)) as? Data,
+        let items = try? JSONDecoder().decode([Song].self, from: data) {
+            self.songs = items
         }
     }
     
     var body: some View {
         VStack {
-            if(!self.setListItems.isEmpty) {
+            if(!self.songs.isEmpty) {
                 List {
-                    ForEach(self.setListItems, id: \.self) { listItem in
+                    ForEach(self.songs, id: \.self) { song in
                         if(editMode) {
-                            SetListItemEditView(name: listItem.name)
+                            SongItemEditView(name: song.name)
                         } else {
-                            SetListItemView(name: listItem.name, key: listItem.key)
+                            SongItemView(name: song.name, key: song.key)
                             .onLongPressGesture(minimumDuration: 15) {
                             } onPressingChanged: { inProgress in
                                 if inProgress {
-                                    pitchPlayer.playPitch(selectedPitch: listItem.fileName)
+                                    pitchPlayer.playPitch(selectedPitch: song.fileName)
                                 } else if holdToPlay {
                                     pitchPlayer.stopPlaying()
                                 }
@@ -46,7 +48,7 @@ struct SetList: View {
                     .onMove { from, to in self.moveRow(from: from, to: to) }
                 }
             } else {
-                NavigationLink(destination: AddSong(setList: $setListItems)) {
+                NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
                     HStack{
                         Image(systemName: "plus")
                         Text("Add Song")
@@ -54,10 +56,12 @@ struct SetList: View {
                 }
             }
         }
+        .navigationBarTitleDisplayMode(.large)
+        .navigationTitle(setListName)
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
-                if(!self.setListItems.isEmpty && !editMode) {
-                    NavigationLink(destination: AddSong(setList: $setListItems)) {
+                if(!self.songs.isEmpty && !editMode) {
+                    NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
                         HStack{
                             Image(systemName: "plus")
                             Text("Add Song")
@@ -68,7 +72,7 @@ struct SetList: View {
                 }
             }
             
-            if(self.setListItems.count > 1) {
+            if(self.songs.count > 1) {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button(action: { editMode.toggle() }, label: {
                         editMode
@@ -85,26 +89,29 @@ struct SetList: View {
     }
     
     private func moveRow(from: IndexSet, to: Int) {
-        self.setListItems.move(fromOffsets: from, toOffset: to)
+        self.songs.move(fromOffsets: from, toOffset: to)
         saveSetList()
     }
     
     private func deleteRow(at indexSet: IndexSet) {
-        self.setListItems.remove(atOffsets: indexSet)
+        self.songs.remove(atOffsets: indexSet)
         saveSetList()
     }
     
     private func saveSetList() {
-        if let encoded = try? JSONEncoder().encode(setListItems) {
-            self.defaults.set(encoded, forKey: UserDefaultsKeys().setList)
+        if let encoded = try? JSONEncoder().encode(songs) {
+            self.defaults.set(encoded, forKey: UserDefaultsKeys().setListKey(for: setListId))
             self.defaults.synchronize()
         }
     }
 }
 
 #Preview {
-    SetList(setListItems: [
-        SetListItem(name: "Tonight", key: "G", fileName: "GNatural"),
-        SetListItem(name: "Wild Irish Rose", key: "B♭", fileName: "BFlat")
-    ])
+    NavigationView {
+        SongList(setListId: UUID(), setListName: "Test Set List",
+                 songs: [
+                    Song(name: "Tonight", key: "G", fileName: "GNatural"),
+                    Song(name: "Wild Irish Rose", key: "B♭", fileName: "BFlat")
+                ])
+    }
 }

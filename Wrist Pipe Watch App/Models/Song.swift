@@ -1,5 +1,5 @@
 //
-//  SetListItem.swift
+//  Song.swift
 //  Wrist Pipe WatchKit Extension
 //
 //  Created by David Freeman on 11/7/21.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct SetListItem: Identifiable, Hashable, Encodable, Decodable {
+struct Song: Identifiable, Hashable, Encodable, Decodable {
     var id = UUID()
     let name: String
     let key: String
