@@ -20,8 +20,13 @@ struct HoldToPlaySettings: View {
             .buttonBorderShape(.roundedRectangle)
             .padding(.bottom)
             
-            Text("You can hold the center button to play a pitch. The pitch will stop playing when you release the center button.")
-                .font(.footnote)
+            if(holdToPlay) {
+                Text("You can hold the center button to play a pitch. The pitch will stop playing when you release the center button.")
+                    .font(.footnote)
+            } else {
+                Text("You can tap the center button to play a pitch. Tap the center button again to stop playing.")
+                    .font(.footnote)
+            }
             
             Spacer()
         }
@@ -29,5 +34,7 @@ struct HoldToPlaySettings: View {
 }
 
 #Preview {
-    HoldToPlaySettings()
+    NavigationView {
+        HoldToPlaySettings()
+    }
 }
