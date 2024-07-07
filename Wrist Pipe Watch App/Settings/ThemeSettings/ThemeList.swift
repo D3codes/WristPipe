@@ -14,10 +14,7 @@ struct ThemeList: View {
     
     var body: some View {
         List(themes.sorted(by: { $0.name < $1.name }), id:\.self.id) { theme in
-            Button(action: {
-                selectedTheme = theme.id
-                path.removeAll()
-            }, label: {
+            NavigationLink { ThemePreview(theme: theme, path: $path) } label: {
                 HStack {
                     Text("\(theme.name)")
                     Spacer()
@@ -25,7 +22,7 @@ struct ThemeList: View {
                         Image(systemName: "checkmark")
                     }
                 }
-            })
+            }
         }
     }
 }

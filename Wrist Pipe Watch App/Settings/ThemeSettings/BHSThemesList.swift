@@ -14,40 +14,24 @@ struct BHSThemesList: View {
     var body: some View {
         List {
             Section() {
-                Button(action: {
-                    selectedTheme = BHSTheme().id
-                    path.removeAll()
-                }, label: {
+                NavigationLink { ThemePreview(theme: BHSTheme(), path: $path) } label: {
                     HStack {
-//                        Image("BHSlogo")
-//                            .resizable()
-//                            .frame(width: 50, height: 50)
-//                            .padding(.vertical)
-//                            .padding(.trailing)
                         Text("BHS")
                         Spacer()
                         if selectedTheme == BHSTheme().id {
                             Image(systemName: "checkmark")
                         }
                     }
-                })
-                Button(action: {
-                    selectedTheme = SPEBSQSATheme().id
-                    path.removeAll()
-                }, label: {
+                }
+                NavigationLink { ThemePreview(theme: SPEBSQSATheme(), path: $path) } label: {
                     HStack {
-//                        Image("SPEBSQSAlogo")
-//                            .resizable()
-//                            .frame(width: 50, height: 50)
-//                            .padding(.vertical)
-//                            .padding(.trailing)
                         Text("SPEBSQSA")
                         Spacer()
                         if selectedTheme == SPEBSQSATheme().id {
                             Image(systemName: "checkmark")
                         }
                     }
-                })
+                }
             }
             Section(header: Text("Districts")) {                
                 NavigationLink { ThemeList(themes: CARThemes, path: $path) } label: {

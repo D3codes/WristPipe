@@ -36,6 +36,9 @@ class Screen {
         198.0 : 38.0, //45mm
         205.0 : 40.0, //49mm
     ]
+    func getPitchSize() -> Double {
+        return pitchSize[screenWidth]!
+    }
     
     let pitchSelectorSize = [
         136.0 : 80.0, //38mm
@@ -46,6 +49,9 @@ class Screen {
         198.0 : 80.0, //45mm
         205.0 : 80.0, //49mm
     ]
+    func getPitchSelectorSize() -> Double {
+        return pitchSelectorSize[screenWidth]!
+    }
     
     let pitchPointerSize = [
         136.0 : 15.0, //38mm
@@ -56,17 +62,21 @@ class Screen {
         198.0 : 45.0, //45mm
         205.0 : 49.0, //49mm
     ]
-    
-    func getPitchSize() -> Double {
-        return pitchSize[screenWidth]!
-    }
-    
-    func getPitchSelectorSize() -> Double {
-        return pitchSelectorSize[screenWidth]!
-    }
-    
     func getPitchPointerSize() -> Double {
         return pitchPointerSize[screenWidth]!
+    }
+    
+    let saveButtonOffset = [
+        136.0 : 90.0,  //38mm
+        156.0 : 90.0,  //42mm
+        162.0 : 90.0,  //40mm
+        184.0 : 100.0, //44mm
+        176.0 : 100.0, //41mm
+        198.0 : 110.0, //45mm
+        205.0 : 110.0, //49mm
+    ]
+    func getSaveButtonOffset() -> Double {
+        return saveButtonOffset[screenWidth]!
     }
     
     func isSeries3() -> Bool {

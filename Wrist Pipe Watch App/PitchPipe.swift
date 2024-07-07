@@ -37,9 +37,7 @@ struct PitchPipe: View {
             .onChange(of: selectedTheme, { _,newTheme in
                 theme = Themes.first(where: { $0.id == newTheme }) ?? Themes[0]
             })
-            .onChange(of: selectedPitch, { _,newVal in
-                // needed for some reason
-            })
+            .onChange(of: selectedPitch, { _,newVal in }) //needed for some reason
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(value: 1, label: {

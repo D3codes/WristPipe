@@ -112,6 +112,7 @@
 		0E3486CE2C39A611009D682A /* SetListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3486CD2C39A611009D682A /* SetListItemView.swift */; };
 		0E3486D22C3A003D009D682A /* PitchRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3486D12C3A003B009D682A /* PitchRing.swift */; };
 		0E3486D42C3A03BE009D682A /* PitchSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3486D32C3A03BB009D682A /* PitchSelector.swift */; };
+		0E3486D62C3A202C009D682A /* ThemePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3486D52C3A2029009D682A /* ThemePreview.swift */; };
 		0E3FAB302BB5FB3C00265CA2 /* MVETheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB2F2BB5FB3C00265CA2 /* MVETheme.swift */; };
 		0E3FAB322BB5FC9600265CA2 /* ForwardHarmonyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB312BB5FC9600265CA2 /* ForwardHarmonyTheme.swift */; };
 		0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB332BB600D000265CA2 /* GNUTheme.swift */; };
@@ -351,6 +352,7 @@
 		0E3486CD2C39A611009D682A /* SetListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListItemView.swift; sourceTree = "<group>"; };
 		0E3486D12C3A003B009D682A /* PitchRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchRing.swift; sourceTree = "<group>"; };
 		0E3486D32C3A03BB009D682A /* PitchSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchSelector.swift; sourceTree = "<group>"; };
+		0E3486D52C3A2029009D682A /* ThemePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePreview.swift; sourceTree = "<group>"; };
 		0E3FAB2F2BB5FB3C00265CA2 /* MVETheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVETheme.swift; sourceTree = "<group>"; };
 		0E3FAB312BB5FC9600265CA2 /* ForwardHarmonyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardHarmonyTheme.swift; sourceTree = "<group>"; };
 		0E3FAB332BB600D000265CA2 /* GNUTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNUTheme.swift; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 		0E117A332BB1F9A2009B0B2A /* ThemeSettings */ = {
 			isa = PBXGroup;
 			children = (
+				0E3486D52C3A2029009D682A /* ThemePreview.swift */,
 				0E89E0412B90EF2500FBD605 /* ThemeSettings.swift */,
 				0E117A312BB0F183009B0B2A /* BHSThemesList.swift */,
 				0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */,
@@ -1276,6 +1279,7 @@
 				0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */,
 				0EF0E1FC2BB3E97500B31FFA /* PDXTheme.swift in Sources */,
 				0EF0E1E22BB3881A00B31FFA /* CircleCitySoundTheme.swift in Sources */,
+				0E3486D62C3A202C009D682A /* ThemePreview.swift in Sources */,
 				0EC171F52BB4B6F3004908E0 /* PCHTheme.swift in Sources */,
 				0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */,
 				0E2514D12C21480500D94EA1 /* HOHTheme.swift in Sources */,
