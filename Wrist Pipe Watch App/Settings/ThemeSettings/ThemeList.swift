@@ -18,7 +18,13 @@ struct ThemeList: View {
                 selectedTheme = theme.id
                 path.removeAll()
             }, label: {
-                Text("\(theme.name)")
+                HStack {
+                    Text("\(theme.name)")
+                    Spacer()
+                    if selectedTheme == theme.id {
+                        Image(systemName: "checkmark")
+                    }
+                }
             })
         }
     }

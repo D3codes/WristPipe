@@ -23,7 +23,6 @@ struct VolumeSettings: View {
     
     var body: some View {
         VStack {
-            //Spacer()
             VolumeView()
             Spacer()
             Divider()
@@ -40,5 +39,7 @@ struct VolumeSettings: View {
 }
 
 #Preview {
-    VolumeSettings()
+    NavigationView {
+        VolumeSettings()
+    }
 }

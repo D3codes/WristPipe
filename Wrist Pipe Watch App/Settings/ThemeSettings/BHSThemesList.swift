@@ -25,6 +25,10 @@ struct BHSThemesList: View {
 //                            .padding(.vertical)
 //                            .padding(.trailing)
                         Text("BHS")
+                        Spacer()
+                        if selectedTheme == BHSTheme().id {
+                            Image(systemName: "checkmark")
+                        }
                     }
                 })
                 Button(action: {
@@ -38,6 +42,10 @@ struct BHSThemesList: View {
 //                            .padding(.vertical)
 //                            .padding(.trailing)
                         Text("SPEBSQSA")
+                        Spacer()
+                        if selectedTheme == SPEBSQSATheme().id {
+                            Image(systemName: "checkmark")
+                        }
                     }
                 })
             }
