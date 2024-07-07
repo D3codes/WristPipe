@@ -19,7 +19,7 @@ struct CityLightsTheme: Theme {
             Image("citylights_background")
                 .resizable()
                 .scaledToFill()
-                .frame(maxWidth: .infinity, minHeight: 300, maxHeight: .infinity)
+                .frame(maxWidth: 220, minHeight: 300)
                 .background(CLBlue)
                 .opacity(0.4)
         }
