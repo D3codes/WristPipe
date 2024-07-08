@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ThemeSettings: View {
     @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
+    @AppStorage(UserDefaultsKeys().showImage) private var showImage = true
     @Binding var path: [Int]
     
     var body: some View {
@@ -36,6 +37,7 @@ struct ThemeSettings: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     selectedTheme = Themes[Int.random(in: 0..<Themes.count)].id
+                    showImage = true
                     path.removeAll()
                 } label: {
                     Image(systemName: "shuffle")
