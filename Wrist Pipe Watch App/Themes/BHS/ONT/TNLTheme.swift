@@ -20,7 +20,7 @@ struct TNLTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 1.000, green: 0.835, blue: 0.024)
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = Color(red: 1.000, green: 0.835, blue: 0.024)
     var selectorBackgroundColor: [Color] = [
         .black,
         .black,
@@ -75,8 +75,16 @@ struct TNLTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: TNLTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(TNLTheme().getBackground()))
+#Preview() {
+    struct TNLTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: TNLTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return TNLTheme_Preview()
 }

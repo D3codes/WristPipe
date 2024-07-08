@@ -20,7 +20,7 @@ struct WTCTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.32, green: 0.7, blue: 0.87)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct WTCTheme: Theme {
     var logoYScale: Double = 6
 }
 
-#Preview {
-    PitchPipe(theme: WTCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(WTCTheme().getBackground()))
+#Preview() {
+    struct WTCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: WTCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return WTCTheme_Preview()
 }

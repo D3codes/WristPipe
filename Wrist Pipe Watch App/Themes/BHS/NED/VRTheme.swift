@@ -73,8 +73,16 @@ struct VRTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: VRTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VRTheme().getBackground()))
+#Preview() {
+    struct VRTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VRTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VRTheme_Preview()
 }

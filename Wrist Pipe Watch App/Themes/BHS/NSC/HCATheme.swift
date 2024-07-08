@@ -19,7 +19,20 @@ struct HCATheme: Theme {
     
     var selectorColor: Color = .white
     var selectorTextColor: Color = .black
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
         Color(red: 0.48, green: 0.21, blue: 0.46),
@@ -60,8 +73,16 @@ struct HCATheme: Theme {
     var logoYScale: Double = 5.0
 }
 
-#Preview {
-    PitchPipe(theme: HCATheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(HCATheme().getBackground()))
+#Preview() {
+    struct HCATheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: HCATheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return HCATheme_Preview()
 }

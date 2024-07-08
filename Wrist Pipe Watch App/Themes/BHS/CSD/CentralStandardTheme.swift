@@ -19,13 +19,52 @@ struct CentralStandardTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var selectorBackgroundColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -35,7 +74,15 @@ struct CentralStandardTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: CentralStandardTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CentralStandardTheme().getBackground()))
+    struct CentralStandardTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CentralStandardTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CentralStandardTheme_Preview()
 }

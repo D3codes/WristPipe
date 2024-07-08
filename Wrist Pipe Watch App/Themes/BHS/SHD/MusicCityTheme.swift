@@ -22,7 +22,7 @@ struct MusicCityTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.000, green: 0.000, blue: 0.290)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.000, green: 0.000, blue: 0.290)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -77,8 +77,16 @@ struct MusicCityTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: MusicCityTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(MusicCityTheme().getBackground()))
+#Preview() {
+    struct MusicCityTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: MusicCityTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return MusicCityTheme_Preview()
 }

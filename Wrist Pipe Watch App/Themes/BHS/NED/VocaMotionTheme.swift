@@ -21,7 +21,7 @@ struct VocaMotionTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.251, green: 0.569, blue: 0.980)
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = Color(red: 0.251, green: 0.569, blue: 0.980)
     var selectorBackgroundColor: [Color] = [
         Color(red: 0.059, green: 0.031, blue: 0.302),
         Color(red: 0.059, green: 0.031, blue: 0.302),
@@ -76,8 +76,16 @@ struct VocaMotionTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: VocaMotionTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VocaMotionTheme().getBackground()))
+#Preview() {
+    struct VocaMotionTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VocaMotionTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VocaMotionTheme_Preview()
 }

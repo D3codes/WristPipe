@@ -18,14 +18,53 @@ struct BHSTheme: Theme {
     }
 
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var selectorTextColor: Color = .black
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray
+    ]
     var pitchTextUnselectedColor: Color = .black
     var pitchUnselectedOpacity: Double = 0.8
 
-    var pitchBackgroundSelectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray
+    ]
     var pitchTextSelectedColor: Color = .white
     var pitchSelectedOpacity: Double = 0.8
     
@@ -35,7 +74,15 @@ struct BHSTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: BHSTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(BHSTheme().getBackground()))
+    struct BHSTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: BHSTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return BHSTheme_Preview()
 }

@@ -43,7 +43,7 @@ struct PCHTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.92, green: 0.71, blue: 0.27)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0, green: 0.1, blue: 0.65)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -98,8 +98,16 @@ struct PCHTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: PCHTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(PCHTheme().getBackground()))
+#Preview() {
+    struct PCHTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: PCHTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return PCHTheme_Preview()
 }

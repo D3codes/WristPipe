@@ -19,13 +19,52 @@ struct OrangeTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange, .orange]
+    var selectorBackgroundColor: [Color] = [
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange,
+        .orange
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -35,7 +74,15 @@ struct OrangeTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: OrangeTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(OrangeTheme().getBackground()))
+    struct OrangeTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: OrangeTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return OrangeTheme_Preview()
 }

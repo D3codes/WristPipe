@@ -19,13 +19,52 @@ struct VocalSummitTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var selectorBackgroundColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1
     
@@ -35,7 +74,15 @@ struct VocalSummitTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: VocalSummitTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VocalSummitTheme().getBackground()))
+    struct VocalSummitTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VocalSummitTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VocalSummitTheme_Preview()
 }

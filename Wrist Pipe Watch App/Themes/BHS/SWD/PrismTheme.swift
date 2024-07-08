@@ -73,8 +73,16 @@ struct PrismTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: PrismTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(PrismTheme().getBackground()))
+#Preview() {
+    struct PrismTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: PrismTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return PrismTheme_Preview()
 }

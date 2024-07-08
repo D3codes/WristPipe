@@ -21,7 +21,7 @@ struct SGCTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.29, green: 0.62, blue: 0.31)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.29, green: 0.62, blue: 0.31)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -76,8 +76,16 @@ struct SGCTheme: Theme {
     var logoYScale: Double = -22
 }
 
-#Preview {
-    PitchPipe(theme: SGCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SGCTheme().getBackground()))
+#Preview() {
+    struct SGCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SGCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SGCTheme_Preview()
 }

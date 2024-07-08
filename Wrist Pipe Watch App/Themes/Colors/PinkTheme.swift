@@ -19,13 +19,52 @@ struct PinkTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.pink, .pink, .pink, .pink, .pink, .pink, .pink, .pink, .pink, .pink, .pink, .pink]
+    var selectorBackgroundColor: [Color] = [
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink,
+        .pink
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.8
     
@@ -35,7 +74,15 @@ struct PinkTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: PinkTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(PinkTheme().getBackground()))
+    struct PinkTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: PinkTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return PinkTheme_Preview()
 }

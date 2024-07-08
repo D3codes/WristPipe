@@ -19,13 +19,52 @@ struct RedTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.red, .red, .red, .red, .red, .red, .red, .red, .red, .red, .red, .red]
+    var selectorBackgroundColor: [Color] = [
+        .red,
+        .red,
+        .red,
+        .red,
+        .red,
+        .red,
+        .red,
+        .red,
+        .red,
+        .red,
+        .red,
+        .red
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -35,7 +74,15 @@ struct RedTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: RedTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(RedTheme().getBackground()))
+    struct RedTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: RedTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return RedTheme_Preview()
 }

@@ -20,7 +20,7 @@ struct VocalMajorityTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.761, green: 0.678, blue: 0.337)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.761, green: 0.678, blue: 0.337)
     var selectorBackgroundColor: [Color] = [
         .black,
         .black,
@@ -75,8 +75,16 @@ struct VocalMajorityTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: VocalMajorityTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VocalMajorityTheme().getBackground()))
+#Preview() {
+    struct VocalMajorityTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VocalMajorityTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VocalMajorityTheme_Preview()
 }

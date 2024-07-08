@@ -20,7 +20,7 @@ struct SpaceCityTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.243, green: 0.886, blue: 0.141)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.243, green: 0.886, blue: 0.141)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct SpaceCityTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: SpaceCityTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SpaceCityTheme().getBackground()))
+#Preview() {
+    struct SpaceCityTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SpaceCityTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SpaceCityTheme_Preview()
 }

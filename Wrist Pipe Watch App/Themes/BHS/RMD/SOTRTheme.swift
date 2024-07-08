@@ -22,7 +22,7 @@ struct SOTRTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = Color(red: 0.055, green: 0.208, blue: 0.325)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -77,8 +77,16 @@ struct SOTRTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: SOTRTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SOTRTheme().getBackground()))
+#Preview() {
+    struct SOTRTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SOTRTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SOTRTheme_Preview()
 }

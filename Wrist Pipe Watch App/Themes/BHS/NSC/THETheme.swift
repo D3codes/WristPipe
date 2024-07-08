@@ -59,7 +59,20 @@ struct THETheme: Theme {
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 0.8
     
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.9
     
@@ -68,8 +81,16 @@ struct THETheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: THETheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(THETheme().getBackground()))
+#Preview() {
+    struct THETheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: THETheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return THETheme_Preview()
 }

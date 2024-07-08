@@ -23,7 +23,7 @@ struct CircleCitySoundTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.69, green: 0.19, blue: 0.31)
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
         Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
         Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8),
@@ -39,11 +39,37 @@ struct CircleCitySoundTheme: Theme {
         Color(red: 0.149, green: 0.663, blue: 0.882).opacity(0.8)
     ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
     
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.9
     
@@ -52,8 +78,16 @@ struct CircleCitySoundTheme: Theme {
     var logoYScale: Double = -20.0
 }
 
-#Preview {
-    PitchPipe(theme: CircleCitySoundTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CircleCitySoundTheme().getBackground()))
+#Preview() {
+    struct CircleCitySoundTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CircleCitySoundTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CircleCitySoundTheme_Preview()
 }

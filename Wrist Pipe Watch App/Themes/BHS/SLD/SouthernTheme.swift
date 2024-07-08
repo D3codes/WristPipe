@@ -75,8 +75,16 @@ struct SouthernTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: SouthernTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SouthernTheme().getBackground()))
+#Preview() {
+    struct SouthernTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SouthernTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SouthernTheme_Preview()
 }

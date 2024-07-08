@@ -20,8 +20,21 @@ struct PalmettoTheme: Theme {
     }
     
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .black
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorTextColor: Color = Color(red: 0.63, green: 0.16, blue: 0.15)
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
         Color(red: 0.64, green: 0.16, blue: 0.15),
@@ -40,7 +53,20 @@ struct PalmettoTheme: Theme {
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
     
-    var pitchBackgroundSelectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.7
     
@@ -49,8 +75,16 @@ struct PalmettoTheme: Theme {
     var logoYScale: Double = 4.0
 }
 
-#Preview {
-    PitchPipe(theme: PalmettoTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(PalmettoTheme().getBackground()))
+#Preview() {
+    struct PalmettoTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: PalmettoTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return PalmettoTheme_Preview()
 }

@@ -21,8 +21,21 @@ struct BoiseChordsTheme: Theme {
     }
 
     var selectorColor: Color = Color(red: 0.09, green: 0.27, blue: 0.43)
-    var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorTextColor: Color = Color(red: 0.09, green: 0.27, blue: 0.43)
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
 
     var pitchBackgroundUnselectedColor: [Color] = [
         Color(red: 0.09, green: 0.27, blue: 0.43),
@@ -41,7 +54,20 @@ struct BoiseChordsTheme: Theme {
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = Color(red: 0.09, green: 0.27, blue: 0.43)
     var pitchSelectedOpacity: Double = 1
     
@@ -51,7 +77,15 @@ struct BoiseChordsTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: BoiseChordsTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(BoiseChordsTheme().getBackground()))
+    struct BoiseChordsTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: BoiseChordsTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return BoiseChordsTheme_Preview()
 }

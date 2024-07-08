@@ -21,13 +21,52 @@ struct PDXTheme: Theme {
 
     var selectorColor: Color = .black
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var selectorBackgroundColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.8
     
@@ -37,7 +76,15 @@ struct PDXTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: PDXTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(PDXTheme().getBackground()))
+    struct PDXTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: PDXTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return PDXTheme_Preview()
 }

@@ -19,14 +19,53 @@ struct GoldStandardTheme: Theme {
     
     var selectorColor: Color = .black
     var selectorTextColor: Color = .black
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .black
     var pitchUnselectedOpacity: Double = 0.7
     
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
-    var pitchTextSelectedColor: Color = .black
+    var pitchBackgroundSelectedColor: [Color] = [
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray
+    ]
+    var pitchTextSelectedColor: Color = .white
     var pitchSelectedOpacity: Double = 0.9
     
     var logo: Image? = Image("goldstandard_logo")
@@ -34,8 +73,16 @@ struct GoldStandardTheme: Theme {
     var logoYScale: Double = -30
 }
 
-#Preview {
-    PitchPipe(theme: GoldStandardTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(GoldStandardTheme().getBackground()))
+#Preview() {
+    struct GoldStandardTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: GoldStandardTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return GoldStandardTheme_Preview()
 }

@@ -101,8 +101,16 @@ struct MOITheme: Theme {
     var logoYScale: Double = 4
 }
 
-#Preview {
-    PitchPipe(theme: MOITheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(MOITheme().getBackground()))
+#Preview() {
+    struct MOITheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: MOITheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return MOITheme_Preview()
 }

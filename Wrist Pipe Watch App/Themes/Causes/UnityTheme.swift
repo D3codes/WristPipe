@@ -19,13 +19,52 @@ struct UnityTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var selectorBackgroundColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.red, .green, .red, .green, .red, .green, .red, .green, .red, .green, .red, .green]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .red,
+        .green,
+        .red,
+        .green,
+        .red,
+        .green,
+        .red,
+        .green,
+        .red,
+        .green,
+        .red,
+        .green
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
 
-    var pitchBackgroundSelectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextSelectedColor: Color = .white
     var pitchSelectedOpacity: Double = 1
     
@@ -35,7 +74,15 @@ struct UnityTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: UnityTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(UnityTheme().getBackground()))
+    struct UnityTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: UnityTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return UnityTheme_Preview()
 }

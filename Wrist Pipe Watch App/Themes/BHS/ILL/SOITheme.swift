@@ -21,7 +21,6 @@ struct SOITheme: Theme {
             Image("SOI_logo")
                 .resizable()
                 .frame(maxWidth: 180, maxHeight: 100)
-                //.background(.white)
                 .offset(y: -75)
         }
     }
@@ -82,8 +81,16 @@ struct SOITheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: SOITheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SOITheme().getBackground()))
+#Preview() {
+    struct SOITheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SOITheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SOITheme_Preview()
 }

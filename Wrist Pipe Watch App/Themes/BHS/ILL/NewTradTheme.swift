@@ -75,8 +75,16 @@ struct NewTradTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: NewTradTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(NewTradTheme().getBackground()))
+#Preview() {
+    struct NewTradTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: NewTradTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return NewTradTheme_Preview()
 }

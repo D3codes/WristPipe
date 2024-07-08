@@ -20,7 +20,7 @@ struct CapCityTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = Color(red: 0.184, green: 0.227, blue: 0.471)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct CapCityTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: CapCityTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CapCityTheme().getBackground()))
+#Preview() {
+    struct CapCityTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CapCityTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CapCityTheme_Preview()
 }

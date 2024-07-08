@@ -81,8 +81,16 @@ struct SingingBuckeyesTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: SingingBuckeyesTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SingingBuckeyesTheme().getBackground()))
+#Preview() {
+    struct SingingBuckeyesTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SingingBuckeyesTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SingingBuckeyesTheme_Preview()
 }

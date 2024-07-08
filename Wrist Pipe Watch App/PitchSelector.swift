@@ -11,6 +11,7 @@ struct PitchSelector: View {
     @AppStorage(UserDefaultsKeys().holdToPlay) private var holdToPlay = true
     @Binding var selectedPitch: Double
     @Binding var theme: any Theme
+    @Binding var showImage: Bool
     
     let selectorSize: Double = Screen().getPitchSelectorSize()
     let pointerSize: Double = Screen().getPitchPointerSize()
@@ -47,7 +48,7 @@ struct PitchSelector: View {
                 .fill(theme.selectorBackgroundColor[getSelectedPitchIndex()])
                 .frame(width: selectorSize - 5, height: selectorSize - 5)
             
-            if (theme.logo != nil) {
+            if (theme.logo != nil && showImage) {
                 theme.logo!
                     .resizable()
                     .frame(width: selectorSize - theme.logoXScale, height: selectorSize - theme.logoYScale)
@@ -73,10 +74,11 @@ struct PitchSelector: View {
     struct PitchSelector_Preview: View {
         @State var selectedPitch: Double = 0.0
         @State var theme: any Theme = SPEBSQSATheme()
+        @State var showImage: Bool = true
         
         var body: some View {
             ZStack {
-                PitchSelector(selectedPitch: $selectedPitch, theme: $theme)
+                PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImage)
             }
         }
     }

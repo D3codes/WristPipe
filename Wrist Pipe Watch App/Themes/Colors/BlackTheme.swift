@@ -74,7 +74,15 @@ struct BlackTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: BlackTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(BlackTheme().getBackground()))
+    struct BlackTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: BlackTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return BlackTheme_Preview()
 }

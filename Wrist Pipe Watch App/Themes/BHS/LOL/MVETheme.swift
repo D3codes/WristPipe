@@ -73,8 +73,16 @@ struct MVETheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: MVETheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(MVETheme().getBackground()))
+#Preview() {
+    struct MVETheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: MVETheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return MVETheme_Preview()
 }

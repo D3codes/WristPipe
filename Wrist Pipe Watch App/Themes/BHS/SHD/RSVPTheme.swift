@@ -22,18 +22,18 @@ struct RSVPTheme: Theme {
     var selectorColor: Color = Color(red: 0.918, green: 0.788, blue: 0.176)
     var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
@@ -75,8 +75,16 @@ struct RSVPTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: RSVPTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(RSVPTheme().getBackground()))
+#Preview() {
+    struct RSVPTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: RSVPTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return RSVPTheme_Preview()
 }

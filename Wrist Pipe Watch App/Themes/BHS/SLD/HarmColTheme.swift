@@ -73,8 +73,16 @@ struct HarmColTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: HarmColTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(HarmColTheme().getBackground()))
+#Preview() {
+    struct HarmColTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: HarmColTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return HarmColTheme_Preview()
 }

@@ -21,7 +21,7 @@ struct AOHTheme: Theme {
     }
 
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = .black
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -77,7 +77,15 @@ struct AOHTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: AOHTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(AOHTheme().getBackground()))
+    struct AOHTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: AOHTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return AOHTheme_Preview()
 }

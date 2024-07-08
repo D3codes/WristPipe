@@ -21,7 +21,7 @@ struct HOHTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.078, green: 0.180, blue: 0.259)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.078, green: 0.180, blue: 0.259)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -76,8 +76,16 @@ struct HOHTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: HOHTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(HOHTheme().getBackground()))
+#Preview() {
+    struct HOHTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: HOHTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return HOHTheme_Preview()
 }

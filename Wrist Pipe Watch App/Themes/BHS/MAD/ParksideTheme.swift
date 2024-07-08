@@ -73,8 +73,16 @@ struct ParksideTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: ParksideTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(ParksideTheme().getBackground()))
+#Preview() {
+    struct ParksideTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: ParksideTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return ParksideTheme_Preview()
 }

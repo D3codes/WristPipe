@@ -18,8 +18,21 @@ struct SmorgasTheme: Theme {
     }
 
     var selectorColor: Color = Color(red: 0.92, green: 0.6, blue: 0.24)
-    var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var selectorTextColor: Color = Color(red: 0.92, green: 0.6, blue: 0.24)
+    var selectorBackgroundColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
 
     var pitchBackgroundUnselectedColor: [Color] = [
         Color(red: 0.92, green: 0.6, blue: 0.24),
@@ -38,7 +51,20 @@ struct SmorgasTheme: Theme {
     var pitchTextUnselectedColor: Color = .black
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -48,7 +74,15 @@ struct SmorgasTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: SmorgasTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SmorgasTheme().getBackground()))
+    struct SmorgasTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SmorgasTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SmorgasTheme_Preview()
 }

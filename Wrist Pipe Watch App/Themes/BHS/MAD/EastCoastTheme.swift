@@ -20,7 +20,7 @@ struct EastCoastTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.004, green: 0.094, blue: 0.447)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.004, green: 0.094, blue: 0.447)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct EastCoastTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: EastCoastTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(EastCoastTheme().getBackground()))
+#Preview() {
+    struct EastCoastTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: EastCoastTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return EastCoastTheme_Preview()
 }

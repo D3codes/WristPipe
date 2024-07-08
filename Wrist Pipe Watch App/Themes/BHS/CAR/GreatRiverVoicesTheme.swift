@@ -20,8 +20,21 @@ struct GreatRiverVoicesTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorTextColor: Color = Color(red: 0.37, green: 0.19, blue: 0.55)
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
         .clear,
@@ -62,8 +75,16 @@ struct GreatRiverVoicesTheme: Theme {
     var logoYScale: Double = 5.0
 }
 
-#Preview {
-    PitchPipe(theme: GreatRiverVoicesTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(GreatRiverVoicesTheme().getBackground()))
+#Preview() {
+    struct GreatRiverVoicesTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: GreatRiverVoicesTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return GreatRiverVoicesTheme_Preview()
 }

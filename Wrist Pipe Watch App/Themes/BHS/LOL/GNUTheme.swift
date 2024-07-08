@@ -78,8 +78,16 @@ struct GNUTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: GNUTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(GNUTheme().getBackground()))
+#Preview() {
+    struct GNUTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: GNUTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return GNUTheme_Preview()
 }

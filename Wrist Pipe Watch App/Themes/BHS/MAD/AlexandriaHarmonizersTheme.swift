@@ -75,9 +75,17 @@ struct AlexandriaHarmonizersTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: AlexandriaHarmonizersTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(AlexandriaHarmonizersTheme().getBackground()))
+#Preview() {
+    struct AlexandriaHarmonizersTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: AlexandriaHarmonizersTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return AlexandriaHarmonizersTheme_Preview()
 }
 

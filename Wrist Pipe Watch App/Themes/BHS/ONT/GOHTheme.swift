@@ -22,7 +22,7 @@ struct GOHTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
         .black,
         .black,
@@ -77,8 +77,16 @@ struct GOHTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: GOHTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(GOHTheme().getBackground()))
+#Preview() {
+    struct GOHTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: GOHTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return GOHTheme_Preview()
 }

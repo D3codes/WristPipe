@@ -21,7 +21,7 @@ struct CCSTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.973, green: 0.910, blue: 0.075)
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = Color(red: 0.973, green: 0.910, blue: 0.075)
     var selectorBackgroundColor: [Color] = [
         Color(red: 0.176, green: 0.275, blue: 0.588),
         Color(red: 0.176, green: 0.275, blue: 0.588),
@@ -76,8 +76,16 @@ struct CCSTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: CCSTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CCSTheme().getBackground()))
+#Preview() {
+    struct CCSTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CCSTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CCSTheme_Preview()
 }

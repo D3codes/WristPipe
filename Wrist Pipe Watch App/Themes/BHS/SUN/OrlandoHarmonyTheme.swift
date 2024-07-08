@@ -77,8 +77,16 @@ struct OrlandoHarmonyTheme: Theme {
     var logoYScale: Double = 15
 }
 
-#Preview {
-    PitchPipe(theme: OrlandoHarmonyTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(OrlandoHarmonyTheme().getBackground()))
+#Preview() {
+    struct OrlandoHarmonyTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: OrlandoHarmonyTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return OrlandoHarmonyTheme_Preview()
 }

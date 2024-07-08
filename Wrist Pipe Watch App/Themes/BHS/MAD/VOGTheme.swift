@@ -20,7 +20,7 @@ struct VOGTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.000, green: 0.361, blue: 0.671)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.000, green: 0.361, blue: 0.671)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct VOGTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: VOGTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VOGTheme().getBackground()))
+#Preview() {
+    struct VOGTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VOGTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VOGTheme_Preview()
 }

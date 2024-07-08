@@ -20,7 +20,7 @@ struct SOTNTheme: Theme {
     }
     
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = .black
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct SOTNTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: SOTNTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SOTNTheme().getBackground()))
+#Preview() {
+    struct SOTNTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SOTNTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SOTNTheme_Preview()
 }

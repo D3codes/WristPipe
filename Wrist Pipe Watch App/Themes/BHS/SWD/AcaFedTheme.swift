@@ -75,8 +75,16 @@ struct AcaFedTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: AcaFedTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(AcaFedTheme().getBackground()))
+#Preview() {
+    struct AcaFedTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: AcaFedTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return AcaFedTheme_Preview()
 }

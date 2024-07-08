@@ -21,7 +21,7 @@ struct HarmonyLeagueTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.953, green: 0.737, blue: 0.361)
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
         Color(red: 0.294, green: 0.369, blue: 0.553),
         Color(red: 0.294, green: 0.369, blue: 0.553),
@@ -76,8 +76,16 @@ struct HarmonyLeagueTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: HarmonyLeagueTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(HarmonyLeagueTheme().getBackground()))
+#Preview() {
+    struct HarmonyLeagueTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: HarmonyLeagueTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return HarmonyLeagueTheme_Preview()
 }

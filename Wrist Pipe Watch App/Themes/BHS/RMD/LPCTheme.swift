@@ -75,8 +75,16 @@ struct LPCTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: LPCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(LPCTheme().getBackground()))
+#Preview() {
+    struct LPCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: LPCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return LPCTheme_Preview()
 }

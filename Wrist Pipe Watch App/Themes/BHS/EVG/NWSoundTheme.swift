@@ -21,13 +21,52 @@ struct NWSoundTheme: Theme {
     
     var selectorColor: Color = .black
     var selectorTextColor: Color = .black
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorBackgroundColor: [Color] = [
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38),
+        Color(red: 0.82, green: 0.69, blue: 0.38)
+    ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
     
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1
     
@@ -36,8 +75,16 @@ struct NWSoundTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: NWSoundTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(NWSoundTheme().getBackground()))
+#Preview() {
+    struct NWSoundTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: NWSoundTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return NWSoundTheme_Preview()
 }

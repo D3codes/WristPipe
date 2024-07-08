@@ -76,9 +76,16 @@ struct GPHTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: GPHTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(GPHTheme().getBackground()))
+#Preview() {
+    struct GPHTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: GPHTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return GPHTheme_Preview()
 }
-

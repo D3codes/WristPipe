@@ -36,11 +36,37 @@ struct WestminsterTheme: Theme {
         Color(red: 0.91, green: 0.75, blue: 0.4)
     ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextUnselectedColor: Color = Color(red: 0.91, green: 0.75, blue: 0.4)
     var pitchUnselectedOpacity: Double = 1
     
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.9
     
@@ -49,8 +75,16 @@ struct WestminsterTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: WestminsterTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(WestminsterTheme().getBackground()))
+#Preview() {
+    struct WestminsterTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: WestminsterTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return WestminsterTheme_Preview()
 }

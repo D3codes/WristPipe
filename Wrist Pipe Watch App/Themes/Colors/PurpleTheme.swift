@@ -19,13 +19,52 @@ struct PurpleTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.purple, .purple, .purple, .purple, .purple, .purple, .purple, .purple, .purple, .purple, .purple, .purple]
+    var selectorBackgroundColor: [Color] = [
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple,
+        .purple
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -35,7 +74,15 @@ struct PurpleTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: PurpleTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(PurpleTheme().getBackground()))
+    struct PurpleTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: PurpleTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return PurpleTheme_Preview()
 }

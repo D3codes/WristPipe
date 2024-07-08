@@ -20,7 +20,7 @@ struct GreatLakesTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
         Color(red: 0.000, green: 0.290, blue: 0.553),
         Color(red: 0.000, green: 0.290, blue: 0.553),
@@ -75,8 +75,16 @@ struct GreatLakesTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: GreatLakesTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(GreatLakesTheme().getBackground()))
+#Preview() {
+    struct GreatLakesTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: GreatLakesTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return GreatLakesTheme_Preview()
 }

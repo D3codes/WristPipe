@@ -21,7 +21,7 @@ struct SWVATheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.933, green: 0.855, blue: 0.518)
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = Color(red: 0.133, green: 0.294, blue: 0.518)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -76,8 +76,16 @@ struct SWVATheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: SWVATheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SWVATheme().getBackground()))
+#Preview() {
+    struct SWVATheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SWVATheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SWVATheme_Preview()
 }

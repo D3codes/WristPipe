@@ -23,7 +23,7 @@ struct ForwardHarmonyTheme: Theme {
     }
     
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = .black
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -78,8 +78,16 @@ struct ForwardHarmonyTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: ForwardHarmonyTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(ForwardHarmonyTheme().getBackground()))
+#Preview() {
+    struct ForwardHarmonyTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: ForwardHarmonyTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return ForwardHarmonyTheme_Preview()
 }

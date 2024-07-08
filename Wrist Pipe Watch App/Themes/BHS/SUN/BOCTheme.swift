@@ -22,18 +22,18 @@ struct BOCTheme: Theme {
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086),
+        Color(red: 0.976, green: 0.635, blue: 0.086)
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
@@ -75,8 +75,16 @@ struct BOCTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: BOCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(BOCTheme().getBackground()))
+#Preview() {
+    struct BOCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: BOCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return BOCTheme_Preview()
 }

@@ -20,7 +20,7 @@ struct OBCTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.945, green: 0.349, blue: 0.173)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.945, green: 0.349, blue: 0.173)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct OBCTheme: Theme {
     var logoYScale: Double = 15
 }
 
-#Preview {
-    PitchPipe(theme: OBCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(OBCTheme().getBackground()))
+#Preview() {
+    struct OBCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: OBCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return OBCTheme_Preview()
 }

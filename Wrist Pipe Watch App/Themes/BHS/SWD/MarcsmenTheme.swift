@@ -20,20 +20,20 @@ struct MarcsmenTheme: Theme {
     }
     
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.537, green: 0.067, blue: 0.071)
     var selectorBackgroundColor: [Color] = [
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
@@ -75,8 +75,16 @@ struct MarcsmenTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: MarcsmenTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(MarcsmenTheme().getBackground()))
+#Preview() {
+    struct MarcsmenTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: MarcsmenTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return MarcsmenTheme_Preview()
 }

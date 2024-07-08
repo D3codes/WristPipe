@@ -20,7 +20,7 @@ struct NBCTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.180, green: 0.192, blue: 0.576)
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = Color(red: 0.180, green: 0.192, blue: 0.576)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct NBCTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: NBCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(NBCTheme().getBackground()))
+#Preview() {
+    struct NBCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: NBCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return NBCTheme_Preview()
 }

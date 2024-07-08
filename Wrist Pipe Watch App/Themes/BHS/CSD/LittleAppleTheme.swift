@@ -18,14 +18,53 @@ struct LittleAppleTheme: Theme {
     }
 
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorTextColor: Color = .black
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.green, .green, .green, .green, .green, .green, .green, .green, .green, .green, .green, .green]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green
+    ]
     var pitchTextUnselectedColor: Color = .black
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -35,7 +74,15 @@ struct LittleAppleTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: LittleAppleTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(LittleAppleTheme().getBackground()))
+    struct LittleAppleTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: LittleAppleTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return LittleAppleTheme_Preview()
 }

@@ -36,11 +36,37 @@ struct ThoroughbredTheme: Theme {
         Color(red: 0.91, green: 0.89, blue: 0.81)
     ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown, .brown]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown,
+        .brown
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 0.9
     
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.9
     
@@ -49,8 +75,16 @@ struct ThoroughbredTheme: Theme {
     var logoYScale: Double = 0.0
 }
 
-#Preview {
-    PitchPipe(theme: ThoroughbredTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(ThoroughbredTheme().getBackground()))
+#Preview() {
+    struct ThoroughbredTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: ThoroughbredTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return ThoroughbredTheme_Preview()
 }

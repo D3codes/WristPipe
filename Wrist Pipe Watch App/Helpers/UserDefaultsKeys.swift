@@ -19,6 +19,8 @@ struct UserDefaultsKeys {
     
     let theme = "theme"
     
+    let showImage = "showImage"
+    
     let ignoreSilentMode = "ignoreSilentMode"
     
     let instrument = "instrument"

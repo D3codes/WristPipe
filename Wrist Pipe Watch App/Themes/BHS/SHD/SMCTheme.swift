@@ -20,7 +20,7 @@ struct SMCTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.196, green: 0.243, blue: 0.529)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.196, green: 0.243, blue: 0.529)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct SMCTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: SMCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SMCTheme().getBackground()))
+#Preview() {
+    struct SMCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SMCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SMCTheme_Preview()
 }

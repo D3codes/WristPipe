@@ -75,8 +75,16 @@ struct TVSTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: TVSTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(TVSTheme().getBackground()))
+#Preview() {
+    struct TVSTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: TVSTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return TVSTheme_Preview()
 }

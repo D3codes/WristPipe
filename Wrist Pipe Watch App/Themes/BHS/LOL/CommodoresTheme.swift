@@ -11,7 +11,6 @@ struct CommodoresTheme: Theme {
     var id: Int = 1803
     var name: String = "Minneapolis Commodores"
     
-    //48, 48, 139
     private let commodoresBlue: Color = Color(red: 0.19, green: 0.19, blue: 0.54)
     
     func getBackground() -> any View {
@@ -21,7 +20,7 @@ struct CommodoresTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.19, green: 0.19, blue: 0.54)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.19, green: 0.19, blue: 0.54)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -76,8 +75,16 @@ struct CommodoresTheme: Theme {
     var logoYScale: Double = 6
 }
 
-#Preview {
-    PitchPipe(theme: CommodoresTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CommodoresTheme().getBackground()))
+#Preview() {
+    struct CommodoresTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CommodoresTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CommodoresTheme_Preview()
 }

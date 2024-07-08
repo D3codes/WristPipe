@@ -19,13 +19,52 @@ struct SenateAiresTheme: Theme {
     
     var selectorColor: Color = .black
     var selectorTextColor: Color = .black
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     
-    var pitchBackgroundUnselectedColor: [Color] = [.black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black, .black]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black,
+        .black
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
     
-    var pitchBackgroundSelectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.9
     
@@ -34,8 +73,16 @@ struct SenateAiresTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: SenateAiresTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SenateAiresTheme().getBackground()))
+#Preview() {
+    struct SenateAiresTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SenateAiresTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SenateAiresTheme_Preview()
 }

@@ -20,7 +20,7 @@ struct FogCityTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
         Color(red: 0.2, green: 0.43, blue: 0.83),
         Color(red: 0.2, green: 0.43, blue: 0.83),
@@ -53,7 +53,20 @@ struct FogCityTheme: Theme {
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
     
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.8
     
@@ -62,8 +75,16 @@ struct FogCityTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: FogCityTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(FogCityTheme().getBackground()))
+#Preview() {
+    struct FogCityTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: FogCityTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return FogCityTheme_Preview()
 }

@@ -26,7 +26,7 @@ struct CityLightsTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.718, green: 0.655, blue: 0.051)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.718, green: 0.655, blue: 0.051)
     var selectorBackgroundColor: [Color] = [
         Color(red: 0.024, green: 0.039, blue: 0.161),
         Color(red: 0.024, green: 0.039, blue: 0.161),
@@ -81,8 +81,16 @@ struct CityLightsTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: CityLightsTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CityLightsTheme().getBackground()))
+#Preview() {
+    struct CityLightsTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CityLightsTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CityLightsTheme_Preview()
 }

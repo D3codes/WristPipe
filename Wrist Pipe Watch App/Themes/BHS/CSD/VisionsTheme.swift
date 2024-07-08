@@ -76,7 +76,15 @@ struct VisionsTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: VisionsTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VisionsTheme().getBackground()))
+    struct VisionsTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VisionsTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VisionsTheme_Preview()
 }

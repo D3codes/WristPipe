@@ -19,13 +19,51 @@ struct GreenTheme: Theme {
 
     var selectorColor: Color = .white
     var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.green, .green, .green, .green, .green, .green, .green, .green, .green, .green, .green, .green]
-
-    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var selectorBackgroundColor: [Color] = [
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green,
+        .green]
+    
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -35,7 +73,15 @@ struct GreenTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: GreenTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(GreenTheme().getBackground()))
+    struct GreenTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: GreenTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return GreenTheme_Preview()
 }

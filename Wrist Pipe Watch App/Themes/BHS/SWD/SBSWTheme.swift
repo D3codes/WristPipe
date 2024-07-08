@@ -77,8 +77,16 @@ struct SBSWTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: SBSWTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SBSWTheme().getBackground()))
+#Preview() {
+    struct SBSWTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SBSWTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SBSWTheme_Preview()
 }

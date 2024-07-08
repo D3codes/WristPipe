@@ -18,8 +18,21 @@ struct PathfinderTheme: Theme {
     }
 
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorTextColor: Color = Color(red: 0.3, green: 0.68, blue: 0.78)
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
 
     var pitchBackgroundUnselectedColor: [Color] = [
         Color(red: 0.3, green: 0.68, blue: 0.78),
@@ -38,7 +51,20 @@ struct PathfinderTheme: Theme {
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray, .gray]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray,
+        .gray
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 0.8
     
@@ -48,7 +74,15 @@ struct PathfinderTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: PathfinderTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(PathfinderTheme().getBackground()))
+    struct PathfinderTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: PathfinderTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return PathfinderTheme_Preview()
 }

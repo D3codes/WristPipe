@@ -20,20 +20,20 @@ struct TimberTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212),
+        Color(red: 0.000, green: 0.502, blue: 0.212)
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
@@ -75,8 +75,16 @@ struct TimberTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: TimberTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(TimberTheme().getBackground()))
+#Preview() {
+    struct TimberTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: TimberTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return TimberTheme_Preview()
 }

@@ -11,6 +11,7 @@ import Foundation
 
 struct PitchPipe: View {
     @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
+    @AppStorage(UserDefaultsKeys().showImage) private var showImage = true
     @State var theme = Themes[0]
     @State var preview = false
     @State private var path = [Int]()
@@ -20,7 +21,7 @@ struct PitchPipe: View {
         NavigationStack(path: $path) {
             ZStack {
                 PitchRing(selectedPitch: $selectedPitch, theme: $theme)
-                PitchSelector(selectedPitch: $selectedPitch, theme: $theme)
+                PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImage)
             }
             .focusable(true)
             .digitalCrownRotation($selectedPitch,

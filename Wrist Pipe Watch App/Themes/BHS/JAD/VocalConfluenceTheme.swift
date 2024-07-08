@@ -20,7 +20,7 @@ struct VocalConfluenceTheme: Theme {
     }
     
     var selectorColor: Color = Color(red: 0.8, green: 0.76, blue: 0.6)
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.8, green: 0.76, blue: 0.6)
     var selectorBackgroundColor: [Color] = [
         .black,
         .black,
@@ -75,8 +75,16 @@ struct VocalConfluenceTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: VocalConfluenceTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VocalConfluenceTheme().getBackground()))
+#Preview() {
+    struct VocalConfluenceTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VocalConfluenceTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VocalConfluenceTheme_Preview()
 }

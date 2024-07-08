@@ -20,7 +20,7 @@ struct HarbourtownTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
         .black,
         .black,
@@ -75,8 +75,16 @@ struct HarbourtownTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: HarbourtownTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(HarbourtownTheme().getBackground()))
+#Preview() {
+    struct HarbourtownTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: HarbourtownTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return HarbourtownTheme_Preview()
 }

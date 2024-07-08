@@ -90,7 +90,15 @@ struct TransTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: TransTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(TransTheme().getBackground()))
+    struct TransTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: TransTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return TransTheme_Preview()
 }

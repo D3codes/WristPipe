@@ -82,8 +82,16 @@ struct SaltairesTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: SaltairesTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(SaltairesTheme().getBackground()))
+#Preview() {
+    struct SaltairesTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: SaltairesTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return SaltairesTheme_Preview()
 }

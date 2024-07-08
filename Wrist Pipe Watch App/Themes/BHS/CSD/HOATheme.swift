@@ -21,8 +21,21 @@ struct HOATheme: Theme {
     }
 
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var selectorTextColor: Color = Color(red: 0.08, green: 0.19, blue: 0.37)
+    var selectorBackgroundColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
 
     var pitchBackgroundUnselectedColor: [Color] = [
         Color(red: 0.75, green: 0.31, blue: 0.34),
@@ -41,7 +54,20 @@ struct HOATheme: Theme {
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -51,7 +77,15 @@ struct HOATheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: HOATheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(HOATheme().getBackground()))
+    struct HOATheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: HOATheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return HOATheme_Preview()
 }

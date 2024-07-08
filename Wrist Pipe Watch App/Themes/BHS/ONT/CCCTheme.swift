@@ -20,7 +20,7 @@ struct CCCTheme: Theme {
     }
     
     var selectorColor: Color = .white
-    var selectorTextColor: Color = .black
+    var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
         .black,
         .black,
@@ -75,8 +75,16 @@ struct CCCTheme: Theme {
     var logoYScale: Double = 10
 }
 
-#Preview {
-    PitchPipe(theme: CCCTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CCCTheme().getBackground()))
+#Preview() {
+    struct CCCTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CCCTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CCCTheme_Preview()
 }

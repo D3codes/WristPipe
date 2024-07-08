@@ -9,32 +9,49 @@ import SwiftUI
 
 struct ThemePreview: View {
     @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
+    @AppStorage(UserDefaultsKeys().showImage) private var showImage = true
     @State var theme: any Theme
     @Binding var path: [Int]
     @State var selectedPitch: Double = 0.0
+    @State var showImagePreview: Bool = true
+    @State var showSaveButton: Bool = true
     
     let saveButtonOffset: Double = Screen().getSaveButtonOffset()
     
     var body: some View {
         ZStack {
             PitchRing(selectedPitch: $selectedPitch, theme: $theme)
-            PitchSelector(selectedPitch: $selectedPitch, theme: $theme)
-            ZStack() {
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(.ultraThinMaterial)
-                VStack {
-                    Button("Save") {
-                        selectedTheme = theme.id
-                        path.removeAll()
+            PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImagePreview)
+            if showSaveButton {
+                ZStack() {
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(.ultraThinMaterial)
+                    VStack {
+                        Button("Save") {
+                            selectedTheme = theme.id
+                            showImage = showImagePreview
+                            path.removeAll()
+                        }
+                        .padding()
+                        Spacer()
                     }
-                    .padding()
-                    Spacer()
                 }
+                .offset(y: saveButtonOffset)
             }
-            .offset(y: saveButtonOffset)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(AnyView(theme.getBackground()))
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button { withAnimation(.easeInOut(duration: 0.75)) { showImagePreview.toggle() } } label: {
+                    showImagePreview && theme.logo != nil
+                    ? Image(systemName: "photo.circle").foregroundStyle(Color.white)
+                    : Image("photo.circle.slash").foregroundStyle(Color.white)
+                }
+                .contentTransition(.symbolEffect(.replace))
+                .disabled(theme.logo == nil)
+            }
+        }
     }
 }
 

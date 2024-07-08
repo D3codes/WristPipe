@@ -18,14 +18,53 @@ struct CodyChoraliersTheme: Theme {
     }
 
     var selectorColor: Color = Color(red: 0.62, green: 0.36, blue: 0.33)
-    var selectorTextColor: Color = .white
-    var selectorBackgroundColor: [Color] = [Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54), Color(red: 0.75, green: 0.65, blue: 0.54)]
+    var selectorTextColor: Color = Color(red: 0.4, green: 0.1, blue: 0.4)
+    var selectorBackgroundColor: [Color] = [
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54),
+        Color(red: 0.75, green: 0.65, blue: 0.54)
+    ]
 
-    var pitchBackgroundUnselectedColor: [Color] = [.clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear, .clear]
+    var pitchBackgroundUnselectedColor: [Color] = [
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear,
+        .clear
+    ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1.0
 
-    var pitchBackgroundSelectedColor: [Color] = [.white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white, .white]
+    var pitchBackgroundSelectedColor: [Color] = [
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
+    ]
     var pitchTextSelectedColor: Color = .black
     var pitchSelectedOpacity: Double = 1.0
     
@@ -35,7 +74,15 @@ struct CodyChoraliersTheme: Theme {
 }
 
 #Preview() {
-    PitchPipe(theme: CodyChoraliersTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CodyChoraliersTheme().getBackground()))
+    struct CodyChoraliersTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CodyChoraliersTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CodyChoraliersTheme_Preview()
 }

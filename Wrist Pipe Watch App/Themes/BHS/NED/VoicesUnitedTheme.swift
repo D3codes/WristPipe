@@ -75,8 +75,16 @@ struct VoicesUnitedTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: VoicesUnitedTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VoicesUnitedTheme().getBackground()))
+#Preview() {
+    struct VoicesUnitedTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VoicesUnitedTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VoicesUnitedTheme_Preview()
 }

@@ -20,7 +20,7 @@ struct CrimPrideTheme: Theme {
     }
     
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = Color(red: 0.675, green: 0.125, blue: 0.176)
     var selectorBackgroundColor: [Color] = [
         .white,
         .white,
@@ -75,8 +75,16 @@ struct CrimPrideTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: CrimPrideTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(CrimPrideTheme().getBackground()))
+#Preview() {
+    struct CrimPrideTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: CrimPrideTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return CrimPrideTheme_Preview()
 }

@@ -30,18 +30,18 @@ struct ChooChooTheme: Theme {
     var selectorColor: Color = Color(red: 0.769, green: 0.239, blue: 0.161)
     var selectorTextColor: Color = .white
     var selectorBackgroundColor: [Color] = [
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161),
+        Color(red: 0.769, green: 0.239, blue: 0.161)
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
@@ -83,8 +83,16 @@ struct ChooChooTheme: Theme {
     var logoYScale: Double = 0
 }
 
-#Preview {
-    PitchPipe(theme: ChooChooTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(ChooChooTheme().getBackground()))
+#Preview() {
+    struct ChooChooTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: ChooChooTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return ChooChooTheme_Preview()
 }

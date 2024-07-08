@@ -18,20 +18,20 @@ struct VSOOTheme: Theme {
     }
     
     var selectorColor: Color = .black
-    var selectorTextColor: Color = .white
+    var selectorTextColor: Color = .black
     var selectorBackgroundColor: [Color] = [
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black,
-        .black
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white,
+        .white
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
@@ -73,8 +73,16 @@ struct VSOOTheme: Theme {
     var logoYScale: Double = 3
 }
 
-#Preview {
-    PitchPipe(theme: VSOOTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(VSOOTheme().getBackground()))
+#Preview() {
+    struct VSOOTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: VSOOTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return VSOOTheme_Preview()
 }

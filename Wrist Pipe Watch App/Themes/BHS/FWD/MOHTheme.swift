@@ -76,8 +76,16 @@ struct MOHTheme: Theme {
     var logoYScale: Double = 5
 }
 
-#Preview {
-    PitchPipe(theme: MOHTheme(), preview: true)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(AnyView(MOHTheme().getBackground()))
+#Preview() {
+    struct MOHTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: MOHTheme(), path: $path, showSaveButton: false)
+            }
+        }
+    }
+    
+    return MOHTheme_Preview()
 }
