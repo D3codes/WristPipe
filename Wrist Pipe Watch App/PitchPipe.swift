@@ -13,7 +13,6 @@ struct PitchPipe: View {
     @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
     @AppStorage(UserDefaultsKeys().showImage) private var showImage = true
     @State var theme = Themes[0]
-    @State var preview = false
     @State private var path = [Int]()
     @State private var selectedPitch = 0.0
     
@@ -31,9 +30,7 @@ struct PitchPipe: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(AnyView(theme.getBackground()))
             .onAppear(perform: {
-                if !preview {
-                    theme = Themes.first(where: { $0.id == selectedTheme }) ?? Themes[0]
-                }
+                theme = Themes.first(where: { $0.id == selectedTheme }) ?? Themes[0]
             })
             .onChange(of: selectedTheme, { _,newTheme in
                 theme = Themes.first(where: { $0.id == newTheme }) ?? Themes[0]
@@ -62,5 +59,5 @@ struct PitchPipe: View {
 }
 
 #Preview() {
-    PitchPipe(theme: SPEBSQSATheme(), preview: true)
+    PitchPipe(theme: BlackTheme())
 }

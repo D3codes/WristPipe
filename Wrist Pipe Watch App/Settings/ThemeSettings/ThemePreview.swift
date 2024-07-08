@@ -39,8 +39,14 @@ struct ThemePreview: View {
                 .offset(y: saveButtonOffset)
             }
         }
+        .focusable(true)
+        .digitalCrownRotation($selectedPitch,
+            from: 0, through: 12.001, by: 1,
+            sensitivity: .low, isContinuous: true, isHapticFeedbackEnabled: true
+        )
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(AnyView(theme.getBackground()))
+        .onChange(of: selectedPitch, { _,newVal in }) //needed for some reason
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button { withAnimation(.easeInOut(duration: 0.75)) { showImagePreview.toggle() } } label: {

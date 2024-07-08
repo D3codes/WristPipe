@@ -89,5 +89,5 @@ class Screen {
 }
 
 #Preview() {
-    PitchPipe(theme: BlackTheme(), preview: true)
+    PitchPipe(theme: BlackTheme())
 }
