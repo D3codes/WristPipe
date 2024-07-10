@@ -32,6 +32,12 @@ struct SongList: View {
                     ForEach(self.songs, id: \.self) { song in
                         if(editMode) {
                             SongItemEditView(name: song.name)
+                                .swipeActions(edge: .leading) {
+                                    NavigationLink(destination: AddSong(setListId: setListId, setList: $songs, songId: song.id, title: song.name, selectedPitch: pitchPlayer.pitches.first(where: { $0.note == song.key })!)) {
+                                        Label("Rename", systemImage: "pencil")
+                                    }
+                                    .tint(.indigo)
+                                }
                         } else {
                             SongItemView(name: song.name, key: song.key)
                             .onLongPressGesture(minimumDuration: 15) {
@@ -41,6 +47,12 @@ struct SongList: View {
                                 } else if holdToPlay {
                                     pitchPlayer.stopPlaying()
                                 }
+                            }
+                            .swipeActions(edge: .leading) {
+                                NavigationLink(destination: AddSong(setListId: setListId, setList: $songs, songId: song.id, title: song.name, selectedPitch: pitchPlayer.pitches.first(where: { $0.note == song.key })!)) {
+                                    Label("Rename", systemImage: "pencil")
+                                }
+                                .tint(.indigo)
                             }
                         }
                     }

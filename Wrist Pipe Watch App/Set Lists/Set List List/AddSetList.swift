@@ -22,8 +22,7 @@ struct AddSetList: View {
     
     private func updateSetList() {
         let index = setLists.firstIndex(where: { $0.id == id })!
-        var setList = setLists.remove(at: index)
-        setList.name = title
+        setLists.remove(at: index)
         setLists.insert(SetList(id: id!, name: title), at: index)
         saveSetLists()
     }

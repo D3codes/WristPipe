@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Song: Identifiable, Hashable, Encodable, Decodable {
     var id = UUID()
-    let name: String
-    let key: String
-    let fileName: String
+    var name: String
+    var key: String
+    var fileName: String
 }

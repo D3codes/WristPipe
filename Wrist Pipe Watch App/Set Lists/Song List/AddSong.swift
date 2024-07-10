@@ -12,9 +12,29 @@ struct AddSong: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State var setListId: UUID
     @Binding var setList: [Song]
-    @State private var title: String = ""
-    @State private var selectedPitch: Pitch = PitchPlayer().pitches[0]
+    @State var songId: UUID?
+    @State var title: String = ""
+    @State var selectedPitch: Pitch = PitchPlayer().pitches[0]
     let defaults = UserDefaults.standard
+    
+    private func insertSong() {
+        setList.append(Song(name: title, key: selectedPitch.note, fileName: selectedPitch.fileName))
+        saveSongs()
+    }
+    
+    private func updateSong() {
+        let index = setList.firstIndex(where: { $0.id == songId })!
+        setList.remove(at: index)
+        setList.insert(Song(id: songId!, name: title, key: selectedPitch.note, fileName: selectedPitch.fileName), at: index)
+        saveSongs()
+    }
+    
+    private func saveSongs() {
+        if let encoded = try? JSONEncoder().encode(setList) {
+            self.defaults.set(encoded, forKey: UserDefaultsKeys().setListKey(for: setListId))
+            self.defaults.synchronize()
+        }
+    }
     
     var body: some View {
         VStack {
@@ -33,15 +53,15 @@ struct AddSong: View {
             .frame(height: 30)
             Spacer()
             Button(action: {
-                setList.append(Song(name: title, key: selectedPitch.note, fileName: selectedPitch.fileName))
-                if let encoded = try? JSONEncoder().encode(setList) {
-                    self.defaults.set(encoded, forKey: UserDefaultsKeys().setListKey(for: setListId))
-                    self.defaults.synchronize()
+                if songId != nil {
+                    updateSong()
+                } else {
+                    insertSong()
                 }
-                
+
                 self.presentationMode.wrappedValue.dismiss()
             }) {
-                Text("Add Song")
+                Text(songId != nil ? "Save Song" : "Add Song")
             }
             .padding()
             .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
