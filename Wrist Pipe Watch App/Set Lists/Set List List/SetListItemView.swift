@@ -10,15 +10,25 @@ import SwiftUI
 struct SetListItemView: View {
     var name: String
     var id: UUID
+    @Binding var editMode: Bool
     
     var body: some View {
-        NavigationLink(destination: SongList(setListId: id, setListName: name)) {
+        if editMode {
             HStack {
                 Text(name)
                 Spacer()
-                Image(systemName: "chevron.right")
+                Image(systemName: "line.3.horizontal")
             }
             .contentShape(Rectangle())
+        } else {
+            NavigationLink(destination: SongList(setListId: id, setListName: name)) {
+                HStack {
+                    Text(name)
+                    Spacer()
+                    Image(systemName: "chevron.right")
+                }
+                .contentShape(Rectangle())
+            }
         }
     }
 }

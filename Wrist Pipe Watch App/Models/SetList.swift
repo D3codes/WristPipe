@@ -9,5 +9,5 @@ import SwiftUI
 
 struct SetList: Identifiable, Hashable, Encodable, Decodable {
     var id = UUID()
-    let name: String
+    var name: String
 }

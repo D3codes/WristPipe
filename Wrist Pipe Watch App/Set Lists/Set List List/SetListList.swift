@@ -20,6 +20,10 @@ struct SetListList: View {
             self.setLists = items
         }
         
+        migrateLegacySetList()
+    }
+    
+    func migrateLegacySetList() {
         // Migrating legacy set list
         if let data = defaults.object(forKey: UserDefaultsKeys().setListPrefix) as? Data,
         let items = try? JSONDecoder().decode([Song].self, from: data) {
@@ -42,6 +46,7 @@ struct SetListList: View {
                 }
             }
         }
+        // End Migrating legacy set list
     }
     
     var body: some View {
@@ -49,11 +54,13 @@ struct SetListList: View {
             if(!self.setLists.isEmpty) {
                 List {
                     ForEach(self.setLists, id: \.self) { setList in
-                        if(editMode) {
-                            SetListItemEditView(name: setList.name)
-                        } else {
-                            SetListItemView(name: setList.name, id: setList.id)
-                        }
+                        SetListItemView(name: setList.name, id: setList.id, editMode: $editMode)
+                            .swipeActions(edge: .leading) {
+                                NavigationLink(destination: AddSetList(setLists: $setLists, id: setList.id, title: setList.name)) {
+                                    Label("Rename", systemImage: "pencil")
+                                }
+                                .tint(.indigo)
+                            }
                     }
                     .onDelete(perform: self.deleteRow)
                     .onMove { from, to in self.moveRow(from: from, to: to) }

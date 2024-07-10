@@ -11,23 +11,43 @@ import SwiftUI
 struct AddSetList: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @Binding var setLists: [SetList]
-    @State private var title: String = ""
+    @State var id: UUID?
+    @State var title: String = ""
     let defaults = UserDefaults.standard
+    
+    private func insertSetList() {
+        setLists.append(SetList(name: title))
+        saveSetLists()
+    }
+    
+    private func updateSetList() {
+        let index = setLists.firstIndex(where: { $0.id == id })!
+        var setList = setLists.remove(at: index)
+        setList.name = title
+        setLists.insert(SetList(id: id!, name: title), at: index)
+        saveSetLists()
+    }
+    
+    private func saveSetLists() {
+        if let encoded = try? JSONEncoder().encode(setLists) {
+            self.defaults.set(encoded, forKey: UserDefaultsKeys().setLists)
+            self.defaults.synchronize()
+        }
+    }
     
     var body: some View {
         VStack {
             TextField("Title", text: $title)
             Spacer()
             Button(action: {
-                setLists.append(SetList(name: title))
-                if let encoded = try? JSONEncoder().encode(setLists) {
-                    self.defaults.set(encoded, forKey: UserDefaultsKeys().setLists)
-                    self.defaults.synchronize()
+                if id != nil {
+                    updateSetList()
+                } else {
+                    insertSetList()
                 }
-                
                 self.presentationMode.wrappedValue.dismiss()
             }) {
-                Text("Add Set List")
+                Text(id != nil ? "Save Set List" : "Add Set List")
             }
             .padding()
             .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
@@ -41,7 +61,7 @@ struct AddSetList: View {
         @State var setList = [SetList]()
         
         var body: some View {
-            AddSetList(setLists: $setList)
+            AddSetList(setLists: $setList, id: UUID(), title: "Test")
         }
     }
     
