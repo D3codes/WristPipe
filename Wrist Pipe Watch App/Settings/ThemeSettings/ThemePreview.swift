@@ -23,7 +23,7 @@ struct ThemePreview: View {
             PitchRing(selectedPitch: $selectedPitch, theme: $theme)
             PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImagePreview)
             if showSaveButton {
-                ZStack() {
+                ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(.ultraThinMaterial)
                     VStack {
@@ -51,8 +51,8 @@ struct ThemePreview: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Button { withAnimation(.easeInOut(duration: 0.75)) { showImagePreview.toggle() } } label: {
                     showImagePreview && theme.logo != nil
-                    ? Image(systemName: "photo.circle").foregroundStyle(Color.white)
-                    : Image("photo.circle.slash").foregroundStyle(Color.white)
+                    ? Image("custom.photo.circle").foregroundStyle(Color.white)
+                    : Image("custom.photo.circle.slash").foregroundStyle(Color.white)
                 }
                 .contentTransition(.symbolEffect(.replace))
                 .disabled(theme.logo == nil)
