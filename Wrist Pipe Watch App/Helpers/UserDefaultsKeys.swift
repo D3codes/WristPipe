@@ -24,5 +24,7 @@ struct UserDefaultsKeys {
     let ignoreSilentMode = "ignoreSilentMode"
     
     let instrument = "instrument"
+    
+    let octave = "octave"
 }
 

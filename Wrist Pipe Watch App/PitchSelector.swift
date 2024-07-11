@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PitchSelector: View {
     @AppStorage(UserDefaultsKeys().holdToPlay) private var holdToPlay = true
+    @State var selectedInstrument: Instrument = pitchPipe
+    let defaults = UserDefaults.standard
     @Binding var selectedPitch: Double
     @Binding var theme: any Theme
     @Binding var showImage: Bool
@@ -25,11 +27,18 @@ struct PitchSelector: View {
         return pitchPlayer.pitches[getSelectedPitchIndex()]
     }
     
+    func getSelectedInstrument() {
+        if let data = defaults.object(forKey: UserDefaultsKeys().instrument) as? Data,
+        let item = try? JSONDecoder().decode(Instrument.self, from: data) {
+            self.selectedInstrument = item
+        }
+    }
+    
     var body: some View {
         ZStack {
             if #available(watchOS 11.0, *) {
                 Button ("") {
-                    pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName)
+                    pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName, instrument: selectedInstrument.name)
                 }
                 .frame(width: selectorSize, height: selectorSize)
                 .clipShape(.circle)
@@ -62,11 +71,12 @@ struct PitchSelector: View {
         .onLongPressGesture(minimumDuration: 15) {
         } onPressingChanged: { inProgress in
             if inProgress {
-                pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName)
+                pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName, instrument: selectedInstrument.name)
             } else if holdToPlay {
                 pitchPlayer.stopPlaying()
             }
         }
+        .onAppear(perform: getSelectedInstrument)
     }
 }
 

@@ -12,8 +12,8 @@ import AVFoundation
 var pitchSound: AVAudioPlayer!
 
 class PitchPlayer {
+    @AppStorage(UserDefaultsKeys().octave) private var octave = Octave.mid.rawValue
     @AppStorage(UserDefaultsKeys().ignoreSilentMode) private var ignoreSilentMode = true
-    @AppStorage(UserDefaultsKeys().instrument) private var instrument = "PitchPipe"
     
     public let pitches: [Pitch] = [
         Pitch(id: 0, note: "F", fileName: "FNatural", xOff: sin((Double.pi/6) * Double(0)), yOff: -cos((Double.pi/6) * Double(0))),
@@ -36,13 +36,13 @@ class PitchPlayer {
         }
     }
     
-    public func playPitch(selectedPitch: String) {
+    public func playPitch(selectedPitch: String, instrument: String) {
         if pitchSound != nil && pitchSound!.isPlaying {
             pitchSound?.stop()
             return
         }
         
-        let path = Bundle.main.path(forResource: "\(instrument)_\(selectedPitch)", ofType:"mp3")!
+        let path = Bundle.main.path(forResource: "\(octave)\(instrument.filter{!$0.isWhitespace})_\(selectedPitch)", ofType:"mp3")!
         let url = URL(fileURLWithPath: path)
         do {
             if ignoreSilentMode {

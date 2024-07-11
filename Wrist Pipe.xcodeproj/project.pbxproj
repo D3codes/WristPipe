@@ -24,18 +24,18 @@
 		0E117A5A2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4F2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 */; };
 		0E117A5B2BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A502BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 */; };
 		0E117A5D2BB24511009B0B2A /* InstrumentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A5C2BB24511009B0B2A /* InstrumentSettings.swift */; };
-		0E117A6B2BB2486A009B0B2A /* Clarinet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A5F2BB2486A009B0B2A /* Clarinet_ANatural.mp3 */; };
-		0E117A6C2BB2486A009B0B2A /* Clarinet_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A602BB2486A009B0B2A /* Clarinet_BNatural.mp3 */; };
-		0E117A6D2BB2486A009B0B2A /* Clarinet_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A612BB2486A009B0B2A /* Clarinet_FSharp.mp3 */; };
-		0E117A6E2BB2486A009B0B2A /* Clarinet_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A622BB2486A009B0B2A /* Clarinet_CNatural.mp3 */; };
-		0E117A6F2BB2486A009B0B2A /* Clarinet_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A632BB2486A009B0B2A /* Clarinet_CSharp.mp3 */; };
-		0E117A702BB2486A009B0B2A /* Clarinet_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A642BB2486A009B0B2A /* Clarinet_DNatural.mp3 */; };
-		0E117A712BB2486A009B0B2A /* Clarinet_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A652BB2486A009B0B2A /* Clarinet_ENaturalHigh.mp3 */; };
-		0E117A722BB2486A009B0B2A /* Clarinet_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A662BB2486A009B0B2A /* Clarinet_FNatural.mp3 */; };
-		0E117A732BB2486A009B0B2A /* Clarinet_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A672BB2486A009B0B2A /* Clarinet_AFlat.mp3 */; };
-		0E117A742BB2486A009B0B2A /* Clarinet_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A682BB2486A009B0B2A /* Clarinet_GNatural.mp3 */; };
-		0E117A752BB2486A009B0B2A /* Clarinet_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A692BB2486A009B0B2A /* Clarinet_BFlat.mp3 */; };
-		0E117A762BB2486A009B0B2A /* Clarinet_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A6A2BB2486A009B0B2A /* Clarinet_EFlat.mp3 */; };
+		0E117A6B2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A5F2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 */; };
+		0E117A6C2BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A602BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 */; };
+		0E117A6D2BB2486A009B0B2A /* TenorClarinet_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A612BB2486A009B0B2A /* TenorClarinet_FSharp.mp3 */; };
+		0E117A6E2BB2486A009B0B2A /* TenorClarinet_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A622BB2486A009B0B2A /* TenorClarinet_CNatural.mp3 */; };
+		0E117A6F2BB2486A009B0B2A /* TenorClarinet_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A632BB2486A009B0B2A /* TenorClarinet_CSharp.mp3 */; };
+		0E117A702BB2486A009B0B2A /* TenorClarinet_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A642BB2486A009B0B2A /* TenorClarinet_DNatural.mp3 */; };
+		0E117A712BB2486A009B0B2A /* TenorClarinet_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A652BB2486A009B0B2A /* TenorClarinet_ENaturalHigh.mp3 */; };
+		0E117A722BB2486A009B0B2A /* TenorClarinet_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A662BB2486A009B0B2A /* TenorClarinet_FNatural.mp3 */; };
+		0E117A732BB2486A009B0B2A /* TenorClarinet_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A672BB2486A009B0B2A /* TenorClarinet_AFlat.mp3 */; };
+		0E117A742BB2486A009B0B2A /* TenorClarinet_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A682BB2486A009B0B2A /* TenorClarinet_GNatural.mp3 */; };
+		0E117A752BB2486A009B0B2A /* TenorClarinet_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A692BB2486A009B0B2A /* TenorClarinet_BFlat.mp3 */; };
+		0E117A762BB2486A009B0B2A /* TenorClarinet_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A6A2BB2486A009B0B2A /* TenorClarinet_EFlat.mp3 */; };
 		0E117A842BB24B43009B0B2A /* Whistle_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A782BB24B43009B0B2A /* Whistle_FNatural.mp3 */; };
 		0E117A852BB24B43009B0B2A /* Whistle_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A792BB24B43009B0B2A /* Whistle_FSharp.mp3 */; };
 		0E117A862BB24B43009B0B2A /* Whistle_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A7A2BB24B43009B0B2A /* Whistle_GNatural.mp3 */; };
@@ -130,6 +130,20 @@
 		0E595D322C3F6196005F0042 /* BassClarinet_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D1F2C3F6196005F0042 /* BassClarinet_BNatural.mp3 */; };
 		0E595D332C3F6196005F0042 /* BassClarinet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D1D2C3F6196005F0042 /* BassClarinet_ANatural.mp3 */; };
 		0E595D352C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D342C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 */; };
+		0E595D6C2C3F9106005F0042 /* Instruments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595D6B2C3F9104005F0042 /* Instruments.swift */; };
+		0E595D6E2C3F9137005F0042 /* Instrument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595D6D2C3F9134005F0042 /* Instrument.swift */; };
+		0E595D7E2C3F9F4A005F0042 /* Clarinet_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D742C3F9F4A005F0042 /* Clarinet_BFlat.mp3 */; };
+		0E595D7F2C3F9F4A005F0042 /* Clarinet_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D762C3F9F4A005F0042 /* Clarinet_CNatural.mp3 */; };
+		0E595D802C3F9F4A005F0042 /* Clarinet_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D752C3F9F4A005F0042 /* Clarinet_BNatural.mp3 */; };
+		0E595D812C3F9F4A005F0042 /* Clarinet_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D7C2C3F9F4A005F0042 /* Clarinet_FSharp.mp3 */; };
+		0E595D822C3F9F4A005F0042 /* Clarinet_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D722C3F9F4A005F0042 /* Clarinet_AFlat.mp3 */; };
+		0E595D832C3F9F4A005F0042 /* Clarinet_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D792C3F9F4A005F0042 /* Clarinet_EFlat.mp3 */; };
+		0E595D842C3F9F4A005F0042 /* Clarinet_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D7A2C3F9F4A005F0042 /* Clarinet_ENaturalHigh.mp3 */; };
+		0E595D852C3F9F4A005F0042 /* Clarinet_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D7B2C3F9F4A005F0042 /* Clarinet_FNatural.mp3 */; };
+		0E595D862C3F9F4A005F0042 /* Clarinet_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D782C3F9F4A005F0042 /* Clarinet_DNatural.mp3 */; };
+		0E595D872C3F9F4A005F0042 /* Clarinet_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D7D2C3F9F4A005F0042 /* Clarinet_GNatural.mp3 */; };
+		0E595D882C3F9F4A005F0042 /* Clarinet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D732C3F9F4A005F0042 /* Clarinet_ANatural.mp3 */; };
+		0E595D892C3F9F4A005F0042 /* Clarinet_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D772C3F9F4A005F0042 /* Clarinet_CSharp.mp3 */; };
 		0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBC2BD3637900581CCB /* ParksideTheme.swift */; };
 		0E595EBF2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */; };
 		0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC02BD36B0E00581CCB /* VOGTheme.swift */; };
@@ -275,18 +289,18 @@
 		0E117A4F2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_EFlat.mp3; sourceTree = "<group>"; };
 		0E117A502BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_ANatural.mp3; sourceTree = "<group>"; };
 		0E117A5C2BB24511009B0B2A /* InstrumentSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentSettings.swift; sourceTree = "<group>"; };
-		0E117A5F2BB2486A009B0B2A /* Clarinet_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_ANatural.mp3; sourceTree = "<group>"; };
-		0E117A602BB2486A009B0B2A /* Clarinet_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_BNatural.mp3; sourceTree = "<group>"; };
-		0E117A612BB2486A009B0B2A /* Clarinet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_FSharp.mp3; sourceTree = "<group>"; };
-		0E117A622BB2486A009B0B2A /* Clarinet_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_CNatural.mp3; sourceTree = "<group>"; };
-		0E117A632BB2486A009B0B2A /* Clarinet_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_CSharp.mp3; sourceTree = "<group>"; };
-		0E117A642BB2486A009B0B2A /* Clarinet_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_DNatural.mp3; sourceTree = "<group>"; };
-		0E117A652BB2486A009B0B2A /* Clarinet_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_ENaturalHigh.mp3; sourceTree = "<group>"; };
-		0E117A662BB2486A009B0B2A /* Clarinet_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_FNatural.mp3; sourceTree = "<group>"; };
-		0E117A672BB2486A009B0B2A /* Clarinet_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_AFlat.mp3; sourceTree = "<group>"; };
-		0E117A682BB2486A009B0B2A /* Clarinet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_GNatural.mp3; sourceTree = "<group>"; };
-		0E117A692BB2486A009B0B2A /* Clarinet_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_BFlat.mp3; sourceTree = "<group>"; };
-		0E117A6A2BB2486A009B0B2A /* Clarinet_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_EFlat.mp3; sourceTree = "<group>"; };
+		0E117A5F2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_ANatural.mp3; sourceTree = "<group>"; };
+		0E117A602BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_BNatural.mp3; sourceTree = "<group>"; };
+		0E117A612BB2486A009B0B2A /* TenorClarinet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_FSharp.mp3; sourceTree = "<group>"; };
+		0E117A622BB2486A009B0B2A /* TenorClarinet_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_CNatural.mp3; sourceTree = "<group>"; };
+		0E117A632BB2486A009B0B2A /* TenorClarinet_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_CSharp.mp3; sourceTree = "<group>"; };
+		0E117A642BB2486A009B0B2A /* TenorClarinet_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_DNatural.mp3; sourceTree = "<group>"; };
+		0E117A652BB2486A009B0B2A /* TenorClarinet_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_ENaturalHigh.mp3; sourceTree = "<group>"; };
+		0E117A662BB2486A009B0B2A /* TenorClarinet_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_FNatural.mp3; sourceTree = "<group>"; };
+		0E117A672BB2486A009B0B2A /* TenorClarinet_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_AFlat.mp3; sourceTree = "<group>"; };
+		0E117A682BB2486A009B0B2A /* TenorClarinet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_GNatural.mp3; sourceTree = "<group>"; };
+		0E117A692BB2486A009B0B2A /* TenorClarinet_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_BFlat.mp3; sourceTree = "<group>"; };
+		0E117A6A2BB2486A009B0B2A /* TenorClarinet_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_EFlat.mp3; sourceTree = "<group>"; };
 		0E117A782BB24B43009B0B2A /* Whistle_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Whistle_FNatural.mp3; sourceTree = "<group>"; };
 		0E117A792BB24B43009B0B2A /* Whistle_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Whistle_FSharp.mp3; sourceTree = "<group>"; };
 		0E117A7A2BB24B43009B0B2A /* Whistle_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Whistle_GNatural.mp3; sourceTree = "<group>"; };
@@ -382,6 +396,20 @@
 		0E595D262C3F6196005F0042 /* BassClarinet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_FSharp.mp3; sourceTree = "<group>"; };
 		0E595D272C3F6196005F0042 /* BassClarinet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_GNatural.mp3; sourceTree = "<group>"; };
 		0E595D342C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_ENaturalHigh.mp3; sourceTree = "<group>"; };
+		0E595D6B2C3F9104005F0042 /* Instruments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruments.swift; sourceTree = "<group>"; };
+		0E595D6D2C3F9134005F0042 /* Instrument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrument.swift; sourceTree = "<group>"; };
+		0E595D722C3F9F4A005F0042 /* Clarinet_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_AFlat.mp3; sourceTree = "<group>"; };
+		0E595D732C3F9F4A005F0042 /* Clarinet_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_ANatural.mp3; sourceTree = "<group>"; };
+		0E595D742C3F9F4A005F0042 /* Clarinet_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_BFlat.mp3; sourceTree = "<group>"; };
+		0E595D752C3F9F4A005F0042 /* Clarinet_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_BNatural.mp3; sourceTree = "<group>"; };
+		0E595D762C3F9F4A005F0042 /* Clarinet_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_CNatural.mp3; sourceTree = "<group>"; };
+		0E595D772C3F9F4A005F0042 /* Clarinet_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_CSharp.mp3; sourceTree = "<group>"; };
+		0E595D782C3F9F4A005F0042 /* Clarinet_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_DNatural.mp3; sourceTree = "<group>"; };
+		0E595D792C3F9F4A005F0042 /* Clarinet_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_EFlat.mp3; sourceTree = "<group>"; };
+		0E595D7A2C3F9F4A005F0042 /* Clarinet_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_ENaturalHigh.mp3; sourceTree = "<group>"; };
+		0E595D7B2C3F9F4A005F0042 /* Clarinet_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_FNatural.mp3; sourceTree = "<group>"; };
+		0E595D7C2C3F9F4A005F0042 /* Clarinet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_FSharp.mp3; sourceTree = "<group>"; };
+		0E595D7D2C3F9F4A005F0042 /* Clarinet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_GNatural.mp3; sourceTree = "<group>"; };
 		0E595EBC2BD3637900581CCB /* ParksideTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksideTheme.swift; sourceTree = "<group>"; };
 		0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandriaHarmonizersTheme.swift; sourceTree = "<group>"; };
 		0E595EC02BD36B0E00581CCB /* VOGTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOGTheme.swift; sourceTree = "<group>"; };
@@ -537,23 +565,23 @@
 			path = ReedOrgan;
 			sourceTree = "<group>";
 		};
-		0E117A5E2BB2485A009B0B2A /* Clarinet */ = {
+		0E117A5E2BB2485A009B0B2A /* TenorClarinet */ = {
 			isa = PBXGroup;
 			children = (
-				0E117A672BB2486A009B0B2A /* Clarinet_AFlat.mp3 */,
-				0E117A5F2BB2486A009B0B2A /* Clarinet_ANatural.mp3 */,
-				0E117A692BB2486A009B0B2A /* Clarinet_BFlat.mp3 */,
-				0E117A602BB2486A009B0B2A /* Clarinet_BNatural.mp3 */,
-				0E117A622BB2486A009B0B2A /* Clarinet_CNatural.mp3 */,
-				0E117A632BB2486A009B0B2A /* Clarinet_CSharp.mp3 */,
-				0E117A642BB2486A009B0B2A /* Clarinet_DNatural.mp3 */,
-				0E117A6A2BB2486A009B0B2A /* Clarinet_EFlat.mp3 */,
-				0E117A652BB2486A009B0B2A /* Clarinet_ENaturalHigh.mp3 */,
-				0E117A662BB2486A009B0B2A /* Clarinet_FNatural.mp3 */,
-				0E117A612BB2486A009B0B2A /* Clarinet_FSharp.mp3 */,
-				0E117A682BB2486A009B0B2A /* Clarinet_GNatural.mp3 */,
+				0E117A672BB2486A009B0B2A /* TenorClarinet_AFlat.mp3 */,
+				0E117A5F2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 */,
+				0E117A692BB2486A009B0B2A /* TenorClarinet_BFlat.mp3 */,
+				0E117A602BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 */,
+				0E117A622BB2486A009B0B2A /* TenorClarinet_CNatural.mp3 */,
+				0E117A632BB2486A009B0B2A /* TenorClarinet_CSharp.mp3 */,
+				0E117A642BB2486A009B0B2A /* TenorClarinet_DNatural.mp3 */,
+				0E117A6A2BB2486A009B0B2A /* TenorClarinet_EFlat.mp3 */,
+				0E117A652BB2486A009B0B2A /* TenorClarinet_ENaturalHigh.mp3 */,
+				0E117A662BB2486A009B0B2A /* TenorClarinet_FNatural.mp3 */,
+				0E117A612BB2486A009B0B2A /* TenorClarinet_FSharp.mp3 */,
+				0E117A682BB2486A009B0B2A /* TenorClarinet_GNatural.mp3 */,
 			);
-			path = Clarinet;
+			path = TenorClarinet;
 			sourceTree = "<group>";
 		};
 		0E117A772BB24B20009B0B2A /* Whistle */ = {
@@ -793,6 +821,36 @@
 			path = BassClarinet;
 			sourceTree = "<group>";
 		};
+		0E595D6A2C3F90FC005F0042 /* Instruments */ = {
+			isa = PBXGroup;
+			children = (
+				0E595D6B2C3F9104005F0042 /* Instruments.swift */,
+				0EDBF7722B8B7B3C00A313D8 /* Pitches */,
+			);
+			path = Instruments;
+			sourceTree = "<group>";
+		};
+		0E595D712C3F9ED8005F0042 /* Clarinet */ = {
+			isa = PBXGroup;
+			children = (
+				0E595D032C3F5FA3005F0042 /* BassClarinet */,
+				0E117A5E2BB2485A009B0B2A /* TenorClarinet */,
+				0E595D722C3F9F4A005F0042 /* Clarinet_AFlat.mp3 */,
+				0E595D732C3F9F4A005F0042 /* Clarinet_ANatural.mp3 */,
+				0E595D742C3F9F4A005F0042 /* Clarinet_BFlat.mp3 */,
+				0E595D752C3F9F4A005F0042 /* Clarinet_BNatural.mp3 */,
+				0E595D762C3F9F4A005F0042 /* Clarinet_CNatural.mp3 */,
+				0E595D772C3F9F4A005F0042 /* Clarinet_CSharp.mp3 */,
+				0E595D782C3F9F4A005F0042 /* Clarinet_DNatural.mp3 */,
+				0E595D792C3F9F4A005F0042 /* Clarinet_EFlat.mp3 */,
+				0E595D7A2C3F9F4A005F0042 /* Clarinet_ENaturalHigh.mp3 */,
+				0E595D7B2C3F9F4A005F0042 /* Clarinet_FNatural.mp3 */,
+				0E595D7C2C3F9F4A005F0042 /* Clarinet_FSharp.mp3 */,
+				0E595D7D2C3F9F4A005F0042 /* Clarinet_GNatural.mp3 */,
+			);
+			path = Clarinet;
+			sourceTree = "<group>";
+		};
 		0E595EBB2BD361FD00581CCB /* MAD */ = {
 			isa = PBXGroup;
 			children = (
@@ -903,16 +961,16 @@
 		0EDBF75C2B8B7AC500A313D8 /* Wrist Pipe Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				0E3486D32C3A03BB009D682A /* PitchSelector.swift */,
-				0E3486D12C3A003B009D682A /* PitchRing.swift */,
+				0E595D6A2C3F90FC005F0042 /* Instruments */,
 				0E89E03C2B90D48800FBD605 /* Set Lists */,
 				0EF7C1342B8C62170031AD78 /* Settings */,
 				0EDBF7942B8BFF2C00A313D8 /* Themes */,
 				0EDBF77F2B8B7B3C00A313D8 /* Helpers */,
 				0EDBF76F2B8B7B3C00A313D8 /* Models */,
 				0EDBF7712B8B7B3C00A313D8 /* PitchPipe.swift */,
+				0E3486D12C3A003B009D682A /* PitchRing.swift */,
+				0E3486D32C3A03BB009D682A /* PitchSelector.swift */,
 				0EDBF75D2B8B7AC500A313D8 /* WristPipeApp.swift */,
-				0EDBF7722B8B7B3C00A313D8 /* Pitches */,
 				0EDBF7612B8B7AC600A313D8 /* Assets.xcassets */,
 				0EDBF7632B8B7AC600A313D8 /* Preview Content */,
 			);
@@ -930,6 +988,7 @@
 		0EDBF76F2B8B7B3C00A313D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0E595D6D2C3F9134005F0042 /* Instrument.swift */,
 				0E91F6C42C39998F004FFFB9 /* SetList.swift */,
 				0E117AAD2BB28167009B0B2A /* Song.swift */,
 				0EDBF7702B8B7B3C00A313D8 /* Pitch.swift */,
@@ -941,10 +1000,9 @@
 		0EDBF7722B8B7B3C00A313D8 /* Pitches */ = {
 			isa = PBXGroup;
 			children = (
-				0E595D032C3F5FA3005F0042 /* BassClarinet */,
+				0E595D712C3F9ED8005F0042 /* Clarinet */,
 				0E117A922BB27DD1009B0B2A /* Trumpet */,
 				0E117A772BB24B20009B0B2A /* Whistle */,
-				0E117A5E2BB2485A009B0B2A /* Clarinet */,
 				0E117A412BB241AF009B0B2A /* ReedOrgan */,
 				0E117A402BB24195009B0B2A /* PitchPipe */,
 			);
@@ -1010,12 +1068,12 @@
 		0EF7C1342B8C62170031AD78 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				0E117A332BB1F9A2009B0B2A /* ThemeSettings */,
 				0EF7C1322B8C61C90031AD78 /* Settings.swift */,
 				0E89E0432B90F09D00FBD605 /* VolumeSettings.swift */,
+				0E117A332BB1F9A2009B0B2A /* ThemeSettings */,
+				0E117A5C2BB24511009B0B2A /* InstrumentSettings.swift */,
 				0E89E0452B90F0B700FBD605 /* HoldToPlaySettings.swift */,
 				0E117A3E2BB23F92009B0B2A /* About.swift */,
-				0E117A5C2BB24511009B0B2A /* InstrumentSettings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1150,11 +1208,11 @@
 				0E117AA42BB27DD8009B0B2A /* Trumpet_BFlat.mp3 in Resources */,
 				0E117A592BB244E1009B0B2A /* ReedOrgan_BFlat.mp3 in Resources */,
 				0EDBF78D2B8B7B3C00A313D8 /* PitchPipe_ANatural.mp3 in Resources */,
-				0E117A6E2BB2486A009B0B2A /* Clarinet_CNatural.mp3 in Resources */,
+				0E117A6E2BB2486A009B0B2A /* TenorClarinet_CNatural.mp3 in Resources */,
 				0EDBF7652B8B7AC600A313D8 /* Preview Assets.xcassets in Resources */,
 				0EDBF7852B8B7B3C00A313D8 /* PitchPipe_BNatural.mp3 in Resources */,
 				0E117A8C2BB24B43009B0B2A /* Whistle_CSharp.mp3 in Resources */,
-				0E117A6B2BB2486A009B0B2A /* Clarinet_ANatural.mp3 in Resources */,
+				0E117A6B2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 in Resources */,
 				0E117A8D2BB24B43009B0B2A /* Whistle_BFlat.mp3 in Resources */,
 				0E117AA32BB27DD8009B0B2A /* Trumpet_AFlat.mp3 in Resources */,
 				0E117AA22BB27DD8009B0B2A /* Trumpet_ANatural.mp3 in Resources */,
@@ -1165,7 +1223,7 @@
 				0E117A882BB24B43009B0B2A /* Whistle_BNatural.mp3 in Resources */,
 				0E117A582BB244E1009B0B2A /* ReedOrgan_AFlat.mp3 in Resources */,
 				0E117AA12BB27DD8009B0B2A /* Trumpet_DNatural.mp3 in Resources */,
-				0E117A752BB2486A009B0B2A /* Clarinet_BFlat.mp3 in Resources */,
+				0E117A752BB2486A009B0B2A /* TenorClarinet_BFlat.mp3 in Resources */,
 				0E117A9F2BB27DD8009B0B2A /* Trumpet_FSharp.mp3 in Resources */,
 				0E117AA02BB27DD8009B0B2A /* Trumpet_GNatural.mp3 in Resources */,
 				0EDBF78E2B8B7B3C00A313D8 /* PitchPipe_DNatural.mp3 in Resources */,
@@ -1180,31 +1238,43 @@
 				0E117A532BB244E1009B0B2A /* ReedOrgan_GNatural.mp3 in Resources */,
 				0EDBF7882B8B7B3C00A313D8 /* PitchPipe_ENaturalHigh.mp3 in Resources */,
 				0EDBF78A2B8B7B3C00A313D8 /* PitchPipe_CNatural.mp3 in Resources */,
-				0E117A732BB2486A009B0B2A /* Clarinet_AFlat.mp3 in Resources */,
+				0E117A732BB2486A009B0B2A /* TenorClarinet_AFlat.mp3 in Resources */,
 				0EDBF7832B8B7B3C00A313D8 /* PitchPipe_GNatural.mp3 in Resources */,
-				0E117A742BB2486A009B0B2A /* Clarinet_GNatural.mp3 in Resources */,
+				0E117A742BB2486A009B0B2A /* TenorClarinet_GNatural.mp3 in Resources */,
 				0E117A452BB24252009B0B2A /* ReedOrgan_CNatural.mp3 in Resources */,
 				0EDBF78C2B8B7B3C00A313D8 /* PitchPipe_EFlat.mp3 in Resources */,
 				0E117A5A2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 in Resources */,
 				0E117A8A2BB24B43009B0B2A /* Whistle_ENaturalHigh.mp3 in Resources */,
 				0E117A842BB24B43009B0B2A /* Whistle_FNatural.mp3 in Resources */,
-				0E117A762BB2486A009B0B2A /* Clarinet_EFlat.mp3 in Resources */,
-				0E117A6F2BB2486A009B0B2A /* Clarinet_CSharp.mp3 in Resources */,
+				0E117A762BB2486A009B0B2A /* TenorClarinet_EFlat.mp3 in Resources */,
+				0E117A6F2BB2486A009B0B2A /* TenorClarinet_CSharp.mp3 in Resources */,
+				0E595D7E2C3F9F4A005F0042 /* Clarinet_BFlat.mp3 in Resources */,
+				0E595D7F2C3F9F4A005F0042 /* Clarinet_CNatural.mp3 in Resources */,
+				0E595D802C3F9F4A005F0042 /* Clarinet_BNatural.mp3 in Resources */,
+				0E595D812C3F9F4A005F0042 /* Clarinet_FSharp.mp3 in Resources */,
+				0E595D822C3F9F4A005F0042 /* Clarinet_AFlat.mp3 in Resources */,
+				0E595D832C3F9F4A005F0042 /* Clarinet_EFlat.mp3 in Resources */,
+				0E595D842C3F9F4A005F0042 /* Clarinet_ENaturalHigh.mp3 in Resources */,
+				0E595D852C3F9F4A005F0042 /* Clarinet_FNatural.mp3 in Resources */,
+				0E595D862C3F9F4A005F0042 /* Clarinet_DNatural.mp3 in Resources */,
+				0E595D872C3F9F4A005F0042 /* Clarinet_GNatural.mp3 in Resources */,
+				0E595D882C3F9F4A005F0042 /* Clarinet_ANatural.mp3 in Resources */,
+				0E595D892C3F9F4A005F0042 /* Clarinet_CSharp.mp3 in Resources */,
 				0EDBF7622B8B7AC600A313D8 /* Assets.xcassets in Resources */,
 				0E117A8E2BB24B43009B0B2A /* Whistle_CNatural.mp3 in Resources */,
 				0E117A562BB244E1009B0B2A /* ReedOrgan_CSharp.mp3 in Resources */,
-				0E117A722BB2486A009B0B2A /* Clarinet_FNatural.mp3 in Resources */,
+				0E117A722BB2486A009B0B2A /* TenorClarinet_FNatural.mp3 in Resources */,
 				0EDBF7842B8B7B3C00A313D8 /* PitchPipe_AFlat.mp3 in Resources */,
-				0E117A712BB2486A009B0B2A /* Clarinet_ENaturalHigh.mp3 in Resources */,
+				0E117A712BB2486A009B0B2A /* TenorClarinet_ENaturalHigh.mp3 in Resources */,
 				0EDBF7872B8B7B3C00A313D8 /* PitchPipe_BFlat.mp3 in Resources */,
 				0E117A5B2BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 in Resources */,
 				0E117A8F2BB24B43009B0B2A /* Whistle_EFlat.mp3 in Resources */,
-				0E117A6D2BB2486A009B0B2A /* Clarinet_FSharp.mp3 in Resources */,
+				0E117A6D2BB2486A009B0B2A /* TenorClarinet_FSharp.mp3 in Resources */,
 				0E117A8B2BB24B43009B0B2A /* Whistle_AFlat.mp3 in Resources */,
 				0E117A892BB24B43009B0B2A /* Whistle_ANatural.mp3 in Resources */,
 				0E117A572BB244E1009B0B2A /* ReedOrgan_FNatural.mp3 in Resources */,
 				0E117A852BB24B43009B0B2A /* Whistle_FSharp.mp3 in Resources */,
-				0E117A6C2BB2486A009B0B2A /* Clarinet_BNatural.mp3 in Resources */,
+				0E117A6C2BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 in Resources */,
 				0E117A542BB244E1009B0B2A /* ReedOrgan_ENaturalHigh.mp3 in Resources */,
 				0E117AA72BB27DD8009B0B2A /* Trumpet_EFlat.mp3 in Resources */,
 				0EDBF7862B8B7B3C00A313D8 /* PitchPipe_CSharp.mp3 in Resources */,
@@ -1220,7 +1290,7 @@
 				0E595D322C3F6196005F0042 /* BassClarinet_BNatural.mp3 in Resources */,
 				0E595D332C3F6196005F0042 /* BassClarinet_ANatural.mp3 in Resources */,
 				0E117AA62BB27DD8009B0B2A /* Trumpet_ENaturalHigh.mp3 in Resources */,
-				0E117A702BB2486A009B0B2A /* Clarinet_DNatural.mp3 in Resources */,
+				0E117A702BB2486A009B0B2A /* TenorClarinet_DNatural.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1329,6 +1399,7 @@
 				0E2514BE2C2129C000D94EA1 /* SpaceCityTheme.swift in Sources */,
 				0EF7C1332B8C61C90031AD78 /* Settings.swift in Sources */,
 				0E595ECF2BD4791900581CCB /* GOHTheme.swift in Sources */,
+				0E595D6E2C3F9137005F0042 /* Instrument.swift in Sources */,
 				0EC171DE2BB3F78B004908E0 /* BoiseChordsTheme.swift in Sources */,
 				0E214C5B2C28825F00B05F82 /* SMCTheme.swift in Sources */,
 				0E2514B62C21205B00D94EA1 /* SOTNTheme.swift in Sources */,
@@ -1336,6 +1407,7 @@
 				0EF0E1FC2BB3E97500B31FFA /* PDXTheme.swift in Sources */,
 				0EF0E1E22BB3881A00B31FFA /* CircleCitySoundTheme.swift in Sources */,
 				0E3486D62C3A202C009D682A /* ThemePreview.swift in Sources */,
+				0E595D6C2C3F9106005F0042 /* Instruments.swift in Sources */,
 				0EC171F52BB4B6F3004908E0 /* PCHTheme.swift in Sources */,
 				0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */,
 				0E2514D12C21480500D94EA1 /* HOHTheme.swift in Sources */,
@@ -1390,7 +1462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1420,7 +1492,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1567,7 +1639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1596,7 +1668,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1624,7 +1696,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1639,7 +1711,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 15;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;

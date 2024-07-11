@@ -13,6 +13,7 @@ struct SongList: View {
     @State var setListId: UUID
     @State var setListName: String
     @State var songs: [Song] = []
+    @State var selectedInstrument: Instrument = pitchPipe
     let defaults = UserDefaults.standard
     let pitchPlayer = PitchPlayer()
     
@@ -22,6 +23,13 @@ struct SongList: View {
         if let data = defaults.object(forKey: UserDefaultsKeys().setListKey(for: setListId)) as? Data,
         let items = try? JSONDecoder().decode([Song].self, from: data) {
             self.songs = items
+        }
+    }
+    
+    func getSelectedInstrument() {
+        if let data = defaults.object(forKey: UserDefaultsKeys().instrument) as? Data,
+        let item = try? JSONDecoder().decode(Instrument.self, from: data) {
+            self.selectedInstrument = item
         }
     }
     
@@ -43,7 +51,7 @@ struct SongList: View {
                             .onLongPressGesture(minimumDuration: 15) {
                             } onPressingChanged: { inProgress in
                                 if inProgress {
-                                    pitchPlayer.playPitch(selectedPitch: song.fileName)
+                                    pitchPlayer.playPitch(selectedPitch: song.fileName, instrument: selectedInstrument.name)
                                 } else if holdToPlay {
                                     pitchPlayer.stopPlaying()
                                 }
@@ -97,7 +105,10 @@ struct SongList: View {
                 }
             }
         }
-        .onAppear(perform: getSetList)
+        .onAppear(perform: {
+            getSetList()
+            getSelectedInstrument()
+        })
     }
     
     private func moveRow(from: IndexSet, to: Int) {
