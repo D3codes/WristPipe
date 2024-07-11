@@ -11,6 +11,7 @@ struct InstrumentSettings: View {
     @AppStorage(UserDefaultsKeys().instrument) private var instrument = "PitchPipe"
     
     private let instruments = [
+        "Bass Clarinet",
         "Clarinet",
         "Pitch Pipe",
         "Reed Organ",

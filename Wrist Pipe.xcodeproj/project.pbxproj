@@ -118,6 +118,18 @@
 		0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB332BB600D000265CA2 /* GNUTheme.swift */; };
 		0E3FAB362BB6043300265CA2 /* CommodoresTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB352BB6043300265CA2 /* CommodoresTheme.swift */; };
 		0E3FAB382BB6154E00265CA2 /* GPHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3FAB372BB6154E00265CA2 /* GPHTheme.swift */; };
+		0E595D282C3F6196005F0042 /* BassClarinet_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D1E2C3F6196005F0042 /* BassClarinet_BFlat.mp3 */; };
+		0E595D2A2C3F6196005F0042 /* BassClarinet_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D252C3F6196005F0042 /* BassClarinet_FNatural.mp3 */; };
+		0E595D2B2C3F6196005F0042 /* BassClarinet_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D232C3F6196005F0042 /* BassClarinet_EFlat.mp3 */; };
+		0E595D2C2C3F6196005F0042 /* BassClarinet_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D202C3F6196005F0042 /* BassClarinet_CNatural.mp3 */; };
+		0E595D2D2C3F6196005F0042 /* BassClarinet_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D262C3F6196005F0042 /* BassClarinet_FSharp.mp3 */; };
+		0E595D2E2C3F6196005F0042 /* BassClarinet_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D272C3F6196005F0042 /* BassClarinet_GNatural.mp3 */; };
+		0E595D2F2C3F6196005F0042 /* BassClarinet_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D212C3F6196005F0042 /* BassClarinet_CSharp.mp3 */; };
+		0E595D302C3F6196005F0042 /* BassClarinet_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D1C2C3F6196005F0042 /* BassClarinet_AFlat.mp3 */; };
+		0E595D312C3F6196005F0042 /* BassClarinet_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D222C3F6196005F0042 /* BassClarinet_DNatural.mp3 */; };
+		0E595D322C3F6196005F0042 /* BassClarinet_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D1F2C3F6196005F0042 /* BassClarinet_BNatural.mp3 */; };
+		0E595D332C3F6196005F0042 /* BassClarinet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D1D2C3F6196005F0042 /* BassClarinet_ANatural.mp3 */; };
+		0E595D352C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D342C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 */; };
 		0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBC2BD3637900581CCB /* ParksideTheme.swift */; };
 		0E595EBF2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */; };
 		0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC02BD36B0E00581CCB /* VOGTheme.swift */; };
@@ -358,6 +370,18 @@
 		0E3FAB332BB600D000265CA2 /* GNUTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNUTheme.swift; sourceTree = "<group>"; };
 		0E3FAB352BB6043300265CA2 /* CommodoresTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommodoresTheme.swift; sourceTree = "<group>"; };
 		0E3FAB372BB6154E00265CA2 /* GPHTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPHTheme.swift; sourceTree = "<group>"; };
+		0E595D1C2C3F6196005F0042 /* BassClarinet_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_AFlat.mp3; sourceTree = "<group>"; };
+		0E595D1D2C3F6196005F0042 /* BassClarinet_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_ANatural.mp3; sourceTree = "<group>"; };
+		0E595D1E2C3F6196005F0042 /* BassClarinet_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_BFlat.mp3; sourceTree = "<group>"; };
+		0E595D1F2C3F6196005F0042 /* BassClarinet_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_BNatural.mp3; sourceTree = "<group>"; };
+		0E595D202C3F6196005F0042 /* BassClarinet_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_CNatural.mp3; sourceTree = "<group>"; };
+		0E595D212C3F6196005F0042 /* BassClarinet_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_CSharp.mp3; sourceTree = "<group>"; };
+		0E595D222C3F6196005F0042 /* BassClarinet_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_DNatural.mp3; sourceTree = "<group>"; };
+		0E595D232C3F6196005F0042 /* BassClarinet_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_EFlat.mp3; sourceTree = "<group>"; };
+		0E595D252C3F6196005F0042 /* BassClarinet_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_FNatural.mp3; sourceTree = "<group>"; };
+		0E595D262C3F6196005F0042 /* BassClarinet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_FSharp.mp3; sourceTree = "<group>"; };
+		0E595D272C3F6196005F0042 /* BassClarinet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_GNatural.mp3; sourceTree = "<group>"; };
+		0E595D342C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassClarinet_ENaturalHigh.mp3; sourceTree = "<group>"; };
 		0E595EBC2BD3637900581CCB /* ParksideTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksideTheme.swift; sourceTree = "<group>"; };
 		0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandriaHarmonizersTheme.swift; sourceTree = "<group>"; };
 		0E595EC02BD36B0E00581CCB /* VOGTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOGTheme.swift; sourceTree = "<group>"; };
@@ -750,6 +774,25 @@
 			path = LOL;
 			sourceTree = "<group>";
 		};
+		0E595D032C3F5FA3005F0042 /* BassClarinet */ = {
+			isa = PBXGroup;
+			children = (
+				0E595D1C2C3F6196005F0042 /* BassClarinet_AFlat.mp3 */,
+				0E595D1D2C3F6196005F0042 /* BassClarinet_ANatural.mp3 */,
+				0E595D1E2C3F6196005F0042 /* BassClarinet_BFlat.mp3 */,
+				0E595D1F2C3F6196005F0042 /* BassClarinet_BNatural.mp3 */,
+				0E595D202C3F6196005F0042 /* BassClarinet_CNatural.mp3 */,
+				0E595D212C3F6196005F0042 /* BassClarinet_CSharp.mp3 */,
+				0E595D222C3F6196005F0042 /* BassClarinet_DNatural.mp3 */,
+				0E595D232C3F6196005F0042 /* BassClarinet_EFlat.mp3 */,
+				0E595D252C3F6196005F0042 /* BassClarinet_FNatural.mp3 */,
+				0E595D262C3F6196005F0042 /* BassClarinet_FSharp.mp3 */,
+				0E595D272C3F6196005F0042 /* BassClarinet_GNatural.mp3 */,
+				0E595D342C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 */,
+			);
+			path = BassClarinet;
+			sourceTree = "<group>";
+		};
 		0E595EBB2BD361FD00581CCB /* MAD */ = {
 			isa = PBXGroup;
 			children = (
@@ -898,6 +941,7 @@
 		0EDBF7722B8B7B3C00A313D8 /* Pitches */ = {
 			isa = PBXGroup;
 			children = (
+				0E595D032C3F5FA3005F0042 /* BassClarinet */,
 				0E117A922BB27DD1009B0B2A /* Trumpet */,
 				0E117A772BB24B20009B0B2A /* Whistle */,
 				0E117A5E2BB2485A009B0B2A /* Clarinet */,
@@ -1114,6 +1158,7 @@
 				0E117A8D2BB24B43009B0B2A /* Whistle_BFlat.mp3 in Resources */,
 				0E117AA32BB27DD8009B0B2A /* Trumpet_AFlat.mp3 in Resources */,
 				0E117AA22BB27DD8009B0B2A /* Trumpet_ANatural.mp3 in Resources */,
+				0E595D352C3F61E2005F0042 /* BassClarinet_ENaturalHigh.mp3 in Resources */,
 				0E117AAA2BB27DD8009B0B2A /* Trumpet_CSharp.mp3 in Resources */,
 				0E117AA82BB27DD8009B0B2A /* Trumpet_BNatural.mp3 in Resources */,
 				0E117AA92BB27DD8009B0B2A /* Trumpet_CNatural.mp3 in Resources */,
@@ -1163,6 +1208,17 @@
 				0E117A542BB244E1009B0B2A /* ReedOrgan_ENaturalHigh.mp3 in Resources */,
 				0E117AA72BB27DD8009B0B2A /* Trumpet_EFlat.mp3 in Resources */,
 				0EDBF7862B8B7B3C00A313D8 /* PitchPipe_CSharp.mp3 in Resources */,
+				0E595D282C3F6196005F0042 /* BassClarinet_BFlat.mp3 in Resources */,
+				0E595D2A2C3F6196005F0042 /* BassClarinet_FNatural.mp3 in Resources */,
+				0E595D2B2C3F6196005F0042 /* BassClarinet_EFlat.mp3 in Resources */,
+				0E595D2C2C3F6196005F0042 /* BassClarinet_CNatural.mp3 in Resources */,
+				0E595D2D2C3F6196005F0042 /* BassClarinet_FSharp.mp3 in Resources */,
+				0E595D2E2C3F6196005F0042 /* BassClarinet_GNatural.mp3 in Resources */,
+				0E595D2F2C3F6196005F0042 /* BassClarinet_CSharp.mp3 in Resources */,
+				0E595D302C3F6196005F0042 /* BassClarinet_AFlat.mp3 in Resources */,
+				0E595D312C3F6196005F0042 /* BassClarinet_DNatural.mp3 in Resources */,
+				0E595D322C3F6196005F0042 /* BassClarinet_BNatural.mp3 in Resources */,
+				0E595D332C3F6196005F0042 /* BassClarinet_ANatural.mp3 in Resources */,
 				0E117AA62BB27DD8009B0B2A /* Trumpet_ENaturalHigh.mp3 in Resources */,
 				0E117A702BB2486A009B0B2A /* Clarinet_DNatural.mp3 in Resources */,
 			);
@@ -1334,7 +1390,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1364,7 +1420,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1511,7 +1567,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1540,7 +1596,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1568,7 +1624,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1583,7 +1639,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
