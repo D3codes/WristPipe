@@ -11,18 +11,18 @@
 		0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A312BB0F183009B0B2A /* BHSThemesList.swift */; };
 		0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */; };
 		0E117A3F2BB23F92009B0B2A /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A3E2BB23F92009B0B2A /* About.swift */; };
-		0E117A452BB24252009B0B2A /* ReedOrgan_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A442BB24252009B0B2A /* ReedOrgan_CNatural.mp3 */; };
-		0E117A512BB244E1009B0B2A /* ReedOrgan_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A462BB244E1009B0B2A /* ReedOrgan_DNatural.mp3 */; };
-		0E117A522BB244E1009B0B2A /* ReedOrgan_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A472BB244E1009B0B2A /* ReedOrgan_FSharp.mp3 */; };
-		0E117A532BB244E1009B0B2A /* ReedOrgan_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A482BB244E1009B0B2A /* ReedOrgan_GNatural.mp3 */; };
-		0E117A542BB244E1009B0B2A /* ReedOrgan_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A492BB244E1009B0B2A /* ReedOrgan_ENaturalHigh.mp3 */; };
-		0E117A552BB244E1009B0B2A /* ReedOrgan_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4A2BB244E1009B0B2A /* ReedOrgan_BNatural.mp3 */; };
-		0E117A562BB244E1009B0B2A /* ReedOrgan_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4B2BB244E1009B0B2A /* ReedOrgan_CSharp.mp3 */; };
-		0E117A572BB244E1009B0B2A /* ReedOrgan_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4C2BB244E1009B0B2A /* ReedOrgan_FNatural.mp3 */; };
-		0E117A582BB244E1009B0B2A /* ReedOrgan_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4D2BB244E1009B0B2A /* ReedOrgan_AFlat.mp3 */; };
-		0E117A592BB244E1009B0B2A /* ReedOrgan_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4E2BB244E1009B0B2A /* ReedOrgan_BFlat.mp3 */; };
-		0E117A5A2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4F2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 */; };
-		0E117A5B2BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A502BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 */; };
+		0E117A452BB24252009B0B2A /* TenorReedOrgan_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A442BB24252009B0B2A /* TenorReedOrgan_CNatural.mp3 */; };
+		0E117A512BB244E1009B0B2A /* TenorReedOrgan_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A462BB244E1009B0B2A /* TenorReedOrgan_DNatural.mp3 */; };
+		0E117A522BB244E1009B0B2A /* TenorReedOrgan_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A472BB244E1009B0B2A /* TenorReedOrgan_FSharp.mp3 */; };
+		0E117A532BB244E1009B0B2A /* TenorReedOrgan_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A482BB244E1009B0B2A /* TenorReedOrgan_GNatural.mp3 */; };
+		0E117A542BB244E1009B0B2A /* TenorReedOrgan_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A492BB244E1009B0B2A /* TenorReedOrgan_ENaturalHigh.mp3 */; };
+		0E117A552BB244E1009B0B2A /* TenorReedOrgan_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4A2BB244E1009B0B2A /* TenorReedOrgan_BNatural.mp3 */; };
+		0E117A562BB244E1009B0B2A /* TenorReedOrgan_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4B2BB244E1009B0B2A /* TenorReedOrgan_CSharp.mp3 */; };
+		0E117A572BB244E1009B0B2A /* TenorReedOrgan_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4C2BB244E1009B0B2A /* TenorReedOrgan_FNatural.mp3 */; };
+		0E117A582BB244E1009B0B2A /* TenorReedOrgan_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4D2BB244E1009B0B2A /* TenorReedOrgan_AFlat.mp3 */; };
+		0E117A592BB244E1009B0B2A /* TenorReedOrgan_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4E2BB244E1009B0B2A /* TenorReedOrgan_BFlat.mp3 */; };
+		0E117A5A2BB244E1009B0B2A /* TenorReedOrgan_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A4F2BB244E1009B0B2A /* TenorReedOrgan_EFlat.mp3 */; };
+		0E117A5B2BB244E1009B0B2A /* TenorReedOrgan_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A502BB244E1009B0B2A /* TenorReedOrgan_ANatural.mp3 */; };
 		0E117A5D2BB24511009B0B2A /* InstrumentSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A5C2BB24511009B0B2A /* InstrumentSettings.swift */; };
 		0E117A6B2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A5F2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 */; };
 		0E117A6C2BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E117A602BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 */; };
@@ -144,6 +144,42 @@
 		0E595D872C3F9F4A005F0042 /* Clarinet_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D7D2C3F9F4A005F0042 /* Clarinet_GNatural.mp3 */; };
 		0E595D882C3F9F4A005F0042 /* Clarinet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D732C3F9F4A005F0042 /* Clarinet_ANatural.mp3 */; };
 		0E595D892C3F9F4A005F0042 /* Clarinet_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595D772C3F9F4A005F0042 /* Clarinet_CSharp.mp3 */; };
+		0E595DB02C401AE7005F0042 /* ReedOrgan_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DA82C401AE7005F0042 /* ReedOrgan_CNatural.mp3 */; };
+		0E595DB12C401AE7005F0042 /* ReedOrgan_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DA62C401AE7005F0042 /* ReedOrgan_BFlat.mp3 */; };
+		0E595DB22C401AE7005F0042 /* ReedOrgan_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DAA2C401AE7005F0042 /* ReedOrgan_DNatural.mp3 */; };
+		0E595DB32C401AE7005F0042 /* ReedOrgan_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DA52C401AE7005F0042 /* ReedOrgan_ANatural.mp3 */; };
+		0E595DB42C401AE7005F0042 /* ReedOrgan_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DAE2C401AE7005F0042 /* ReedOrgan_FSharp.mp3 */; };
+		0E595DB52C401AE7005F0042 /* ReedOrgan_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DA72C401AE7005F0042 /* ReedOrgan_BNatural.mp3 */; };
+		0E595DB62C401AE7005F0042 /* ReedOrgan_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DAC2C401AE7005F0042 /* ReedOrgan_ENaturalHigh.mp3 */; };
+		0E595DB72C401AE7005F0042 /* ReedOrgan_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DAD2C401AE7005F0042 /* ReedOrgan_FNatural.mp3 */; };
+		0E595DB82C401AE7005F0042 /* ReedOrgan_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DA42C401AE7005F0042 /* ReedOrgan_AFlat.mp3 */; };
+		0E595DB92C401AE7005F0042 /* ReedOrgan_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DA92C401AE7005F0042 /* ReedOrgan_CSharp.mp3 */; };
+		0E595DBA2C401AE7005F0042 /* ReedOrgan_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DAB2C401AE7005F0042 /* ReedOrgan_EFlat.mp3 */; };
+		0E595DBB2C401AE7005F0042 /* ReedOrgan_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DAF2C401AE7005F0042 /* ReedOrgan_GNatural.mp3 */; };
+		0E595DC92C406D5D005F0042 /* BassTrumpet_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC52C406D5D005F0042 /* BassTrumpet_ENaturalHigh.mp3 */; };
+		0E595DCA2C406D5D005F0042 /* BassTrumpet_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC82C406D5D005F0042 /* BassTrumpet_GNatural.mp3 */; };
+		0E595DCB2C406D5D005F0042 /* BassTrumpet_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC62C406D5D005F0042 /* BassTrumpet_FNatural.mp3 */; };
+		0E595DCC2C406D5D005F0042 /* BassTrumpet_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DBE2C406D5D005F0042 /* BassTrumpet_ANatural.mp3 */; };
+		0E595DCD2C406D5D005F0042 /* BassTrumpet_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DBF2C406D5D005F0042 /* BassTrumpet_BFlat.mp3 */; };
+		0E595DCE2C406D5D005F0042 /* BassTrumpet_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC32C406D5D005F0042 /* BassTrumpet_DNatural.mp3 */; };
+		0E595DCF2C406D5D005F0042 /* BassTrumpet_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC02C406D5D005F0042 /* BassTrumpet_BNatural.mp3 */; };
+		0E595DD02C406D5D005F0042 /* BassTrumpet_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC72C406D5D005F0042 /* BassTrumpet_FSharp.mp3 */; };
+		0E595DD12C406D5D005F0042 /* BassTrumpet_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC12C406D5D005F0042 /* BassTrumpet_CNatural.mp3 */; };
+		0E595DD22C406D5D005F0042 /* BassTrumpet_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DBD2C406D5D005F0042 /* BassTrumpet_AFlat.mp3 */; };
+		0E595DD32C406D5D005F0042 /* BassTrumpet_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC42C406D5D005F0042 /* BassTrumpet_EFlat.mp3 */; };
+		0E595DD42C406D5D005F0042 /* BassTrumpet_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC22C406D5D005F0042 /* BassTrumpet_CSharp.mp3 */; };
+		0E595DE22C406EDF005F0042 /* BassWhistle_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD72C406EDF005F0042 /* BassWhistle_ANatural.mp3 */; };
+		0E595DE32C406EDF005F0042 /* BassWhistle_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD62C406EDF005F0042 /* BassWhistle_AFlat.mp3 */; };
+		0E595DE42C406EDF005F0042 /* BassWhistle_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD92C406EDF005F0042 /* BassWhistle_BNatural.mp3 */; };
+		0E595DE52C406EDF005F0042 /* BassWhistle_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDC2C406EDF005F0042 /* BassWhistle_DNatural.mp3 */; };
+		0E595DE62C406EDF005F0042 /* BassWhistle_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD82C406EDF005F0042 /* BassWhistle_BFlat.mp3 */; };
+		0E595DE72C406EDF005F0042 /* BassWhistle_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDD2C406EDF005F0042 /* BassWhistle_EFlat.mp3 */; };
+		0E595DE82C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDE2C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 */; };
+		0E595DE92C406EDF005F0042 /* BassWhistle_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DE02C406EDF005F0042 /* BassWhistle_FSharp.mp3 */; };
+		0E595DEA2C406EDF005F0042 /* BassWhistle_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DE12C406EDF005F0042 /* BassWhistle_GNatural.mp3 */; };
+		0E595DEB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 */; };
+		0E595DEC2C406EDF005F0042 /* BassWhistle_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDA2C406EDF005F0042 /* BassWhistle_CNatural.mp3 */; };
+		0E595DED2C406EDF005F0042 /* BassWhistle_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDF2C406EDF005F0042 /* BassWhistle_FNatural.mp3 */; };
 		0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBC2BD3637900581CCB /* ParksideTheme.swift */; };
 		0E595EBF2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */; };
 		0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC02BD36B0E00581CCB /* VOGTheme.swift */; };
@@ -276,18 +312,18 @@
 		0E117A312BB0F183009B0B2A /* BHSThemesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSThemesList.swift; sourceTree = "<group>"; };
 		0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		0E117A3E2BB23F92009B0B2A /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
-		0E117A442BB24252009B0B2A /* ReedOrgan_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_CNatural.mp3; sourceTree = "<group>"; };
-		0E117A462BB244E1009B0B2A /* ReedOrgan_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_DNatural.mp3; sourceTree = "<group>"; };
-		0E117A472BB244E1009B0B2A /* ReedOrgan_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_FSharp.mp3; sourceTree = "<group>"; };
-		0E117A482BB244E1009B0B2A /* ReedOrgan_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_GNatural.mp3; sourceTree = "<group>"; };
-		0E117A492BB244E1009B0B2A /* ReedOrgan_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_ENaturalHigh.mp3; sourceTree = "<group>"; };
-		0E117A4A2BB244E1009B0B2A /* ReedOrgan_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_BNatural.mp3; sourceTree = "<group>"; };
-		0E117A4B2BB244E1009B0B2A /* ReedOrgan_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_CSharp.mp3; sourceTree = "<group>"; };
-		0E117A4C2BB244E1009B0B2A /* ReedOrgan_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_FNatural.mp3; sourceTree = "<group>"; };
-		0E117A4D2BB244E1009B0B2A /* ReedOrgan_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_AFlat.mp3; sourceTree = "<group>"; };
-		0E117A4E2BB244E1009B0B2A /* ReedOrgan_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_BFlat.mp3; sourceTree = "<group>"; };
-		0E117A4F2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_EFlat.mp3; sourceTree = "<group>"; };
-		0E117A502BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_ANatural.mp3; sourceTree = "<group>"; };
+		0E117A442BB24252009B0B2A /* TenorReedOrgan_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_CNatural.mp3; sourceTree = "<group>"; };
+		0E117A462BB244E1009B0B2A /* TenorReedOrgan_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_DNatural.mp3; sourceTree = "<group>"; };
+		0E117A472BB244E1009B0B2A /* TenorReedOrgan_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_FSharp.mp3; sourceTree = "<group>"; };
+		0E117A482BB244E1009B0B2A /* TenorReedOrgan_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_GNatural.mp3; sourceTree = "<group>"; };
+		0E117A492BB244E1009B0B2A /* TenorReedOrgan_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_ENaturalHigh.mp3; sourceTree = "<group>"; };
+		0E117A4A2BB244E1009B0B2A /* TenorReedOrgan_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_BNatural.mp3; sourceTree = "<group>"; };
+		0E117A4B2BB244E1009B0B2A /* TenorReedOrgan_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_CSharp.mp3; sourceTree = "<group>"; };
+		0E117A4C2BB244E1009B0B2A /* TenorReedOrgan_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_FNatural.mp3; sourceTree = "<group>"; };
+		0E117A4D2BB244E1009B0B2A /* TenorReedOrgan_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_AFlat.mp3; sourceTree = "<group>"; };
+		0E117A4E2BB244E1009B0B2A /* TenorReedOrgan_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_BFlat.mp3; sourceTree = "<group>"; };
+		0E117A4F2BB244E1009B0B2A /* TenorReedOrgan_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_EFlat.mp3; sourceTree = "<group>"; };
+		0E117A502BB244E1009B0B2A /* TenorReedOrgan_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorReedOrgan_ANatural.mp3; sourceTree = "<group>"; };
 		0E117A5C2BB24511009B0B2A /* InstrumentSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentSettings.swift; sourceTree = "<group>"; };
 		0E117A5F2BB2486A009B0B2A /* TenorClarinet_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_ANatural.mp3; sourceTree = "<group>"; };
 		0E117A602BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TenorClarinet_BNatural.mp3; sourceTree = "<group>"; };
@@ -410,6 +446,42 @@
 		0E595D7B2C3F9F4A005F0042 /* Clarinet_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_FNatural.mp3; sourceTree = "<group>"; };
 		0E595D7C2C3F9F4A005F0042 /* Clarinet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_FSharp.mp3; sourceTree = "<group>"; };
 		0E595D7D2C3F9F4A005F0042 /* Clarinet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Clarinet_GNatural.mp3; sourceTree = "<group>"; };
+		0E595DA42C401AE7005F0042 /* ReedOrgan_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_AFlat.mp3; sourceTree = "<group>"; };
+		0E595DA52C401AE7005F0042 /* ReedOrgan_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_ANatural.mp3; sourceTree = "<group>"; };
+		0E595DA62C401AE7005F0042 /* ReedOrgan_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_BFlat.mp3; sourceTree = "<group>"; };
+		0E595DA72C401AE7005F0042 /* ReedOrgan_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_BNatural.mp3; sourceTree = "<group>"; };
+		0E595DA82C401AE7005F0042 /* ReedOrgan_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_CNatural.mp3; sourceTree = "<group>"; };
+		0E595DA92C401AE7005F0042 /* ReedOrgan_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_CSharp.mp3; sourceTree = "<group>"; };
+		0E595DAA2C401AE7005F0042 /* ReedOrgan_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_DNatural.mp3; sourceTree = "<group>"; };
+		0E595DAB2C401AE7005F0042 /* ReedOrgan_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_EFlat.mp3; sourceTree = "<group>"; };
+		0E595DAC2C401AE7005F0042 /* ReedOrgan_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_ENaturalHigh.mp3; sourceTree = "<group>"; };
+		0E595DAD2C401AE7005F0042 /* ReedOrgan_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_FNatural.mp3; sourceTree = "<group>"; };
+		0E595DAE2C401AE7005F0042 /* ReedOrgan_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_FSharp.mp3; sourceTree = "<group>"; };
+		0E595DAF2C401AE7005F0042 /* ReedOrgan_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReedOrgan_GNatural.mp3; sourceTree = "<group>"; };
+		0E595DBD2C406D5D005F0042 /* BassTrumpet_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_AFlat.mp3; sourceTree = "<group>"; };
+		0E595DBE2C406D5D005F0042 /* BassTrumpet_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_ANatural.mp3; sourceTree = "<group>"; };
+		0E595DBF2C406D5D005F0042 /* BassTrumpet_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_BFlat.mp3; sourceTree = "<group>"; };
+		0E595DC02C406D5D005F0042 /* BassTrumpet_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_BNatural.mp3; sourceTree = "<group>"; };
+		0E595DC12C406D5D005F0042 /* BassTrumpet_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_CNatural.mp3; sourceTree = "<group>"; };
+		0E595DC22C406D5D005F0042 /* BassTrumpet_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_CSharp.mp3; sourceTree = "<group>"; };
+		0E595DC32C406D5D005F0042 /* BassTrumpet_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_DNatural.mp3; sourceTree = "<group>"; };
+		0E595DC42C406D5D005F0042 /* BassTrumpet_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_EFlat.mp3; sourceTree = "<group>"; };
+		0E595DC52C406D5D005F0042 /* BassTrumpet_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_ENaturalHigh.mp3; sourceTree = "<group>"; };
+		0E595DC62C406D5D005F0042 /* BassTrumpet_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_FNatural.mp3; sourceTree = "<group>"; };
+		0E595DC72C406D5D005F0042 /* BassTrumpet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_FSharp.mp3; sourceTree = "<group>"; };
+		0E595DC82C406D5D005F0042 /* BassTrumpet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_GNatural.mp3; sourceTree = "<group>"; };
+		0E595DD62C406EDF005F0042 /* BassWhistle_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_AFlat.mp3; sourceTree = "<group>"; };
+		0E595DD72C406EDF005F0042 /* BassWhistle_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_ANatural.mp3; sourceTree = "<group>"; };
+		0E595DD82C406EDF005F0042 /* BassWhistle_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_BFlat.mp3; sourceTree = "<group>"; };
+		0E595DD92C406EDF005F0042 /* BassWhistle_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_BNatural.mp3; sourceTree = "<group>"; };
+		0E595DDA2C406EDF005F0042 /* BassWhistle_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_CNatural.mp3; sourceTree = "<group>"; };
+		0E595DDB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_CSharp.mp3; sourceTree = "<group>"; };
+		0E595DDC2C406EDF005F0042 /* BassWhistle_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_DNatural.mp3; sourceTree = "<group>"; };
+		0E595DDD2C406EDF005F0042 /* BassWhistle_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_EFlat.mp3; sourceTree = "<group>"; };
+		0E595DDE2C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_ENaturalHigh.mp3; sourceTree = "<group>"; };
+		0E595DDF2C406EDF005F0042 /* BassWhistle_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_FNatural.mp3; sourceTree = "<group>"; };
+		0E595DE02C406EDF005F0042 /* BassWhistle_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_FSharp.mp3; sourceTree = "<group>"; };
+		0E595DE12C406EDF005F0042 /* BassWhistle_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_GNatural.mp3; sourceTree = "<group>"; };
 		0E595EBC2BD3637900581CCB /* ParksideTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksideTheme.swift; sourceTree = "<group>"; };
 		0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandriaHarmonizersTheme.swift; sourceTree = "<group>"; };
 		0E595EC02BD36B0E00581CCB /* VOGTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOGTheme.swift; sourceTree = "<group>"; };
@@ -546,23 +618,23 @@
 			path = PitchPipe;
 			sourceTree = "<group>";
 		};
-		0E117A412BB241AF009B0B2A /* ReedOrgan */ = {
+		0E117A412BB241AF009B0B2A /* TenorReedOrgan */ = {
 			isa = PBXGroup;
 			children = (
-				0E117A4D2BB244E1009B0B2A /* ReedOrgan_AFlat.mp3 */,
-				0E117A502BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 */,
-				0E117A4E2BB244E1009B0B2A /* ReedOrgan_BFlat.mp3 */,
-				0E117A4A2BB244E1009B0B2A /* ReedOrgan_BNatural.mp3 */,
-				0E117A4B2BB244E1009B0B2A /* ReedOrgan_CSharp.mp3 */,
-				0E117A462BB244E1009B0B2A /* ReedOrgan_DNatural.mp3 */,
-				0E117A4F2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 */,
-				0E117A492BB244E1009B0B2A /* ReedOrgan_ENaturalHigh.mp3 */,
-				0E117A4C2BB244E1009B0B2A /* ReedOrgan_FNatural.mp3 */,
-				0E117A472BB244E1009B0B2A /* ReedOrgan_FSharp.mp3 */,
-				0E117A482BB244E1009B0B2A /* ReedOrgan_GNatural.mp3 */,
-				0E117A442BB24252009B0B2A /* ReedOrgan_CNatural.mp3 */,
+				0E117A4D2BB244E1009B0B2A /* TenorReedOrgan_AFlat.mp3 */,
+				0E117A502BB244E1009B0B2A /* TenorReedOrgan_ANatural.mp3 */,
+				0E117A4E2BB244E1009B0B2A /* TenorReedOrgan_BFlat.mp3 */,
+				0E117A4A2BB244E1009B0B2A /* TenorReedOrgan_BNatural.mp3 */,
+				0E117A4B2BB244E1009B0B2A /* TenorReedOrgan_CSharp.mp3 */,
+				0E117A462BB244E1009B0B2A /* TenorReedOrgan_DNatural.mp3 */,
+				0E117A4F2BB244E1009B0B2A /* TenorReedOrgan_EFlat.mp3 */,
+				0E117A492BB244E1009B0B2A /* TenorReedOrgan_ENaturalHigh.mp3 */,
+				0E117A4C2BB244E1009B0B2A /* TenorReedOrgan_FNatural.mp3 */,
+				0E117A472BB244E1009B0B2A /* TenorReedOrgan_FSharp.mp3 */,
+				0E117A482BB244E1009B0B2A /* TenorReedOrgan_GNatural.mp3 */,
+				0E117A442BB24252009B0B2A /* TenorReedOrgan_CNatural.mp3 */,
 			);
-			path = ReedOrgan;
+			path = TenorReedOrgan;
 			sourceTree = "<group>";
 		};
 		0E117A5E2BB2485A009B0B2A /* TenorClarinet */ = {
@@ -587,6 +659,7 @@
 		0E117A772BB24B20009B0B2A /* Whistle */ = {
 			isa = PBXGroup;
 			children = (
+				0E595DD52C406ED4005F0042 /* BassWhistle */,
 				0E117A7F2BB24B43009B0B2A /* Whistle_AFlat.mp3 */,
 				0E117A7D2BB24B43009B0B2A /* Whistle_ANatural.mp3 */,
 				0E117A812BB24B43009B0B2A /* Whistle_BFlat.mp3 */,
@@ -606,6 +679,7 @@
 		0E117A922BB27DD1009B0B2A /* Trumpet */ = {
 			isa = PBXGroup;
 			children = (
+				0E595DBC2C406CD6005F0042 /* BassTrumpet */,
 				0E117A972BB27DD8009B0B2A /* Trumpet_AFlat.mp3 */,
 				0E117A962BB27DD8009B0B2A /* Trumpet_ANatural.mp3 */,
 				0E117A982BB27DD8009B0B2A /* Trumpet_BFlat.mp3 */,
@@ -824,8 +898,8 @@
 		0E595D6A2C3F90FC005F0042 /* Instruments */ = {
 			isa = PBXGroup;
 			children = (
-				0E595D6B2C3F9104005F0042 /* Instruments.swift */,
 				0EDBF7722B8B7B3C00A313D8 /* Pitches */,
+				0E595D6B2C3F9104005F0042 /* Instruments.swift */,
 			);
 			path = Instruments;
 			sourceTree = "<group>";
@@ -849,6 +923,72 @@
 				0E595D7D2C3F9F4A005F0042 /* Clarinet_GNatural.mp3 */,
 			);
 			path = Clarinet;
+			sourceTree = "<group>";
+		};
+		0E595D8A2C401840005F0042 /* ReedOrgan */ = {
+			isa = PBXGroup;
+			children = (
+				0E595DA32C40197E005F0042 /* BassReedOrgan */,
+				0E117A412BB241AF009B0B2A /* TenorReedOrgan */,
+				0E595DA42C401AE7005F0042 /* ReedOrgan_AFlat.mp3 */,
+				0E595DA52C401AE7005F0042 /* ReedOrgan_ANatural.mp3 */,
+				0E595DA62C401AE7005F0042 /* ReedOrgan_BFlat.mp3 */,
+				0E595DA72C401AE7005F0042 /* ReedOrgan_BNatural.mp3 */,
+				0E595DA82C401AE7005F0042 /* ReedOrgan_CNatural.mp3 */,
+				0E595DA92C401AE7005F0042 /* ReedOrgan_CSharp.mp3 */,
+				0E595DAA2C401AE7005F0042 /* ReedOrgan_DNatural.mp3 */,
+				0E595DAB2C401AE7005F0042 /* ReedOrgan_EFlat.mp3 */,
+				0E595DAC2C401AE7005F0042 /* ReedOrgan_ENaturalHigh.mp3 */,
+				0E595DAD2C401AE7005F0042 /* ReedOrgan_FNatural.mp3 */,
+				0E595DAE2C401AE7005F0042 /* ReedOrgan_FSharp.mp3 */,
+				0E595DAF2C401AE7005F0042 /* ReedOrgan_GNatural.mp3 */,
+			);
+			path = ReedOrgan;
+			sourceTree = "<group>";
+		};
+		0E595DA32C40197E005F0042 /* BassReedOrgan */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BassReedOrgan;
+			sourceTree = "<group>";
+		};
+		0E595DBC2C406CD6005F0042 /* BassTrumpet */ = {
+			isa = PBXGroup;
+			children = (
+				0E595DBD2C406D5D005F0042 /* BassTrumpet_AFlat.mp3 */,
+				0E595DBE2C406D5D005F0042 /* BassTrumpet_ANatural.mp3 */,
+				0E595DBF2C406D5D005F0042 /* BassTrumpet_BFlat.mp3 */,
+				0E595DC02C406D5D005F0042 /* BassTrumpet_BNatural.mp3 */,
+				0E595DC12C406D5D005F0042 /* BassTrumpet_CNatural.mp3 */,
+				0E595DC22C406D5D005F0042 /* BassTrumpet_CSharp.mp3 */,
+				0E595DC32C406D5D005F0042 /* BassTrumpet_DNatural.mp3 */,
+				0E595DC42C406D5D005F0042 /* BassTrumpet_EFlat.mp3 */,
+				0E595DC52C406D5D005F0042 /* BassTrumpet_ENaturalHigh.mp3 */,
+				0E595DC62C406D5D005F0042 /* BassTrumpet_FNatural.mp3 */,
+				0E595DC72C406D5D005F0042 /* BassTrumpet_FSharp.mp3 */,
+				0E595DC82C406D5D005F0042 /* BassTrumpet_GNatural.mp3 */,
+			);
+			path = BassTrumpet;
+			sourceTree = "<group>";
+		};
+		0E595DD52C406ED4005F0042 /* BassWhistle */ = {
+			isa = PBXGroup;
+			children = (
+				0E595DD62C406EDF005F0042 /* BassWhistle_AFlat.mp3 */,
+				0E595DD72C406EDF005F0042 /* BassWhistle_ANatural.mp3 */,
+				0E595DD82C406EDF005F0042 /* BassWhistle_BFlat.mp3 */,
+				0E595DD92C406EDF005F0042 /* BassWhistle_BNatural.mp3 */,
+				0E595DDA2C406EDF005F0042 /* BassWhistle_CNatural.mp3 */,
+				0E595DDB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 */,
+				0E595DDC2C406EDF005F0042 /* BassWhistle_DNatural.mp3 */,
+				0E595DDD2C406EDF005F0042 /* BassWhistle_EFlat.mp3 */,
+				0E595DDE2C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 */,
+				0E595DDF2C406EDF005F0042 /* BassWhistle_FNatural.mp3 */,
+				0E595DE02C406EDF005F0042 /* BassWhistle_FSharp.mp3 */,
+				0E595DE12C406EDF005F0042 /* BassWhistle_GNatural.mp3 */,
+			);
+			path = BassWhistle;
 			sourceTree = "<group>";
 		};
 		0E595EBB2BD361FD00581CCB /* MAD */ = {
@@ -1000,10 +1140,10 @@
 		0EDBF7722B8B7B3C00A313D8 /* Pitches */ = {
 			isa = PBXGroup;
 			children = (
+				0E595D8A2C401840005F0042 /* ReedOrgan */,
 				0E595D712C3F9ED8005F0042 /* Clarinet */,
 				0E117A922BB27DD1009B0B2A /* Trumpet */,
 				0E117A772BB24B20009B0B2A /* Whistle */,
-				0E117A412BB241AF009B0B2A /* ReedOrgan */,
 				0E117A402BB24195009B0B2A /* PitchPipe */,
 			);
 			path = Pitches;
@@ -1206,7 +1346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E117AA42BB27DD8009B0B2A /* Trumpet_BFlat.mp3 in Resources */,
-				0E117A592BB244E1009B0B2A /* ReedOrgan_BFlat.mp3 in Resources */,
+				0E117A592BB244E1009B0B2A /* TenorReedOrgan_BFlat.mp3 in Resources */,
 				0EDBF78D2B8B7B3C00A313D8 /* PitchPipe_ANatural.mp3 in Resources */,
 				0E117A6E2BB2486A009B0B2A /* TenorClarinet_CNatural.mp3 in Resources */,
 				0EDBF7652B8B7AC600A313D8 /* Preview Assets.xcassets in Resources */,
@@ -1221,7 +1361,7 @@
 				0E117AA82BB27DD8009B0B2A /* Trumpet_BNatural.mp3 in Resources */,
 				0E117AA92BB27DD8009B0B2A /* Trumpet_CNatural.mp3 in Resources */,
 				0E117A882BB24B43009B0B2A /* Whistle_BNatural.mp3 in Resources */,
-				0E117A582BB244E1009B0B2A /* ReedOrgan_AFlat.mp3 in Resources */,
+				0E117A582BB244E1009B0B2A /* TenorReedOrgan_AFlat.mp3 in Resources */,
 				0E117AA12BB27DD8009B0B2A /* Trumpet_DNatural.mp3 in Resources */,
 				0E117A752BB2486A009B0B2A /* TenorClarinet_BFlat.mp3 in Resources */,
 				0E117A9F2BB27DD8009B0B2A /* Trumpet_FSharp.mp3 in Resources */,
@@ -1229,26 +1369,50 @@
 				0EDBF78E2B8B7B3C00A313D8 /* PitchPipe_DNatural.mp3 in Resources */,
 				0EDBF78B2B8B7B3C00A313D8 /* PitchPipe_FNatural.mp3 in Resources */,
 				0E117AA52BB27DD8009B0B2A /* Trumpet_FNatural.mp3 in Resources */,
-				0E117A512BB244E1009B0B2A /* ReedOrgan_DNatural.mp3 in Resources */,
+				0E117A512BB244E1009B0B2A /* TenorReedOrgan_DNatural.mp3 in Resources */,
 				0EDBF7892B8B7B3C00A313D8 /* PitchPipe_FSharp.mp3 in Resources */,
 				0E117A872BB24B43009B0B2A /* Whistle_DNatural.mp3 in Resources */,
-				0E117A552BB244E1009B0B2A /* ReedOrgan_BNatural.mp3 in Resources */,
-				0E117A522BB244E1009B0B2A /* ReedOrgan_FSharp.mp3 in Resources */,
+				0E117A552BB244E1009B0B2A /* TenorReedOrgan_BNatural.mp3 in Resources */,
+				0E117A522BB244E1009B0B2A /* TenorReedOrgan_FSharp.mp3 in Resources */,
+				0E595DE22C406EDF005F0042 /* BassWhistle_ANatural.mp3 in Resources */,
+				0E595DE32C406EDF005F0042 /* BassWhistle_AFlat.mp3 in Resources */,
+				0E595DE42C406EDF005F0042 /* BassWhistle_BNatural.mp3 in Resources */,
+				0E595DE52C406EDF005F0042 /* BassWhistle_DNatural.mp3 in Resources */,
+				0E595DE62C406EDF005F0042 /* BassWhistle_BFlat.mp3 in Resources */,
+				0E595DE72C406EDF005F0042 /* BassWhistle_EFlat.mp3 in Resources */,
+				0E595DE82C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 in Resources */,
+				0E595DE92C406EDF005F0042 /* BassWhistle_FSharp.mp3 in Resources */,
+				0E595DEA2C406EDF005F0042 /* BassWhistle_GNatural.mp3 in Resources */,
+				0E595DEB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 in Resources */,
+				0E595DEC2C406EDF005F0042 /* BassWhistle_CNatural.mp3 in Resources */,
+				0E595DED2C406EDF005F0042 /* BassWhistle_FNatural.mp3 in Resources */,
 				0E117A862BB24B43009B0B2A /* Whistle_GNatural.mp3 in Resources */,
-				0E117A532BB244E1009B0B2A /* ReedOrgan_GNatural.mp3 in Resources */,
+				0E117A532BB244E1009B0B2A /* TenorReedOrgan_GNatural.mp3 in Resources */,
 				0EDBF7882B8B7B3C00A313D8 /* PitchPipe_ENaturalHigh.mp3 in Resources */,
 				0EDBF78A2B8B7B3C00A313D8 /* PitchPipe_CNatural.mp3 in Resources */,
 				0E117A732BB2486A009B0B2A /* TenorClarinet_AFlat.mp3 in Resources */,
 				0EDBF7832B8B7B3C00A313D8 /* PitchPipe_GNatural.mp3 in Resources */,
 				0E117A742BB2486A009B0B2A /* TenorClarinet_GNatural.mp3 in Resources */,
-				0E117A452BB24252009B0B2A /* ReedOrgan_CNatural.mp3 in Resources */,
+				0E117A452BB24252009B0B2A /* TenorReedOrgan_CNatural.mp3 in Resources */,
 				0EDBF78C2B8B7B3C00A313D8 /* PitchPipe_EFlat.mp3 in Resources */,
-				0E117A5A2BB244E1009B0B2A /* ReedOrgan_EFlat.mp3 in Resources */,
+				0E117A5A2BB244E1009B0B2A /* TenorReedOrgan_EFlat.mp3 in Resources */,
 				0E117A8A2BB24B43009B0B2A /* Whistle_ENaturalHigh.mp3 in Resources */,
 				0E117A842BB24B43009B0B2A /* Whistle_FNatural.mp3 in Resources */,
 				0E117A762BB2486A009B0B2A /* TenorClarinet_EFlat.mp3 in Resources */,
 				0E117A6F2BB2486A009B0B2A /* TenorClarinet_CSharp.mp3 in Resources */,
 				0E595D7E2C3F9F4A005F0042 /* Clarinet_BFlat.mp3 in Resources */,
+				0E595DC92C406D5D005F0042 /* BassTrumpet_ENaturalHigh.mp3 in Resources */,
+				0E595DCA2C406D5D005F0042 /* BassTrumpet_GNatural.mp3 in Resources */,
+				0E595DCB2C406D5D005F0042 /* BassTrumpet_FNatural.mp3 in Resources */,
+				0E595DCC2C406D5D005F0042 /* BassTrumpet_ANatural.mp3 in Resources */,
+				0E595DCD2C406D5D005F0042 /* BassTrumpet_BFlat.mp3 in Resources */,
+				0E595DCE2C406D5D005F0042 /* BassTrumpet_DNatural.mp3 in Resources */,
+				0E595DCF2C406D5D005F0042 /* BassTrumpet_BNatural.mp3 in Resources */,
+				0E595DD02C406D5D005F0042 /* BassTrumpet_FSharp.mp3 in Resources */,
+				0E595DD12C406D5D005F0042 /* BassTrumpet_CNatural.mp3 in Resources */,
+				0E595DD22C406D5D005F0042 /* BassTrumpet_AFlat.mp3 in Resources */,
+				0E595DD32C406D5D005F0042 /* BassTrumpet_EFlat.mp3 in Resources */,
+				0E595DD42C406D5D005F0042 /* BassTrumpet_CSharp.mp3 in Resources */,
 				0E595D7F2C3F9F4A005F0042 /* Clarinet_CNatural.mp3 in Resources */,
 				0E595D802C3F9F4A005F0042 /* Clarinet_BNatural.mp3 in Resources */,
 				0E595D812C3F9F4A005F0042 /* Clarinet_FSharp.mp3 in Resources */,
@@ -1262,20 +1426,32 @@
 				0E595D892C3F9F4A005F0042 /* Clarinet_CSharp.mp3 in Resources */,
 				0EDBF7622B8B7AC600A313D8 /* Assets.xcassets in Resources */,
 				0E117A8E2BB24B43009B0B2A /* Whistle_CNatural.mp3 in Resources */,
-				0E117A562BB244E1009B0B2A /* ReedOrgan_CSharp.mp3 in Resources */,
+				0E117A562BB244E1009B0B2A /* TenorReedOrgan_CSharp.mp3 in Resources */,
 				0E117A722BB2486A009B0B2A /* TenorClarinet_FNatural.mp3 in Resources */,
+				0E595DB02C401AE7005F0042 /* ReedOrgan_CNatural.mp3 in Resources */,
+				0E595DB12C401AE7005F0042 /* ReedOrgan_BFlat.mp3 in Resources */,
+				0E595DB22C401AE7005F0042 /* ReedOrgan_DNatural.mp3 in Resources */,
+				0E595DB32C401AE7005F0042 /* ReedOrgan_ANatural.mp3 in Resources */,
+				0E595DB42C401AE7005F0042 /* ReedOrgan_FSharp.mp3 in Resources */,
+				0E595DB52C401AE7005F0042 /* ReedOrgan_BNatural.mp3 in Resources */,
+				0E595DB62C401AE7005F0042 /* ReedOrgan_ENaturalHigh.mp3 in Resources */,
+				0E595DB72C401AE7005F0042 /* ReedOrgan_FNatural.mp3 in Resources */,
+				0E595DB82C401AE7005F0042 /* ReedOrgan_AFlat.mp3 in Resources */,
+				0E595DB92C401AE7005F0042 /* ReedOrgan_CSharp.mp3 in Resources */,
+				0E595DBA2C401AE7005F0042 /* ReedOrgan_EFlat.mp3 in Resources */,
+				0E595DBB2C401AE7005F0042 /* ReedOrgan_GNatural.mp3 in Resources */,
 				0EDBF7842B8B7B3C00A313D8 /* PitchPipe_AFlat.mp3 in Resources */,
 				0E117A712BB2486A009B0B2A /* TenorClarinet_ENaturalHigh.mp3 in Resources */,
 				0EDBF7872B8B7B3C00A313D8 /* PitchPipe_BFlat.mp3 in Resources */,
-				0E117A5B2BB244E1009B0B2A /* ReedOrgan_ANatural.mp3 in Resources */,
+				0E117A5B2BB244E1009B0B2A /* TenorReedOrgan_ANatural.mp3 in Resources */,
 				0E117A8F2BB24B43009B0B2A /* Whistle_EFlat.mp3 in Resources */,
 				0E117A6D2BB2486A009B0B2A /* TenorClarinet_FSharp.mp3 in Resources */,
 				0E117A8B2BB24B43009B0B2A /* Whistle_AFlat.mp3 in Resources */,
 				0E117A892BB24B43009B0B2A /* Whistle_ANatural.mp3 in Resources */,
-				0E117A572BB244E1009B0B2A /* ReedOrgan_FNatural.mp3 in Resources */,
+				0E117A572BB244E1009B0B2A /* TenorReedOrgan_FNatural.mp3 in Resources */,
 				0E117A852BB24B43009B0B2A /* Whistle_FSharp.mp3 in Resources */,
 				0E117A6C2BB2486A009B0B2A /* TenorClarinet_BNatural.mp3 in Resources */,
-				0E117A542BB244E1009B0B2A /* ReedOrgan_ENaturalHigh.mp3 in Resources */,
+				0E117A542BB244E1009B0B2A /* TenorReedOrgan_ENaturalHigh.mp3 in Resources */,
 				0E117AA72BB27DD8009B0B2A /* Trumpet_EFlat.mp3 in Resources */,
 				0EDBF7862B8B7B3C00A313D8 /* PitchPipe_CSharp.mp3 in Resources */,
 				0E595D282C3F6196005F0042 /* BassClarinet_BFlat.mp3 in Resources */,
@@ -1462,7 +1638,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1492,7 +1668,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1639,7 +1815,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1668,7 +1844,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1696,7 +1872,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1711,7 +1887,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 15;
+				CURRENT_PROJECT_VERSION = 16;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
