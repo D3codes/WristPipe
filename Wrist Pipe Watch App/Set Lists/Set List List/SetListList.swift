@@ -88,17 +88,16 @@ struct SetListList: View {
                 }
             }
             
-            if(self.setLists.count > 1) {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: { editMode.toggle() }, label: {
-                        editMode
-                        ? Image(systemName: "checkmark")
-                        : Image(systemName: "arrow.up.arrow.down")
-                    })
-                    .contentTransition(.symbolEffect(.replace))
-                    .padding()
-                    .foregroundStyle(Color.white)
-                }
+            ToolbarItem(placement: .topBarTrailing) {
+                Button(action: { editMode.toggle() }, label: {
+                    editMode
+                    ? Image(systemName: "checkmark")
+                    : Image(systemName: "arrow.up.arrow.down")
+                })
+                .contentTransition(.symbolEffect(.replace))
+                .padding()
+                .foregroundStyle(Color.white)
+                .disabled(self.setLists.count < 2)
             }
         }
         .onAppear(perform: getSetLists)
