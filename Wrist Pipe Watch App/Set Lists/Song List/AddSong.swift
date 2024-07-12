@@ -34,6 +34,7 @@ struct AddSong: View {
             self.defaults.set(encoded, forKey: UserDefaultsKeys().setListKey(for: setListId))
             self.defaults.synchronize()
         }
+        ReorderSongsTip.songsAdded.sendDonation()
     }
     
     var body: some View {

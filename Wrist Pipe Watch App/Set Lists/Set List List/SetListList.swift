@@ -7,12 +7,15 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct SetListList: View {
     @State var setLists: [SetList] = []
     let defaults = UserDefaults.standard
     
     @State var editMode: Bool = false
+    
+    private let renameSetListTip = RenameSetListTip()
     
     func getSetLists() {
         if let data = defaults.object(forKey: UserDefaultsKeys().setLists) as? Data,
@@ -50,57 +53,61 @@ struct SetListList: View {
     }
     
     var body: some View {
-        VStack {
-            if(!self.setLists.isEmpty) {
-                List {
-                    ForEach(self.setLists, id: \.self) { setList in
-                        SetListItemView(name: setList.name, id: setList.id, editMode: $editMode)
-                            .swipeActions(edge: .leading) {
-                                NavigationLink(destination: AddSetList(setLists: $setLists, id: setList.id, title: setList.name)) {
-                                    Label("Rename", systemImage: "pencil")
+        ZStack {
+            VStack {
+                if(!self.setLists.isEmpty) {
+                    List {
+                        ForEach(self.setLists, id: \.self) { setList in
+                            SetListItemView(name: setList.name, id: setList.id, editMode: $editMode)
+                                .swipeActions(edge: .leading) {
+                                    NavigationLink(destination: AddSetList(setLists: $setLists, id: setList.id, title: setList.name)) {
+                                        Label("Rename", systemImage: "pencil")
+                                    }
+                                    .tint(.indigo)
                                 }
-                                .tint(.indigo)
-                            }
+                        }
+                        .onDelete(perform: self.deleteRow)
+                        .onMove { from, to in self.moveRow(from: from, to: to) }
                     }
-                    .onDelete(perform: self.deleteRow)
-                    .onMove { from, to in self.moveRow(from: from, to: to) }
-                }
-            } else {
-                NavigationLink(destination: AddSetList(setLists: $setLists)) {
-                    HStack{
-                        Image(systemName: "plus")
-                        Text("Add Set List")
-                    }
-                }
-            }
-        }
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                if(!self.setLists.isEmpty && !editMode) {
+                } else {
                     NavigationLink(destination: AddSetList(setLists: $setLists)) {
                         HStack{
                             Image(systemName: "plus")
                             Text("Add Set List")
                         }
                     }
-                    .buttonStyle(BorderedButtonStyle())
-                    .padding()
                 }
             }
-            
-            ToolbarItem(placement: .topBarTrailing) {
-                Button(action: { editMode.toggle() }, label: {
-                    editMode
-                    ? Image(systemName: "checkmark")
-                    : Image(systemName: "arrow.up.arrow.down")
-                })
-                .contentTransition(.symbolEffect(.replace))
-                .padding()
-                .foregroundStyle(Color.white)
-                .disabled(self.setLists.count < 2)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    if(!self.setLists.isEmpty && !editMode) {
+                        NavigationLink(destination: AddSetList(setLists: $setLists)) {
+                            HStack{
+                                Image(systemName: "plus")
+                                Text("Add Set List")
+                            }
+                        }
+                        .buttonStyle(BorderedButtonStyle())
+                        .padding()
+                    }
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: { editMode.toggle() }, label: {
+                        editMode
+                        ? Image(systemName: "checkmark")
+                        : Image(systemName: "arrow.up.arrow.down")
+                    })
+                    .contentTransition(.symbolEffect(.replace))
+                    .padding()
+                    .foregroundStyle(Color.white)
+                    .disabled(self.setLists.count < 2)
+                }
             }
+            .onAppear(perform: getSetLists)
+            TipView(renameSetListTip)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
-        .onAppear(perform: getSetLists)
     }
     
     private func moveRow(from: IndexSet, to: Int) {

@@ -70,6 +70,7 @@ struct PitchSelector: View {
         }
         .onLongPressGesture(minimumDuration: 15) {
         } onPressingChanged: { inProgress in
+            PlayPitchTip.alreadyDiscovered = true
             if inProgress {
                 pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName, instrument: selectedInstrument.name)
             } else if holdToPlay {

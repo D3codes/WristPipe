@@ -6,9 +6,20 @@
 //
 
 import SwiftUI
+import TipKit
 
 @main
 struct Wrist_Pipe_Watch_AppApp: App {
+    
+    init() {
+        try? Tips.resetDatastore()
+        
+        try? Tips.configure([
+            .displayFrequency(.immediate),
+            .datastoreLocation(.applicationDefault)
+        ])
+    }
+    
     var body: some Scene {
         WindowGroup {
             PitchPipe()

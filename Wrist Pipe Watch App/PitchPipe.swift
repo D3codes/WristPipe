@@ -8,6 +8,7 @@
 
 import SwiftUI
 import Foundation
+import TipKit
 
 struct PitchPipe: View {
     @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
@@ -16,11 +17,18 @@ struct PitchPipe: View {
     @State private var path = [Int]()
     @State private var selectedPitch = 0.0
     
+    private let pitchSelectTip = PitchSelectTip()
+    private let playPitchTip = PlayPitchTip()
+    
     var body: some View {
         NavigationStack(path: $path) {
             ZStack {
                 PitchRing(selectedPitch: $selectedPitch, theme: $theme)
                 PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImage)
+                TipView(pitchSelectTip)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                TipView(playPitchTip)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
             }
             .focusable(true)
             .digitalCrownRotation($selectedPitch,
@@ -35,7 +43,10 @@ struct PitchPipe: View {
             .onChange(of: selectedTheme, { _,newTheme in
                 theme = Themes.first(where: { $0.id == newTheme }) ?? Themes[0]
             })
-            .onChange(of: selectedPitch, { _,newVal in }) //needed for some reason
+            .onChange(of: selectedPitch, { _,newVal in
+                PitchSelectTip.alreadyDiscovered = true
+                PlayPitchTip.pitchSelected.sendDonation()
+            })
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(value: 1, label: {

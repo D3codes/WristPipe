@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct ThemePreview: View {
     @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
@@ -17,6 +18,8 @@ struct ThemePreview: View {
     @State var showSaveButton: Bool = true
     
     let saveButtonOffset: Double = Screen().getSaveButtonOffset()
+    
+    private let toggleImageTip = ToggleImageTip()
     
     var body: some View {
         ZStack {
@@ -38,6 +41,8 @@ struct ThemePreview: View {
                 }
                 .offset(y: saveButtonOffset)
             }
+            TipView(toggleImageTip)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
         .focusable(true)
         .digitalCrownRotation($selectedPitch,
@@ -49,7 +54,10 @@ struct ThemePreview: View {
         .onChange(of: selectedPitch, { _,newVal in }) //needed for some reason
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button { withAnimation(.easeInOut(duration: 0.75)) { showImagePreview.toggle() } } label: {
+                Button {
+                    withAnimation(.easeInOut(duration: 0.75)) { showImagePreview.toggle() }
+                    ToggleImageTip.alreadyDiscovered = true
+                } label: {
                     showImagePreview && theme.logo != nil
                     ? Image("custom.photo.circle").foregroundStyle(Color.white)
                     : Image("custom.photo.circle.slash").foregroundStyle(Color.white)
@@ -58,6 +66,11 @@ struct ThemePreview: View {
                 .disabled(theme.logo == nil)
             }
         }
+        .onAppear(perform: {
+            if theme.logo != nil {
+                ToggleImageTip.themeSelected.sendDonation()
+            }
+        })
     }
 }
 

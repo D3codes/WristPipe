@@ -32,6 +32,7 @@ struct AddSetList: View {
             self.defaults.set(encoded, forKey: UserDefaultsKeys().setLists)
             self.defaults.synchronize()
         }
+        RenameSetListTip.setListCreated.sendDonation()
     }
     
     var body: some View {
@@ -52,6 +53,11 @@ struct AddSetList: View {
             .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
         }
         .padding(.top)
+        .onAppear(perform: {
+            if id != nil {
+                RenameSetListTip.alreadyDiscovered = true
+            }
+        })
     }
 }
 

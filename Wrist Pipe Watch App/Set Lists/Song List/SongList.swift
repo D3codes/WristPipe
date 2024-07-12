@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct SongList: View {
     @AppStorage(UserDefaultsKeys().holdToPlay) private var holdToPlay = true
@@ -18,6 +19,8 @@ struct SongList: View {
     let pitchPlayer = PitchPlayer()
     
     @State var editMode: Bool = false
+    
+    private let reorderSongsTip = ReorderSongsTip()
     
     func getSetList() {
         if let data = defaults.object(forKey: UserDefaultsKeys().setListKey(for: setListId)) as? Data,
@@ -34,80 +37,87 @@ struct SongList: View {
     }
     
     var body: some View {
-        VStack {
-            if(!self.songs.isEmpty) {
-                List {
-                    ForEach(self.songs, id: \.self) { song in
-                        if(editMode) {
-                            SongItemEditView(name: song.name)
-                                .swipeActions(edge: .leading) {
-                                    NavigationLink(destination: AddSong(setListId: setListId, setList: $songs, songId: song.id, title: song.name, selectedPitch: pitchPlayer.pitches.first(where: { $0.note == song.key })!)) {
-                                        Label("Rename", systemImage: "pencil")
+        ZStack {
+            VStack {
+                if(!self.songs.isEmpty) {
+                    List {
+                        ForEach(self.songs, id: \.self) { song in
+                            if(editMode) {
+                                SongItemEditView(name: song.name)
+                                    .swipeActions(edge: .leading) {
+                                        NavigationLink(destination: AddSong(setListId: setListId, setList: $songs, songId: song.id, title: song.name, selectedPitch: pitchPlayer.pitches.first(where: { $0.note == song.key })!)) {
+                                            Label("Rename", systemImage: "pencil")
+                                        }
+                                        .tint(.indigo)
                                     }
-                                    .tint(.indigo)
-                                }
-                        } else {
-                            SongItemView(name: song.name, key: song.key)
-                            .onLongPressGesture(minimumDuration: 15) {
-                            } onPressingChanged: { inProgress in
-                                if inProgress {
-                                    pitchPlayer.playPitch(selectedPitch: song.fileName, instrument: selectedInstrument.name)
-                                } else if holdToPlay {
-                                    pitchPlayer.stopPlaying()
-                                }
-                            }
-                            .swipeActions(edge: .leading) {
-                                NavigationLink(destination: AddSong(setListId: setListId, setList: $songs, songId: song.id, title: song.name, selectedPitch: pitchPlayer.pitches.first(where: { $0.note == song.key })!)) {
-                                    Label("Rename", systemImage: "pencil")
-                                }
-                                .tint(.indigo)
+                            } else {
+                                SongItemView(name: song.name, key: song.key)
+                                    .onLongPressGesture(minimumDuration: 15) {
+                                    } onPressingChanged: { inProgress in
+                                        if inProgress {
+                                            pitchPlayer.playPitch(selectedPitch: song.fileName, instrument: selectedInstrument.name)
+                                        } else if holdToPlay {
+                                            pitchPlayer.stopPlaying()
+                                        }
+                                    }
+                                    .swipeActions(edge: .leading) {
+                                        NavigationLink(destination: AddSong(setListId: setListId, setList: $songs, songId: song.id, title: song.name, selectedPitch: pitchPlayer.pitches.first(where: { $0.note == song.key })!)) {
+                                            Label("Rename", systemImage: "pencil")
+                                        }
+                                        .tint(.indigo)
+                                    }
                             }
                         }
+                        .onDelete(perform: self.deleteRow)
+                        .onMove { from, to in self.moveRow(from: from, to: to) }
                     }
-                    .onDelete(perform: self.deleteRow)
-                    .onMove { from, to in self.moveRow(from: from, to: to) }
-                }
-            } else {
-                NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
-                    HStack{
-                        Image(systemName: "plus")
-                        Text("Add Song")
-                    }
-                }
-            }
-        }
-        .navigationBarTitleDisplayMode(.large)
-        .navigationTitle(setListName)
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                if(!self.songs.isEmpty && !editMode) {
+                } else {
                     NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
                         HStack{
                             Image(systemName: "plus")
                             Text("Add Song")
                         }
                     }
-                    .buttonStyle(BorderedButtonStyle())
-                    .padding()
                 }
             }
-            
-            ToolbarItem(placement: .topBarTrailing) {
-                Button(action: { editMode.toggle() }, label: {
-                    editMode
-                    ? Image(systemName: "checkmark")
-                    : Image(systemName: "arrow.up.arrow.down")
-                })
-                .contentTransition(.symbolEffect(.replace))
-                .padding()
-                .foregroundStyle(Color.white)
-                .disabled(self.songs.count < 2)
+            .navigationBarTitleDisplayMode(.large)
+            .navigationTitle(setListName)
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    if(!self.songs.isEmpty && !editMode) {
+                        NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
+                            HStack{
+                                Image(systemName: "plus")
+                                Text("Add Song")
+                            }
+                        }
+                        .buttonStyle(BorderedButtonStyle())
+                        .padding()
+                    }
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        editMode.toggle()
+                        ReorderSongsTip.alreadyDiscovered = true
+                    }, label: {
+                        editMode
+                        ? Image(systemName: "checkmark")
+                        : Image(systemName: "arrow.up.arrow.down")
+                    })
+                    .contentTransition(.symbolEffect(.replace))
+                    .padding()
+                    .foregroundStyle(Color.white)
+                    .disabled(self.songs.count < 2)
+                }
             }
+            .onAppear(perform: {
+                getSetList()
+                getSelectedInstrument()
+            })
+            TipView(reorderSongsTip)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
-        .onAppear(perform: {
-            getSetList()
-            getSelectedInstrument()
-        })
     }
     
     private func moveRow(from: IndexSet, to: Int) {

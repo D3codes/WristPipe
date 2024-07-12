@@ -192,6 +192,12 @@
 		0E595ED12BD567D300581CCB /* CCCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ED02BD567D300581CCB /* CCCTheme.swift */; };
 		0E595ED42BD56AC800581CCB /* GreatLakesTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ED32BD56AC800581CCB /* GreatLakesTheme.swift */; };
 		0E595ED62BD6A53600581CCB /* CityLightsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595ED52BD6A53600581CCB /* CityLightsTheme.swift */; };
+		0E5A765B2C408AC600A0395E /* PitchSelectTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A765A2C408AB800A0395E /* PitchSelectTip.swift */; };
+		0E5A765D2C40B76500A0395E /* OctaveSelectTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A765C2C40B76500A0395E /* OctaveSelectTip.swift */; };
+		0E5A765F2C40BB6200A0395E /* PlayPitchTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A765E2C40BB6200A0395E /* PlayPitchTip.swift */; };
+		0E5A76612C40BF6900A0395E /* ReorderSongsTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A76602C40BF6900A0395E /* ReorderSongsTip.swift */; };
+		0E5A76632C40C16800A0395E /* ToggleImageTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A76622C40C16800A0395E /* ToggleImageTip.swift */; };
+		0E5A76652C40C64700A0395E /* RenameSetListTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A76642C40C64700A0395E /* RenameSetListTip.swift */; };
 		0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */; };
 		0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0322B8D208D00FBD605 /* BHSTheme.swift */; };
 		0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */; };
@@ -494,6 +500,12 @@
 		0E595ED02BD567D300581CCB /* CCCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCTheme.swift; sourceTree = "<group>"; };
 		0E595ED32BD56AC800581CCB /* GreatLakesTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatLakesTheme.swift; sourceTree = "<group>"; };
 		0E595ED52BD6A53600581CCB /* CityLightsTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityLightsTheme.swift; sourceTree = "<group>"; };
+		0E5A765A2C408AB800A0395E /* PitchSelectTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchSelectTip.swift; sourceTree = "<group>"; };
+		0E5A765C2C40B76500A0395E /* OctaveSelectTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctaveSelectTip.swift; sourceTree = "<group>"; };
+		0E5A765E2C40BB6200A0395E /* PlayPitchTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPitchTip.swift; sourceTree = "<group>"; };
+		0E5A76602C40BF6900A0395E /* ReorderSongsTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderSongsTip.swift; sourceTree = "<group>"; };
+		0E5A76622C40C16800A0395E /* ToggleImageTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImageTip.swift; sourceTree = "<group>"; };
+		0E5A76642C40C64700A0395E /* RenameSetListTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameSetListTip.swift; sourceTree = "<group>"; };
 		0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkTheme.swift; sourceTree = "<group>"; };
 		0E89E0322B8D208D00FBD605 /* BHSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSTheme.swift; sourceTree = "<group>"; };
 		0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEBSQSATheme.swift; sourceTree = "<group>"; };
@@ -1036,6 +1048,19 @@
 			path = PIO;
 			sourceTree = "<group>";
 		};
+		0E5A76592C408AB000A0395E /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A765A2C408AB800A0395E /* PitchSelectTip.swift */,
+				0E5A765E2C40BB6200A0395E /* PlayPitchTip.swift */,
+				0E5A765C2C40B76500A0395E /* OctaveSelectTip.swift */,
+				0E5A76602C40BF6900A0395E /* ReorderSongsTip.swift */,
+				0E5A76622C40C16800A0395E /* ToggleImageTip.swift */,
+				0E5A76642C40C64700A0395E /* RenameSetListTip.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
 		0E89E03C2B90D48800FBD605 /* Set Lists */ = {
 			isa = PBXGroup;
 			children = (
@@ -1101,6 +1126,7 @@
 		0EDBF75C2B8B7AC500A313D8 /* Wrist Pipe Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				0E5A76592C408AB000A0395E /* Tips */,
 				0E595D6A2C3F90FC005F0042 /* Instruments */,
 				0E89E03C2B90D48800FBD605 /* Set Lists */,
 				0EF7C1342B8C62170031AD78 /* Settings */,
@@ -1544,6 +1570,7 @@
 				0E3FAB322BB5FC9600265CA2 /* ForwardHarmonyTheme.swift in Sources */,
 				0E2514B82C2122C100D94EA1 /* RSVPTheme.swift in Sources */,
 				0E214C512C286E9A00B05F82 /* SWVATheme.swift in Sources */,
+				0E5A76652C40C64700A0395E /* RenameSetListTip.swift in Sources */,
 				0E2514C82C213EAA00D94EA1 /* VocalMajorityTheme.swift in Sources */,
 				0EC172032BB523AD004908E0 /* SingingBuckeyesTheme.swift in Sources */,
 				0EC171DC2BB3EFAD004908E0 /* VocalSummitTheme.swift in Sources */,
@@ -1568,12 +1595,15 @@
 				0EC171FF2BB51CF2004908E0 /* SGCTheme.swift in Sources */,
 				0E91F6C52C399992004FFFB9 /* SetList.swift in Sources */,
 				0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */,
+				0E5A765B2C408AC600A0395E /* PitchSelectTip.swift in Sources */,
 				0E3486D42C3A03BE009D682A /* PitchSelector.swift in Sources */,
 				0E89E0422B90EF2500FBD605 /* ThemeSettings.swift in Sources */,
 				0E0072D52BB528BF001F2F3B /* MOITheme.swift in Sources */,
 				0E2514A62C1D3FA000D94EA1 /* LPCTheme.swift in Sources */,
 				0E2514BE2C2129C000D94EA1 /* SpaceCityTheme.swift in Sources */,
+				0E5A765F2C40BB6200A0395E /* PlayPitchTip.swift in Sources */,
 				0EF7C1332B8C61C90031AD78 /* Settings.swift in Sources */,
+				0E5A765D2C40B76500A0395E /* OctaveSelectTip.swift in Sources */,
 				0E595ECF2BD4791900581CCB /* GOHTheme.swift in Sources */,
 				0E595D6E2C3F9137005F0042 /* Instrument.swift in Sources */,
 				0EC171DE2BB3F78B004908E0 /* BoiseChordsTheme.swift in Sources */,
@@ -1591,6 +1621,7 @@
 				0E2514AB2C20EA8200D94EA1 /* HarmColTheme.swift in Sources */,
 				0E3FAB382BB6154E00265CA2 /* GPHTheme.swift in Sources */,
 				0E2514C62C213C7800D94EA1 /* MarcsmenTheme.swift in Sources */,
+				0E5A76632C40C16800A0395E /* ToggleImageTip.swift in Sources */,
 				0EC172012BB52192004908E0 /* VocalConfluenceTheme.swift in Sources */,
 				0E214C592C287F7B00B05F82 /* TNLTheme.swift in Sources */,
 				0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */,
@@ -1599,6 +1630,7 @@
 				0EF7C1372B8C66670031AD78 /* UnityTheme.swift in Sources */,
 				0E214C5D2C2885AC00B05F82 /* SBSWTheme.swift in Sources */,
 				0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */,
+				0E5A76612C40BF6900A0395E /* ReorderSongsTip.swift in Sources */,
 				0E89E0392B8DA5FD00FBD605 /* Themes.swift in Sources */,
 				0EC171EB2BB4ABB7004908E0 /* WestminsterTheme.swift in Sources */,
 				0E2514C22C21394F00D94EA1 /* AcaFedTheme.swift in Sources */,
