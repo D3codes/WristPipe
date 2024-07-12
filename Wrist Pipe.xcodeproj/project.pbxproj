@@ -73,7 +73,6 @@
 		0E214C452C24DBB000B05F82 /* CircularLaunchWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C442C24DBA800B05F82 /* CircularLaunchWidgetView.swift */; };
 		0E214C472C24DBE700B05F82 /* RectangularLaunchWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C462C24DBE500B05F82 /* RectangularLaunchWidgetView.swift */; };
 		0E214C492C24DC3700B05F82 /* CornerLaunchWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C482C24DC3400B05F82 /* CornerLaunchWidgetView.swift */; };
-		0E214C4B2C24DC7F00B05F82 /* SFIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C4A2C24DC7B00B05F82 /* SFIcon.swift */; };
 		0E214C4D2C28510300B05F82 /* VisionsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C4C2C28510300B05F82 /* VisionsTheme.swift */; };
 		0E214C4F2C286B9200B05F82 /* TVSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C4E2C286B9200B05F82 /* TVSTheme.swift */; };
 		0E214C512C286E9A00B05F82 /* SWVATheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C502C286E9A00B05F82 /* SWVATheme.swift */; };
@@ -198,6 +197,8 @@
 		0E5A76612C40BF6900A0395E /* ReorderSongsTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A76602C40BF6900A0395E /* ReorderSongsTip.swift */; };
 		0E5A76632C40C16800A0395E /* ToggleImageTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A76622C40C16800A0395E /* ToggleImageTip.swift */; };
 		0E5A76652C40C64700A0395E /* RenameSetListTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A76642C40C64700A0395E /* RenameSetListTip.swift */; };
+		0E5A766B2C40D93300A0395E /* PlayFNaturalIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766A2C40D92600A0395E /* PlayFNaturalIntent.swift */; };
+		0E5A766D2C40E3E700A0395E /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766C2C40E3C700A0395E /* Shortcuts.swift */; };
 		0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */; };
 		0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0322B8D208D00FBD605 /* BHSTheme.swift */; };
 		0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */; };
@@ -381,7 +382,6 @@
 		0E214C442C24DBA800B05F82 /* CircularLaunchWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularLaunchWidgetView.swift; sourceTree = "<group>"; };
 		0E214C462C24DBE500B05F82 /* RectangularLaunchWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangularLaunchWidgetView.swift; sourceTree = "<group>"; };
 		0E214C482C24DC3400B05F82 /* CornerLaunchWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerLaunchWidgetView.swift; sourceTree = "<group>"; };
-		0E214C4A2C24DC7B00B05F82 /* SFIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFIcon.swift; sourceTree = "<group>"; };
 		0E214C4C2C28510300B05F82 /* VisionsTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionsTheme.swift; sourceTree = "<group>"; };
 		0E214C4E2C286B9200B05F82 /* TVSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVSTheme.swift; sourceTree = "<group>"; };
 		0E214C502C286E9A00B05F82 /* SWVATheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWVATheme.swift; sourceTree = "<group>"; };
@@ -506,6 +506,8 @@
 		0E5A76602C40BF6900A0395E /* ReorderSongsTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReorderSongsTip.swift; sourceTree = "<group>"; };
 		0E5A76622C40C16800A0395E /* ToggleImageTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImageTip.swift; sourceTree = "<group>"; };
 		0E5A76642C40C64700A0395E /* RenameSetListTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameSetListTip.swift; sourceTree = "<group>"; };
+		0E5A766A2C40D92600A0395E /* PlayFNaturalIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFNaturalIntent.swift; sourceTree = "<group>"; };
+		0E5A766C2C40E3C700A0395E /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
 		0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkTheme.swift; sourceTree = "<group>"; };
 		0E89E0322B8D208D00FBD605 /* BHSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSTheme.swift; sourceTree = "<group>"; };
 		0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEBSQSATheme.swift; sourceTree = "<group>"; };
@@ -720,7 +722,6 @@
 		0E214C322C2355C300B05F82 /* Wrist Pipe Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				0E214C4A2C24DC7B00B05F82 /* SFIcon.swift */,
 				0E214C432C24C0C300B05F82 /* Launch */,
 				0E214C332C2355C300B05F82 /* WristPipeWidgets.swift */,
 				0E214C352C2355C300B05F82 /* AppIntent.swift */,
@@ -1061,6 +1062,15 @@
 			path = Tips;
 			sourceTree = "<group>";
 		};
+		0E5A76692C40D91D00A0395E /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				0E5A766C2C40E3C700A0395E /* Shortcuts.swift */,
+				0E5A766A2C40D92600A0395E /* PlayFNaturalIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
 		0E89E03C2B90D48800FBD605 /* Set Lists */ = {
 			isa = PBXGroup;
 			children = (
@@ -1126,6 +1136,7 @@
 		0EDBF75C2B8B7AC500A313D8 /* Wrist Pipe Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				0E5A76692C40D91D00A0395E /* Intents */,
 				0E5A76592C408AB000A0395E /* Tips */,
 				0E595D6A2C3F90FC005F0042 /* Instruments */,
 				0E89E03C2B90D48800FBD605 /* Set Lists */,
@@ -1505,7 +1516,6 @@
 			files = (
 				0E214C492C24DC3700B05F82 /* CornerLaunchWidgetView.swift in Sources */,
 				0E214C422C23B28700B05F82 /* LaunchWidget.swift in Sources */,
-				0E214C4B2C24DC7F00B05F82 /* SFIcon.swift in Sources */,
 				0E214C452C24DBB000B05F82 /* CircularLaunchWidgetView.swift in Sources */,
 				0E214C472C24DBE700B05F82 /* RectangularLaunchWidgetView.swift in Sources */,
 				0E214C342C2355C300B05F82 /* WristPipeWidgets.swift in Sources */,
@@ -1546,6 +1556,7 @@
 				0EF0E1E72BB394A700B31FFA /* PalmettoTheme.swift in Sources */,
 				0E595ED42BD56AC800581CCB /* GreatLakesTheme.swift in Sources */,
 				0E89E0442B90F09D00FBD605 /* VolumeSettings.swift in Sources */,
+				0E5A766D2C40E3E700A0395E /* Shortcuts.swift in Sources */,
 				0E2514CF2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift in Sources */,
 				0E595EC42BD417A900581CCB /* VRTheme.swift in Sources */,
 				0EF0E1F52BB3CF2200B31FFA /* LittleAppleTheme.swift in Sources */,
@@ -1628,6 +1639,7 @@
 				0E117AAE2BB28167009B0B2A /* AddSong.swift in Sources */,
 				0E2514A42C1CE80300D94EA1 /* SaltairesTheme.swift in Sources */,
 				0EF7C1372B8C66670031AD78 /* UnityTheme.swift in Sources */,
+				0E5A766B2C40D93300A0395E /* PlayFNaturalIntent.swift in Sources */,
 				0E214C5D2C2885AC00B05F82 /* SBSWTheme.swift in Sources */,
 				0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */,
 				0E5A76612C40BF6900A0395E /* ReorderSongsTip.swift in Sources */,
@@ -1670,7 +1682,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1700,7 +1712,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1847,7 +1859,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1876,7 +1888,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1904,7 +1916,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1919,7 +1931,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;

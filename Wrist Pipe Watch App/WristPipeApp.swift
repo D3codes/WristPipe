@@ -12,6 +12,8 @@ import TipKit
 struct Wrist_Pipe_Watch_AppApp: App {
     
     init() {
+        AppShortcuts.updateAppShortcutParameters()
+        
         try? Tips.resetDatastore()
         
         try? Tips.configure([
