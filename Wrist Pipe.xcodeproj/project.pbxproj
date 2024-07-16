@@ -199,6 +199,7 @@
 		0E5A76652C40C64700A0395E /* RenameSetListTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A76642C40C64700A0395E /* RenameSetListTip.swift */; };
 		0E5A766B2C40D93300A0395E /* PlayFNaturalIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766A2C40D92600A0395E /* PlayFNaturalIntent.swift */; };
 		0E5A766D2C40E3E700A0395E /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766C2C40E3C700A0395E /* Shortcuts.swift */; };
+		0E5A766F2C42166B00A0395E /* PlayFSharpIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766E2C42166B00A0395E /* PlayFSharpIntent.swift */; };
 		0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */; };
 		0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0322B8D208D00FBD605 /* BHSTheme.swift */; };
 		0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */; };
@@ -508,6 +509,7 @@
 		0E5A76642C40C64700A0395E /* RenameSetListTip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenameSetListTip.swift; sourceTree = "<group>"; };
 		0E5A766A2C40D92600A0395E /* PlayFNaturalIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFNaturalIntent.swift; sourceTree = "<group>"; };
 		0E5A766C2C40E3C700A0395E /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
+		0E5A766E2C42166B00A0395E /* PlayFSharpIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayFSharpIntent.swift; sourceTree = "<group>"; };
 		0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkTheme.swift; sourceTree = "<group>"; };
 		0E89E0322B8D208D00FBD605 /* BHSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSTheme.swift; sourceTree = "<group>"; };
 		0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPEBSQSATheme.swift; sourceTree = "<group>"; };
@@ -1067,6 +1069,7 @@
 			children = (
 				0E5A766C2C40E3C700A0395E /* Shortcuts.swift */,
 				0E5A766A2C40D92600A0395E /* PlayFNaturalIntent.swift */,
+				0E5A766E2C42166B00A0395E /* PlayFSharpIntent.swift */,
 			);
 			path = Intents;
 			sourceTree = "<group>";
@@ -1636,6 +1639,7 @@
 				0EC172012BB52192004908E0 /* VocalConfluenceTheme.swift in Sources */,
 				0E214C592C287F7B00B05F82 /* TNLTheme.swift in Sources */,
 				0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */,
+				0E5A766F2C42166B00A0395E /* PlayFSharpIntent.swift in Sources */,
 				0E117AAE2BB28167009B0B2A /* AddSong.swift in Sources */,
 				0E2514A42C1CE80300D94EA1 /* SaltairesTheme.swift in Sources */,
 				0EF7C1372B8C66670031AD78 /* UnityTheme.swift in Sources */,
@@ -1682,7 +1686,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1712,7 +1716,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1859,7 +1863,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1888,7 +1892,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1916,7 +1920,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1931,7 +1935,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 21;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;

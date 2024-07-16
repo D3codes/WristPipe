@@ -12,9 +12,11 @@ import TipKit
 struct Wrist_Pipe_Watch_AppApp: App {
     
     init() {
-        AppShortcuts.updateAppShortcutParameters()
+        //Waiting on resolution from Apple (FB14303206)
+        //AppShortcuts.updateAppShortcutParameters()
         
-        try? Tips.resetDatastore()
+        //For testing
+        //try? Tips.resetDatastore()
         
         try? Tips.configure([
             .displayFrequency(.immediate),
