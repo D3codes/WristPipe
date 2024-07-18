@@ -12,19 +12,9 @@ struct CircularLaunchWidgetView: View {
     @Environment(\.widgetRenderingMode) var renderingMode
     
     var body: some View {
-        if renderingMode == .fullColor {
-            Image("wpicon_sm")
-                .resizable()
-                .scaledToFit()
-        } else {
-            ZStack {
-                Circle()
-                    .opacity(0.15)
-                Image("wpicon_sm_tint")
-                    .resizable()
-                    .scaledToFit()
-            }
-        }
+        Image("wpicon_sm\(renderingMode == .fullColor ? "" : "_tint")")
+            .resizable()
+            .scaledToFit()
     }
 }
 

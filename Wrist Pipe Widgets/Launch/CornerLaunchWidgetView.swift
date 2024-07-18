@@ -12,19 +12,9 @@ struct CornerLaunchWidgetView: View {
     @Environment(\.widgetRenderingMode) var renderingMode
     
     var body: some View {
-        if renderingMode == .fullColor {
-            Image("wpicon_xs")
-                .resizable()
-                .scaledToFit()
-        } else {
-            ZStack {
-                Circle()
-                    .opacity(0.15)
-                Image("wpicon_xs_tint")
-                    .resizable()
-                    .scaledToFit()
-            }
-        }
+        Image("wpicon_xs\(renderingMode == .fullColor ? "" : "_tint")")
+            .resizable()
+            .scaledToFit()
     }
 }
 
