@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E0072D52BB528BF001F2F3B /* MOITheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0072D42BB528BF001F2F3B /* MOITheme.swift */; };
+		0E0A001D2C48D7FA000A452C /* EIHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A001C2C48D7F6000A452C /* EIHTheme.swift */; };
+		0E0A001F2C48DB58000A452C /* BrownTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A001E2C48DB58000A452C /* BrownTheme.swift */; };
 		0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A312BB0F183009B0B2A /* BHSThemesList.swift */; };
 		0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */; };
 		0E117A3F2BB23F92009B0B2A /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A3E2BB23F92009B0B2A /* About.swift */; };
@@ -317,6 +319,8 @@
 
 /* Begin PBXFileReference section */
 		0E0072D42BB528BF001F2F3B /* MOITheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOITheme.swift; sourceTree = "<group>"; };
+		0E0A001C2C48D7F6000A452C /* EIHTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EIHTheme.swift; sourceTree = "<group>"; };
+		0E0A001E2C48DB58000A452C /* BrownTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownTheme.swift; sourceTree = "<group>"; };
 		0E117A312BB0F183009B0B2A /* BHSThemesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSThemesList.swift; sourceTree = "<group>"; };
 		0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		0E117A3E2BB23F92009B0B2A /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
@@ -790,6 +794,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF7C1382B8D109C0031AD78 /* BlackTheme.swift */,
+				0E0A001E2C48DB58000A452C /* BrownTheme.swift */,
 				0EDBF7952B8BFF5F00A313D8 /* BlueTheme.swift */,
 				0EC171E32BB4000B004908E0 /* RedTheme.swift */,
 				0EC171E52BB40056004908E0 /* PurpleTheme.swift */,
@@ -1261,6 +1266,7 @@
 		0EF7C1352B8C66580031AD78 /* Causes */ = {
 			isa = PBXGroup;
 			children = (
+				0E0A001C2C48D7F6000A452C /* EIHTheme.swift */,
 				0EF7C1362B8C66670031AD78 /* UnityTheme.swift */,
 				0EF7C13A2B8D15B80031AD78 /* PrideTheme.swift */,
 				0E214C5E2C28F69100B05F82 /* TransTheme.swift */,
@@ -1620,6 +1626,7 @@
 				0E5A765D2C40B76500A0395E /* OctaveSelectTip.swift in Sources */,
 				0E595ECF2BD4791900581CCB /* GOHTheme.swift in Sources */,
 				0E595D6E2C3F9137005F0042 /* Instrument.swift in Sources */,
+				0E0A001D2C48D7FA000A452C /* EIHTheme.swift in Sources */,
 				0EC171DE2BB3F78B004908E0 /* BoiseChordsTheme.swift in Sources */,
 				0E214C5B2C28825F00B05F82 /* SMCTheme.swift in Sources */,
 				0E2514B62C21205B00D94EA1 /* SOTNTheme.swift in Sources */,
@@ -1652,6 +1659,7 @@
 				0E2514C22C21394F00D94EA1 /* AcaFedTheme.swift in Sources */,
 				0EC171E82BB400A9004908E0 /* GreenTheme.swift in Sources */,
 				0EDBF78F2B8B7B3C00A313D8 /* PitchPlayer.swift in Sources */,
+				0E0A001F2C48DB58000A452C /* BrownTheme.swift in Sources */,
 				0E2514A82C1D419700D94EA1 /* TimberTheme.swift in Sources */,
 				0EC171ED2BB4AF14004908E0 /* OrangeTheme.swift in Sources */,
 				0EDBF7962B8BFF5F00A313D8 /* BlueTheme.swift in Sources */,

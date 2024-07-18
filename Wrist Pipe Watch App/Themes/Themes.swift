@@ -17,6 +17,7 @@ let ColorThemes: [any Theme] = [
     OrangeTheme(),          //5
     YellowTheme(),          //6
     PinkTheme(),            //7
+//    BrownTheme(),           //8
 ]
 
 //1000-2999
@@ -183,6 +184,7 @@ let CauseThemes: [any Theme] = [
     UnityTheme(),           //3000
     PrideTheme(),           //3001
     TransTheme(),           //3002
+    EIHTheme(),             //3003
 ]
 
 let Themes: [any Theme] = ColorThemes + BHSThemes + CauseThemes
