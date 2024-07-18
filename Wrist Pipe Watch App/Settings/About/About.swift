@@ -14,17 +14,16 @@ struct About: View {
     
     var body: some View {
         VStack {
-            Group {
-                Text("Wrist Pipe")
-                Text(appVersion ?? "")
-            }
+            Text("Wrist Pipe\(appVersion != nil ? " \(appVersion!)" : "")")
             Spacer()
             Group {
                 Text("Made by")
                 Text("David Freeman")
             }
             Spacer()
-            Text("Keep the Whole World Singing!")
+            NavigationLink { BetaTesterList() } label: {
+                Text("Beta Testers")
+            }
         }
     }
 }
