@@ -15,14 +15,14 @@ struct RectangularLaunchWidgetView: View {
         HStack {
             Image("wpicon\(renderingMode == .fullColor ? "" : "_tint")")
                 .resizable()
-                .frame(maxWidth: 30, maxHeight: 30)
+                .frame(maxWidth: 50, maxHeight: 50)
                 .clipShape(.circle)
             Spacer()
             VStack {
-                Text("Keep the Whole")
-                Text("World Singing!")
+                Text("Keep the")
+                Text("Whole World")
+                Text("Singing!")
             }
-            Spacer()
         }
     }
 }
