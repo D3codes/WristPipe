@@ -15,6 +15,7 @@ struct CornerLaunchWidgetView: View {
         Image("wpicon_xs\(renderingMode == .fullColor ? "" : "_tint")")
             .resizable()
             .scaledToFit()
+            .widgetAccentable()
     }
 }
 

@@ -15,6 +15,7 @@ struct CircularLaunchWidgetView: View {
         Image("wpicon_sm\(renderingMode == .fullColor ? "" : "_tint")")
             .resizable()
             .scaledToFit()
+            .widgetAccentable()
     }
 }
 

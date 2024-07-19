@@ -17,6 +17,7 @@ struct RectangularLaunchWidgetView: View {
                 .resizable()
                 .frame(maxWidth: 50, maxHeight: 50)
                 .clipShape(.circle)
+                .widgetAccentable()
             Spacer()
             VStack {
                 Text("Keep the")
