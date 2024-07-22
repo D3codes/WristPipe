@@ -23,7 +23,9 @@ struct PitchPipe: View {
     var body: some View {
         NavigationStack(path: $path) {
             ZStack {
-                PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImage)
+                ZStack {
+                    PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImage)
+                }.frame(maxHeight: 100) //needed for easter egg
                 PitchRing(selectedPitch: $selectedPitch, theme: $theme)
                 TipView(pitchSelectTip)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)

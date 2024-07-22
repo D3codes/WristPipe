@@ -23,7 +23,9 @@ struct ThemePreview: View {
     
     var body: some View {
         ZStack {
-            PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImagePreview)
+            ZStack {
+                PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImagePreview)
+            }.frame(maxHeight: 100) //needed for easter egg
             PitchRing(selectedPitch: $selectedPitch, theme: $theme)
             if showSaveButton {
                 ZStack {
@@ -76,7 +78,7 @@ struct ThemePreview: View {
 
 #Preview {
     struct ThemePreview_Preview: View {
-        @State var theme = SPEBSQSATheme()
+        @State var theme = AOHTheme()
         @State var path: [Int] = []
         
         var body: some View {
