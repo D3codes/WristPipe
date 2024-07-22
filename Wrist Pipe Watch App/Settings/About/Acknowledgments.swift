@@ -1,5 +1,5 @@
 //
-//  BetaTesterList.swift
+//  Acknowledgments.swift
 //  Wrist Pipe
 //
 //  Created by David Freeman on 7/18/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BetaTesterList: View {
+struct Acknowledgments: View {
     
     private let betaTesters: [String] = [
         "Caullen",
@@ -25,10 +25,17 @@ struct BetaTesterList: View {
             ForEach(betaTesters.sorted(by: { $0 < $1 }), id: \.self) { betaTester in
                 Text(betaTester)
             }
+            
+            Text("Thank you to the packages that made Wrist Pipe possible!")
+                .listRowBackground(Color.clear)
+            VStack(alignment: .leading) {
+                Text("Vortex").font(.title3)
+                Text("by Paul Hudson")
+            }
         }
     }
 }
 
 #Preview {
-    BetaTesterList()
+    Acknowledgments()
 }

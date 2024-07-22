@@ -23,8 +23,8 @@ struct PitchPipe: View {
     var body: some View {
         NavigationStack(path: $path) {
             ZStack {
-                PitchRing(selectedPitch: $selectedPitch, theme: $theme)
                 PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImage)
+                PitchRing(selectedPitch: $selectedPitch, theme: $theme)
                 TipView(pitchSelectTip)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
                 TipView(playPitchTip)

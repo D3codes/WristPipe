@@ -21,8 +21,8 @@ struct About: View {
                 Text("David Freeman")
             }
             Spacer()
-            NavigationLink { BetaTesterList() } label: {
-                Text("Beta Testers")
+            NavigationLink { Acknowledgments() } label: {
+                Text("Acknowledgments")
             }
         }
     }

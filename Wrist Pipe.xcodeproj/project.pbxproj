@@ -10,7 +10,7 @@
 		0E0072D52BB528BF001F2F3B /* MOITheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0072D42BB528BF001F2F3B /* MOITheme.swift */; };
 		0E0A001D2C48D7FA000A452C /* EIHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A001C2C48D7F6000A452C /* EIHTheme.swift */; };
 		0E0A001F2C48DB58000A452C /* BrownTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A001E2C48DB58000A452C /* BrownTheme.swift */; };
-		0E0A00212C49D203000A452C /* BetaTesterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A00202C49D1FF000A452C /* BetaTesterList.swift */; };
+		0E0A00212C49D203000A452C /* Acknowledgments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A00202C49D1FF000A452C /* Acknowledgments.swift */; };
 		0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A312BB0F183009B0B2A /* BHSThemesList.swift */; };
 		0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */; };
 		0E117A3F2BB23F92009B0B2A /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117A3E2BB23F92009B0B2A /* About.swift */; };
@@ -203,6 +203,7 @@
 		0E5A766B2C40D93300A0395E /* PlayFNaturalIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766A2C40D92600A0395E /* PlayFNaturalIntent.swift */; };
 		0E5A766D2C40E3E700A0395E /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766C2C40E3C700A0395E /* Shortcuts.swift */; };
 		0E5A766F2C42166B00A0395E /* PlayFSharpIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A766E2C42166B00A0395E /* PlayFSharpIntent.swift */; };
+		0E5AE3EB2C4E023300C96548 /* Vortex in Frameworks */ = {isa = PBXBuildFile; productRef = 0E5AE3EA2C4E023300C96548 /* Vortex */; };
 		0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88A49A2C1B7A6B00AB25F2 /* PinkTheme.swift */; };
 		0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0322B8D208D00FBD605 /* BHSTheme.swift */; };
 		0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0342B8D21FD00FBD605 /* SPEBSQSATheme.swift */; };
@@ -322,7 +323,7 @@
 		0E0072D42BB528BF001F2F3B /* MOITheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOITheme.swift; sourceTree = "<group>"; };
 		0E0A001C2C48D7F6000A452C /* EIHTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EIHTheme.swift; sourceTree = "<group>"; };
 		0E0A001E2C48DB58000A452C /* BrownTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrownTheme.swift; sourceTree = "<group>"; };
-		0E0A00202C49D1FF000A452C /* BetaTesterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTesterList.swift; sourceTree = "<group>"; };
+		0E0A00202C49D1FF000A452C /* Acknowledgments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgments.swift; sourceTree = "<group>"; };
 		0E117A312BB0F183009B0B2A /* BHSThemesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BHSThemesList.swift; sourceTree = "<group>"; };
 		0E117A3C2BB21E4E009B0B2A /* ThemeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeList.swift; sourceTree = "<group>"; };
 		0E117A3E2BB23F92009B0B2A /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
@@ -604,6 +605,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5AE3EB2C4E023300C96548 /* Vortex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +616,7 @@
 			isa = PBXGroup;
 			children = (
 				0E117A3E2BB23F92009B0B2A /* About.swift */,
-				0E0A00202C49D1FF000A452C /* BetaTesterList.swift */,
+				0E0A00202C49D1FF000A452C /* Acknowledgments.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -1371,6 +1373,9 @@
 				Base,
 			);
 			mainGroup = 0EDBF74B2B8B7AC500A313D8;
+			packageReferences = (
+				0E5AE3E92C4E023300C96548 /* XCRemoteSwiftPackageReference "Vortex" */,
+			);
 			productRefGroup = 0EDBF7532B8B7AC500A313D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1643,7 +1648,7 @@
 				0E2514B62C21205B00D94EA1 /* SOTNTheme.swift in Sources */,
 				0E88A49B2C1B7A6B00AB25F2 /* PinkTheme.swift in Sources */,
 				0EF0E1FC2BB3E97500B31FFA /* PDXTheme.swift in Sources */,
-				0E0A00212C49D203000A452C /* BetaTesterList.swift in Sources */,
+				0E0A00212C49D203000A452C /* Acknowledgments.swift in Sources */,
 				0EF0E1E22BB3881A00B31FFA /* CircleCitySoundTheme.swift in Sources */,
 				0E3486D62C3A202C009D682A /* ThemePreview.swift in Sources */,
 				0E595D6C2C3F9106005F0042 /* Instruments.swift in Sources */,
@@ -1706,7 +1711,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1736,7 +1741,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1883,7 +1888,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1912,7 +1917,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1940,7 +1945,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1955,7 +1960,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -2007,6 +2012,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E5AE3E92C4E023300C96548 /* XCRemoteSwiftPackageReference "Vortex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Vortex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E5AE3EA2C4E023300C96548 /* Vortex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E5AE3E92C4E023300C96548 /* XCRemoteSwiftPackageReference "Vortex" */;
+			productName = Vortex;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EDBF74C2B8B7AC500A313D8 /* Project object */;
 }

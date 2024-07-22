@@ -23,8 +23,8 @@ struct ThemePreview: View {
     
     var body: some View {
         ZStack {
-            PitchRing(selectedPitch: $selectedPitch, theme: $theme)
             PitchSelector(selectedPitch: $selectedPitch, theme: $theme, showImage: $showImagePreview)
+            PitchRing(selectedPitch: $selectedPitch, theme: $theme)
             if showSaveButton {
                 ZStack {
                     RoundedRectangle(cornerRadius: 20)
