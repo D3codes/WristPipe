@@ -22,15 +22,18 @@ struct Acknowledgments: View {
         List {
             Text("Thank you to everyone who helps make Wrist Pipe the best it can be!")
                 .listRowBackground(Color.clear)
-            ForEach(betaTesters.sorted(by: { $0 < $1 }), id: \.self) { betaTester in
-                Text(betaTester)
+            
+            Section("Testers") {
+                ForEach(betaTesters.sorted(by: { $0 < $1 }), id: \.self) { betaTester in
+                    Text(betaTester)
+                }
             }
             
-            Text("Thank you to the packages that made Wrist Pipe possible!")
-                .listRowBackground(Color.clear)
-            VStack(alignment: .leading) {
-                Text("Vortex").font(.title3)
-                Text("by Paul Hudson")
+            Section("Packages") {
+                VStack(alignment: .leading) {
+                    Text("Vortex").font(.title3)
+                    Text("by Paul Hudson")
+                }
             }
         }
     }
