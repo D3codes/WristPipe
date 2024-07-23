@@ -19,7 +19,14 @@ struct PitchSelector: View {
     let selectorSize: Double = Screen().getPitchSelectorSize()
     let pointerSize: Double = Screen().getPitchPointerSize()
     var pitchPlayer = PitchPlayer()
+    
     @State var pitchOrder: [Double] = []
+    private let easterEgg: [Double] = [
+        5.0, 5.0, 5.0, 5.0, 5.0, 0.0,       //Keep the whole world singing
+        5.0, 5.0, 5.0,                      //all day long
+        5.0, 7.0, 8.0, 8.0, 8.0, 9.0, 0.0,  //Watch goodwill come a-winging
+        9.0, 7.0, 5.0                       //on a song
+    ]
     
     func getSelectedPitchIndex() -> Int {
         return round(selectedPitch) == 12 ? 0 : Int(round(selectedPitch))
@@ -34,11 +41,6 @@ struct PitchSelector: View {
         let item = try? JSONDecoder().decode(Instrument.self, from: data) {
             self.selectedInstrument = item
         }
-    }
-    
-    func triggeredEasterEgg() -> Bool {
-        //Keep the Whole World Singing
-        return pitchOrder == [5.0, 5.0, 5.0, 5.0, 5.0, 0.0, 5.0, 5.0, 5.0]
     }
     
     var body: some View {
@@ -97,10 +99,10 @@ struct PitchSelector: View {
                     pitchPlayer.playPitch(selectedPitch: getSelectedPitch().fileName, instrument: selectedInstrument.name)
                     
                     pitchOrder.append(selectedPitch)
-                    if pitchOrder.count > 9 {
+                    if pitchOrder.count > easterEgg.count {
                         pitchOrder = Array(pitchOrder[1...])
                     }
-                    if triggeredEasterEgg() {
+                    if pitchOrder == easterEgg {
                         proxy.burst()
                     }
                 } else if holdToPlay {

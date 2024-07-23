@@ -170,18 +170,6 @@
 		0E595DD22C406D5D005F0042 /* BassTrumpet_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DBD2C406D5D005F0042 /* BassTrumpet_AFlat.mp3 */; };
 		0E595DD32C406D5D005F0042 /* BassTrumpet_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC42C406D5D005F0042 /* BassTrumpet_EFlat.mp3 */; };
 		0E595DD42C406D5D005F0042 /* BassTrumpet_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DC22C406D5D005F0042 /* BassTrumpet_CSharp.mp3 */; };
-		0E595DE22C406EDF005F0042 /* BassWhistle_ANatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD72C406EDF005F0042 /* BassWhistle_ANatural.mp3 */; };
-		0E595DE32C406EDF005F0042 /* BassWhistle_AFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD62C406EDF005F0042 /* BassWhistle_AFlat.mp3 */; };
-		0E595DE42C406EDF005F0042 /* BassWhistle_BNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD92C406EDF005F0042 /* BassWhistle_BNatural.mp3 */; };
-		0E595DE52C406EDF005F0042 /* BassWhistle_DNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDC2C406EDF005F0042 /* BassWhistle_DNatural.mp3 */; };
-		0E595DE62C406EDF005F0042 /* BassWhistle_BFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DD82C406EDF005F0042 /* BassWhistle_BFlat.mp3 */; };
-		0E595DE72C406EDF005F0042 /* BassWhistle_EFlat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDD2C406EDF005F0042 /* BassWhistle_EFlat.mp3 */; };
-		0E595DE82C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDE2C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 */; };
-		0E595DE92C406EDF005F0042 /* BassWhistle_FSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DE02C406EDF005F0042 /* BassWhistle_FSharp.mp3 */; };
-		0E595DEA2C406EDF005F0042 /* BassWhistle_GNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DE12C406EDF005F0042 /* BassWhistle_GNatural.mp3 */; };
-		0E595DEB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 */; };
-		0E595DEC2C406EDF005F0042 /* BassWhistle_CNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDA2C406EDF005F0042 /* BassWhistle_CNatural.mp3 */; };
-		0E595DED2C406EDF005F0042 /* BassWhistle_FNatural.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E595DDF2C406EDF005F0042 /* BassWhistle_FNatural.mp3 */; };
 		0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBC2BD3637900581CCB /* ParksideTheme.swift */; };
 		0E595EBF2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */; };
 		0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E595EC02BD36B0E00581CCB /* VOGTheme.swift */; };
@@ -484,18 +472,6 @@
 		0E595DC62C406D5D005F0042 /* BassTrumpet_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_FNatural.mp3; sourceTree = "<group>"; };
 		0E595DC72C406D5D005F0042 /* BassTrumpet_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_FSharp.mp3; sourceTree = "<group>"; };
 		0E595DC82C406D5D005F0042 /* BassTrumpet_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassTrumpet_GNatural.mp3; sourceTree = "<group>"; };
-		0E595DD62C406EDF005F0042 /* BassWhistle_AFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_AFlat.mp3; sourceTree = "<group>"; };
-		0E595DD72C406EDF005F0042 /* BassWhistle_ANatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_ANatural.mp3; sourceTree = "<group>"; };
-		0E595DD82C406EDF005F0042 /* BassWhistle_BFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_BFlat.mp3; sourceTree = "<group>"; };
-		0E595DD92C406EDF005F0042 /* BassWhistle_BNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_BNatural.mp3; sourceTree = "<group>"; };
-		0E595DDA2C406EDF005F0042 /* BassWhistle_CNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_CNatural.mp3; sourceTree = "<group>"; };
-		0E595DDB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_CSharp.mp3; sourceTree = "<group>"; };
-		0E595DDC2C406EDF005F0042 /* BassWhistle_DNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_DNatural.mp3; sourceTree = "<group>"; };
-		0E595DDD2C406EDF005F0042 /* BassWhistle_EFlat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_EFlat.mp3; sourceTree = "<group>"; };
-		0E595DDE2C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_ENaturalHigh.mp3; sourceTree = "<group>"; };
-		0E595DDF2C406EDF005F0042 /* BassWhistle_FNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_FNatural.mp3; sourceTree = "<group>"; };
-		0E595DE02C406EDF005F0042 /* BassWhistle_FSharp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_FSharp.mp3; sourceTree = "<group>"; };
-		0E595DE12C406EDF005F0042 /* BassWhistle_GNatural.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BassWhistle_GNatural.mp3; sourceTree = "<group>"; };
 		0E595EBC2BD3637900581CCB /* ParksideTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksideTheme.swift; sourceTree = "<group>"; };
 		0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlexandriaHarmonizersTheme.swift; sourceTree = "<group>"; };
 		0E595EC02BD36B0E00581CCB /* VOGTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOGTheme.swift; sourceTree = "<group>"; };
@@ -692,7 +668,6 @@
 		0E117A772BB24B20009B0B2A /* Whistle */ = {
 			isa = PBXGroup;
 			children = (
-				0E595DD52C406ED4005F0042 /* BassWhistle */,
 				0E117A7F2BB24B43009B0B2A /* Whistle_AFlat.mp3 */,
 				0E117A7D2BB24B43009B0B2A /* Whistle_ANatural.mp3 */,
 				0E117A812BB24B43009B0B2A /* Whistle_BFlat.mp3 */,
@@ -1003,25 +978,6 @@
 				0E595DC82C406D5D005F0042 /* BassTrumpet_GNatural.mp3 */,
 			);
 			path = BassTrumpet;
-			sourceTree = "<group>";
-		};
-		0E595DD52C406ED4005F0042 /* BassWhistle */ = {
-			isa = PBXGroup;
-			children = (
-				0E595DD62C406EDF005F0042 /* BassWhistle_AFlat.mp3 */,
-				0E595DD72C406EDF005F0042 /* BassWhistle_ANatural.mp3 */,
-				0E595DD82C406EDF005F0042 /* BassWhistle_BFlat.mp3 */,
-				0E595DD92C406EDF005F0042 /* BassWhistle_BNatural.mp3 */,
-				0E595DDA2C406EDF005F0042 /* BassWhistle_CNatural.mp3 */,
-				0E595DDB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 */,
-				0E595DDC2C406EDF005F0042 /* BassWhistle_DNatural.mp3 */,
-				0E595DDD2C406EDF005F0042 /* BassWhistle_EFlat.mp3 */,
-				0E595DDE2C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 */,
-				0E595DDF2C406EDF005F0042 /* BassWhistle_FNatural.mp3 */,
-				0E595DE02C406EDF005F0042 /* BassWhistle_FSharp.mp3 */,
-				0E595DE12C406EDF005F0042 /* BassWhistle_GNatural.mp3 */,
-			);
-			path = BassWhistle;
 			sourceTree = "<group>";
 		};
 		0E595EBB2BD361FD00581CCB /* MAD */ = {
@@ -1436,18 +1392,6 @@
 				0E117A872BB24B43009B0B2A /* Whistle_DNatural.mp3 in Resources */,
 				0E117A552BB244E1009B0B2A /* TenorReedOrgan_BNatural.mp3 in Resources */,
 				0E117A522BB244E1009B0B2A /* TenorReedOrgan_FSharp.mp3 in Resources */,
-				0E595DE22C406EDF005F0042 /* BassWhistle_ANatural.mp3 in Resources */,
-				0E595DE32C406EDF005F0042 /* BassWhistle_AFlat.mp3 in Resources */,
-				0E595DE42C406EDF005F0042 /* BassWhistle_BNatural.mp3 in Resources */,
-				0E595DE52C406EDF005F0042 /* BassWhistle_DNatural.mp3 in Resources */,
-				0E595DE62C406EDF005F0042 /* BassWhistle_BFlat.mp3 in Resources */,
-				0E595DE72C406EDF005F0042 /* BassWhistle_EFlat.mp3 in Resources */,
-				0E595DE82C406EDF005F0042 /* BassWhistle_ENaturalHigh.mp3 in Resources */,
-				0E595DE92C406EDF005F0042 /* BassWhistle_FSharp.mp3 in Resources */,
-				0E595DEA2C406EDF005F0042 /* BassWhistle_GNatural.mp3 in Resources */,
-				0E595DEB2C406EDF005F0042 /* BassWhistle_CSharp.mp3 in Resources */,
-				0E595DEC2C406EDF005F0042 /* BassWhistle_CNatural.mp3 in Resources */,
-				0E595DED2C406EDF005F0042 /* BassWhistle_FNatural.mp3 in Resources */,
 				0E117A862BB24B43009B0B2A /* Whistle_GNatural.mp3 in Resources */,
 				0E117A532BB244E1009B0B2A /* TenorReedOrgan_GNatural.mp3 in Resources */,
 				0EDBF7882B8B7B3C00A313D8 /* PitchPipe_ENaturalHigh.mp3 in Resources */,
@@ -1711,7 +1655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1741,7 +1685,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 27;
+				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
