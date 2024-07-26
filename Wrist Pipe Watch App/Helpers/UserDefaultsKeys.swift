@@ -18,13 +18,14 @@ struct UserDefaultsKeys {
     let holdToPlay = "holdToPlay"
     
     let theme = "theme"
-    
     let showImage = "showImage"
     
     let ignoreSilentMode = "ignoreSilentMode"
     
     let instrument = "instrument"
-    
     let octave = "octave"
+    
+    let lastOpenedDate = "lastOpenedDate"
+    let openStreak = "openStreak"
 }
 

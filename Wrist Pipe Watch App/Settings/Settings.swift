@@ -12,42 +12,47 @@ struct Settings: View {
     @Binding var path: [Int]
     
     var body: some View {
-        List {
-            NavigationLink(destination: VolumeSettings()) {
-                HStack{
-                    Image(systemName: "speaker.wave.2.fill")
-                    Text("Volume")
-                }
-            }.padding()
+        TabView {
+            List {
+                NavigationLink(destination: VolumeSettings()) {
+                    HStack{
+                        Image(systemName: "speaker.wave.2.fill")
+                        Text("Volume")
+                    }
+                }.padding()
+                
+                NavigationLink(destination: ThemeSettings(path: $path)) {
+                    HStack{
+                        Image(systemName: "paintbrush.fill")
+                        Text("Theme")
+                    }
+                }.padding()
+                
+                NavigationLink(destination: InstrumentSettings()) {
+                    HStack{
+                        Image(systemName: "pianokeys.inverse")
+                        Text("Instrument")
+                    }
+                }.padding()
+                
+                NavigationLink(destination: HoldToPlaySettings()) {
+                    HStack{
+                        Image(systemName: "hand.tap.fill")
+                        Text("Hold to Play")
+                    }
+                }.padding()
+                
+                NavigationLink(destination: About()) {
+                    HStack{
+                        Image(systemName: "info.circle.fill")
+                        Text("About")
+                    }
+                }.padding()
+            }
             
-            NavigationLink(destination: ThemeSettings(path: $path)) {
-                HStack{
-                    Image(systemName: "paintbrush.fill")
-                    Text("Theme")
-                }
-            }.padding()
-            
-            NavigationLink(destination: InstrumentSettings()) {
-                HStack{
-                    Image(systemName: "pianokeys.inverse")
-                    Text("Instrument")
-                }
-            }.padding()
-            
-            NavigationLink(destination: HoldToPlaySettings()) {
-                HStack{
-                    Image(systemName: "hand.tap.fill")
-                    Text("Hold to Play")
-                }
-            }.padding()
-            
-            NavigationLink(destination: About()) {
-                HStack{
-                    Image(systemName: "info.circle.fill")
-                    Text("About")
-                }
-            }.padding()
+            Streak()
         }
+        .tabViewStyle(.verticalPage)
     }
 }
 
@@ -56,7 +61,9 @@ struct Settings: View {
         @State var path = [Int]()
         
         var body: some View {
-            Settings(path: $path)
+            NavigationView {
+                Settings(path: $path)
+            }
         }
     }
     

@@ -222,6 +222,7 @@
 		0EC171FF2BB51CF2004908E0 /* SGCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC171FE2BB51CF2004908E0 /* SGCTheme.swift */; };
 		0EC172012BB52192004908E0 /* VocalConfluenceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC172002BB52192004908E0 /* VocalConfluenceTheme.swift */; };
 		0EC172032BB523AD004908E0 /* SingingBuckeyesTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC172022BB523AD004908E0 /* SingingBuckeyesTheme.swift */; };
+		0EC808382C5303DB003B1713 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC808372C5303C7003B1713 /* Streak.swift */; };
 		0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */; };
 		0EDBF7592B8B7AC500A313D8 /* Wrist Pipe.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0EDBF75E2B8B7AC500A313D8 /* WristPipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDBF75D2B8B7AC500A313D8 /* WristPipeApp.swift */; };
@@ -523,6 +524,7 @@
 		0EC171FE2BB51CF2004908E0 /* SGCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCTheme.swift; sourceTree = "<group>"; };
 		0EC172002BB52192004908E0 /* VocalConfluenceTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalConfluenceTheme.swift; sourceTree = "<group>"; };
 		0EC172022BB523AD004908E0 /* SingingBuckeyesTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingBuckeyesTheme.swift; sourceTree = "<group>"; };
+		0EC808372C5303C7003B1713 /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
 		0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralStandardTheme.swift; sourceTree = "<group>"; };
 		0EDBF7522B8B7AC500A313D8 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1222,6 +1224,7 @@
 		0EF7C1342B8C62170031AD78 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				0EC808372C5303C7003B1713 /* Streak.swift */,
 				0E0A00222C49D44D000A452C /* About */,
 				0EF7C1322B8C61C90031AD78 /* Settings.swift */,
 				0E89E0432B90F09D00FBD605 /* VolumeSettings.swift */,
@@ -1620,6 +1623,7 @@
 				0E2514C22C21394F00D94EA1 /* AcaFedTheme.swift in Sources */,
 				0EC171E82BB400A9004908E0 /* GreenTheme.swift in Sources */,
 				0EDBF78F2B8B7B3C00A313D8 /* PitchPlayer.swift in Sources */,
+				0EC808382C5303DB003B1713 /* Streak.swift in Sources */,
 				0E0A001F2C48DB58000A452C /* BrownTheme.swift in Sources */,
 				0E2514A82C1D419700D94EA1 /* TimberTheme.swift in Sources */,
 				0EC171ED2BB4AF14004908E0 /* OrangeTheme.swift in Sources */,
@@ -1655,7 +1659,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1685,7 +1689,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1832,7 +1836,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1861,7 +1865,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1889,7 +1893,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
@@ -1904,7 +1908,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 30;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
 				MARKETING_VERSION = 2.0;
