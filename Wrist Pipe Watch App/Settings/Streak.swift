@@ -11,18 +11,19 @@ import Vortex
 struct Streak: View {
     @AppStorage(UserDefaultsKeys().openStreak) private var openStreak = 1
     @State var backgroundColor: Color = .blue
+    private let colorHelper = ColorHelper()
     
     let phrases: [String] = [
         "Opened Wrist Pipe",
-        "Kept in Tune",
+        "Stayed in Tune",
         "In Key for",
         "On Pitch",
         "Harmonious for",
-        "Pitch-perfect for",
-        "Properly tuned",
-        "Tonally accurate",
+        "Pitch-Perfect for",
+        "Properly Tuned",
+        "Tonally Accurate",
         "Musically precise",
-        "Perfectly tuned",
+        "Perfectly Tuned",
         "Blew a Pitch",
         "Harmonized",
         "Rang a Chord"
@@ -36,16 +37,49 @@ struct Streak: View {
         return openStreak % 365 == 0
     }
     
-    func getContrastText() -> Color {
-        var r, g, b, a: CGFloat
-        (r, g, b, a) = (0, 0, 0, 0)
-        UIColor(backgroundColor).getRed(&r, green: &g, blue: &b, alpha: &a)
-        let luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b
-        return  luminance < 0.6 ? Color.white : Color.black
+    @State private var noteOffsets = [
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200),
+        Double.random(in: 100...200)
+    ]
+    
+    //used to start floating notes animation
+    @State private var appeared = false
+    func flipOffsets() {
+        if appeared {
+            return
+        }
+        
+        for i in 0...9 {
+            noteOffsets[i] = -noteOffsets[i]
+        }
+        
+        appeared = true
     }
     
     var body: some View {
         ZStack {
+            VStack {
+                ForEach(0..<10) { i in
+                    Image(systemName: "music.note")
+                        .foregroundStyle(colorHelper.getRandomColor())
+                        .scaleEffect(Double.random(in: 0.3...1.3))
+                        .offset(x: noteOffsets[i])
+                        .animation(
+                            .linear(duration: Double.random(in: 5...10))
+                            .repeatForever(autoreverses: false),
+                            value: noteOffsets[i]
+                        )
+                }
+            }
+            
             VStack {
                 Text(phrases.randomElement()!)
                 ZStack {
@@ -54,7 +88,7 @@ struct Streak: View {
                         .foregroundStyle(backgroundColor.gradient)
                     Text("\(openStreak)")
                         .font(.system(size: 50, weight: .semibold))
-                        .foregroundStyle(getContrastText())
+                        .foregroundStyle(colorHelper.getContrastText(for: backgroundColor))
                 }
                 Text("Day\(openStreak > 1 ? "s" : "") in a Row")
             }
@@ -71,12 +105,8 @@ struct Streak: View {
             }
         }
         .onAppear() {
-            backgroundColor = Color(
-                red: .random(in: 0...1),
-                green: .random(in: 0...1),
-                blue: .random(in: 0...1),
-                opacity: 1
-            )
+            backgroundColor = colorHelper.getRandomColor()
+            flipOffsets()
         }
     }
 }

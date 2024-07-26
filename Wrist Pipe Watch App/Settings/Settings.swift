@@ -50,7 +50,7 @@ struct Settings: View {
                 }.padding()
             }
             
-            Streak()
+            Streak().frame(width: .infinity, height: .infinity)
         }
         .tabViewStyle(.verticalPage)
     }

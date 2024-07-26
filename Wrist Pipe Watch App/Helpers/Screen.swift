@@ -16,7 +16,7 @@ class Screen {
     let mm38 = 136.0
     let mm42 = 156.0
     
-    // Series 4, 5, 6, SE
+    // Series 4, 5, 6, SE, SE 2
     let mm40 = 162.0
     let mm44 = 184.0
     
