@@ -47,6 +47,7 @@ struct InstrumentSettings: View {
                         Spacer()
                         if selectedInstrument == instrument {
                             Image(systemName: "checkmark")
+                                .foregroundStyle(.green)
                         }
                     }
                 })
@@ -82,6 +83,7 @@ struct InstrumentSettings: View {
                                 Spacer()
                                 if octave == Octave.high.rawValue {
                                     Image(systemName: "checkmark")
+                                        .foregroundStyle(.green)
                                 }
                             }
                         })
@@ -97,6 +99,7 @@ struct InstrumentSettings: View {
                                 Spacer()
                                 if octave == Octave.mid.rawValue {
                                     Image(systemName: "checkmark")
+                                        .foregroundStyle(.green)
                                 }
                             }
                         })
@@ -111,6 +114,7 @@ struct InstrumentSettings: View {
                                 Spacer()
                                 if octave == Octave.low.rawValue {
                                     Image(systemName: "checkmark")
+                                        .foregroundStyle(.green)
                                 }
                             }
                         })

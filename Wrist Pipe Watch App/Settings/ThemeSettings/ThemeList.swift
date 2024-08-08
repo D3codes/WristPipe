@@ -20,6 +20,7 @@ struct ThemeList: View {
                     Spacer()
                     if selectedTheme == theme.id {
                         Image(systemName: "checkmark")
+                            .foregroundStyle(.green)
                     }
                 }
             }

@@ -20,6 +20,7 @@ struct BHSThemesList: View {
                         Spacer()
                         if selectedTheme == BHSTheme().id {
                             Image(systemName: "checkmark")
+                                .foregroundStyle(.green)
                         }
                     }
                 }
@@ -29,6 +30,7 @@ struct BHSThemesList: View {
                         Spacer()
                         if selectedTheme == SPEBSQSATheme().id {
                             Image(systemName: "checkmark")
+                                .foregroundStyle(.green)
                         }
                     }
                 }

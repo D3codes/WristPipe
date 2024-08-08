@@ -22,11 +22,12 @@ struct Streak: View {
         "Pitch-Perfect for",
         "Properly Tuned",
         "Tonally Accurate",
-        "Musically precise",
+        "Musically Precise",
         "Perfectly Tuned",
         "Blew a Pitch",
         "Harmonized",
-        "Rang a Chord"
+        "Rang a Chord",
+        "Made Music"
     ]
     
     func isAnniverary() -> Bool {

@@ -15,7 +15,8 @@ struct Acknowledgments: View {
         "i.phoenix",
         "quaharini2all",
         "matiascloudbirb",
-        "u/quangdog"
+        "u/quangdog",
+        "u/samuraipie01"
     ]
     
     var body: some View {
