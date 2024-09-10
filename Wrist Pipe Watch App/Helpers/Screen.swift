@@ -13,8 +13,8 @@ class Screen {
     let screenWidth = WKInterfaceDevice.current().screenBounds.width
     
     // Series 0, 1, 2, 3
-    let mm38 = 136.0
-    let mm42 = 156.0
+    // let mm38 = 136.0
+    // let mm42 = 156.0
     
     // Series 4, 5, 6, SE, SE 2
     let mm40 = 162.0
@@ -23,6 +23,10 @@ class Screen {
     // Series 7, 8, 9
     let mm41 = 176.0
     let mm45 = 198.0
+    
+    // Series 10
+    let mm42 = 187.0
+    let mm46 = 208.0
     
     // Ultra, Ultra 2
     let mm49 = 205.0
@@ -35,6 +39,8 @@ class Screen {
         176.0 : 33.0, //41mm
         198.0 : 38.0, //45mm
         205.0 : 40.0, //49mm
+        187.0 : 36.0, //42mm
+        208.0 : 40.0, //46mm
     ]
     func getPitchSize() -> Double {
         return pitchSize[screenWidth]!
@@ -48,6 +54,8 @@ class Screen {
         176.0 : 75.0, //41mm
         198.0 : 80.0, //45mm
         205.0 : 80.0, //49mm
+        187.0 : 80.0, //42mm
+        208.0 : 80.0, //46mm
     ]
     func getPitchSelectorSize() -> Double {
         return pitchSelectorSize[screenWidth]!
@@ -61,6 +69,8 @@ class Screen {
         176.0 : 41.0, //41mm
         198.0 : 45.0, //45mm
         205.0 : 49.0, //49mm
+        187.0 : 49.0, //42mm
+        208.0 : 49.0, //46mm
     ]
     func getPitchPointerSize() -> Double {
         return pitchPointerSize[screenWidth]!
@@ -74,13 +84,11 @@ class Screen {
         176.0 : 100.0, //41mm
         198.0 : 110.0, //45mm
         205.0 : 110.0, //49mm
+        187.0 : 100.0, //42mm
+        208.0 : 110.0, //46mm
     ]
     func getSaveButtonOffset() -> Double {
         return saveButtonOffset[screenWidth]!
-    }
-    
-    func isSeries3() -> Bool {
-        return screenWidth == mm38 || screenWidth == mm42
     }
     
     func isUltra() -> Bool {
@@ -89,5 +97,15 @@ class Screen {
 }
 
 #Preview() {
-    PitchPipe(theme: BlackTheme())
+    struct BlackTheme_Preview: View {
+        @State var path: [Int] = []
+        
+        var body: some View {
+            NavigationView {
+                ThemePreview(theme: BlueTheme(), path: $path, showSaveButton: true)
+            }
+        }
+    }
+    
+    return BlackTheme_Preview()
 }
