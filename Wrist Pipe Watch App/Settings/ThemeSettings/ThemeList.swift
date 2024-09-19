@@ -9,18 +9,40 @@ import SwiftUI
 
 struct ThemeList: View {
     @AppStorage(UserDefaultsKeys().theme) private var selectedTheme = 0
+    @State var topLevelThemes: [any Theme] = []
     @State var themes: [any Theme]
+    @State var themesHeader: String = ""
     @Binding var path: [Int]
     
     var body: some View {
-        List(themes.sorted(by: { $0.name < $1.name }), id:\.self.id) { theme in
-            NavigationLink { ThemePreview(theme: theme, path: $path) } label: {
-                HStack {
-                    Text("\(theme.name)")
-                    Spacer()
-                    if selectedTheme == theme.id {
-                        Image(systemName: "checkmark")
-                            .foregroundStyle(.green)
+        List {
+            if !topLevelThemes.isEmpty {
+                Section() {
+                    ForEach(topLevelThemes.sorted(by: { $0.name < $1.name }), id:\.self.id) { theme in
+                        NavigationLink { ThemePreview(theme: theme, path: $path) } label: {
+                            HStack {
+                                Text("\(theme.name)")
+                                Spacer()
+                                if selectedTheme == theme.id {
+                                    Image(systemName: "checkmark")
+                                        .foregroundStyle(.green)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            Section(header: Text(themesHeader)) {
+                ForEach(themes.sorted(by: { $0.name < $1.name }), id:\.self.id) { theme in
+                    NavigationLink { ThemePreview(theme: theme, path: $path) } label: {
+                        HStack {
+                            Text("\(theme.name)")
+                            Spacer()
+                            if selectedTheme == theme.id {
+                                Image(systemName: "checkmark")
+                                    .foregroundStyle(.green)
+                            }
+                        }
                     }
                 }
             }
@@ -33,7 +55,12 @@ struct ThemeList: View {
         @State var path = [Int]()
         
         var body: some View {
-            ThemeList(themes: Themes, path: $path)
+            ThemeList(
+                topLevelThemes: [SPEBSQSATheme()],
+                themes: CSDThemes,
+                themesHeader: "Choruses",
+                path: $path
+            )
         }
     }
     

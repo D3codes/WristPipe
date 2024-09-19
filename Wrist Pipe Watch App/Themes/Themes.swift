@@ -24,6 +24,17 @@ let ColorThemes: [any Theme] = [
 let BHSThemes: [any Theme] = [
     BHSTheme(),             //1000
     SPEBSQSATheme(),        //1001
+    CARTheme(),             //1002
+    NSCTheme(),             //1003
+    CSDTheme(),             //1004
+    EVGTheme(),             //1005
+    FWDTheme(),             //1006
+    ILLTheme(),             //1007
+    JADTheme(),             //1008
+    LOLTheme(),             //1009
+    MADTheme(),             //1010
+    NEDTheme(),             //1011
+    ONTTheme(),             //1012
 ]
 + CARThemes + NSCThemes + CSDThemes + EVGThemes
 + FWDThemes + ILLThemes + JADThemes + LOLThemes
