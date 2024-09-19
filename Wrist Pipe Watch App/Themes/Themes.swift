@@ -194,6 +194,7 @@ let SUNThemes: [any Theme] = [
     OBCTheme(),                     //2701
     OrlandoHarmonyTheme(),          //2702
     HOHTheme(),                     //2703
+    HOFTheme(),                     //2704
 ]
 
 //3000-3999
