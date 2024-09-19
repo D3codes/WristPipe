@@ -126,6 +126,7 @@ let MADThemes: [any Theme] = [
     AlexandriaHarmonizersTheme(),   //1901
     VOGTheme(),                     //1902
     EastCoastTheme(),               //1903
+    MVTheme(),                      //1904
 ]
 
 //2000-2099
@@ -175,6 +176,7 @@ let SHDThemes: [any Theme] = [
     RSVPTheme(),                    //2503
     MusicCityTheme(),               //2504
     SMCTheme(),                     //2505
+    //AVPTheme(),                     //2506
 ]
 
 //2600-2699

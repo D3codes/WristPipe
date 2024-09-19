@@ -67,6 +67,8 @@
 		0E117AAF2BB28167009B0B2A /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAC2BB28167009B0B2A /* SongList.swift */; };
 		0E117AB02BB28167009B0B2A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAD2BB28167009B0B2A /* Song.swift */; };
 		0E15DEE52C9C9B55001958D6 /* HOFTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15DEE42C9C9B55001958D6 /* HOFTheme.swift */; };
+		0E15DEE72C9CACC2001958D6 /* MVTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15DEE62C9CACC2001958D6 /* MVTheme.swift */; };
+		0E15DEE92C9CB1F8001958D6 /* AVPTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15DEE82C9CB1F8001958D6 /* AVPTheme.swift */; };
 		0E214C2F2C2355C300B05F82 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E214C2E2C2355C300B05F82 /* WidgetKit.framework */; };
 		0E214C312C2355C300B05F82 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E214C302C2355C300B05F82 /* SwiftUI.framework */; };
 		0E214C342C2355C300B05F82 /* WristPipeWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C332C2355C300B05F82 /* WristPipeWidgets.swift */; };
@@ -388,6 +390,8 @@
 		0E117AAC2BB28167009B0B2A /* SongList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		0E117AAD2BB28167009B0B2A /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		0E15DEE42C9C9B55001958D6 /* HOFTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOFTheme.swift; sourceTree = "<group>"; };
+		0E15DEE62C9CACC2001958D6 /* MVTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVTheme.swift; sourceTree = "<group>"; };
+		0E15DEE82C9CB1F8001958D6 /* AVPTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPTheme.swift; sourceTree = "<group>"; };
 		0E214C2C2C2355C300B05F82 /* Wrist Pipe WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wrist Pipe WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E214C2E2C2355C300B05F82 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0E214C302C2355C300B05F82 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -866,6 +870,7 @@
 				0E2514B72C2122C100D94EA1 /* RSVPTheme.swift */,
 				0E2514B92C2123FD00D94EA1 /* MusicCityTheme.swift */,
 				0E214C5A2C28825F00B05F82 /* SMCTheme.swift */,
+				0E15DEE82C9CB1F8001958D6 /* AVPTheme.swift */,
 				0E2514B32C21157A00D94EA1 /* ChooChooTheme.swift */,
 			);
 			path = SHD;
@@ -1034,6 +1039,7 @@
 				0EC19A752C9BB7450030E379 /* MADTheme.swift */,
 				0E595EBC2BD3637900581CCB /* ParksideTheme.swift */,
 				0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */,
+				0E15DEE62C9CACC2001958D6 /* MVTheme.swift */,
 				0E595EC02BD36B0E00581CCB /* VOGTheme.swift */,
 				0E214C522C28711200B05F82 /* EastCoastTheme.swift */,
 			);
@@ -1619,6 +1625,7 @@
 				0E595ECD2BD4764B00581CCB /* HarmonyLeagueTheme.swift in Sources */,
 				0EF7C1392B8D109C0031AD78 /* BlackTheme.swift in Sources */,
 				0E214C552C28733E00B05F82 /* CCSTheme.swift in Sources */,
+				0E15DEE92C9CB1F8001958D6 /* AVPTheme.swift in Sources */,
 				0EDBF7822B8B7B3C00A313D8 /* PitchPipe.swift in Sources */,
 				0E3FAB322BB5FC9600265CA2 /* ForwardHarmonyTheme.swift in Sources */,
 				0E2514B82C2122C100D94EA1 /* RSVPTheme.swift in Sources */,
@@ -1669,6 +1676,7 @@
 				0EF0E1FC2BB3E97500B31FFA /* PDXTheme.swift in Sources */,
 				0E0A00212C49D203000A452C /* Acknowledgments.swift in Sources */,
 				0EF0E1E22BB3881A00B31FFA /* CircleCitySoundTheme.swift in Sources */,
+				0E15DEE72C9CACC2001958D6 /* MVTheme.swift in Sources */,
 				0E3486D62C3A202C009D682A /* ThemePreview.swift in Sources */,
 				0E595D6C2C3F9106005F0042 /* Instruments.swift in Sources */,
 				0EC19A6A2C9B59240030E379 /* CSDTheme.swift in Sources */,
