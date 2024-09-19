@@ -102,37 +102,37 @@ struct BHSThemesList: View {
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: PIOThemes, themesHeader: "Choruses", path: $path) } label: {
+                NavigationLink { ThemeList(topLevelThemes: [PIOTheme()], themes: PIOThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Pioneer District") //PIO
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: RMDThemes, themesHeader: "Choruses", path: $path) } label: {
+                NavigationLink { ThemeList(topLevelThemes: [RMDTheme()], themes: RMDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Rocky Mountain District") //RMD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SLDThemes, themesHeader: "Choruses", path: $path) } label: {
+                NavigationLink { ThemeList(topLevelThemes: [SLDTheme()], themes: SLDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Seneca Land District") //SLD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SHDThemes, themesHeader: "Choruses", path: $path) } label: {
+                NavigationLink { ThemeList(topLevelThemes: [SHDTheme()], themes: SHDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Southeastern Harmony District") //SHD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SWDThemes, themesHeader: "Choruses", path: $path) } label: {
+                NavigationLink { ThemeList(topLevelThemes: [SWDTheme()], themes: SWDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Southwestern District") //SWD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SUNThemes, themesHeader: "Choruses", path: $path) } label: {
+                NavigationLink { ThemeList(topLevelThemes: [SUNTheme()], themes: SUNThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Sunshine District") //SUN
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()

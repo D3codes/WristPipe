@@ -234,6 +234,12 @@
 		0EC19A762C9BB7450030E379 /* MADTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A752C9BB7450030E379 /* MADTheme.swift */; };
 		0EC19A782C9BBACF0030E379 /* NEDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A772C9BBACF0030E379 /* NEDTheme.swift */; };
 		0EC19A7A2C9BBC740030E379 /* ONTTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A792C9BBC740030E379 /* ONTTheme.swift */; };
+		0EC19A7C2C9BC6430030E379 /* PIOTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A7B2C9BC6430030E379 /* PIOTheme.swift */; };
+		0EC19A7E2C9BC9600030E379 /* RMDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A7D2C9BC9600030E379 /* RMDTheme.swift */; };
+		0EC19A802C9BD0A00030E379 /* SLDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A7F2C9BD0A00030E379 /* SLDTheme.swift */; };
+		0EC19A822C9BD4A00030E379 /* SHDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A812C9BD4A00030E379 /* SHDTheme.swift */; };
+		0EC19A842C9BD77C0030E379 /* SWDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A832C9BD77C0030E379 /* SWDTheme.swift */; };
+		0EC19A862C9BDACF0030E379 /* SUNTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A852C9BDACF0030E379 /* SUNTheme.swift */; };
 		0EC808382C5303DB003B1713 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC808372C5303C7003B1713 /* Streak.swift */; };
 		0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */; };
 		0EDBF7592B8B7AC500A313D8 /* Wrist Pipe.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -548,6 +554,12 @@
 		0EC19A752C9BB7450030E379 /* MADTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADTheme.swift; sourceTree = "<group>"; };
 		0EC19A772C9BBACF0030E379 /* NEDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEDTheme.swift; sourceTree = "<group>"; };
 		0EC19A792C9BBC740030E379 /* ONTTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONTTheme.swift; sourceTree = "<group>"; };
+		0EC19A7B2C9BC6430030E379 /* PIOTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIOTheme.swift; sourceTree = "<group>"; };
+		0EC19A7D2C9BC9600030E379 /* RMDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMDTheme.swift; sourceTree = "<group>"; };
+		0EC19A7F2C9BD0A00030E379 /* SLDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLDTheme.swift; sourceTree = "<group>"; };
+		0EC19A812C9BD4A00030E379 /* SHDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHDTheme.swift; sourceTree = "<group>"; };
+		0EC19A832C9BD77C0030E379 /* SWDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWDTheme.swift; sourceTree = "<group>"; };
+		0EC19A852C9BDACF0030E379 /* SUNTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUNTheme.swift; sourceTree = "<group>"; };
 		0EC808372C5303C7003B1713 /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
 		0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralStandardTheme.swift; sourceTree = "<group>"; };
 		0EDBF7522B8B7AC500A313D8 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -824,6 +836,7 @@
 		0E2514A02C1CE12C00D94EA1 /* RMD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A7D2C9BC9600030E379 /* RMDTheme.swift */,
 				0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */,
 				0E2514A52C1D3FA000D94EA1 /* LPCTheme.swift */,
 				0E2514A72C1D419700D94EA1 /* TimberTheme.swift */,
@@ -835,6 +848,7 @@
 		0E2514A92C20EA7000D94EA1 /* SLD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A7F2C9BD0A00030E379 /* SLDTheme.swift */,
 				0E2514AA2C20EA7B00D94EA1 /* HarmColTheme.swift */,
 				0E2514AC2C20ED2400D94EA1 /* SouthernTheme.swift */,
 			);
@@ -844,6 +858,7 @@
 		0E2514B02C20FCD000D94EA1 /* SHD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A812C9BD4A00030E379 /* SHDTheme.swift */,
 				0E2514B12C20FD3600D94EA1 /* CrimPrideTheme.swift */,
 				0E2514B52C21205B00D94EA1 /* SOTNTheme.swift */,
 				0E2514B72C2122C100D94EA1 /* RSVPTheme.swift */,
@@ -857,6 +872,7 @@
 		0E2514BC2C2129AF00D94EA1 /* SWD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A832C9BD77C0030E379 /* SWDTheme.swift */,
 				0E2514BD2C2129B800D94EA1 /* SpaceCityTheme.swift */,
 				0E2514BF2C212BFC00D94EA1 /* PrismTheme.swift */,
 				0E2514C72C213EAA00D94EA1 /* VocalMajorityTheme.swift */,
@@ -871,6 +887,7 @@
 		0E2514C92C21412000D94EA1 /* SUN */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A852C9BDACF0030E379 /* SUNTheme.swift */,
 				0E2514CA2C21412A00D94EA1 /* BOCTheme.swift */,
 				0E2514CC2C21435800D94EA1 /* OBCTheme.swift */,
 				0E2514D02C21480500D94EA1 /* HOHTheme.swift */,
@@ -1049,6 +1066,7 @@
 		0E595ED22BD56A6900581CCB /* PIO */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A7B2C9BC6430030E379 /* PIOTheme.swift */,
 				0E595ED32BD56AC800581CCB /* GreatLakesTheme.swift */,
 				0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */,
 				0E595ED52BD6A53600581CCB /* CityLightsTheme.swift */,
@@ -1538,7 +1556,10 @@
 				0E2514CD2C21435800D94EA1 /* OBCTheme.swift in Sources */,
 				0E214C572C287DD700B05F82 /* HarbourtownTheme.swift in Sources */,
 				0EF0E1F12BB3C3DC00B31FFA /* RecruitsTheme.swift in Sources */,
+				0EC19A842C9BD77C0030E379 /* SWDTheme.swift in Sources */,
 				0EDBF7982B8C01EA00A313D8 /* Screen.swift in Sources */,
+				0EC19A822C9BD4A00030E379 /* SHDTheme.swift in Sources */,
+				0EC19A7E2C9BC9600030E379 /* RMDTheme.swift in Sources */,
 				0E595ED12BD567D300581CCB /* CCCTheme.swift in Sources */,
 				0EC19A7A2C9BBC740030E379 /* ONTTheme.swift in Sources */,
 				0E117A5D2BB24511009B0B2A /* InstrumentSettings.swift in Sources */,
@@ -1556,6 +1577,8 @@
 				0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */,
 				0E595EC82BD41CB700581CCB /* VoicesUnitedTheme.swift in Sources */,
 				0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */,
+				0EC19A7C2C9BC6430030E379 /* PIOTheme.swift in Sources */,
+				0EC19A802C9BD0A00030E379 /* SLDTheme.swift in Sources */,
 				0EDBF7932B8BFE9100A313D8 /* Theme.swift in Sources */,
 				0E2514B22C20FD3A00D94EA1 /* CrimPrideTheme.swift in Sources */,
 				0E2514B42C21157A00D94EA1 /* ChooChooTheme.swift in Sources */,
@@ -1570,6 +1593,7 @@
 				0E595EC42BD417A900581CCB /* VRTheme.swift in Sources */,
 				0EC19A722C9B98C30030E379 /* JADTheme.swift in Sources */,
 				0EF0E1F52BB3CF2200B31FFA /* LittleAppleTheme.swift in Sources */,
+				0EC19A862C9BDACF0030E379 /* SUNTheme.swift in Sources */,
 				0EC19A782C9BBACF0030E379 /* NEDTheme.swift in Sources */,
 				0EB277822BB3440B00A73710 /* UserDefaultsKeys.swift in Sources */,
 				0EF0E1F32BB3C63A00B31FFA /* SmorgasTheme.swift in Sources */,

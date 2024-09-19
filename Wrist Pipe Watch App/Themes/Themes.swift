@@ -35,6 +35,12 @@ let BHSThemes: [any Theme] = [
     MADTheme(),             //1010
     NEDTheme(),             //1011
     ONTTheme(),             //1012
+    PIOTheme(),             //1013
+    RMDTheme(),             //1014
+    SLDTheme(),             //1015
+    SHDTheme(),             //1016
+    SWDTheme(),             //1017
+    SUNTheme(),             //1018
 ]
 + CARThemes + NSCThemes + CSDThemes + EVGThemes
 + FWDThemes + ILLThemes + JADThemes + LOLThemes
