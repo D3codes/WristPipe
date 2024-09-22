@@ -11,44 +11,45 @@ struct AVPTheme: Theme {
     var id: Int = 2506
     var name: String = "Atlanta Vocal Project"
     
-    private let smcBlue: Color = Color(red: 0.196, green: 0.243, blue: 0.529)
+    private let avpDarkBlue: Color = Color(red: 0.090, green: 0.118, blue: 0.404)
+    private let avpLightBlue: Color = Color(red: 0.451, green: 0.604, blue: 0.992)
     
     func getBackground() -> any View {
         return AnyView(Spacer())
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(.white)
+                .background(avpLightBlue.gradient)
     }
     
-    var selectorColor: Color = Color(red: 0.196, green: 0.243, blue: 0.529)
-    var selectorTextColor: Color = Color(red: 0.196, green: 0.243, blue: 0.529)
+    var selectorColor: Color = Color(red: 0.090, green: 0.118, blue: 0.404)
+    var selectorTextColor: Color = Color(red: 0.451, green: 0.604, blue: 0.992)
     var selectorBackgroundColor: [Color] = [
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white,
-        .white
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404)
     ]
     
     var pitchBackgroundUnselectedColor: [Color] = [
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529),
-        Color(red: 0.196, green: 0.243, blue: 0.529)
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404),
+        Color(red: 0.090, green: 0.118, blue: 0.404)
     ]
     var pitchTextUnselectedColor: Color = .white
     var pitchUnselectedOpacity: Double = 1
@@ -67,12 +68,12 @@ struct AVPTheme: Theme {
         .white,
         .white
     ]
-    var pitchTextSelectedColor: Color = .black
+    var pitchTextSelectedColor: Color = Color(red: 0.090, green: 0.118, blue: 0.404)
     var pitchSelectedOpacity: Double = 1
     
     var logo: Image? = Image("avp_logo")
-    var logoXScale: Double = 0
-    var logoYScale: Double = 0
+    var logoXScale: Double = 4
+    var logoYScale: Double = 4
 }
 
 #Preview() {
