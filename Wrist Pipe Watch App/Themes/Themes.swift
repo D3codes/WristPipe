@@ -24,6 +24,23 @@ let ColorThemes: [any Theme] = [
 let BHSThemes: [any Theme] = [
     BHSTheme(),             //1000
     SPEBSQSATheme(),        //1001
+    CARTheme(),             //1002
+    NSCTheme(),             //1003
+    CSDTheme(),             //1004
+    EVGTheme(),             //1005
+    FWDTheme(),             //1006
+    ILLTheme(),             //1007
+    JADTheme(),             //1008
+    LOLTheme(),             //1009
+    MADTheme(),             //1010
+    NEDTheme(),             //1011
+    ONTTheme(),             //1012
+    PIOTheme(),             //1013
+    RMDTheme(),             //1014
+    SLDTheme(),             //1015
+    SHDTheme(),             //1016
+    SWDTheme(),             //1017
+    SUNTheme(),             //1018
 ]
 + CARThemes + NSCThemes + CSDThemes + EVGThemes
 + FWDThemes + ILLThemes + JADThemes + LOLThemes
@@ -109,6 +126,7 @@ let MADThemes: [any Theme] = [
     AlexandriaHarmonizersTheme(),   //1901
     VOGTheme(),                     //1902
     EastCoastTheme(),               //1903
+    MVTheme(),                      //1904
 ]
 
 //2000-2099
@@ -158,6 +176,7 @@ let SHDThemes: [any Theme] = [
     RSVPTheme(),                    //2503
     MusicCityTheme(),               //2504
     SMCTheme(),                     //2505
+    AVPTheme(),                     //2506
 ]
 
 //2600-2699
@@ -177,6 +196,7 @@ let SUNThemes: [any Theme] = [
     OBCTheme(),                     //2701
     OrlandoHarmonyTheme(),          //2702
     HOHTheme(),                     //2703
+    HOFTheme(),                     //2704
 ]
 
 //3000-3999

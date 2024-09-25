@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ThoroughbredTheme: Theme {
     var id: Int = 1102
-    var name: String = "The Throughbreds"
+    var name: String = "The Thoroughbreds"
     
     private let thoroughbredBrown: Color = Color(red: 0.91, green: 0.89, blue: 0.81)
     

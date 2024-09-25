@@ -66,6 +66,9 @@
 		0E117AAE2BB28167009B0B2A /* AddSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAB2BB28167009B0B2A /* AddSong.swift */; };
 		0E117AAF2BB28167009B0B2A /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAC2BB28167009B0B2A /* SongList.swift */; };
 		0E117AB02BB28167009B0B2A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117AAD2BB28167009B0B2A /* Song.swift */; };
+		0E15DEE52C9C9B55001958D6 /* HOFTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15DEE42C9C9B55001958D6 /* HOFTheme.swift */; };
+		0E15DEE72C9CACC2001958D6 /* MVTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15DEE62C9CACC2001958D6 /* MVTheme.swift */; };
+		0E15DEE92C9CB1F8001958D6 /* AVPTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E15DEE82C9CB1F8001958D6 /* AVPTheme.swift */; };
 		0E214C2F2C2355C300B05F82 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E214C2E2C2355C300B05F82 /* WidgetKit.framework */; };
 		0E214C312C2355C300B05F82 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E214C302C2355C300B05F82 /* SwiftUI.framework */; };
 		0E214C342C2355C300B05F82 /* WristPipeWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E214C332C2355C300B05F82 /* WristPipeWidgets.swift */; };
@@ -223,6 +226,23 @@
 		0EC171FF2BB51CF2004908E0 /* SGCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC171FE2BB51CF2004908E0 /* SGCTheme.swift */; };
 		0EC172012BB52192004908E0 /* VocalConfluenceTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC172002BB52192004908E0 /* VocalConfluenceTheme.swift */; };
 		0EC172032BB523AD004908E0 /* SingingBuckeyesTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC172022BB523AD004908E0 /* SingingBuckeyesTheme.swift */; };
+		0EC19A662C9B50A20030E379 /* CARTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A652C9B50A20030E379 /* CARTheme.swift */; };
+		0EC19A682C9B56710030E379 /* NSCTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A672C9B56710030E379 /* NSCTheme.swift */; };
+		0EC19A6A2C9B59240030E379 /* CSDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A692C9B59240030E379 /* CSDTheme.swift */; };
+		0EC19A6C2C9B822F0030E379 /* EVGTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A6B2C9B822F0030E379 /* EVGTheme.swift */; };
+		0EC19A6E2C9B872D0030E379 /* FWDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A6D2C9B872D0030E379 /* FWDTheme.swift */; };
+		0EC19A702C9B8BD80030E379 /* ILLTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A6F2C9B8BD80030E379 /* ILLTheme.swift */; };
+		0EC19A722C9B98C30030E379 /* JADTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A712C9B98C30030E379 /* JADTheme.swift */; };
+		0EC19A742C9BB11F0030E379 /* LOLTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A732C9BB11F0030E379 /* LOLTheme.swift */; };
+		0EC19A762C9BB7450030E379 /* MADTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A752C9BB7450030E379 /* MADTheme.swift */; };
+		0EC19A782C9BBACF0030E379 /* NEDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A772C9BBACF0030E379 /* NEDTheme.swift */; };
+		0EC19A7A2C9BBC740030E379 /* ONTTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A792C9BBC740030E379 /* ONTTheme.swift */; };
+		0EC19A7C2C9BC6430030E379 /* PIOTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A7B2C9BC6430030E379 /* PIOTheme.swift */; };
+		0EC19A7E2C9BC9600030E379 /* RMDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A7D2C9BC9600030E379 /* RMDTheme.swift */; };
+		0EC19A802C9BD0A00030E379 /* SLDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A7F2C9BD0A00030E379 /* SLDTheme.swift */; };
+		0EC19A822C9BD4A00030E379 /* SHDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A812C9BD4A00030E379 /* SHDTheme.swift */; };
+		0EC19A842C9BD77C0030E379 /* SWDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A832C9BD77C0030E379 /* SWDTheme.swift */; };
+		0EC19A862C9BDACF0030E379 /* SUNTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC19A852C9BDACF0030E379 /* SUNTheme.swift */; };
 		0EC808382C5303DB003B1713 /* Streak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC808372C5303C7003B1713 /* Streak.swift */; };
 		0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */; };
 		0EDBF7592B8B7AC500A313D8 /* Wrist Pipe.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0EDBF7582B8B7AC500A313D8 /* Wrist Pipe.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -369,6 +389,9 @@
 		0E117AAB2BB28167009B0B2A /* AddSong.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSong.swift; sourceTree = "<group>"; };
 		0E117AAC2BB28167009B0B2A /* SongList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		0E117AAD2BB28167009B0B2A /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		0E15DEE42C9C9B55001958D6 /* HOFTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOFTheme.swift; sourceTree = "<group>"; };
+		0E15DEE62C9CACC2001958D6 /* MVTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVTheme.swift; sourceTree = "<group>"; };
+		0E15DEE82C9CB1F8001958D6 /* AVPTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPTheme.swift; sourceTree = "<group>"; };
 		0E214C2C2C2355C300B05F82 /* Wrist Pipe WidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wrist Pipe WidgetsExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E214C2E2C2355C300B05F82 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0E214C302C2355C300B05F82 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -526,6 +549,23 @@
 		0EC171FE2BB51CF2004908E0 /* SGCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGCTheme.swift; sourceTree = "<group>"; };
 		0EC172002BB52192004908E0 /* VocalConfluenceTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalConfluenceTheme.swift; sourceTree = "<group>"; };
 		0EC172022BB523AD004908E0 /* SingingBuckeyesTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingingBuckeyesTheme.swift; sourceTree = "<group>"; };
+		0EC19A652C9B50A20030E379 /* CARTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CARTheme.swift; sourceTree = "<group>"; };
+		0EC19A672C9B56710030E379 /* NSCTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCTheme.swift; sourceTree = "<group>"; };
+		0EC19A692C9B59240030E379 /* CSDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSDTheme.swift; sourceTree = "<group>"; };
+		0EC19A6B2C9B822F0030E379 /* EVGTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVGTheme.swift; sourceTree = "<group>"; };
+		0EC19A6D2C9B872D0030E379 /* FWDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FWDTheme.swift; sourceTree = "<group>"; };
+		0EC19A6F2C9B8BD80030E379 /* ILLTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILLTheme.swift; sourceTree = "<group>"; };
+		0EC19A712C9B98C30030E379 /* JADTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JADTheme.swift; sourceTree = "<group>"; };
+		0EC19A732C9BB11F0030E379 /* LOLTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOLTheme.swift; sourceTree = "<group>"; };
+		0EC19A752C9BB7450030E379 /* MADTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADTheme.swift; sourceTree = "<group>"; };
+		0EC19A772C9BBACF0030E379 /* NEDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEDTheme.swift; sourceTree = "<group>"; };
+		0EC19A792C9BBC740030E379 /* ONTTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONTTheme.swift; sourceTree = "<group>"; };
+		0EC19A7B2C9BC6430030E379 /* PIOTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIOTheme.swift; sourceTree = "<group>"; };
+		0EC19A7D2C9BC9600030E379 /* RMDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMDTheme.swift; sourceTree = "<group>"; };
+		0EC19A7F2C9BD0A00030E379 /* SLDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLDTheme.swift; sourceTree = "<group>"; };
+		0EC19A812C9BD4A00030E379 /* SHDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHDTheme.swift; sourceTree = "<group>"; };
+		0EC19A832C9BD77C0030E379 /* SWDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWDTheme.swift; sourceTree = "<group>"; };
+		0EC19A852C9BDACF0030E379 /* SUNTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUNTheme.swift; sourceTree = "<group>"; };
 		0EC808372C5303C7003B1713 /* Streak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Streak.swift; sourceTree = "<group>"; };
 		0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralStandardTheme.swift; sourceTree = "<group>"; };
 		0EDBF7522B8B7AC500A313D8 /* Wrist Pipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wrist Pipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -769,6 +809,7 @@
 		0E229CD82B8C46140065AB31 /* CSD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A692C9B59240030E379 /* CSDTheme.swift */,
 				0E229CD52B8C45EA0065AB31 /* CodyChoraliersTheme.swift */,
 				0E89E0362B8D2E2900FBD605 /* AmbassadorsOfHarmonyTheme.swift */,
 				0ECD24802BA5386F00476F37 /* CentralStandardTheme.swift */,
@@ -801,6 +842,7 @@
 		0E2514A02C1CE12C00D94EA1 /* RMD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A7D2C9BC9600030E379 /* RMDTheme.swift */,
 				0E2514A12C1CE16A00D94EA1 /* SOTRTheme.swift */,
 				0E2514A52C1D3FA000D94EA1 /* LPCTheme.swift */,
 				0E2514A72C1D419700D94EA1 /* TimberTheme.swift */,
@@ -812,6 +854,7 @@
 		0E2514A92C20EA7000D94EA1 /* SLD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A7F2C9BD0A00030E379 /* SLDTheme.swift */,
 				0E2514AA2C20EA7B00D94EA1 /* HarmColTheme.swift */,
 				0E2514AC2C20ED2400D94EA1 /* SouthernTheme.swift */,
 			);
@@ -821,11 +864,13 @@
 		0E2514B02C20FCD000D94EA1 /* SHD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A812C9BD4A00030E379 /* SHDTheme.swift */,
 				0E2514B12C20FD3600D94EA1 /* CrimPrideTheme.swift */,
 				0E2514B52C21205B00D94EA1 /* SOTNTheme.swift */,
 				0E2514B72C2122C100D94EA1 /* RSVPTheme.swift */,
 				0E2514B92C2123FD00D94EA1 /* MusicCityTheme.swift */,
 				0E214C5A2C28825F00B05F82 /* SMCTheme.swift */,
+				0E15DEE82C9CB1F8001958D6 /* AVPTheme.swift */,
 				0E2514B32C21157A00D94EA1 /* ChooChooTheme.swift */,
 			);
 			path = SHD;
@@ -834,6 +879,7 @@
 		0E2514BC2C2129AF00D94EA1 /* SWD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A832C9BD77C0030E379 /* SWDTheme.swift */,
 				0E2514BD2C2129B800D94EA1 /* SpaceCityTheme.swift */,
 				0E2514BF2C212BFC00D94EA1 /* PrismTheme.swift */,
 				0E2514C72C213EAA00D94EA1 /* VocalMajorityTheme.swift */,
@@ -848,6 +894,8 @@
 		0E2514C92C21412000D94EA1 /* SUN */ = {
 			isa = PBXGroup;
 			children = (
+				0E15DEE42C9C9B55001958D6 /* HOFTheme.swift */,
+				0EC19A852C9BDACF0030E379 /* SUNTheme.swift */,
 				0E2514CA2C21412A00D94EA1 /* BOCTheme.swift */,
 				0E2514CC2C21435800D94EA1 /* OBCTheme.swift */,
 				0E2514D02C21480500D94EA1 /* HOHTheme.swift */,
@@ -879,6 +927,7 @@
 		0E3FAB2E2BB5FA9300265CA2 /* LOL */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A732C9BB11F0030E379 /* LOLTheme.swift */,
 				0E3FAB2F2BB5FB3C00265CA2 /* MVETheme.swift */,
 				0E3FAB312BB5FC9600265CA2 /* ForwardHarmonyTheme.swift */,
 				0E3FAB332BB600D000265CA2 /* GNUTheme.swift */,
@@ -987,8 +1036,10 @@
 		0E595EBB2BD361FD00581CCB /* MAD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A752C9BB7450030E379 /* MADTheme.swift */,
 				0E595EBC2BD3637900581CCB /* ParksideTheme.swift */,
 				0E595EBE2BD3679B00581CCB /* AlexandriaHarmonizersTheme.swift */,
+				0E15DEE62C9CACC2001958D6 /* MVTheme.swift */,
 				0E595EC02BD36B0E00581CCB /* VOGTheme.swift */,
 				0E214C522C28711200B05F82 /* EastCoastTheme.swift */,
 			);
@@ -998,6 +1049,7 @@
 		0E595EC22BD4169C00581CCB /* NED */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A772C9BBACF0030E379 /* NEDTheme.swift */,
 				0E595EC32BD417A900581CCB /* VRTheme.swift */,
 				0E595EC52BD4196A00581CCB /* VocaMotionTheme.swift */,
 				0E595EC72BD41CB700581CCB /* VoicesUnitedTheme.swift */,
@@ -1010,6 +1062,7 @@
 		0E595ECB2BD4763100581CCB /* ONT */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A792C9BBC740030E379 /* ONTTheme.swift */,
 				0E595ECC2BD4764B00581CCB /* HarmonyLeagueTheme.swift */,
 				0E595ECE2BD4791900581CCB /* GOHTheme.swift */,
 				0E595ED02BD567D300581CCB /* CCCTheme.swift */,
@@ -1022,6 +1075,7 @@
 		0E595ED22BD56A6900581CCB /* PIO */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A7B2C9BC6430030E379 /* PIOTheme.swift */,
 				0E595ED32BD56AC800581CCB /* GreatLakesTheme.swift */,
 				0E25149E2C1B87B300D94EA1 /* CapCityTheme.swift */,
 				0E595ED52BD6A53600581CCB /* CityLightsTheme.swift */,
@@ -1064,6 +1118,7 @@
 		0EC171E92BB4A9D2004908E0 /* FWD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A6D2C9B872D0030E379 /* FWDTheme.swift */,
 				0EC171EA2BB4ABB7004908E0 /* WestminsterTheme.swift */,
 				0EC171F02BB4B0B9004908E0 /* FogCityTheme.swift */,
 				0EC171F22BB4B3BD004908E0 /* MOHTheme.swift */,
@@ -1076,6 +1131,7 @@
 		0EC171F62BB4F6DD004908E0 /* ILL */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A6F2C9B8BD80030E379 /* ILLTheme.swift */,
 				0EC171F72BB4F791004908E0 /* SOITheme.swift */,
 				0EC171F92BB4FB8C004908E0 /* NewTradTheme.swift */,
 				0EC171FB2BB4FE38004908E0 /* WTCTheme.swift */,
@@ -1086,6 +1142,7 @@
 		0EC171FD2BB51CE8004908E0 /* JAD */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A712C9B98C30030E379 /* JADTheme.swift */,
 				0EC171FE2BB51CF2004908E0 /* SGCTheme.swift */,
 				0EC172002BB52192004908E0 /* VocalConfluenceTheme.swift */,
 				0EC172022BB523AD004908E0 /* SingingBuckeyesTheme.swift */,
@@ -1193,6 +1250,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF0E1DF2BB382AD00B31FFA /* GreatRiverVoicesTheme.swift */,
+				0EC19A652C9B50A20030E379 /* CARTheme.swift */,
 				0EF0E1E12BB3881A00B31FFA /* CircleCitySoundTheme.swift */,
 				0EF0E1E32BB38E2300B31FFA /* ThoroughbredTheme.swift */,
 			);
@@ -1202,6 +1260,7 @@
 		0EF0E1E52BB393E200B31FFA /* NSC */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A672C9B56710030E379 /* NSCTheme.swift */,
 				0EF0E1E62BB394A700B31FFA /* PalmettoTheme.swift */,
 				0EF0E1E82BB3A9C100B31FFA /* HCATheme.swift */,
 				0EF0E1EA2BB3AF8D00B31FFA /* GoldStandardTheme.swift */,
@@ -1214,6 +1273,7 @@
 		0EF0E1FA2BB3D9C400B31FFA /* EVG */ = {
 			isa = PBXGroup;
 			children = (
+				0EC19A6B2C9B822F0030E379 /* EVGTheme.swift */,
 				0EF0E1FB2BB3E97500B31FFA /* PDXTheme.swift */,
 				0EC171DB2BB3EFAD004908E0 /* VocalSummitTheme.swift */,
 				0EC171DD2BB3F78B004908E0 /* BoiseChordsTheme.swift */,
@@ -1503,10 +1563,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2514CD2C21435800D94EA1 /* OBCTheme.swift in Sources */,
+				0E15DEE52C9C9B55001958D6 /* HOFTheme.swift in Sources */,
 				0E214C572C287DD700B05F82 /* HarbourtownTheme.swift in Sources */,
 				0EF0E1F12BB3C3DC00B31FFA /* RecruitsTheme.swift in Sources */,
+				0EC19A842C9BD77C0030E379 /* SWDTheme.swift in Sources */,
 				0EDBF7982B8C01EA00A313D8 /* Screen.swift in Sources */,
+				0EC19A822C9BD4A00030E379 /* SHDTheme.swift in Sources */,
+				0EC19A7E2C9BC9600030E379 /* RMDTheme.swift in Sources */,
 				0E595ED12BD567D300581CCB /* CCCTheme.swift in Sources */,
+				0EC19A7A2C9BBC740030E379 /* ONTTheme.swift in Sources */,
 				0E117A5D2BB24511009B0B2A /* InstrumentSettings.swift in Sources */,
 				0E117A3F2BB23F92009B0B2A /* About.swift in Sources */,
 				0EF0E1F72BB3D25E00B31FFA /* HOATheme.swift in Sources */,
@@ -1522,6 +1587,8 @@
 				0ECD24812BA5386F00476F37 /* CentralStandardTheme.swift in Sources */,
 				0E595EC82BD41CB700581CCB /* VoicesUnitedTheme.swift in Sources */,
 				0E117A322BB0F183009B0B2A /* BHSThemesList.swift in Sources */,
+				0EC19A7C2C9BC6430030E379 /* PIOTheme.swift in Sources */,
+				0EC19A802C9BD0A00030E379 /* SLDTheme.swift in Sources */,
 				0EDBF7932B8BFE9100A313D8 /* Theme.swift in Sources */,
 				0E2514B22C20FD3A00D94EA1 /* CrimPrideTheme.swift in Sources */,
 				0E2514B42C21157A00D94EA1 /* ChooChooTheme.swift in Sources */,
@@ -1534,9 +1601,13 @@
 				0E5A766D2C40E3E700A0395E /* Shortcuts.swift in Sources */,
 				0E2514CF2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift in Sources */,
 				0E595EC42BD417A900581CCB /* VRTheme.swift in Sources */,
+				0EC19A722C9B98C30030E379 /* JADTheme.swift in Sources */,
 				0EF0E1F52BB3CF2200B31FFA /* LittleAppleTheme.swift in Sources */,
+				0EC19A862C9BDACF0030E379 /* SUNTheme.swift in Sources */,
+				0EC19A782C9BBACF0030E379 /* NEDTheme.swift in Sources */,
 				0EB277822BB3440B00A73710 /* UserDefaultsKeys.swift in Sources */,
 				0EF0E1F32BB3C63A00B31FFA /* SmorgasTheme.swift in Sources */,
+				0EC19A702C9B8BD80030E379 /* ILLTheme.swift in Sources */,
 				0E117AAF2BB28167009B0B2A /* SongList.swift in Sources */,
 				0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */,
 				0E2514C42C213B4700D94EA1 /* VSOOTheme.swift in Sources */,
@@ -1548,11 +1619,13 @@
 				0E649EA52C541C8800214395 /* ColorHelper.swift in Sources */,
 				0E595EC62BD4196A00581CCB /* VocaMotionTheme.swift in Sources */,
 				0E2514A22C1CE17700D94EA1 /* SOTRTheme.swift in Sources */,
+				0EC19A6E2C9B872D0030E379 /* FWDTheme.swift in Sources */,
 				0E3486D22C3A003D009D682A /* PitchRing.swift in Sources */,
 				0EC171E22BB3FE76004908E0 /* SenateAiresTheme.swift in Sources */,
 				0E595ECD2BD4764B00581CCB /* HarmonyLeagueTheme.swift in Sources */,
 				0EF7C1392B8D109C0031AD78 /* BlackTheme.swift in Sources */,
 				0E214C552C28733E00B05F82 /* CCSTheme.swift in Sources */,
+				0E15DEE92C9CB1F8001958D6 /* AVPTheme.swift in Sources */,
 				0EDBF7822B8B7B3C00A313D8 /* PitchPipe.swift in Sources */,
 				0E3FAB322BB5FC9600265CA2 /* ForwardHarmonyTheme.swift in Sources */,
 				0E2514B82C2122C100D94EA1 /* RSVPTheme.swift in Sources */,
@@ -1584,6 +1657,7 @@
 				0E89E0332B8D208D00FBD605 /* BHSTheme.swift in Sources */,
 				0E5A765B2C408AC600A0395E /* PitchSelectTip.swift in Sources */,
 				0E3486D42C3A03BE009D682A /* PitchSelector.swift in Sources */,
+				0EC19A682C9B56710030E379 /* NSCTheme.swift in Sources */,
 				0E89E0422B90EF2500FBD605 /* ThemeSettings.swift in Sources */,
 				0E0072D52BB528BF001F2F3B /* MOITheme.swift in Sources */,
 				0E2514A62C1D3FA000D94EA1 /* LPCTheme.swift in Sources */,
@@ -1591,6 +1665,7 @@
 				0E5A765F2C40BB6200A0395E /* PlayPitchTip.swift in Sources */,
 				0EF7C1332B8C61C90031AD78 /* Settings.swift in Sources */,
 				0E5A765D2C40B76500A0395E /* OctaveSelectTip.swift in Sources */,
+				0EC19A6C2C9B822F0030E379 /* EVGTheme.swift in Sources */,
 				0E595ECF2BD4791900581CCB /* GOHTheme.swift in Sources */,
 				0E595D6E2C3F9137005F0042 /* Instrument.swift in Sources */,
 				0E0A001D2C48D7FA000A452C /* EIHTheme.swift in Sources */,
@@ -1601,8 +1676,10 @@
 				0EF0E1FC2BB3E97500B31FFA /* PDXTheme.swift in Sources */,
 				0E0A00212C49D203000A452C /* Acknowledgments.swift in Sources */,
 				0EF0E1E22BB3881A00B31FFA /* CircleCitySoundTheme.swift in Sources */,
+				0E15DEE72C9CACC2001958D6 /* MVTheme.swift in Sources */,
 				0E3486D62C3A202C009D682A /* ThemePreview.swift in Sources */,
 				0E595D6C2C3F9106005F0042 /* Instruments.swift in Sources */,
+				0EC19A6A2C9B59240030E379 /* CSDTheme.swift in Sources */,
 				0EC171F52BB4B6F3004908E0 /* PCHTheme.swift in Sources */,
 				0E3FAB342BB600D000265CA2 /* GNUTheme.swift in Sources */,
 				0E2514D12C21480500D94EA1 /* HOHTheme.swift in Sources */,
@@ -1616,8 +1693,11 @@
 				0E595EC12BD36B0E00581CCB /* VOGTheme.swift in Sources */,
 				0E5A766F2C42166B00A0395E /* PlayFSharpIntent.swift in Sources */,
 				0E117AAE2BB28167009B0B2A /* AddSong.swift in Sources */,
+				0EC19A662C9B50A20030E379 /* CARTheme.swift in Sources */,
 				0E2514A42C1CE80300D94EA1 /* SaltairesTheme.swift in Sources */,
+				0EC19A762C9BB7450030E379 /* MADTheme.swift in Sources */,
 				0EF7C1372B8C66670031AD78 /* UnityTheme.swift in Sources */,
+				0EC19A742C9BB11F0030E379 /* LOLTheme.swift in Sources */,
 				0E5A766B2C40D93300A0395E /* PlayFNaturalIntent.swift in Sources */,
 				0E214C5D2C2885AC00B05F82 /* SBSWTheme.swift in Sources */,
 				0E117A3D2BB21E4E009B0B2A /* ThemeList.swift in Sources */,
@@ -1663,7 +1743,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1675,7 +1755,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.Wrist-Pipe-Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1693,7 +1773,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Wrist Pipe Widgets/Info.plist";
@@ -1705,7 +1785,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.Wrist-Pipe-Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1840,7 +1920,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1851,7 +1931,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -1869,7 +1949,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Wrist Pipe Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				ENABLE_PREVIEWS = YES;
@@ -1880,7 +1960,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -1897,10 +1977,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1912,10 +1992,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 33;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;

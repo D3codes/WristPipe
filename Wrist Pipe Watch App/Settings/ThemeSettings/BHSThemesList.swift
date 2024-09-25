@@ -36,162 +36,103 @@ struct BHSThemesList: View {
                 }
             }
             Section(header: Text("Districts")) {                
-                NavigationLink { ThemeList(themes: CARThemes, path: $path) } label: {
-//                    Image("logo_district_CAR")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [CARTheme()], themes: CARThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Cardinal District") //CAR
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: NSCThemes, path: $path) } label: {
-//                    Image("logo_district_NSC")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [NSCTheme()], themes: NSCThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Carolinas District") //NSC
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: CSDThemes, path: $path) } label: {
-//                    Image("logo_district_CSD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [CSDTheme()], themes: CSDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Central States District") //CSD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: EVGThemes, path: $path) } label: {
-//                    Image("logo_district_EVG")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [EVGTheme()], themes: EVGThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Evergreen District") //EVG
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: FWDThemes, path: $path) } label: {
-//                    Image("logo_district_FWD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [FWDTheme()], themes: FWDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Far Western District") //FWD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: ILLThemes, path: $path) } label: {
-//                    Image("logo_district_ILL")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [ILLTheme()], themes: ILLThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Illinois District") //ILL
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: JADThemes, path: $path) } label: {
-//                    Image("logo_district_JAD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [JADTheme()], themes: JADThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Johnny Appleseed District") //JAD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: LOLThemes, path: $path) } label: {
-//                    Image("logo_district_LOL")
-//                        .resizable()
-//                        .background(.white)
-//                        .clipShape(.circle)
-//                        .frame(width: 50, height: 50)
-//                        .padding(.vertical)
-//                        .padding(.trailing)
+                NavigationLink { ThemeList(topLevelThemes: [LOLTheme()], themes: LOLThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Land O' Lakes District") //LOL
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: MADThemes, path: $path) } label: {
-//                    Image("logo_district_MAD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [MADTheme()], themes: MADThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Mid-Atlantic District") //MAD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: NEDThemes, path: $path) } label: {
-//                    Image("logo_district_NED")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [NEDTheme()], themes: NEDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Northeastern District") //NED
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: ONTThemes, path: $path) } label: {
-//                    Image("logo_district_ONT")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [ONTTheme()], themes: ONTThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Ontario District") //ONT
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: PIOThemes, path: $path) } label: {
-//                    Image("logo_district_PIO")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [PIOTheme()], themes: PIOThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Pioneer District") //PIO
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: RMDThemes, path: $path) } label: {
-//                    Image("logo_district_RMD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [RMDTheme()], themes: RMDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Rocky Mountain District") //RMD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SLDThemes, path: $path) } label: {
-//                    Image("logo_district_SLD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [SLDTheme()], themes: SLDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Seneca Land District") //SLD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SHDThemes, path: $path) } label: {
-//                    Image("logo_district_SHD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [SHDTheme()], themes: SHDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Southeastern Harmony District") //SHD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SWDThemes, path: $path) } label: {
-//                    Image("logo_district_SWD")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
+                NavigationLink { ThemeList(topLevelThemes: [SWDTheme()], themes: SWDThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Southwestern District") //SWD
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
                     Image(systemName: "chevron.right")
                 }
-                NavigationLink { ThemeList(themes: SUNThemes, path: $path) } label: {
-//                    Image("logo_district_SUN")
-//                        .resizable()
-//                        .background(.white)
-//                        .clipShape(.circle)
-//                        .frame(width: 50, height: 50)
-//                        .padding(.vertical)
-//                        .padding(.trailing)
+                NavigationLink { ThemeList(topLevelThemes: [SUNTheme()], themes: SUNThemes, themesHeader: "Choruses", path: $path) } label: {
                     Text("Sunshine District") //SUN
                         .frame(minWidth: 120, alignment: .leading)
                     Spacer()
