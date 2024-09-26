@@ -1,0 +1,29 @@
+Wrist Pipe is the best app to keep you in tune on the go! With its extensive customization options, large selection of instruments, and support for set lists, you’ll never need another pitch pipe again!
+
+Features:
+• designed for quick access to a pitch pipe at a moments notice
+• samples from a real pitch pipe for a natural tuning experience
+• several midi instruments to choose from with three octave selection
+• support for creating predefined set lists for quicker pitch access with no memorization required
+• over 100 hand designed themes across three categories: colors, causes, and barbershop
+• leverages the double tap gesture for one-handed access to pitch playing
+• complications that look good on any watch face
+
+Business model:
+$0.99 one-time purchase. no subscriptions. eligible for family sharing
+
+Accolades:
+“I imagine this would be perfect for times when your opposite hand is busy holding an instrument.” - MacStories
+"Top 10 Paid Music Apps" - Apple, the App Store
+
+Links:
+App Store: https://apps.apple.com/us/app/wrist-pipe/id1492605892
+Website: https://d3.codes/apps/wristpipe/
+
+Developer: David Freeman
+Location: Kansas City, Kansas
+Contact Email: david@d3.codes
+Website: https://d3.codes/
+
+Mastodon: @D3codes@mas.to
+Support Email: david@d3.codes
