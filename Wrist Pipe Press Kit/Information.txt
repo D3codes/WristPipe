@@ -14,7 +14,7 @@ $0.99 one-time purchase. no subscriptions. eligible for family sharing
 
 Accolades:
 “I imagine this would be perfect for times when your opposite hand is busy holding an instrument.” - MacStories
-"Top 10 Paid Music Apps" - Apple, the App Store
+"Top 10 Paid Music Apps" - Apple, the App Store (Sept. 2024)
 
 Links:
 App Store: https://apps.apple.com/us/app/wrist-pipe/id1492605892
@@ -25,5 +25,5 @@ Location: Kansas City, Kansas
 Contact Email: david@d3.codes
 Website: https://d3.codes/
 
-Mastodon: @D3codes@mas.to
+Mastodon: https://mas.to/@D3codes
 Support Email: david@d3.codes
