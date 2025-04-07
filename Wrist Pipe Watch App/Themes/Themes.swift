@@ -127,6 +127,8 @@ let MADThemes: [any Theme] = [
     VOGTheme(),                     //1902
     EastCoastTheme(),               //1903
     MVTheme(),                      //1904
+    SirensTheme(),                  //1905
+    TrueNorthTheme(),               //1906
 ]
 
 //2000-2099
@@ -197,6 +199,7 @@ let SUNThemes: [any Theme] = [
     OrlandoHarmonyTheme(),          //2702
     HOHTheme(),                     //2703
     HOFTheme(),                     //2704
+    HDTheme(),                      //2705
 ]
 
 //3000-3999

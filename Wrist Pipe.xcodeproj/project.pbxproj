@@ -206,6 +206,9 @@
 		0E89E0462B90F0B700FBD605 /* HoldToPlaySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E89E0452B90F0B700FBD605 /* HoldToPlaySettings.swift */; };
 		0E91F6C52C399992004FFFB9 /* SetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91F6C42C39998F004FFFB9 /* SetList.swift */; };
 		0E91F6C72C399A33004FFFB9 /* SetListList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E91F6C62C399A33004FFFB9 /* SetListList.swift */; };
+		0E9845D02DA48E35003DE647 /* HDTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9845CF2DA48E35003DE647 /* HDTheme.swift */; };
+		0E9845D22DA49475003DE647 /* SirensTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9845D12DA49475003DE647 /* SirensTheme.swift */; };
+		0E9845D42DA49616003DE647 /* TrueNorthTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9845D32DA49616003DE647 /* TrueNorthTheme.swift */; };
 		0EB277822BB3440B00A73710 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB277812BB3440B00A73710 /* UserDefaultsKeys.swift */; };
 		0EC171DC2BB3EFAD004908E0 /* VocalSummitTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC171DB2BB3EFAD004908E0 /* VocalSummitTheme.swift */; };
 		0EC171DE2BB3F78B004908E0 /* BoiseChordsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC171DD2BB3F78B004908E0 /* BoiseChordsTheme.swift */; };
@@ -529,6 +532,9 @@
 		0E89E0452B90F0B700FBD605 /* HoldToPlaySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldToPlaySettings.swift; sourceTree = "<group>"; };
 		0E91F6C42C39998F004FFFB9 /* SetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetList.swift; sourceTree = "<group>"; };
 		0E91F6C62C399A33004FFFB9 /* SetListList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetListList.swift; sourceTree = "<group>"; };
+		0E9845CF2DA48E35003DE647 /* HDTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDTheme.swift; sourceTree = "<group>"; };
+		0E9845D12DA49475003DE647 /* SirensTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirensTheme.swift; sourceTree = "<group>"; };
+		0E9845D32DA49616003DE647 /* TrueNorthTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueNorthTheme.swift; sourceTree = "<group>"; };
 		0EB277812BB3440B00A73710 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		0EC171DB2BB3EFAD004908E0 /* VocalSummitTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalSummitTheme.swift; sourceTree = "<group>"; };
 		0EC171DD2BB3F78B004908E0 /* BoiseChordsTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoiseChordsTheme.swift; sourceTree = "<group>"; };
@@ -899,6 +905,7 @@
 				0E2514CA2C21412A00D94EA1 /* BOCTheme.swift */,
 				0E2514CC2C21435800D94EA1 /* OBCTheme.swift */,
 				0E2514D02C21480500D94EA1 /* HOHTheme.swift */,
+				0E9845CF2DA48E35003DE647 /* HDTheme.swift */,
 				0E2514CE2C2144E800D94EA1 /* OrlandoHarmonyTheme.swift */,
 			);
 			path = SUN;
@@ -1042,6 +1049,8 @@
 				0E15DEE62C9CACC2001958D6 /* MVTheme.swift */,
 				0E595EC02BD36B0E00581CCB /* VOGTheme.swift */,
 				0E214C522C28711200B05F82 /* EastCoastTheme.swift */,
+				0E9845D12DA49475003DE647 /* SirensTheme.swift */,
+				0E9845D32DA49616003DE647 /* TrueNorthTheme.swift */,
 			);
 			path = MAD;
 			sourceTree = "<group>";
@@ -1609,10 +1618,12 @@
 				0EF0E1F32BB3C63A00B31FFA /* SmorgasTheme.swift in Sources */,
 				0EC19A702C9B8BD80030E379 /* ILLTheme.swift in Sources */,
 				0E117AAF2BB28167009B0B2A /* SongList.swift in Sources */,
+				0E9845D42DA49616003DE647 /* TrueNorthTheme.swift in Sources */,
 				0E595EBD2BD3637900581CCB /* ParksideTheme.swift in Sources */,
 				0E2514C42C213B4700D94EA1 /* VSOOTheme.swift in Sources */,
 				0EF7C13B2B8D15B80031AD78 /* PrideTheme.swift in Sources */,
 				0E229CD62B8C45EA0065AB31 /* CodyChoraliersTheme.swift in Sources */,
+				0E9845D02DA48E35003DE647 /* HDTheme.swift in Sources */,
 				0E89E0352B8D21FD00FBD605 /* SPEBSQSATheme.swift in Sources */,
 				0E91F6C72C399A33004FFFB9 /* SetListList.swift in Sources */,
 				0E214C532C28711200B05F82 /* EastCoastTheme.swift in Sources */,
@@ -1716,6 +1727,7 @@
 				0E25149F2C1B87B300D94EA1 /* CapCityTheme.swift in Sources */,
 				0EF0E1E92BB3A9C100B31FFA /* HCATheme.swift in Sources */,
 				0E3FAB362BB6043300265CA2 /* CommodoresTheme.swift in Sources */,
+				0E9845D22DA49475003DE647 /* SirensTheme.swift in Sources */,
 				0E89E0462B90F0B700FBD605 /* HoldToPlaySettings.swift in Sources */,
 				0EC171E42BB4000B004908E0 /* RedTheme.swift in Sources */,
 			);
@@ -1755,7 +1767,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.Wrist-Pipe-Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1785,7 +1797,7 @@
 					"@executable_path/../../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp.Wrist-Pipe-Widgets";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1931,7 +1943,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -1960,7 +1972,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe.watchkitapp";
 				PRODUCT_NAME = "Wrist Pipe";
 				SDKROOT = watchos;
@@ -1980,7 +1992,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1995,7 +2007,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 26333RDE2B;
 				INFOPLIST_KEY_CFBundleDisplayName = "Wrist Pipe";
-				MARKETING_VERSION = 2.0.1;
+				MARKETING_VERSION = 2.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Freeman-Software.Wrist-Pipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
