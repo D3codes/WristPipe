@@ -62,6 +62,7 @@ let NSCThemes: [any Theme] = [
     GoldStandardTheme(),            //1202
     THETheme(),                     //1203
     OakCityTheme(),                 //1204
+    LOTSTheme(),                    //1205
 ]
 
 //1300-1399
@@ -94,6 +95,8 @@ let FWDThemes: [any Theme] = [
     MOHTheme(),                     //1502
     PCHTheme(),                     //1503
     SWVATheme(),                    //1504
+    PhoeniciansTheme(),             //1505
+    FCHTheme(),                     //1506
 ]
 
 //1600-1699
@@ -147,6 +150,7 @@ let ONTThemes: [any Theme] = [
     CCCTheme(),                     //2102
     HarbourtownTheme(),             //2103
     TNLTheme(),                     //2104
+    VoicesUnlimitedTheme(),         //2105
 ]
 
 //2200-2299

@@ -210,6 +210,10 @@
 		0E9845D22DA49475003DE647 /* SirensTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9845D12DA49475003DE647 /* SirensTheme.swift */; };
 		0E9845D42DA49616003DE647 /* TrueNorthTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9845D32DA49616003DE647 /* TrueNorthTheme.swift */; };
 		0EB277822BB3440B00A73710 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB277812BB3440B00A73710 /* UserDefaultsKeys.swift */; };
+		0EB2DA272E122C9E000560BA /* PhoeniciansTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB2DA262E122C9E000560BA /* PhoeniciansTheme.swift */; };
+		0EB2DA292E12335E000560BA /* FCHTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB2DA282E12335E000560BA /* FCHTheme.swift */; };
+		0EB2DA2B2E1239B5000560BA /* VoicesUnlimitedTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB2DA2A2E1239B5000560BA /* VoicesUnlimitedTheme.swift */; };
+		0EB2DA2D2E123ACA000560BA /* LOTSTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB2DA2C2E123ACA000560BA /* LOTSTheme.swift */; };
 		0EC171DC2BB3EFAD004908E0 /* VocalSummitTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC171DB2BB3EFAD004908E0 /* VocalSummitTheme.swift */; };
 		0EC171DE2BB3F78B004908E0 /* BoiseChordsTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC171DD2BB3F78B004908E0 /* BoiseChordsTheme.swift */; };
 		0EC171E02BB3FC81004908E0 /* NWSoundTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC171DF2BB3FC81004908E0 /* NWSoundTheme.swift */; };
@@ -536,6 +540,10 @@
 		0E9845D12DA49475003DE647 /* SirensTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SirensTheme.swift; sourceTree = "<group>"; };
 		0E9845D32DA49616003DE647 /* TrueNorthTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueNorthTheme.swift; sourceTree = "<group>"; };
 		0EB277812BB3440B00A73710 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		0EB2DA262E122C9E000560BA /* PhoeniciansTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoeniciansTheme.swift; sourceTree = "<group>"; };
+		0EB2DA282E12335E000560BA /* FCHTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCHTheme.swift; sourceTree = "<group>"; };
+		0EB2DA2A2E1239B5000560BA /* VoicesUnlimitedTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoicesUnlimitedTheme.swift; sourceTree = "<group>"; };
+		0EB2DA2C2E123ACA000560BA /* LOTSTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOTSTheme.swift; sourceTree = "<group>"; };
 		0EC171DB2BB3EFAD004908E0 /* VocalSummitTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalSummitTheme.swift; sourceTree = "<group>"; };
 		0EC171DD2BB3F78B004908E0 /* BoiseChordsTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoiseChordsTheme.swift; sourceTree = "<group>"; };
 		0EC171DF2BB3FC81004908E0 /* NWSoundTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSoundTheme.swift; sourceTree = "<group>"; };
@@ -1077,6 +1085,7 @@
 				0E595ED02BD567D300581CCB /* CCCTheme.swift */,
 				0E214C562C287DD700B05F82 /* HarbourtownTheme.swift */,
 				0E214C582C287F7B00B05F82 /* TNLTheme.swift */,
+				0EB2DA2A2E1239B5000560BA /* VoicesUnlimitedTheme.swift */,
 			);
 			path = ONT;
 			sourceTree = "<group>";
@@ -1132,6 +1141,8 @@
 				0EC171F02BB4B0B9004908E0 /* FogCityTheme.swift */,
 				0EC171F22BB4B3BD004908E0 /* MOHTheme.swift */,
 				0E214C502C286E9A00B05F82 /* SWVATheme.swift */,
+				0EB2DA262E122C9E000560BA /* PhoeniciansTheme.swift */,
+				0EB2DA282E12335E000560BA /* FCHTheme.swift */,
 				0EC171F42BB4B6F3004908E0 /* PCHTheme.swift */,
 			);
 			path = FWD;
@@ -1275,6 +1286,7 @@
 				0EF0E1EA2BB3AF8D00B31FFA /* GoldStandardTheme.swift */,
 				0EF0E1EC2BB3B30B00B31FFA /* THETheme.swift */,
 				0EF0E1EE2BB3BFAE00B31FFA /* OakCityTheme.swift */,
+				0EB2DA2C2E123ACA000560BA /* LOTSTheme.swift */,
 			);
 			path = NSC;
 			sourceTree = "<group>";
@@ -1641,11 +1653,13 @@
 				0E3FAB322BB5FC9600265CA2 /* ForwardHarmonyTheme.swift in Sources */,
 				0E2514B82C2122C100D94EA1 /* RSVPTheme.swift in Sources */,
 				0E214C512C286E9A00B05F82 /* SWVATheme.swift in Sources */,
+				0EB2DA292E12335E000560BA /* FCHTheme.swift in Sources */,
 				0E5A76652C40C64700A0395E /* RenameSetListTip.swift in Sources */,
 				0E2514C82C213EAA00D94EA1 /* VocalMajorityTheme.swift in Sources */,
 				0EC172032BB523AD004908E0 /* SingingBuckeyesTheme.swift in Sources */,
 				0EC171DC2BB3EFAD004908E0 /* VocalSummitTheme.swift in Sources */,
 				0EC171F12BB4B0B9004908E0 /* FogCityTheme.swift in Sources */,
+				0EB2DA2B2E1239B5000560BA /* VoicesUnlimitedTheme.swift in Sources */,
 				0EF0E1EB2BB3AF8D00B31FFA /* GoldStandardTheme.swift in Sources */,
 				0E3FAB302BB5FB3C00265CA2 /* MVETheme.swift in Sources */,
 				0E117AB02BB28167009B0B2A /* Song.swift in Sources */,
@@ -1653,6 +1667,7 @@
 				0E2514CB2C21412D00D94EA1 /* BOCTheme.swift in Sources */,
 				0EF0E1E02BB382AD00B31FFA /* GreatRiverVoicesTheme.swift in Sources */,
 				0EF0E1EF2BB3BFAE00B31FFA /* OakCityTheme.swift in Sources */,
+				0EB2DA272E122C9E000560BA /* PhoeniciansTheme.swift in Sources */,
 				0E2514C02C212BFC00D94EA1 /* PrismTheme.swift in Sources */,
 				0EDBF7812B8B7B3C00A313D8 /* Pitch.swift in Sources */,
 				0E214C4D2C28510300B05F82 /* VisionsTheme.swift in Sources */,
@@ -1726,6 +1741,7 @@
 				0E2514AD2C20ED2400D94EA1 /* SouthernTheme.swift in Sources */,
 				0E25149F2C1B87B300D94EA1 /* CapCityTheme.swift in Sources */,
 				0EF0E1E92BB3A9C100B31FFA /* HCATheme.swift in Sources */,
+				0EB2DA2D2E123ACA000560BA /* LOTSTheme.swift in Sources */,
 				0E3FAB362BB6043300265CA2 /* CommodoresTheme.swift in Sources */,
 				0E9845D22DA49475003DE647 /* SirensTheme.swift in Sources */,
 				0E89E0462B90F0B700FBD605 /* HoldToPlaySettings.swift in Sources */,
