@@ -70,10 +70,20 @@ struct SetListList: View {
                         .onMove { from, to in self.moveRow(from: from, to: to) }
                     }
                 } else {
-                    NavigationLink(destination: AddSetList(setLists: $setLists)) {
-                        HStack{
-                            Image(systemName: "plus")
-                            Text("Add Set List")
+                    if #available(watchOS 26.0, *) {
+                        NavigationLink(destination: AddSetList(setLists: $setLists)) {
+                            HStack{
+                                Image(systemName: "plus")
+                                Text("Add Set List")
+                            }
+                        }
+                        .glassEffect()
+                    } else {
+                        NavigationLink(destination: AddSetList(setLists: $setLists)) {
+                            HStack{
+                                Image(systemName: "plus")
+                                Text("Add Set List")
+                            }
                         }
                     }
                 }
@@ -99,7 +109,6 @@ struct SetListList: View {
                         : Image(systemName: "arrow.up.arrow.down")
                     })
                     .contentTransition(.symbolEffect(.replace))
-                    .padding()
                     .foregroundStyle(Color.white)
                     .disabled(self.setLists.count < 2)
                 }

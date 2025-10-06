@@ -72,10 +72,20 @@ struct SongList: View {
                         .onMove { from, to in self.moveRow(from: from, to: to) }
                     }
                 } else {
-                    NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
-                        HStack{
-                            Image(systemName: "plus")
-                            Text("Add Song")
+                    if #available(watchOS 26.0, *) {
+                        NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
+                            HStack{
+                                Image(systemName: "plus")
+                                Text("Add Song")
+                            }
+                        }
+                        .glassEffect()
+                    } else {
+                        NavigationLink(destination: AddSong(setListId: setListId, setList: $songs)) {
+                            HStack{
+                                Image(systemName: "plus")
+                                Text("Add Song")
+                            }
                         }
                     }
                 }
@@ -106,7 +116,6 @@ struct SongList: View {
                         : Image(systemName: "arrow.up.arrow.down")
                     })
                     .contentTransition(.symbolEffect(.replace))
-                    .padding()
                     .foregroundStyle(Color.white)
                     .disabled(self.songs.count < 2)
                 }

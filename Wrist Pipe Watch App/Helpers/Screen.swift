@@ -12,24 +12,58 @@ import SwiftUI
 class Screen {
     let screenWidth = WKInterfaceDevice.current().screenBounds.width
     
-    // Series 0, 1, 2, 3
-    // let mm38 = 136.0
-    // let mm42 = 156.0
+    // 38mm
+    let series0Small = 136.0
+    let series1Small = 136.0
+    let series2Small = 136.0
+    let series3Small = 136.0
     
-    // Series 4, 5, 6, SE, SE 2
-    let mm40 = 162.0
-    let mm44 = 184.0
+    // 42mm
+    let series0Large = 156.0
+    let series1Large = 156.0
+    let series2Large = 156.0
+    let series3Large = 156.0
     
-    // Series 7, 8, 9
-    let mm41 = 176.0
-    let mm45 = 198.0
+    // 40mm
+    let series4Small = 162.0
+    let series5Small = 162.0
+    let series6Small = 162.0
+    let seSmall = 162.0
+    let se2Small = 162.0
+    let se3Small = 162.0
     
-    // Series 10
-    let mm42 = 187.0
-    let mm46 = 208.0
+    // 44mm
+    let series4Large = 184.0
+    let series5Large = 184.0
+    let series6Large = 184.0
+    let seLarge = 184.0
+    let se2Large = 184.0
+    let se3Large = 184.0
     
-    // Ultra, Ultra 2
-    let mm49 = 205.0
+    // 41mm
+    let series7Small = 176.0
+    let series8Small = 176.0
+    let series9Small = 176.0
+    
+    // 45mm
+    let series7Large = 198.0
+    let series8Large = 198.0
+    let series9Large = 198.0
+    
+    // 42mm
+    let series10Small = 187.0
+    let series11Small = 187.0
+    
+    // 46mm
+    let series10Large = 208.0
+    let series11Large = 208.0
+    
+    // 49mm
+    let ultra = 205.0
+    let ultra2 = 205.0
+    
+    // 49mm
+    let ultra3 = 211.0
     
     let pitchSize = [
         136.0 : 38.0, //38mm
@@ -41,6 +75,7 @@ class Screen {
         205.0 : 40.0, //49mm
         187.0 : 36.0, //42mm
         208.0 : 40.0, //46mm
+        211.0 : 40.0, //49mm
     ]
     func getPitchSize() -> Double {
         return pitchSize[screenWidth]!
@@ -56,6 +91,7 @@ class Screen {
         205.0 : 80.0, //49mm
         187.0 : 80.0, //42mm
         208.0 : 80.0, //46mm
+        211.0 : 80.0, //49mm
     ]
     func getPitchSelectorSize() -> Double {
         return pitchSelectorSize[screenWidth]!
@@ -71,6 +107,7 @@ class Screen {
         205.0 : 49.0, //49mm
         187.0 : 49.0, //42mm
         208.0 : 49.0, //46mm
+        211.0 : 49.0, //49mm
     ]
     func getPitchPointerSize() -> Double {
         return pitchPointerSize[screenWidth]!
@@ -86,13 +123,14 @@ class Screen {
         205.0 : 110.0, //49mm
         187.0 : 100.0, //42mm
         208.0 : 110.0, //46mm
+        211.0 : 110.0, //49mm
     ]
     func getSaveButtonOffset() -> Double {
         return saveButtonOffset[screenWidth]!
     }
     
     func isUltra() -> Bool {
-        return screenWidth == mm49
+        return screenWidth == ultra || screenWidth == ultra2 || screenWidth == ultra3
     }
 }
 

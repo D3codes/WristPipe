@@ -82,14 +82,27 @@ struct Streak: View {
             }
             
             VStack {
+                Spacer()
                 Text(phrases.randomElement()!)
-                ZStack {
-                    Capsule()
-                        .frame(width: (openStreak < 1000 ? 100 : 150), height: 100)
-                        .foregroundStyle(backgroundColor.gradient)
-                    Text("\(openStreak)")
-                        .font(.system(size: 50, weight: .semibold))
-                        .foregroundStyle(colorHelper.getContrastText(for: backgroundColor))
+                if #available(watchOS 26.0, *) {
+                    ZStack {
+                        Capsule()
+                            .frame(width: (openStreak < 1000 ? 100 : 150), height: 100)
+                            .foregroundStyle(backgroundColor.gradient)
+                        Text("\(openStreak)")
+                            .font(.system(size: 50, weight: .semibold))
+                            .foregroundStyle(colorHelper.getContrastText(for: backgroundColor))
+                    }
+                    .glassEffect()
+                } else {
+                    ZStack {
+                        Capsule()
+                            .frame(width: (openStreak < 1000 ? 100 : 150), height: 100)
+                            .foregroundStyle(backgroundColor.gradient)
+                        Text("\(openStreak)")
+                            .font(.system(size: 50, weight: .semibold))
+                            .foregroundStyle(colorHelper.getContrastText(for: backgroundColor))
+                    }
                 }
                 Text("Day\(openStreak > 1 ? "s" : "") in a Row")
             }

@@ -12,7 +12,7 @@ struct CircularLaunchWidgetView: View {
     @Environment(\.widgetRenderingMode) var renderingMode
     
     var body: some View {
-        Image("wpicon_sm\(renderingMode == .fullColor ? "" : "_tint")")
+        Image("wpicon_xs\(renderingMode == .fullColor ? "" : "_tint")")
             .resizable()
             .scaledToFit()
             .widgetAccentable()

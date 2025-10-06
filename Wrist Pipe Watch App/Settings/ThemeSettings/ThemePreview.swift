@@ -29,16 +29,29 @@ struct ThemePreview: View {
             PitchRing(selectedPitch: $selectedPitch, theme: $theme)
             if showSaveButton {
                 ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(.ultraThinMaterial)
-                    VStack {
-                        Button("Save") {
-                            selectedTheme = theme.id
-                            showImage = showImagePreview
-                            path.removeAll()
+                    if #available(watchOS 26.0, *) {
+                        VStack {
+                            Button("Save") {
+                                selectedTheme = theme.id
+                                showImage = showImagePreview
+                                path.removeAll()
+                            }
+                            .buttonStyle(.glass)
+                            .padding()
+                            Spacer()
                         }
-                        .padding()
-                        Spacer()
+                    } else {
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.ultraThinMaterial)
+                        VStack {
+                            Button("Save") {
+                                selectedTheme = theme.id
+                                showImage = showImagePreview
+                                path.removeAll()
+                            }
+                            .padding()
+                            Spacer()
+                        }
                     }
                 }
                 .offset(y: saveButtonOffset)
