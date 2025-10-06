@@ -39,18 +39,34 @@ struct AddSetList: View {
         VStack {
             TextField("Title", text: $title)
             Spacer()
-            Button(action: {
-                if id != nil {
-                    updateSetList()
-                } else {
-                    insertSetList()
+            if #available(watchOS 26.0, *) {
+                Button(action: {
+                    if id != nil {
+                        updateSetList()
+                    } else {
+                        insertSetList()
+                    }
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text(id != nil ? "Save Set List" : "Add Set List")
                 }
-                self.presentationMode.wrappedValue.dismiss()
-            }) {
-                Text(id != nil ? "Save Set List" : "Add Set List")
+                .padding()
+                .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
+                .buttonStyle(.glassProminent)
+            } else {
+                Button(action: {
+                    if id != nil {
+                        updateSetList()
+                    } else {
+                        insertSetList()
+                    }
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text(id != nil ? "Save Set List" : "Add Set List")
+                }
+                .padding()
+                .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
             }
-            .padding()
-            .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
         }
         .padding(.top)
         .onAppear(perform: {

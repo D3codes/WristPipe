@@ -21,8 +21,15 @@ struct About: View {
                 Text("David Freeman")
             }
             Spacer()
-            NavigationLink { Acknowledgments() } label: {
-                Text("Acknowledgments")
+            if #available(watchOS 26.0, *) {
+                NavigationLink { Acknowledgments() } label: {
+                    Text("Acknowledgments")
+                }
+                .buttonStyle(.glass)
+            } else {
+                NavigationLink { Acknowledgments() } label: {
+                    Text("Acknowledgments")
+                }
             }
         }
     }

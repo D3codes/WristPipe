@@ -53,19 +53,36 @@ struct AddSong: View {
             }
             .frame(height: 30)
             Spacer()
-            Button(action: {
-                if songId != nil {
-                    updateSong()
-                } else {
-                    insertSong()
+            if #available(watchOS 26.0, *) {
+                Button(action: {
+                    if songId != nil {
+                        updateSong()
+                    } else {
+                        insertSong()
+                    }
+                    
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text(songId != nil ? "Save Song" : "Add Song")
                 }
-
-                self.presentationMode.wrappedValue.dismiss()
-            }) {
-                Text(songId != nil ? "Save Song" : "Add Song")
+                .padding()
+                .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
+                .buttonStyle(.glassProminent)
+            } else {
+                Button(action: {
+                    if songId != nil {
+                        updateSong()
+                    } else {
+                        insertSong()
+                    }
+                    
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text(songId != nil ? "Save Song" : "Add Song")
+                }
+                .padding()
+                .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
             }
-            .padding()
-            .disabled(title.trimmingCharacters(in: .whitespaces).isEmpty)
         }
         .padding(.top)
     }
