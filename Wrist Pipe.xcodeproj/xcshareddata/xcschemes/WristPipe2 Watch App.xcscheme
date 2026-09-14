@@ -60,7 +60,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0EDBF7572B8B7AC500A313D8"
             BuildableName = "Wrist Pipe.app"
-            BlueprintName = "Wrist Pipe Watch App"
             ReferencedContainer = "container:Wrist Pipe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -77,7 +76,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0EDBF7572B8B7AC500A313D8"
             BuildableName = "Wrist Pipe.app"
-            BlueprintName = "Wrist Pipe Watch App"
             ReferencedContainer = "container:Wrist Pipe.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

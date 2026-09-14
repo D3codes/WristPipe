@@ -53,10 +53,12 @@ class Screen {
     // 42mm
     let series10Small = 187.0
     let series11Small = 187.0
+    let series12Small = 187.0
     
     // 46mm
     let series10Large = 208.0
     let series11Large = 208.0
+    let series12Large = 208.0
     
     // 49mm
     let ultra = 205.0
@@ -64,6 +66,7 @@ class Screen {
     
     // 49mm
     let ultra3 = 211.0
+    let ultra4 = 211.0
     
     let pitchSize = [
         136.0 : 38.0, //38mm
@@ -130,7 +133,7 @@ class Screen {
     }
     
     func isUltra() -> Bool {
-        return screenWidth == ultra || screenWidth == ultra2 || screenWidth == ultra3
+        return screenWidth == ultra || screenWidth == ultra2 || screenWidth == ultra3 || screenWidth == ultra4
     }
 }
 
